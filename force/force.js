@@ -1,23 +1,24 @@
-var width = 1200,
-    height = 800,
-    fill = d3.scale.category20();
+var width = 1500,
+    height = 700;
 
 d3.json("force.json", function(json) {
   var force = d3.layout.force()
-      .charge(-300)
-      .linkDistance(60)
       .nodes(json.nodes)
       .links(json.links)
+      .charge(-50)
+      .linkDistance(function(link) {
+       return 500/link.weight;
+    })
       .size([width, height])
       .on("tick", tick) // new
       .start();
 
-
-
-
 var svg = d3.select("body").append("svg")
     .attr("width", width)
     .attr("height", height);
+    // .append("g")
+        // .call(d3.behavior.zoom().scaleExtent([1, 8]).on("zoom", zoom))
+    // .append("g");
 
 // build the arrow.
 svg.append("svg:defs").selectAll("marker")
@@ -40,6 +41,7 @@ var path = svg.append("svg:g").selectAll("path")
     .attr("class", function(d) { return "link " + d.type; })
     .attr("class", "link")
     .attr("marker-end", "url(#end)");
+//    .style("stroke-width", function(d) {return d.weight/5})
 
 // define the nodes
 var node = svg.selectAll(".node")
@@ -58,6 +60,10 @@ node.append("text")
     .attr("dy", ".35em")
     .text(function(d) { return d.name; });
 
+function zoom() {
+  svg.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
+}
+
 // add the curvy lines
 function tick() {
     path.attr("d", function(d) {
@@ -71,6 +77,7 @@ function tick() {
             d.target.x + "," + 
             d.target.y;
     });
+    // .style("stroke-width", function(d) {return (2**d.weight)/3000});
 
     node
         .attr("transform", function(d) { 

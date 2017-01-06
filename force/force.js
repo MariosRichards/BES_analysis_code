@@ -1,24 +1,53 @@
-var width = 1500,
-    height = 700;
+var w = window,
+    d = document,
+    e = d.documentElement,
+    g = d.getElementsByTagName('body')[0],
+    width = w.innerWidth || e.clientWidth || g.clientWidth,
+    height = w.innerHeight|| e.clientHeight|| g.clientHeight,
+    margin = 12,
+    width = width - margin*2,
+    height = height - margin*2;
+
+var int_width = 1000
+var int_height = 1000
 
 d3.json("force.json", function(json) {
   var force = d3.layout.force()
       .nodes(json.nodes)
       .links(json.links)
-      .charge(-50)
+      .charge(-130)
       .linkDistance(function(link) {
-       return 500/link.weight;
+       return 25+(200000/(2**link.weight));
     })
-      .size([width, height])
+      .size([int_width, int_height])
       .on("tick", tick) // new
       .start();
 
+      // .linkDistance(function(link) {
+       // return 500/link.weight;
+    // })
+  
 var svg = d3.select("body").append("svg")
     .attr("width", width)
-    .attr("height", height);
-    // .append("g")
+    .attr("height", height)
+    .attr("viewBox", "0 0 1200 1000")
+    .attr("preserveAspectRatio", "none");
+    //.append("g");
         // .call(d3.behavior.zoom().scaleExtent([1, 8]).on("zoom", zoom))
     // .append("g");
+
+
+// 2024, 954
+
+function updateWindow(){
+    width = w.innerWidth || e.clientWidth || g.clientWidth;
+    height = w.innerHeight|| e.clientHeight|| g.clientHeight;
+    width = width - margin*2,
+    height = height - margin*2;  
+    svg.attr("width", width).attr("height", height);
+    force.size([int_width, int_height]).resume();
+}
+window.onresize = updateWindow;
 
 // build the arrow.
 svg.append("svg:defs").selectAll("marker")
@@ -84,3 +113,4 @@ function tick() {
   	    return "translate(" + d.x + "," + d.y + ")"; });
 }
 });
+

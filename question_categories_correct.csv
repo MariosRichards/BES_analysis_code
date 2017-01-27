@@ -329,3 +329,5 @@
 327,327,Extremely disappointed|1.0|2.0|3.0|4.0|5.0|6.0|7.0|8.0|9.0|Extremely happy|Don't know,1,85,12,happyEULeaveW9,1
 328,328,1.0|2.0,4,7,2,blameLeave_99W9|creditLeave_99W9|negotiationSpecifics_99W9|passports_99W9,4
 329,329,No formal qualifications,2,24,1,changeIssue1W9|conLeaderLikeW9,4
+330,330,,,,,pano|mapNames,7
+331,331,,,,,personality_agreeableness|personality_conscientiousness|personality_extraversion|personality_neuroticism|personality_openness|riskScale,0

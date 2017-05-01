@@ -21,10 +21,11 @@ Political axis positioning ?
 Process flow:
 =============
 
-Load and pre-process data ?
-Reduce and transform data ?
-Impute Missing Values ?
-
+A: Load and pre-process data LIVE
+B: Impute Missing Values LIVE (but slow! hopefully not necessary!)
+C: Reduce and transform data ?
+    - do I want Binary Categorical variables to have a clearly different transformation format
+    e.g. blahVariable___No (rather than same as non-ordinal)
 
 
 

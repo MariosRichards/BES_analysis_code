@@ -1,0 +1,7 @@
+networkx==1.11
+numpy==1.11.1
+scipy==0.18.0
+pandas==0.18.1
+pyparsing==2.1.8
+wrapt==1.10.8
+

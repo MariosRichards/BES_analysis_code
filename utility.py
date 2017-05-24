@@ -48,8 +48,12 @@ def display_components(n_components, decomp, folder, cols, BES_decomp):
 
 def display_pca_data(n_components, decomp, BES_std):    
     
-    figsz = (3,3)
+    figsz = (16,3)
+    
+    f, axs = plt.subplots( 1, 4, figsize=figsz )
 
+    axno = 0
+    
     if hasattr(decomp, 'explained_variance_ratio_'):
         print('explained variance ratio (first 30): %s'
               % str(decomp.explained_variance_ratio_[0:30]) )
@@ -57,10 +61,12 @@ def display_pca_data(n_components, decomp, BES_std):
     if hasattr(decomp, 'explained_variance_'):
         print('explained variance (first 30): %s'
               % str(decomp.explained_variance_[0:30]) )
-        plt.figure(figsize = figsz)
-        plt.plot( range(1,n_components+1), decomp.explained_variance_, linewidth=2)
-        plt.xlabel('n_components')
-        plt.ylabel('explained_variance_') 
+
+        axs[axno].plot( range(1,n_components+1), decomp.explained_variance_, linewidth=2,figsize = figsz)
+        axs[axno].set_xlabel('n_components')
+        axs[axno].set_ylabel('explained_variance_')
+        axs[axno].set_title('explained variance by n_components')
+        axno = axno + 1
         
     if hasattr(decomp, 'noise_variance_'): 
         if isinstance(decomp.noise_variance_, float):
@@ -72,23 +78,30 @@ def display_pca_data(n_components, decomp, BES_std):
               % str(decomp.score(BES_std)) )
         
     if hasattr(decomp, 'score_samples') and not np.isinf( decomp.score(BES_std) ):
-        pd.DataFrame( decomp.score_samples(BES_std) ).hist(bins=100,figsize = figsz)
+        pd.DataFrame( decomp.score_samples(BES_std) ).hist(bins=100,figsize = figsz, ax=axs[axno])
+        axs[axno].set_xlabel('log likelihood')
+        axs[axno].set_ylabel('frequency')
+        axs[axno].set_title('LL of samples')
+        axno = axno + 1
 
     if hasattr(decomp, 'n_iter_'):
         print('number of iterations: %s'
               % str(decomp.n_iter_) )
         
     if hasattr(decomp, 'loglike_'):
-        plt.figure(figsize = figsz)
-        plt.plot( decomp.loglike_, linewidth=2 )
-        plt.xlabel('n_iter')
-        plt.ylabel('log likelihood') 
+        axs[axno].plot( decomp.loglike_, linewidth=2) # ,figsize = figsz)
+        axs[axno].set_xlabel('n_iter')
+        axs[axno].set_ylabel('log likelihood')
+        axs[axno].set_title('LL by iter')
+        axno = axno + 1
 
     if hasattr(decomp, 'error_'):
-        plt.figure(figsize = figsz)
-        plt.plot( decomp.error_, linewidth=2)
-        plt.xlabel('n_iter')
-        plt.ylabel('error')     
+
+        axs[axno].plot( decomp.error_, linewidth=2, figsize = figsz)
+        axs[axno].set_xlabel('n_iter')
+        axs[axno].set_ylabel('error')
+        axs[axno].set_title('LL by iter')
+        axno = axno + 1
     
     
 # xlim, ylim, samples, weights

@@ -26,7 +26,7 @@ B: Impute Missing Values LIVE (but slow! hopefully not necessary!)
 C: Reduce and transform data ?
     - do I want Binary Categorical variables to have a clearly different transformation format
     e.g. blahVariable___No (rather than same as non-ordinal)
-
+D: 
 
 
 

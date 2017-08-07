@@ -29,7 +29,7 @@ def display_components(n_components, decomp, folder, cols, BES_decomp):
             decomp.components_[comp_no] = -decomp.components_[comp_no]
             BES_decomp[comp_no]         = -BES_decomp[comp_no]
 
-        ax = axes[0]
+        ax = axes[0]fix
         title = "Comp. "+str(comp_no)+" (" + comp.index[-1:][0] + ")"
         comp_labels[comp_no] = title
         ax.set_title( title )
@@ -62,7 +62,8 @@ def display_pca_data(n_components, decomp, BES_std):
         print('explained variance (first 30): %s'
               % str(decomp.explained_variance_[0:30]) )
 
-        axs[axno].plot( range(1,n_components+1), decomp.explained_variance_, linewidth=2,figsize = figsz)
+        axs[axno].plot( range(1,n_components+1), decomp.explained_variance_, linewidth=2)
+        # ,figsize = figsz)
         axs[axno].set_xlabel('n_components')
         axs[axno].set_ylabel('explained_variance_')
         axs[axno].set_title('explained variance by n_components')

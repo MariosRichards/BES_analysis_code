@@ -2,48 +2,74 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 from matplotlib import mlab, cm
+import pickle, os
 
 
-def display_components(n_components, decomp, folder, cols, BES_decomp):
+def display_components(n_components, decomp, cols, BES_decomp,
+                       save_folder = False, show_first_x_comps=4,
+                       show_histogram=True, flip_axes=True):
+    
+    if hasattr(decomp, 'coef_'):
+        decomp_components = decomp.coef_
+    elif hasattr(decomp, 'components_'):
+        decomp_components = decomp.components_
+    else:
+        raise ValueError('no component attribute in decomp')    
 
+    # hardcoded at 20?    
     n_comps = min(n_components,20)
     comp_labels = {}
+    comp_dict = {}
 
     for comp_no in range(0,n_comps):
 
-        fig, axes = plt.subplots(ncols=2)
-
-        ax = axes[1]
-        comp = pd.DataFrame( decomp.components_[comp_no], index = cols, columns = ["components_"] )
+        fig, axes = plt.subplots(ncols=1+show_histogram)
+        
+        comp = pd.DataFrame( decomp_components[comp_no], index = cols, columns = ["components_"] )
         comp["comp_absmag"] = comp["components_"].abs()
-        comp = comp.sort_values(by="comp_absmag",ascending=True)
-        ax.set_xlabel("abs. variable coeffs")
-        ax.set_title("Histogram of abs. variable coeffs")
-        comp["comp_absmag"].hist( bins=30, ax=ax, figsize=(10,6) )
+        comp = comp.sort_values(by="comp_absmag",ascending=True)        
+        
+        if show_histogram:
+            comp_ax = axes[0]
+            
+            hist_ax = axes[1]
+            hist_ax.set_xlabel("abs. variable coeffs")
+            hist_ax.set_title("Histogram of abs. variable coeffs")
+            comp["comp_absmag"].hist( bins=30, ax=hist_ax, figsize=(10,6) )
+            
+        else:
+            comp_ax = axes
+            
 
         # set top abs_mag variable to label
         comp_labels[comp_no] = comp.index[-1:][0] # last label (= highest magnitude)
         # if top abs_mag variable is negative
-        if comp[-1:]["components_"].values[0] < 0:
+     
+        if flip_axes & (comp[-1:]["components_"].values[0] < 0):
+
             comp["components_"]         = -comp["components_"]
-            decomp.components_[comp_no] = -decomp.components_[comp_no]
+            decomp_components[comp_no]  = -decomp_components[comp_no]
             BES_decomp[comp_no]         = -BES_decomp[comp_no]
 
-        ax = axes[0]fix
+#         ax = axes[0]
         title = "Comp. "+str(comp_no)+" (" + comp.index[-1:][0] + ")"
         comp_labels[comp_no] = title
-        ax.set_title( title )
-        ax.set_xlabel("variable coeffs")
+        comp_ax.set_title( title )
+        comp_ax.set_xlabel("variable coeffs")
         xlim = (min(comp["components_"].min(),-1) , max(comp["components_"].max(),1) )
-        comp["components_"].tail(30).plot( kind='barh', ax=ax,figsize=(10,6), xlim=xlim )
+        comp["components_"].tail(30).plot( kind='barh', ax=comp_ax, figsize=(10,6), xlim=xlim )
+        
+        if (save_folder != False):
+            fname = save_folder + os.sep + title.replace("/","_").replace(":","_") + ".png"
+            fig.savefig( fname, bbox_inches='tight' )
 
-        fname = folder + title.replace("/","_") + ".png"
-
-        fig.savefig( fname, bbox_inches='tight' )
-
-        if comp_no >4:
+        comp_dict[comp_no] = comp
+        # show first x components
+        if (comp_no >= min(show_first_x_comps,n_components)):
             plt.close()
-    return (BES_decomp, comp_labels)
+
+        
+    return (BES_decomp, comp_labels, comp_dict)
     
 
 def display_pca_data(n_components, decomp, BES_std):    

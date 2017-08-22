@@ -7,10 +7,24 @@ library(bnlearn)
 library(foreign)
 library(Rgraphviz)
 
+dataset = "W13_voting_path_small"
+fn = paste("C://Users//Marios//Desktop//BES_analysis//BES_analysis_data//",dataset,".dta",sep="") 
+df = read.dta( fn )
+df$index <- NULL
+
+
+
 dataset = "W13_reduced_with_nans"
 fn = paste("C://Users//Marios//Desktop//BES_analysis//BES_analysis_data//",dataset,".dta",sep="") 
 df = read.dta( fn )
 df$index <- NULL
+
+for(col in names(df)) {
+  #  print(fac)
+  df[, col] = as.factor(df[, col])
+}
+
+
 
 df[is.na(df)] = -1
 
@@ -39,9 +53,12 @@ df$index <- NULL
 # with no missing values!
 
 # quicker with
+# debug=TRUE
+
+# boo! Too slow!
 
 ptm <- proc.time()
-res <- tabu(df, debug=TRUE)
+res <- tabu(df) 
 plot(res)
 proc.time() - ptm
 ptm2 <- proc.time()
@@ -66,7 +83,7 @@ proc.time() - ptm
 
 
 #res <- set.arc(res) # 
-strength <- arc.strength(res, df, criterion = "loglik-cg")
+strength <- arc.strength(res, df, criterion = "loglik")
 #strength <- arc.strength(res, df, criterion = "mi-cg")
 output_fn = paste("C://Users//Marios//Desktop//BES_analysis//BES_analysis_code//",dataset,"_strengths",".csv",sep="") 
 write.csv(strength, output_fn )
@@ -89,7 +106,7 @@ ptm2 = proc.time()
 
 
 # bleh still hard to make out
-strength.plot(res, strength, layout="dot", shape="rectangle")
+strength.plot(res, strength, layout="dot", shape="rectangle", highlight = c("voting_path", mb(res, "voting_path")))
 
 
 # df$generalElectionVote = factor(df$generalElectionVote)

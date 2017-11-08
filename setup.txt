@@ -1,0 +1,3 @@
+conda create -n BES_analysis pandas numpy matplotlib
+
+conda install -n BES_analysis jupyter nb_conda statsmodels pandas numpy matplotlib scikit-learn seaborn scipy

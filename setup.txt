@@ -1,3 +1,14 @@
 conda create -n BES_analysis pandas numpy matplotlib
 
 conda install -n BES_analysis jupyter nb_conda statsmodels pandas numpy matplotlib scikit-learn seaborn scipy
+
+conda install -n BES_analysis holoviews ipywidgets pytables
+
+pip install ipysankeywidget
+jupyter nbextension enable --py --sys-prefix ipysankeywidget
+
+conda install -n BES_analysis ecos fastcache
+conda install -n BES_analysis -c cvxgrp cvxpy
+pip install fancyimpute
+
+pip install wpca

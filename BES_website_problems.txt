@@ -1,0 +1,41 @@
+BES data links
+- missing Wave 9 only link! (it's there, but you have to google for that one specifically rather than finding it with the rest)
+- missing Wave 12 and Wave 11 broken links for Questionnaire (both point to wave 13)
+- British Election Study Combined Wave 1, 2, 3, 4 and 5 Internet Panel
+   - Stata and questionnaire links broken!
+   
+- pedantic point added for completeness
+   - 7z zip file format a bit less friendly compared to vanilla zip format
+   - only used twice (W7_comb, W8_comb)
+   
+https://docs.google.com/spreadsheets/d/1Fe-b8Q9qcoyfDwD5MSy2whsZInoITxJ_tzoI5P-rdPo/edit?usp=sharing
+
+
+
+
+
+
+
+
+
+Link for lifetime propensity to effect values:
+https://www.nytimes.com/interactive/2014/07/08/upshot/how-the-year-you-were-born-influences-your-politics.html
+
+
+
+
+
+Random note:
+
+motherCountryBornW8
+fatherCountryBornW8
+
+	Why are these lists different?
+	
+warmWCW11
+
+	missing 9 (in category options) (Very cold, 1,2,3,4,5,6,7,8,10 ...)
+	
+lrMayW12
+	- is this an order problem or a labelling problem?
+	1|2|3|4|5|6|7|8|9|Right  10|Don't know|Left  0	

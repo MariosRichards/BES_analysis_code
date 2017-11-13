@@ -1,6 +1,6 @@
 BES data links
 - missing Wave 9 only link! (it's there, but you have to google for that one specifically rather than finding it with the rest)
-- missing Wave 12 and Wave 11 broken links for Questionnaire (both point to wave 13)
+- Wave 12 and Wave 11 broken links for Questionnaire pdf (both point to wave 13)
 - British Election Study Combined Wave 1, 2, 3, 4 and 5 Internet Panel
    - Stata and questionnaire links broken!
    

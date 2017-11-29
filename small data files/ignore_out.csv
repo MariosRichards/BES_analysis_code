@@ -1,0 +1,175 @@
+,dataset_name,variable_name,dtype,cat_all_strings,cat_list
+0,W13_comb,partyContactSNPW1,category,True,Don't know
+1,W13_comb,partyContactGrnW1,category,True,No|Don't know
+2,W13_comb,partyContactSNPW2,category,True,Don't know
+3,W13_comb,partyContactGrnW2,category,True,No|Don't know
+4,W13_comb,reasonNotRegistered_noneW2,category,True,No|Don't know
+5,W13_comb,partyContactGrnW3,category,True,No|Don't know
+6,W13_comb,reasonNotRegistered_noneW3,category,True,No|Don't know
+7,W13_comb,reasonNotRegistered_noneW4,category,True,No|Don't know
+8,W13_comb,reasonNotRegistered_noneW6,category,True,No|Don't know
+9,W13_comb,whichPartiesHelped_99W6,category,True,No
+10,W13_comb,reasonNotRegistered_noneW7,category,True,No|Don't know
+11,W13_comb,reasonNotRegistered_noneW8,category,True,No|Don't know
+12,W10_comb,partyContactSNPW1,category,True,Don't know
+13,W10_comb,partyContactGrnW1,category,True,No|Don't know
+14,W10_comb,generalElecCertaintyW1,float64,,[ 1.]
+15,W10_comb,partyContactSNPW2,category,True,Don't know
+16,W10_comb,partyContactGrnW2,category,True,No|Don't know
+17,W10_comb,reasonNotRegistered_noneW2,category,True,No|Don't know
+18,W10_comb,generalElecCertaintyW2,float64,,[ 1.]
+19,W10_comb,partyContactGrnW3,category,True,No|Don't know
+20,W10_comb,reasonNotRegistered_noneW3,category,True,No|Don't know
+21,W10_comb,generalElecCertaintyW3,float64,,[ 1.]
+22,W10_comb,reasonNotRegistered_noneW4,category,True,No|Don't know
+23,W10_comb,reasonNotRegistered_noneW6,category,True,No|Don't know
+24,W10_comb,whichPartiesHelped_99W6,category,True,No
+25,W10_comb,londonMayorVoteW7,category,False,"Float64Index([1.0], dtype='float64')"
+26,W10_comb,reasonNotRegistered_noneW7,category,True,No|Don't know
+27,W10_comb,reasonNotRegistered_noneW8,category,True,No|Don't know
+28,W10_comb,locusControlW9,category,True,No formal qualifications
+29,W10_comb,fatherNumEmployeesW4,float64,,[]
+30,W10_comb,motherNumEmployeesW4,float64,,[]
+31,W9_comb,partyContactSNPW1,category,True,Don't know
+32,W9_comb,partyContactGrnW1,category,True,No|Don't know
+33,W9_comb,generalElecCertaintyW1,float64,,[ 1.]
+34,W9_comb,partyContactSNPW2,category,True,Don't know
+35,W9_comb,partyContactGrnW2,category,True,No|Don't know
+36,W9_comb,reasonNotRegistered_noneW2,category,True,No|Don't know
+37,W9_comb,generalElecCertaintyW2,float64,,[ 1.]
+38,W9_comb,partyContactGrnW3,category,True,No|Don't know
+39,W9_comb,reasonNotRegistered_noneW3,category,True,No|Don't know
+40,W9_comb,generalElecCertaintyW3,float64,,[ 1.]
+41,W9_comb,reasonNotRegistered_noneW4,category,True,No|Don't know
+42,W9_comb,reasonNotRegistered_noneW6,category,True,No|Don't know
+43,W9_comb,whichPartiesHelped_99W6,category,True,No
+44,W9_comb,reasonNotRegistered_noneW7,category,True,No|Don't know
+45,W9_comb,reasonNotRegistered_noneW8,category,True,No|Don't know
+46,W9_comb,locusControlW9,category,True,No formal qualifications
+47,W9_comb,fatherNumEmployeesW4,float64,,[]
+48,W9_comb,motherNumEmployeesW4,float64,,[]
+49,W8_only,reasonNotRegistered_none,category,True,No|Don't know
+50,W8_comb,partyContactSNPW1,category,True,Don't know
+51,W8_comb,partyContactGrnW1,category,True,No|Don't know
+52,W8_comb,generalElecCertaintyW1,float64,,[ 1.]
+53,W8_comb,partyContactSNPW2,category,True,Don't know
+54,W8_comb,partyContactGrnW2,category,True,No|Don't know
+55,W8_comb,reasonNotRegistered_noneW2,category,True,No|Don't know
+56,W8_comb,generalElecCertaintyW2,float64,,[ 1.]
+57,W8_comb,partyContactGrnW3,category,True,No|Don't know
+58,W8_comb,reasonNotRegistered_noneW3,category,True,No|Don't know
+59,W8_comb,generalElecCertaintyW3,float64,,[ 1.]
+60,W8_comb,reasonNotRegistered_noneW4,category,True,No|Don't know
+61,W8_comb,reasonNotRegistered_noneW6,category,True,No|Don't know
+62,W8_comb,whichPartiesHelped_99W6,category,True,No
+63,W8_comb,reasonNotRegistered_noneW7,category,True,No|Don't know
+64,W8_comb,reasonNotRegistered_noneW8,category,True,No|Don't know
+65,W8_comb,fatherNumEmployeesW4,float64,,[]
+66,W8_comb,motherNumEmployeesW4,float64,,[]
+67,W7_only,reasonNotRegistered_none,category,True,No|Don't know
+68,W7_comb,partyContactSNPW1,category,True,Don't know
+69,W7_comb,partyContactGrnW1,category,True,No|Don't know
+70,W7_comb,generalElecCertaintyW1,float64,,[ 1.]
+71,W7_comb,partyContactSNPW2,category,True,Don't know
+72,W7_comb,partyContactGrnW2,category,True,No|Don't know
+73,W7_comb,reasonNotRegistered_noneW2,category,True,No|Don't know
+74,W7_comb,generalElecCertaintyW2,float64,,[ 1.]
+75,W7_comb,partyContactGrnW3,category,True,No|Don't know
+76,W7_comb,reasonNotRegistered_noneW3,category,True,No|Don't know
+77,W7_comb,generalElecCertaintyW3,float64,,[ 1.]
+78,W7_comb,reasonNotRegistered_noneW4,category,True,No|Don't know
+79,W7_comb,reasonNotRegistered_noneW6,category,True,No|Don't know
+80,W7_comb,whichPartiesHelped_99W6,category,True,No
+81,W7_comb,reasonNotRegistered_noneW7,category,True,No|Don't know
+82,W7_comb,fatherNumEmployeesW4,float64,,[]
+83,W7_comb,motherNumEmployeesW4,float64,,[]
+84,W6_only,reasonNotRegistered_none,category,True,No|Don't know
+85,W6_comb,generalElecCertaintyW1,float32,,[ 1.]
+86,W6_comb,reasonNotRegistered_noneW2,category,True,No|Don't know
+87,W6_comb,generalElecCertaintyW2,float32,,[ 1.]
+88,W6_comb,reasonNotRegistered_noneW3,category,True,No|Don't know
+89,W6_comb,generalElecCertaintyW3,float32,,[ 1.]
+90,W6_comb,reasonNotRegistered_noneW4,category,True,No|Don't know
+91,W6_comb,profile_GOR_pdlW4,category,False,"Index([                      '15 or under',
+                                      '16',
+                                   '17-18',
+                                      '19',
+                                     '20+',
+       'Still at school/Full time student',
+                          'Can't remember',
+                                       8.0,
+                                       9.0,
+                                      10.0,
+                                      11.0],
+      dtype='object')"
+92,W6_comb,reasonNotRegistered_noneW6,category,True,No|Don't know
+93,W6_comb,whichPartiesHelped_99W6,category,True,No
+94,W5_comb,generalElecCertaintyW1,float32,,[ 1.]
+95,W5_comb,euroElectionVoteYoungW2,category,True,
+96,W5_comb,reasonNotRegistered_noneW2,category,True,No|Don't know
+97,W5_comb,generalElecCertaintyW2,float32,,[ 1.]
+98,W5_comb,csplScotRefW3,category,True,North East
+99,W5_comb,reasonNotRegistered_noneW3,category,True,No|Don't know
+100,W5_comb,generalElecCertaintyW3,float32,,[ 1.]
+101,W5_comb,reasonNotRegistered_noneW4,category,True,No|Don't know
+102,W5_comb,profile_GOR_pdlW4,category,False,"Index([                      '15 or under',
+                                      '16',
+                                   '17-18',
+                                      '19',
+                                     '20+',
+       'Still at school/Full time student',
+                          'Can't remember',
+                                       8.0,
+                                       9.0,
+                                      10.0,
+                                      11.0],
+      dtype='object')"
+103,W5_comb,participation_111W5,category,True,Got a lot worse|Got a little worse
+104,W5_comb,sharedContentOnline_111W5,category,True,Got a lot worse|Got a little worse
+105,W5_comb,sharedContentOnline_99W5,category,True,Got a lot worse|Got a little worse
+106,W4_only,reasonNotRegistered_none,category,True,No|Don't know
+107,W4_comb,generalElecCertaintyW1,float32,,[ 1.]
+108,W4_comb,euroElectionVoteYoungW2,category,True,
+109,W4_comb,reasonNotRegistered_noneW2,category,True,No|Don't know
+110,W4_comb,generalElecCertaintyW2,float32,,[ 1.]
+111,W4_comb,reasonNotRegistered_noneW3,category,True,No|Don't know
+112,W4_comb,reasonNotRegistered_noneW4,category,True,No|Don't know
+113,W4_comb,profile_GOR_pdlW4,category,False,"Index([                      '15 or under',
+                                      '16',
+                                   '17-18',
+                                      '19',
+                                     '20+',
+       'Still at school/Full time student',
+                          'Can't remember',
+                                       8.0,
+                                       9.0,
+                                      10.0,
+                                      11.0],
+      dtype='object')"
+114,W3_only,reasonNotRegistered_none,category,True,No|Don't know
+115,W3_comb,euroElectionVoteYoungW2,category,True,
+116,W3_comb,reasonNotRegistered_noneW2,category,True,No|Don't know
+117,W3_comb,profile_pcon_2010_newW3,category,False,"Index([                      '15 or under',
+                                      '16',
+                                   '17-18',
+                                      '19',
+                                     '20+',
+       'Still at school/Full time student',
+                          'Can't remember',
+                                       8.0,
+                                       9.0,
+                                      10.0,
+       ...
+                                     623.0,
+                                     624.0,
+                                     625.0,
+                                     626.0,
+                                     627.0,
+                                     628.0,
+                                     629.0,
+                                     630.0,
+                                     631.0,
+                                     632.0],
+      dtype='object', length=632)"
+118,W3_comb,reasonNotRegistered_noneW3,category,True,No|Don't know
+119,W2_only,reasonNotRegistered_none,category,True,No|Don't know

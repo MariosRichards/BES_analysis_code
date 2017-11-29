@@ -1,0 +1,357 @@
+
+
+
+
+Not sure which wave:
+
+changeIssue1W9|conLeaderLikeW9|generalElecCertainty1W2|generalElecCertainty2W2|discussantNameGeneratorW2|discussantsRelationshipW2|generalElecCertainty3W2|generalElecCertainty4W2
+"No formal qualifications"
+
+
+
+electoratepcon # size of electorate in parliamentary constituency (no. who voted/no registered to vote?)
+consh10pcon # conservative share 2010 by parliamentary constituency
+turnout10pcon # election turnout 2010 by parliamentary constituency
+winnersh10pcon # winner share 2010 by parliamentary constituency
+runnerupsh10pcon # runner up share 2010 by parliamentary constituency
+marginsh10pcon # margin of victory share 2010 by parliamentary constituency
+# belongs with pano
+
+
+
+soc2010 # ???Standard Occupational Classifications 2010 (SOC2010)???
+# all integers, 413 different values, 1115-9279
+# does not depend directly on constituency
+mapNames # I still have no idea!
+
+
+
+
+
+
+
+Unclear variables
+W3_comb:
+conditionW1 "1.0|2.0|3.0|4.0|5.0"
+eduChoiceW1 "0.0|1.0|2.0"
+RandomIDW1 -> early first attempt at "id"?
+euroElectionVoteYoungW2 -> broken
+
+W4_comb:
+profile_GOR_pdlW4 "15 or under|16|17-18|19|20+|Still at school/Full time student|Can't remember|8.0|9.0|10.0|11.0"
+conDKW4|labDKW4|ldDKW4|snpDKW4|pcDKW4|ukipDKW4|grnDKW4 "1|2"
+
+W5_comb:
+participation_111W5|sharedContentOnline_111W5|sharedContentOnline_99W5 "Got a lot worse|Got a little worse"
+^ doesn't look right!
+csplScotRefW3 "North East" - broken!
+
+
+
+W13_comb:
+cciW1W2W3W4W5
+ccinoITW1W2W3W4W5
+justITW1W2W3W4W5
+cciW6W7W8W9
+ccinoITW6W7W8W9
+justITW6W7W8W9
+- all floats - no idea what they're supposed to be!
+
+
+
+
+
+
+
+
+ignore list
+W13_comb
+===========
+
+approveEUW2 : "Strongly disapprove|Disapprove|Don't know"
+
+partyContactSNPW1 : "Don't know"
+partyContactSNPW2 : "Don't know"
+
+partyContactGrnW1 : "No|Don't know"
+partyContactGrnW2 : "No|Don't know"
+partyContactGrnW3 : "No|Don't know"
+
+# so is this one variable for the "None" and "don't know" options?
+reasonNotRegistered_noneW2 : "No|Don't know"
+reasonNotRegistered_noneW3 : "No|Don't know"
+reasonNotRegistered_noneW4 : "No|Don't know"
+reasonNotRegistered_noneW6 : "No|Don't know"
+reasonNotRegistered_noneW7 : "No|Don't know"
+reasonNotRegistered_noneW8 : "No|Don't know"
+
+whichPartiesHelped_99W6 : "No" # W13 questionnaire has a weird line for "None of these"
+
+selfNumEmployeesW6W7W8W9 :     [1.0, 2.0, 3.0, 9999.0]
+selfNumEmployeesLastW6W7W8W9 : [1.0, 2.0, 3.0, 9999.0]
+
+W10_comb
+===========
+
+approveEUW2 : "Strongly disapprove|Disapprove|Don't know"
+
+partyContactSNPW1 : "Don't know"
+partyContactSNPW2 : "Don't know"
+
+partyContactGrnW1 : "No|Don't know"
+partyContactGrnW2 : "No|Don't know"
+partyContactGrnW3 : "No|Don't know"
+
+generalElecCertaintyW1 : [ 1.0 ]
+generalElecCertaintyW2 : [ 1.0 ]
+generalElecCertaintyW3 : [ 1.0 ]
+
+reasonNotRegistered_noneW2 : "No|Don't know"
+reasonNotRegistered_noneW3 : "No|Don't know"
+reasonNotRegistered_noneW4 : "No|Don't know"
+reasonNotRegistered_noneW6 : "No|Don't know"
+reasonNotRegistered_noneW7 : "No|Don't know"
+reasonNotRegistered_noneW8 : "No|Don't know"
+
+whichPartiesHelped_99W6 : "No"
+
+selfNumEmployeesW6W7W8W9 :     [ 1.0  3.0   2.0  9999.0 ]
+selfNumEmployeesLastW6W7W8W9 : [ 1.0  3.0   2.0  9999.0 ]
+
+# ugh - it's category dtype, but the categories are floats!
+# kills a lot of code!
+londonMayorVoteW7 : [ 1.0 ] 
+
+locusControlW9 : "No formal qualifications"
+fatherNumEmployeesW4 : [ ]
+motherNumEmployeesW4 : [ ]
+
+W9_comb
+===========
+
+partyContactSNPW1 : "Don't know"
+partyContactGrnW1 : "No|Don't know"
+
+generalElecCertaintyW1 : [ 1.0 ]
+approveEUW2 : "Strongly disapprove|Disapprove|Don't know"
+partyContactSNPW2 : "Don't know"
+partyContactGrnW2 : "No|Don't know"
+reasonNotRegistered_noneW2 : "No|Don't know"
+generalElecCertaintyW2 : [ 1.0 ]
+partyContactGrnW3 : "No|Don't know"
+reasonNotRegistered_noneW3 : "No|Don't know"
+generalElecCertaintyW3 : [ 1.0 ]
+reasonNotRegistered_noneW4 : "No|Don't know"
+reasonNotRegistered_noneW6 : "No|Don't know"
+
+whichPartiesHelped_99W6 : "No"
+
+reasonNotRegistered_noneW7 : "No|Don't know"
+reasonNotRegistered_noneW8 : "No|Don't know"
+
+locusControlW9 : "No formal qualifications"
+
+fatherNumEmployeesW4 : []
+motherNumEmployeesW4 : []
+selfNumEmployeesW6W7W8W9 :     [  1.0   3.0   2.0   9999.0]
+selfNumEmployeesLastW6W7W8W9 : [  1.0   3.0   2.0   9999.0]
+
+
+'W9_only'
+==============
+
+selfNumEmployeesW6W7W8W9 :     [  1.0   3.0   2.0   9999.0]
+selfNumEmployeesLastW6W7W8W9 : [  1.0   3.0   2.0   9999.0]
+
+'W8_only'
+==============
+reasonNotRegistered_none : "No|Don't know"
+
+'W8_comb'
+==============
+
+approveEUW2 : "Strongly disapprove|Disapprove|Don't know"
+
+partyContactSNPW1 : "Don't know"
+partyContactSNPW2 : "Don't know"
+partyContactGrnW1 : "No|Don't know"
+partyContactGrnW2 : "No|Don't know"
+partyContactGrnW3 : "No|Don't know"
+
+generalElecCertaintyW1 : [ 1.0 ]
+generalElecCertaintyW2 : [ 1.0 ]
+generalElecCertaintyW3 : [ 1.0 ]
+
+whichPartiesHelped_99W6 : "No"
+
+reasonNotRegistered_noneW2 : "No|Don't know"
+reasonNotRegistered_noneW3 : "No|Don't know"
+reasonNotRegistered_noneW4 : "No|Don't know"
+reasonNotRegistered_noneW6 : "No|Don't know"
+reasonNotRegistered_noneW7 : "No|Don't know"
+reasonNotRegistered_noneW8 : "No|Don't know"
+
+fatherNumEmployeesW4 : []
+motherNumEmployeesW4 : []
+
+'W7_only'
+===============
+
+reasonNotRegistered_none : "No|Don't know"
+
+'W7_comb'
+===============
+approveEUW2 : "Strongly disapprove|Disapprove|Don't know"
+
+partyContactSNPW1 : "Don't know"
+partyContactSNPW2 : "Don't know"
+partyContactGrnW1 : "No|Don't know"
+partyContactGrnW2 : "No|Don't know"
+partyContactGrnW3 : "No|Don't know"
+
+generalElecCertaintyW1 : [ 1.0 ]
+generalElecCertaintyW2 : [ 1.0 ]
+generalElecCertaintyW3 : [ 1.0 ]
+
+reasonNotRegistered_noneW2 : "No|Don't know"
+reasonNotRegistered_noneW3 : "No|Don't know"
+reasonNotRegistered_noneW4 : "No|Don't know"
+reasonNotRegistered_noneW6 : "No|Don't know"
+reasonNotRegistered_noneW7 : "No|Don't know"
+
+whichPartiesHelped_99W6 : "No"
+
+fatherNumEmployeesW4 : []
+motherNumEmployeesW4 : []
+
+'W6_only'
+===============
+
+reasonNotRegistered_none : "No|Don't know"
+
+
+
+
+
+Removed a load as just odd int/float variables relating to 2010 pcon vote
+================================================
+
+remove some as hardcoded options
+
+W13_comb, W10_comb, W9_comb, W9_only
+13	selfNumEmployeesW6W7W8W9					float64	NaN	[1.0, 3.0, 2.0, 9999.0]
+14	W13_comb	selfNumEmployeesLastW6W7W8W9	float64	NaN	[1.0, 2.0, 3.0, 9999.0]
+
+=====================================================
+approveEUW2 	# W7_comb, W10_comb, W13_comb, W8_comb, W9_comb
+Strongly disapprove|Disapprove|Don't know -> Approve|Disapprove|Don't know
+
+=============================================================
+RandomIDW1 -> added to list of weird ints/floats
+
+
+types
+
+
+csplScotRefW3
+euroElectionVoteYoungW2
+fatherNumEmployeesW4
+motherNumEmployeesW4
+generalElecCertainty W1,W2,W3
+locusControlW9
+londonMayorVoteW7
+participation_111W5
+partyContactGrn W1,W2,W3
+partyContactSNP W1,W2
+profile_GOR_pdlW4
+profile_pcon_2010_newW3
+reasonNotRegistered_none (X,W2,W3,W4,W5,W6,W7,W8)
+sharedContentOnline_111W5
+sharedContentOnline_99W5
+whichPartiesHelped_99W6
+
+
+=============================================
+DISPARITIES
+
+
+
+TYPE
+# gor W3_only, W2_only (3->-4, category -> object)
+# # grr - some point BES switched from ONS codes to text names
+# # I feel like percolating the change backwards would have been a good idea
+# ONS codes available here:
+# http://webarchive.nationalarchives.gov.uk/20160128190831/http://www.ons.gov.uk/ons/guide-method/geography/beginner-s-guide/administrative/england/government-office-regions/index.html
+DONE
+
+mapNamesW3 dtype:  W13_comb float64 W5_comb category
+mapNamesW3 dtype:  W13_comb float64 W4_comb category
+mapNamesW3 dtype:  W13_comb float64 W3_comb category
+
+-> they should all be changed to float type!
+DONE
+
+TUESDAY!
+
+-> test fixes DONE
+Refactor 
+* probably should put all reorder/renames into csvs
+	DONE
+* Create csv of all disparate categories!
+	DONE
+
+===============================================
+dtype: float
+* Don't know what to do about this!
+W9_only	float64	1	motherNumEmployees	1 to 24 employees|25 to 499 employees|500 or more employees	1 to 24 employees|25 to 499 employees
+
+* Weird inconsistency about whether or not to have *what I assume* is a "Did not vote" option
+- same variable in other waves is just No|Yes|Don't know
+"No|Yes|3.0|Don't know":
+   ["No","Yes","Did not vote","Don't know"], # regretsIHaveAFewEUW10|regretsIHaveAFewEUW11   
+"No|Yes|3|Don't know":
+   ["No","Yes","Did not vote","Don't know"], # regretsIHaveAFewEU W11_only|regretsIHaveAFew W10_only 
+
+* partyContactGrn # W12_only,W11_only,W3_only,W2_only,W1_only
+# only one variable!
+
+* immigSNP #W12_only,W11_only,W10_only,W9_only,W8_only,W7_only
+# missing 1.0 from Allow many fewer|2.0|4.0|5.0|6.0|7.0|8.0|9.0|Allow many more
+
+* immigPC  #W12_only,W11_only,W10_only,W9_only,W8_only,W7_only
+# missing 1.0|2.0 from Allow many fewer|3.0|4.0|5.0|6.0|7.0|8.0|9.0|Allow many more
+   
+* "disability" - collision between the name of a yougov profile variable "disability"
+"disabilitydisability profile Are your day-to-day activities limited because of a health problem or disability?
+Yes, limited a lot|Yes, limited a little|No"
+and W6_only variable "disability"
+and
+"Do you have any long-term illness, health problem or disability which limits your daily activities or the work you can do? Include problems which are due to old age
+"Yes|No|Don’t know"
+in every wave but 
+
+Mostly distinguised because in all datasets other than W6_only it's "disabilityW6" rather than yougov's "disability"
+... but even that screws with any code that assumes that the variables are related
+-> I suggest clearer rename
+
+* ageGroup W1_only doesn't include "Under 18" as a category  
+
+* remove "Â" and "Ã‚Â" from cat lists - seem to appear near £ signs
+
+* need to load W13_comb/W10_comb to check this - is 2.0 instead of "Don't know"? 
+"No, did not vote|Yes, voted|2.0|99.0|Don't know"
+124	profile_turnout_2015	W13_comb	category	1	profile_turnout	No, did not vote|Yes, voted	No, did not vote|Yes, voted|2.0
+125	profile_turnout_2015	W10_comb	category	1	profile_turnout	No, did not vote|Yes, voted	No, did not vote|Yes, voted|2.0
+
+* hmm - general policy - would it be best to change *all* of these
+# or keep the edge variable names which clarify direction?
+142	likeSalmondW1	W5_comb	category	1	likeSalmond	Strongly dislike|1.0|2.0|3.0|4.0|5.0|6.0|7.0|8.0|9.0|Strongly like	0.0|1.0|2.0|3.0|4.0|5.0|6.0|7.0|8.0|9.0|10.0
+143	likeSalmondW1	W4_comb	category	1	likeSalmond	Strongly dislike|1.0|2.0|3.0|4.0|5.0|6.0|7.0|8.0|9.0|Strongly like	0.0|1.0|2.0|3.0|4.0|5.0|6.0|7.0|8.0|9.0|10.0
+
+* euRefVote Stay/remain in the EU|Leave the EU|I would/will not vote|Don't know
+profile_eurefvote # Stay/remain in the EU|Leave the EU|Don't know
+-> Stay in the EU|Leave the EU
+DONE
+   
+   
+   

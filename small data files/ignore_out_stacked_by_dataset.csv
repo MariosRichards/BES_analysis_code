@@ -1,0 +1,60 @@
+,dataset_list,variable_name,dtype,cat_all_strings,cat_list
+22,['W5_comb'],csplScotRefW3,category,True,North East
+21,['W5_comb'],euroElectionVoteYoungW2,category,True,
+17,['W10_comb'],fatherNumEmployeesW4,float64,,[]
+12,['W10_comb'],generalElecCertaintyW1,float64,,[ 1.]
+13,['W10_comb'],generalElecCertaintyW2,float64,,[ 1.]
+14,['W10_comb'],generalElecCertaintyW3,float64,,[ 1.]
+16,['W10_comb'],locusControlW9,category,True,No formal qualifications
+15,['W10_comb'],londonMayorVoteW7,category,False,"Float64Index([1.0], dtype='float64')"
+18,['W10_comb'],motherNumEmployeesW4,float64,,[]
+23,['W5_comb'],participation_111W5,category,True,Got a lot worse|Got a little worse
+1,['W13_comb'],partyContactGrnW1,category,True,No|Don't know
+3,['W13_comb'],partyContactGrnW2,category,True,No|Don't know
+5,['W13_comb'],partyContactGrnW3,category,True,No|Don't know
+0,['W13_comb'],partyContactSNPW1,category,True,Don't know
+2,['W13_comb'],partyContactSNPW2,category,True,Don't know
+20,['W6_comb'],profile_GOR_pdlW4,category,False,"Index([                      '15 or under',
+                                      '16',
+                                   '17-18',
+                                      '19',
+                                     '20+',
+       'Still at school/Full time student',
+                          'Can't remember',
+                                       8.0,
+                                       9.0,
+                                      10.0,
+                                      11.0],
+      dtype='object')"
+26,['W3_comb'],profile_pcon_2010_newW3,category,False,"Index([                      '15 or under',
+                                      '16',
+                                   '17-18',
+                                      '19',
+                                     '20+',
+       'Still at school/Full time student',
+                          'Can't remember',
+                                       8.0,
+                                       9.0,
+                                      10.0,
+       ...
+                                     623.0,
+                                     624.0,
+                                     625.0,
+                                     626.0,
+                                     627.0,
+                                     628.0,
+                                     629.0,
+                                     630.0,
+                                     631.0,
+                                     632.0],
+      dtype='object', length=632)"
+19,['W8_only'],reasonNotRegistered_none,category,True,No|Don't know
+4,['W13_comb'],reasonNotRegistered_noneW2,category,True,No|Don't know
+6,['W13_comb'],reasonNotRegistered_noneW3,category,True,No|Don't know
+7,['W13_comb'],reasonNotRegistered_noneW4,category,True,No|Don't know
+8,['W13_comb'],reasonNotRegistered_noneW6,category,True,No|Don't know
+10,['W13_comb'],reasonNotRegistered_noneW7,category,True,No|Don't know
+11,['W13_comb'],reasonNotRegistered_noneW8,category,True,No|Don't know
+24,['W5_comb'],sharedContentOnline_111W5,category,True,Got a lot worse|Got a little worse
+25,['W5_comb'],sharedContentOnline_99W5,category,True,Got a lot worse|Got a little worse
+9,['W13_comb'],whichPartiesHelped_99W6,category,True,No

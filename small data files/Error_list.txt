@@ -313,14 +313,14 @@ W9_only	float64	1	motherNumEmployees	1 to 24 employees|25 to 499 employees|500 o
    ["No","Yes","Did not vote","Don't know"], # regretsIHaveAFewEU W11_only|regretsIHaveAFew W10_only 
 
 * partyContactGrn # W12_only,W11_only,W3_only,W2_only,W1_only
-# only one variable!
+# only one non-dk category! ['No', "Don't know']
 
-* immigSNP #W12_only,W11_only,W10_only,W9_only,W8_only,W7_only
+* immigSNP #W13_only
 # missing 1.0 from Allow many fewer|2.0|4.0|5.0|6.0|7.0|8.0|9.0|Allow many more
-
-* immigPC  #W12_only,W11_only,W10_only,W9_only,W8_only,W7_only
+  immigPC  #W13_only (be careful to check!)
 # missing 1.0|2.0 from Allow many fewer|3.0|4.0|5.0|6.0|7.0|8.0|9.0|Allow many more
-   
+CHECK IN BES_Panel
+
 * "disability" - collision between the name of a yougov profile variable "disability"
 "disabilitydisability profile Are your day-to-day activities limited because of a health problem or disability?
 Yes, limited a lot|Yes, limited a little|No"
@@ -334,7 +334,8 @@ Mostly distinguised because in all datasets other than W6_only it's "disabilityW
 ... but even that screws with any code that assumes that the variables are related
 -> I suggest clearer rename
 
-* ageGroup W1_only doesn't include "Under 18" as a category  
+* ageGroup W1_only doesn't include "Under 18" as a category
+check BES_Panel? CHECKED
 
 * remove "Â" and "Ã‚Â" from cat lists - seem to appear near £ signs
 
@@ -343,15 +344,132 @@ Mostly distinguised because in all datasets other than W6_only it's "disabilityW
 124	profile_turnout_2015	W13_comb	category	1	profile_turnout	No, did not vote|Yes, voted	No, did not vote|Yes, voted|2.0
 125	profile_turnout_2015	W10_comb	category	1	profile_turnout	No, did not vote|Yes, voted	No, did not vote|Yes, voted|2.0
 
-* hmm - general policy - would it be best to change *all* of these
-# or keep the edge variable names which clarify direction?
-142	likeSalmondW1	W5_comb	category	1	likeSalmond	Strongly dislike|1.0|2.0|3.0|4.0|5.0|6.0|7.0|8.0|9.0|Strongly like	0.0|1.0|2.0|3.0|4.0|5.0|6.0|7.0|8.0|9.0|10.0
-143	likeSalmondW1	W4_comb	category	1	likeSalmond	Strongly dislike|1.0|2.0|3.0|4.0|5.0|6.0|7.0|8.0|9.0|Strongly like	0.0|1.0|2.0|3.0|4.0|5.0|6.0|7.0|8.0|9.0|10.0
+????
 
-* euRefVote Stay/remain in the EU|Leave the EU|I would/will not vote|Don't know
+
+
+* euRefVote, euRefVoteW2, euRefVoteW3 Stay/remain in the EU|Leave the EU|I would/will not vote|Don't know
 profile_eurefvote # Stay/remain in the EU|Leave the EU|Don't know
 -> Stay in the EU|Leave the EU
-DONE
-   
-   
-   
+FIXED
+
+------------ type == 6 --------------
+
+minIncomeWellOff,minIncomeGetBy,incomeWelfare,age,Age
+- convert straight to float, categories don't matter!
+IGNORE TYPE 6
+
+
+------------ type == 5 --------------
+
+bestPM/bestPMW10 - like party lists, necessarily change!
+CHANGEABLE
+
+profile_socialgrade_cie	W13_comb, W11_only
+
+None|Church of England/Anglican/Episcopal|Roman Catholic|Presbyterian/Church of Scotland|Methodist|Baptist
+-> A|B|C1|C2|D|E
+
+------------ type == 2 --------------
+
+292	churchAttendanceW6	W6_comb	category	2	churchAttendance
+Never or practically never|Less often than once a year|Less often but at least once a year|Less often but at least twice a year|Less often but at least once a month|Less often but at least once in two weeks|Once a week or more|Varies too much to say|I am not religious|Don't know
+xxxxxxxxxxxxxxxxxxxxxxxxxxxLess often than once a year|Less often but at least once a year|Less often but at least twice a year|Less often but at least once a month|Less often but at least once in two weeks|Once a week or more|98.0|99.0|111.0|222.0
+(compare with figures for W7_comb)
+98.0 -> 'I am not religious'
+99.0 -> "Don't know"
+111.0 -> "Never or practically never"
+222.0 -> "Varies too much to say"
+
+
+==============
+
+293	partyMemberW6	W6_comb	category	2	partyMember
+No, I have never been a member|I am not a member now but I used to be|Yes, I am a member of a party
+Yes, I am a member of a party|I am not a member now but I used to be
+
+0.0                                       23064
+I am not a member now but I used to be     3368
+Yes, I am a member of a party              3081
+9999.0                                      512
+
+Hardcode fix!
+
+==============
+
+
+----type 1 from expectationManipCheckW1 ----
+expectationManipCheckW1 # W13,10,9,8,7 vs W6-3_comb 
+A major transfer of powers from Westminster to the Scottish Parliament (devo-max)|Some powers will be transferred but well short of devo-max|No change to the relationship between Westminster and the Scottish Parliament
+A major transfer of powers from Westminster to the Scottish Parliament ("devo-max")|Some powers will be transferred but well short of "devo-max"|No change to the relationship between Westminster and the Scottish Parliament
+
+-----------------------
+
+localTurnoutRetroW2 W3-6_comb
+No, did not vote|Yes, voted
+No, I did not vote|Yes, I voted
+
+------------------------
+
+discussantturnoutName1-3W2	W6_comb,W5_comb,W4_comb,W3_comb
+No, I think they *will not* vote|Yes, I think they *will* vote
+No, didnÂ’t vote|Yes, they voted|They were not eligible to vote
+
+-----------------------------------
+
+
+* hmm - general policy - would it be best to change *all* of these
+# or keep the edge variable names which clarify direction?
+likeSalmondW1-3, W4-5_comb
+
+likeSalmond	Strongly dislike|1.0|2.0|3.0|4.0|5.0|6.0|7.0|8.0|9.0|Strongly like	0.0|1.0|2.0|3.0|4.0|5.0|6.0|7.0|8.0|9.0|10.0
+likeSalmond	Strongly dislike|1.0|2.0|3.0|4.0|5.0|6.0|7.0|8.0|9.0|Strongly like	0.0|1.0|2.0|3.0|4.0|5.0|6.0|7.0|8.0|9.0|10.0
+
+eesEUIntegrationGreenW2 W3-5_comb
+Unification has already gone too far|1.0|2.0|3.0|4.0|5.0|6.0|7.0|8.0|9.0|Unification should be pushed further
+0.0|1.0|2.0|3.0|4.0|5.0|6.0|7.0|8.0|9.0|10.0
+
+------------------------------------
+
+certaintyEUGreenW2 W3-6_comb
+Not at all certain|Somewhat certain|Very certain
+Not at all certain|Somewhat certain|Very certain|98.0
+Index(['Not at all certain', 'Somewhat certain', 'Very certain', 98.0, 99.0], dtype='object')
+Not at all certain|Somewhat certain|Very certain|Don't know
+(other certaintyEUGreenW2)
+
+
+certaintyEUGreen W8_only
+Index(['Not at all certain', 'Somewhat certain', 'Very certain', 'Don't know'], dtype='object')
+
+------------------------------------
+
+euFinancialHelpW2 W3-6_comb
+Strongly disagree|Disagree|Neither agree nor disagree|Agree|Strongly agree
+Strongly disagree|Disagree|Neither nor disagree|Agree|Strongly agree
+
+------------------------------------
+
+csplImproveStandardsW2,csplUncoverWrongsW2,
+	csplPunishWrongsW2  W3-6_comb
+Not at all confident|Not very confident|Fairly confident|Very confident
+Not at all confident|Not very confident|Fairly confident|Very confident|DonÂ‘t know
+
+------------------------------------
+
+expectGoodConductGeneralW2 W3-10_comb
+
+??? Last election?
+
+Expected 20xx election to be conducted fairly|2.0|3.0|4.0|Expect 20xx election to be conducted unfairly
+Expected 2015 election to be conducted fairly|2.0|3.0|4.0|Expect 2015 election to be conducted unfairly
+
+-------------------------------------
+
+
+
+
+
+
+
+

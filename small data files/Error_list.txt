@@ -682,5 +682,76 @@ No, I havenÂ’t received any letter|Yes, I was told I have to re-register|Yes,
 
 
 
+Friday 15th Dec
+===============================
+
+BES cleaning
+------------
+
+(1)
+type == 6
+-> update variable types (e.g. variables that are *mostly* just numbers
+
+-- are we making an artificial distinction here between small sets of numbers (1-7 days) and large sets (0-100% certainty)?
+
+
+
+(2) Variables which appear to be missing categories (perhaps because no entries???)
+
+
+(3) Actual changes in the question (e.g. adding "did not vote" when "will not vote" was not an option)
+
+
+
+Set page file
+Restart
+Load W13_comb
+Test W13_weirdness
+
+(4) ÃƒÂ awfulness!
+
+	(i) Some words just need to be caught and replaced
+		- ThÃƒÂ©rÃƒÂ¨se  Coff
+		- SiÃƒÂ¢n C. Jame
+		- RAÂ©unionRÃƒÂ©union
+
+	(ii)
+	
+Â’ -> '
+Â– -> -
+Â£7,500 -> £7,500
+
+didnÂ’t -> didn't
+DonÂ‘t know ->Don't know
+DonaÂ€Â™t know -> Don't know
+havenÂ’t -> haven't
+
+"Â–" -> "-"
+"Â£" -> "£"
+"Â‘" -> "'"
+"Â’" -> "'"
+"Â€Â™" -> "'"
+Leave the European Union|Stay in EU and reduce EUâ??s powers|Leave things as they are|Stay in EU and increase EUâ??s powers|Work towards single European 
+â?? -> '
+Most people can be trusted|Canâ??t be too careful|Donâ??t know
+â?? -> '
+No, I have never attended higher education|Yes, I am currently enrolled in higher education|Yes, but I didnâ??t complete higher education|Yes, I graduated from higher education|Don't know
+didnâ??t -> didn't
+Donâ€™t know -> 
+"â??" -> "'"
+"â€™" -> "'"
+Own â€“ outright|Own â€“ with a mortgage|Own (part-own) â€“ through shared ownership scheme (i.e. pay part mortgage, part rent)|Rent â€“ from a private landlord|Rent â€“ from my local authority|Rent â€“ from a housing association|Neither â€“ I live with my parents, family or friends but pay some rent to them|Neither â€“ I live rent-free with my parents, family or friends|Other
+No, I do not regard myself as belonging to any particular religion.|Yes - Church of England/Anglican/Episcopal|Yes - Roman Catholic|Yes - Presbyterian/Church of Scotland|Yes - Methodist|Yes - Baptist|Yes - United Reformed Church|Yes - Free Presbyterian|Yes - Brethren|Yes - Judaism|Yes - Hinduism|Yes - Islam|Yes - Sikhism|Yes - Buddhism|Yes - Other|Prefer not to say|Yes â€“ Orthodox Christian|Yes - Pentecostal (e.g. Assemblies of God, Elim Pentecostal Church, New Testament Church of God, Redeemed Christian Chur|Yes - Evangelical â€“ independent/non-denominational (e.g. FIEC, Pioneer, Vineyard, Newfrontiers)
+" â€“ " -> " "
+" Â‘" -> " "
+"Â’ " -> " "
+
+
+
+
+
+
+
+
 
 

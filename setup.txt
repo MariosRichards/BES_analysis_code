@@ -12,3 +12,10 @@ conda install -n BES_analysis -c cvxgrp cvxpy
 pip install fancyimpute
 
 pip install wpca
+
+conda install -n BES_analysis plotly networkx
+
+conda install -n BES_analysis theano
+
+conda install -n BES_analysis -c conda-forge bqplot holoviews ipywidgets
+

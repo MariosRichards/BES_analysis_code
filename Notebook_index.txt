@@ -142,15 +142,19 @@ Transform data (modify categories, weasel words -> nan, drop some categories of 
 
 
 
+================
+(1) Load data from .dtas, preprocess, save 'numeric' and 'nonnumeric' to hdf
+Load All Notebooks
+Untitled5 - utility
+Load_and_preprocess_data
 
+(2) Fill in missing values (skip for now, can add median imputation into beginning of Reduce and transform dataset)
 
+(3) Reduce and transform data
 
+=== ready to do stuff with ===
 
-
-
-
-
-
+(4) 
 
 
 

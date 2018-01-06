@@ -713,11 +713,10 @@ Test W13_weirdness
 	(i) Some words just need to be caught and replaced
 		- ThÃƒÂ©rÃƒÂ¨se  Coff
 		- SiÃƒÂ¢n C. Jame
-		- RAÂ©unionRÃƒÂ©union
+		- RAÂ©union  RÃƒÂ©union
 
 	(ii)
 	
-Â’ -> '
 Â– -> -
 Â£7,500 -> £7,500
 
@@ -726,11 +725,6 @@ DonÂ‘t know ->Don't know
 DonaÂ€Â™t know -> Don't know
 havenÂ’t -> haven't
 
-"Â–" -> "-"
-"Â£" -> "£"
-"Â‘" -> "'"
-"Â’" -> "'"
-"Â€Â™" -> "'"
 Leave the European Union|Stay in EU and reduce EUâ??s powers|Leave things as they are|Stay in EU and increase EUâ??s powers|Work towards single European 
 â?? -> '
 Most people can be trusted|Canâ??t be too careful|Donâ??t know
@@ -738,14 +732,562 @@ Most people can be trusted|Canâ??t be too careful|Donâ??t know
 No, I have never attended higher education|Yes, I am currently enrolled in higher education|Yes, but I didnâ??t complete higher education|Yes, I graduated from higher education|Don't know
 didnâ??t -> didn't
 Donâ€™t know -> 
-"â??" -> "'"
-"â€™" -> "'"
+
 Own â€“ outright|Own â€“ with a mortgage|Own (part-own) â€“ through shared ownership scheme (i.e. pay part mortgage, part rent)|Rent â€“ from a private landlord|Rent â€“ from my local authority|Rent â€“ from a housing association|Neither â€“ I live with my parents, family or friends but pay some rent to them|Neither â€“ I live rent-free with my parents, family or friends|Other
 No, I do not regard myself as belonging to any particular religion.|Yes - Church of England/Anglican/Episcopal|Yes - Roman Catholic|Yes - Presbyterian/Church of Scotland|Yes - Methodist|Yes - Baptist|Yes - United Reformed Church|Yes - Free Presbyterian|Yes - Brethren|Yes - Judaism|Yes - Hinduism|Yes - Islam|Yes - Sikhism|Yes - Buddhism|Yes - Other|Prefer not to say|Yes â€“ Orthodox Christian|Yes - Pentecostal (e.g. Assemblies of God, Elim Pentecostal Church, New Testament Church of God, Redeemed Christian Chur|Yes - Evangelical â€“ independent/non-denominational (e.g. FIEC, Pioneer, Vineyard, Newfrontiers)
+
+
+"Â–" -> "-"
+"Â£" -> "£"
+
 " â€“ " -> " "
 " Â‘" -> " "
 "Â’ " -> " "
 
+"Â‘" -> "'"
+"Â’" -> "'"
+"Â€Â™" -> "'"
+"â??" -> "'"
+"â€™" -> "'"
+
+######################################################
+NEW RUN COMPLETE Monday 18/12/2017
+
+
+W6_only,W4_only,W3_only,W2_only,W1_only
+generalElectionVote
+partyId
+partyIdSqueeze
+bestOnMII
+votingWish W6_only
+partyMemberNow	W11_only,W10_only,W8_only,W6_only
+	+ British National Party (BNP)
+
+
+
+	
+---------------------
+
+regretsIHaveAFew
+	No|Yes	No|Yes|3.0
+
+
+---------------------
+
+electionInterest	W6_only
+	Not at all interested|Not very interested|Somewhat interested|Very interested
+	Not at all interested|Not very interested|Somewhat interested|Very interested|9999.0
+
+---------------------
+
+W12_only,W11_only,W3_only,W2_only,W1_only
+partyContactGrn
+	No|Yes	No
+
+---------------------
+
+W12_only,W11_only,W10_only,W9_only,W8_only,W7_only
+immigSNP
+	Allow many fewer|2.0|4.0|5.0|6.0|7.0|8.0|9.0|Allow many more
+immigPC	
+	Allow many fewer|3.0|4.0|5.0|6.0|7.0|8.0|9.0|Allow many more
+	Allow many fewer|1.0|2.0|3.0|4.0|5.0|6.0|7.0|8.0|9.0|Allow many more
+
+---------------------
+W6_only
+disability	Yes, limited a lot|Yes, limited a little|No	No|Yes
+
+---------------------
+
+ageGroup	W13_only	W1_only
+Under 18|18-25|26-35|36-45|46-55|56-65|66+
+18-25|26-35|36-45|46-55|56-65|66+
+
+---------------------
+
+voted2015	W13_only	W8_only
+No|Yes	Yes, voted|No, did not vote|DonaÂ€Â™t know
+
+---------------------
+
+housing
+W10_comb,W10_only,W9_comb,W9_only,W8_only,W8_comb,W7_only,W7_comb,W6_comb
+Own the leasehold/freehold outright|Buying leasehold/freehold on a mortgage|Rented from local authority|Rented from private landlord|It belongs to a Housing Association
+Own outright|Own with a mortgage|Own (part-own) through shared ownership scheme (i.e. pay part mortgage, part rent)|Rent from a private landlord|Rent from my local authority|Rent from a housing association|Neither I live with my parents, family or friends but pay some rent to them|Neither I live rent-free with my parents, family or friends
+Own Â– outright|Own Â– with a mortgage|Own (part-own) Â– through shared ownership scheme (i.e. pay part mortgage, part rent)|Rent Â– from a private landlord|Rent Â– from my local authority|Neither Â– I live with my parents, family or friends but pay some rent to them|Neither Â– I live rent-free with my parents, family or friends|9999.0
+" Â– " -> " "
+---------------------
+
+gor
+W13_comb,W10_comb,W9_comb,W8_comb,W7_comb,W6_comb,W5_comb,W5_only,W4_comb
++Northern Ireland
+
+---------------------
+
+profile_socialgrade_cie
+W13_comb,W11_only
+A|B|C1|C2|D|E
+None|Church of England/Anglican/Episcopal|Roman Catholic|Presbyterian/Church of Scotland|Methodist|Baptist
+
+---------------------
+profile_religion
+Yes Â– Orthodox Christian -> Yes – Orthodox Christian
+
+
+---------------------
+
+profile_lea
+profile_oslaua
+-> Irish seats???
+
+---------------------
+
+profile_gross_personal
+"Ã‚Â£" -> "£"
+
+---------------------
+
+profile_turnout_2015
+No, did not vote|Yes, voted	No, did not vote|Yes, voted|2.0
+No, did not vote|Yes, voted	Yes, voted|No, did not vote
+
+---------------------
+
+fatherNumEmployees
+1 to 24 employees|25 to 499 employees|500 or more employees
+1 to 24 employees|25 to 499 employees|500 or more employees|
+
+motherNumEmployees
+1 to 24 employees|25 to 499 employees|500 or more employees	1 to 24 employees|25 to 499 employees
+1 to 24 employees|25 to 499 employees|500 or more employees	1 to 24 employees|25 to 499 employees|500 or more employees|
+
+---------------------
+likeSalmondW1	W13_comb	W5_comb	category	1	likeSalmond	Strongly dislike|1.0|2.0|3.0|4.0|5.0|6.0|7.0|8.0|9.0|Strongly like	0.0|1.0|2.0|3.0|4.0|5.0|6.0|7.0|8.0|9.0|10.0
+likeSalmondW1	W13_comb	W4_comb	category	1	likeSalmond	Strongly dislike|1.0|2.0|3.0|4.0|5.0|6.0|7.0|8.0|9.0|Strongly like	0.0|1.0|2.0|3.0|4.0|5.0|6.0|7.0|8.0|9.0|10.0
+---------------------
+euRefVoteW1	W3-6_comb
+euRefVoteW2 W3-6_comb
+euRefVoteW3 W3-6_comb
+Stay/remain in the EU|Leave the EU
+Stay in the EU|Leave the EU
+
+---------------------
+
+expectationManipCheckW1	W13_comb	W6_comb	category	1	expectationManipCheck	
+A major transfer of powers from Westminster to the Scottish Parliament (devo-max)|Some powers will be transferred but well short of devo-max|No change to the relationship between Westminster and the Scottish Parliament
+A major transfer of powers from Westminster to the Scottish Parliament ("devo-max")|Some powers will be transferred but well short of "devo-max"|No change to the relationship between Westminster and the Scottish Parliament
+
+---------------------
+mpNameW1
+---------------------
+W5_comb, W4_comb
+likeSalmondW2	W13_comb	W5_comb	category	1	likeSalmond	Strongly dislike|1.0|2.0|3.0|4.0|5.0|6.0|7.0|8.0|9.0|Strongly like	0.0|1.0|2.0|3.0|4.0|5.0|6.0|7.0|8.0|9.0|10.0
+likeSalmondW3	W13_comb	W5_comb	category	1	likeSalmond	Strongly dislike|1.0|2.0|3.0|4.0|5.0|6.0|7.0|8.0|9.0|Strongly like	0.0|1.0|2.0|3.0|4.0|5.0|6.0|7.0|8.0|9.0|Strongly like  10
+
+---------------------
+W6_comb,W5_comb,W4_comb,W3_comb
+localTurnoutRetroW2	W13_comb	W6_comb	category	1	localTurnoutRetro	No, did not vote|Yes, voted	No, I did not vote|Yes, I voted
+---------------------
+discussantturnoutName1-3W2	W3-6_comb	
+No, I think they *will not* vote|Yes, I think they *will* vote
+No, didnÂ’t vote|Yes, they voted|They were not eligible to vote
+----------------------
+eesEUIntegrationGreenW2	W3-5_comb
+Unification has already gone too far|1.0|2.0|3.0|4.0|5.0|6.0|7.0|8.0|9.0|Unification should be pushed further
+0.0|1.0|2.0|3.0|4.0|5.0|6.0|7.0|8.0|9.0|10.0
+----------------------
+certaintyEUGreenW2	W13_comb	W6_comb	category	1	certaintyEUGreen	Not at all certain|Somewhat certain|Very certain	Not at all certain|Somewhat certain|Very certain|98.0
+----------------------
+euFinancialHelpW2	W13_comb	W6_comb	category	1	euFinancialHelp	Strongly disagree|Disagree|Neither agree nor disagree|Agree|Strongly agree	Strongly disagree|Disagree|Neither nor disagree|Agree|Strongly agree
+----------------------
+csplImproveStandardsW2	W13_comb	W6_comb	category	1	csplImproveStandards	Not at all confident|Not very confident|Fairly confident|Very confident	Not at all confident|Not very confident|Fairly confident|Very confident|DonÂ‘t know
+----------------------
+csplUncoverWrongsW2	W13_comb	W6_comb	category	1	csplUncoverWrongs	Not at all confident|Not very confident|Fairly confident|Very confident	Not at all confident|Not very confident|Fairly confident|Very confident|DonÂ‘t know
+----------------------
+csplPunishWrongsW2	W13_comb	W6_comb	category	1	csplPunishWrongs	Not at all confident|Not very confident|Fairly confident|Very confident	Not at all confident|Not very confident|Fairly confident|Very confident|DonÂ‘t know
+----------------------
+expectGoodConductGeneralW2	W13_comb	W10_comb	category	1	expectGoodConductGeneral	Expected 20xx election to be conducted fairly|2.0|3.0|4.0|Expect 20xx election to be conducted unfairly	Expected 2015 election to be conducted fairly|2.0|3.0|4.0|Expect 2015 election to be conducted unfairly
+----------------------
+certaintyScotUnionW3	W13_comb	W5_comb	category	1	certaintyScotUnion	I am very unsure what would happen|I am quite unsure what would happen|I am quite sure what would happen|I am very sure what would happen	I am very unsure what will happen|I am quite unsure what will happen|I am quite sure what will happen|I am very sure what will happen
+----------------------
+registerChangeW3	W13_comb	W6_comb	category	3	registerChange	No, I haven't received any letter|Yes, I was told I have to re-register|Yes, I was told I do not have to do anything	No, I havenÂ’t received any letter|Yes, I was told I have to re-register|Yes, I was told I do not have to do anything
+----------------------
+likeSturgeonW4	W13_comb	W5_comb	category	1	likeSturgeon	Strongly dislike|1.0|2.0|3.0|4.0|5.0|6.0|7.0|8.0|9.0|Strongly like
+----------------------
+
+
+
+
+- this is a pain in the arse
+
+Wave by Wave
+===========
+
+W1_only
+- changeable added
+- partyContactGrn "No" -> W13_only
+- ageGroup missing "under 18" category
+- religion Â–
+- profile_oslaua missing cat (Northern Ireland areas?)
+- econPersonalProsp, econGenProsp -> W10_only
+- scotRefExpectationTurnout -> Numerical variable (with text at 0% and 100%)
+
+W2_only
+- localElectionVote -> W12_only |98.0 -> probably Other!
+- approveEU -> W10_only Strongly disapprove|Disapprove|Neither approve nor disapprove|Approve|Strongly approve	Strongly disapprove|Disapprove
+
+
+
+
+================================================================
+
+
+(1)
+
+Employers in large organisations and higher managerial|Higher professional occupations|Lower professional and managerial and higher supervisory|Intermediate occupations|Employers in small organisations and own account workers|Lower supervisory and technical occupations|Semi-routine occupations|Routine occupations
+
+Employers in large organisations and higher managerial|Higher professional occupations|Lower professional and managerail and higher supervisory|Intermediate occupations|Employers in small organisations and own account workers|Lower suprivsory and technical occupations|Semi-routine occupations|Routine occupations
+Employers in large organisations and higher managerial|Higher professional occupations|Lower professional and managerail and higher supervisory|Intermediate occupations|Employers in small organisations and own account workers|Lower suprivsory and technical occupations|Semi-routine occupations|Routine occupations
+DONE
+(2)
+
+A major transfer of powers from Westminster to the Scottish Parliament (devo-max)|Some powers will be transferred but well short of devo-max|No change to the relationship between Westminster and the Scottish Parliament
+
+A major transfer of powers from Westminster to the Scottish Parliament ("devo-max")|Some powers will be transferred but well short of "devo-max"|No change to the relationship between Westminster and the Scottish Parliament
+DONE
+(3)
+
+A|B|C1|C2|D|E
+None|Church of England/Anglican/Episcopal|Roman Catholic|Presbyterian/Church of Scotland|Methodist|Baptist
+
+"None|Church of England/Anglican/Episcopal|Roman Catholic|Presbyterian/Church of Scotland|Methodist|Baptist":
+["A","B","C1","C2","D","E"], # profile_socialgrade_cie W13_comb, W11_only
+
+Got to be manual!
+
+
+(4) Detect - and separate - indicator variables
+_99 (don't know), _111 (none of these), _dk, _DK
+
+
+(?)
+approveEU	W10_only	W2_only	category	1	approveEU	Strongly disapprove|Disapprove|Neither approve nor disapprove|Approve|Strongly approve	Approve|Disapprove
+Appears to change categories dramatically!
+
+(housing)
+
+we appear to have another collision between yougov/profile variables of same name!
+
+
+(5)
+Employers in large establishments|Higher managerial and administrative occupations|L3.1 ‘Traditional’ employees|L3.2 ‘New’ employees|L3.3 ‘Traditional’ self-employed|L3.4 ‘New’ self-employed|L4.1 ‘Traditional’ employees|L4.2 ‘New’ employees|L4.3 ‘Traditional’ self-employed|L4.4 ‘New’ self-employed|Lower managerial and administrative occupations|Higher supervisory occupations|L7.1 Intermediate clerical and administrative occupations|L7.2 Intermediate sales and service occupations|L7.3 Intermediate technical and auxiliary occupations|L7.4 Intermediate engineering occupations|L8.1 Employers in small establishments in industry, commerce, services etc.|L8.2 Employers in small establishments in agriculture|L9.1 Own account workers (non-professional)|L9.2 Own account workers (agriculture)| Lower supervisory occupations|L11.1 Lower technical craft occupations|L11.2 Lower technical process operative occupations|L12.1 Semi-routine sales occupations|L12.2 Semi-routine service occupations|L12.3 Semi-routine technical occupations|L12.4 Semi-routine operative occupations|L12.5 Semi-routine agricultural occupations|L12.6 Semi-routine clerical occupations|L12.7 Semi routine childcare occupations|L13.1 Routine sales and service occupations|L13.2 Routine production occupations|L13.3 Routine technical occupations|L13.4 Routine operative occupations|L13.5 Routine agricultural occupations
+Employers in large establishments|Higher managerial and administrative occupations|L3.1 ?Traditional? employees|L3.2 ?New? employees|L3.3 ?Traditional? self-employed|L3.4 ?New? self-employed|L4.1 ?Traditional? employees|L4.2 ?New? employees|L4.3 ?Traditional? self-employed|L4.4 ?New? self-employed|Lower managerial and administrative occupations|Higher supervisory occupations|L7.1 Intermediate clerical and administrative occupations|L7.2 Intermediate sales and service occupations|L7.3 Intermediate technical and auxiliary occupations|L7.4 Intermediate engineering occupations|L8.1 Employers in small establishments in industry, commerce, services etc.|L8.2 Employers in small establishments in agriculture|L9.1 Own account workers (non-professional)|L9.2 Own account workers (agriculture)| Lower supervisory occupations|L11.1 Lower technical craft occupations|L11.2 Lower technical process operative occupations|L12.1 Semi-routine sales occupations|L12.2 Semi-routine service occupations|L12.3 Semi-routine technical occupations|L12.4 Semi-routine operative occupations|L12.5 Semi-routine agricultural occupations|L12.6 Semi-routine clerical occupations|L12.7 Semi routine childcare occupations|L13.1 Routine sales and service occupations|L13.2 Routine production occupations|L13.3 Routine technical occupations|L13.4 Routine operative occupations|L13.5 Routine agricultural occupations
+Employers in large establishments|Higher managerial and administrative occupations|L3.1 Traditional employees|L3.2 New employees|L3.3 Traditional self-employed|L3.4 New self-employed|L4.1 Traditional employees|L4.2 New employees|L4.3 Traditional self-employed|L4.4 New self-employed|Lower managerial and administrative occupations|Higher supervisory occupations|L7.1 Intermediate clerical and administrative occupations|L7.2 Intermediate sales and service occupations|L7.3 Intermediate technical and auxiliary occupations|L7.4 Intermediate engineering occupations|L8.1 Employers in small establishments in industry, commerce, services etc.|L8.2 Employers in small establishments in agriculture|L9.1 Own account workers (non-professional)|L9.2 Own account workers (agriculture)|Lower supervisory occupations|L11.1 Lower technical craft occupations|L11.2 Lower technical process operative occupations|L12.1 Semi-routine sales occupations|L12.2 Semi-routine service occupations|L12.3 Semi-routine technical occupations|L12.4 Semi-routine operative occupations|L12.5 Semi-routine agricultural occupations|L12.6 Semi-routine clerical occupations|L12.7 Semi routine childcare occupations|L13.1 Routine sales and service occupations|L13.2 Routine production occupations|L13.3 Routine technical occupations|L13.4 Routine operative occupations|L13.5 Routine agricultural occupations
+
+*Char weirdness
+
+Employers in large establishments|Higher managerial and administrative occupations|L3.1 Traditional employees|L3.2 New employees|L3.3 Traditional self-employed|L3.4 New self-employed|L4.1 Traditional employees|L4.2 New employees|L4.3 Traditional self-employed|L4.4 New self-employed|Lower managerial and administrative occupations|Higher supervisory occupations|L7.1 Intermediate clerical and administrative occupations|L7.2 Intermediate sales and service occupations|L7.3 Intermediate technical and auxiliary occupations|L7.4 Intermediate engineering occupations|L8.1 Employers in small establishments in industry, commerce, services etc.|L8.2 Employers in small establishments in agriculture|L9.1 Own account workers (non-professional)|L9.2 Own account workers (agriculture)|Lower supervisory occupations|L11.1 Lower technical craft occupations|L11.2 Lower technical process operative occupations|L12.1 Semi-routine sales occupations|L12.2 Semi-routine service occupations|L12.3 Semi-routine technical occupations|L12.4 Semi-routine operative occupations|L12.5 Semi-routine agricultural occupations|L12.6 Semi-routine clerical occupations|L12.7 Semi routine childcare occupations|L13.1 Routine sales and service occupations|L13.2 Routine production occupations|L13.3 Routine technical occupations|L13.4 Routine operative occupations|L13.5 Routine agricultural occupations
+Employers in large establishments|Higher managerial and administrative occupations|L3.1 ?Traditional' employees|L3.2 ?New' employees|L3.3 ?Traditional' self-employed|L3.4 ?New' self-employed|L4.1 ?Traditional' employees|L4.2 ?New' employees|L4.3 ?Traditional' self-employed|L4.4 ?New' self-employed|Lower managerial and administrative occupations|Higher supervisory occupations|L7.1 Intermediate clerical and administrative occupations|L7.2 Intermediate sales and service occupations|L7.3 Intermediate technical and auxiliary occupations|L7.4 Intermediate engineering occupations|L8.1 Employers in small establishments in industry, commerce, services etc.|L8.2 Employers in small establishments in agriculture|L9.1 Own account workers (non-professional)|L9.2 Own account workers (agriculture)| Lower supervisory occupations|L11.1 Lower technical craft occupations|L11.2 Lower technical process operative occupations|L12.1 Semi-routine sales occupations|L12.2 Semi-routine service occupations|L12.3 Semi-routine technical occupations|L12.4 Semi-routine operative occupations|L12.5 Semi-routine agricultural occupations|L12.6 Semi-routine clerical occupations|L12.7 Semi routine childcare occupations|L13.1 Routine sales and service occupations|L13.2 Routine production occupations|L13.3 Routine technical occupations|L13.4 Routine operative occupations|L13.5 Routine agricultural occupations
+
+Not at all confident|Not very confident|Fairly confident|Very confident|Don‘t know
+Not at all confident|Not very confident|Fairly confident|Very confident|Don?t know
+
+Yes, voted|No, did not vote|Dona??t know
+
+
+
+
+
+(!!!) 
+Out[18]:
+Series([], Name: profile_socialgrade_cie, dtype: int64)
+
+W1_only - it's completely empty!
+
+
+
+
+
+
+
+
+
+'partyContactGrn'
+'immigSNP', 'immigPC'
+'ageGroup'
+'voted'
+'housing'
+'approveEU'
+
+'profile_religion'
+'profile_turnout'
+'motherNumEmployees', 'selfNumEmployees', 'selfNumEmployeesLast',
+'likeSalmond', 'likeSturgeon'
+
+
+       'eesEUIntegrationGreen', 'certaintyEUGreen', 'csplImproveStandards',
+       'csplUncoverWrongs', 'csplPunishWrongs',
+       'tryReduceImmigDK', 'achieveReduceImmigUKIP',
+       'achieveReduceImmigGrn', 'achieveReduceImmigDK',
+       'tryReduceInequalityDK', 'successReduceInequalityDK',
+       'sharedContentOnline', 'bestLeaderCampaign', 'worstLeaderCampaign',
+       'zeroHourContract', 'scotReferendumIntention', 'econPersonalProsp',
+       'econGenProsp', 'devoResponsibleScotNHS',
+       'devoResponsibleScotSchools', 'devoResponsibleScotTax',
+       'winConstituencyGreen', 'winConstituencySNP', 'winConstituencyPC',
+
+
+       'noDependentsInHousehold', 'scotRefExpectationTurnout'
+
+'discussantturnoutName'
+
+
+
+
+ns_sec	W8_comb
+missing "L8.2 Employers in small establishments in agriculture"
+Employers in large establishments|Higher managerial and administrative occupations|L3.1 Traditional employees|L3.2 New employees|L3.3 Traditional self-employed|L3.4 New self-employed|L4.1 Traditional employees|L4.2 New employees|L4.3 Traditional self-employed|L4.4 New self-employed|Lower managerial and administrative occupations|Higher supervisory occupations|L7.1 Intermediate clerical and administrative occupations|L7.2 Intermediate sales and service occupations|L7.3 Intermediate technical and auxiliary occupations|L7.4 Intermediate engineering occupations|L8.1 Employers in small establishments in industry, commerce, services etc.|L8.2 Employers in small establishments in agriculture|L9.1 Own account workers (non-professional)|L9.2 Own account workers (agriculture)|Lower supervisory occupations|L11.1 Lower technical craft occupations|L11.2 Lower technical process operative occupations|L12.1 Semi-routine sales occupations|L12.2 Semi-routine service occupations|L12.3 Semi-routine technical occupations|L12.4 Semi-routine operative occupations|L12.5 Semi-routine agricultural occupations|L12.6 Semi-routine clerical occupations|L12.7 Semi routine childcare occupations|L13.1 Routine sales and service occupations|L13.2 Routine production occupations|L13.3 Routine technical occupations|L13.4 Routine operative occupations|L13.5 Routine agricultural occupations
+Employers in large establishments|Higher managerial and administrative occupations|L3.1 Traditional employees|L3.2 New employees|L3.3 Traditional self-employed|L3.4 New self-employed|L4.1 Traditional employees|L4.2 New employees|L4.3 Traditional self-employed|L4.4 New self-employed|Lower managerial and administrative occupations|Higher supervisory occupations|L7.1 Intermediate clerical and administrative occupations|L7.2 Intermediate sales and service occupations|L7.3 Intermediate technical and auxiliary occupations|L7.4 Intermediate engineering occupations|L8.1 Employers in small establishments in industry, commerce, services etc.|L9.1 Own account workers (non-professional)|L9.2 Own account workers (agriculture)|Lower supervisory occupations|L11.1 Lower technical craft occupations|L11.2 Lower technical process operative occupations|L12.1 Semi-routine sales occupations|L12.2 Semi-routine service occupations|L12.3 Semi-routine technical occupations|L12.4 Semi-routine operative occupations|L12.5 Semi-routine agricultural occupations|L12.6 Semi-routine clerical occupations|L12.7 Semi routine childcare occupations|L13.1 Routine sales and service occupations|L13.2 Routine production occupations|L13.3 Routine technical occupations|L13.4 Routine operative occupations|L13.5 Routine agricultural occupations
+Employers in large establishments|Higher managerial and administrative occupations|L3.1 ‘Traditional' employees|L3.2 ‘New' employees|L3.3 ‘Traditional' self-employed|L3.4 ‘New' self-employed|L4.1 ‘Traditional' employees|L4.2 ‘New' employees|L4.3 ‘Traditional' self-employed|L4.4 ‘New' self-employed|Lower managerial and administrative occupations|Higher supervisory occupations|L7.1 Intermediate clerical and administrative occupations|L7.2 Intermediate sales and service occupations|L7.3 Intermediate technical and auxiliary occupations|L7.4 Intermediate engineering occupations|L8.1 Employers in small establishments in industry, commerce, services etc.|L8.2 Employers in small establishments in agriculture|L9.1 Own account workers (non-professional)|L9.2 Own account workers (agriculture)| Lower supervisory occupations|L11.1 Lower technical craft occupations|L11.2 Lower technical process operative occupations|L12.1 Semi-routine sales occupations|L12.2 Semi-routine service occupations|L12.3 Semi-routine technical occupations|L12.4 Semi-routine operative occupations|L12.5 Semi-routine agricultural occupations|L12.6 Semi-routine clerical occupations|L12.7 Semi routine childcare occupations|L13.1 Routine sales and service occupations|L13.2 Routine production occupations|L13.3 Routine technical occupations|L13.4 Routine operative occupations|L13.5 Routine agricultural occupations
+
+
+No, I do not regard myself as belonging to any particular religion.|Yes - Church of England/Anglican/Episcopal|Yes - Roman Catholic|Yes - Presbyterian/Church of Scotland|Yes - Methodist|Yes - Baptist|Yes - United Reformed Church|Yes - Free Presbyterian|Yes - Brethren|Yes - Judaism|Yes - Hinduism|Yes - Islam|Yes - Sikhism|Yes - Buddhism|Yes - Other|Yes - Orthodox Christian|Yes - Pentecostal|Yes - Evangelical /independent/non-denominational
+No, I do not regard myself as belonging to any particular religion.|Yes - Church of England/Anglican/Episcopal|Yes - Roman Catholic|Yes - Presbyterian/Church of Scotland|Yes - Methodist|Yes - Baptist|Yes - United Reformed Church|Yes - Free Presbyterian|Yes - Brethren|Yes - Judaism|Yes - Hinduism|Yes - Islam|Yes - Sikhism|Yes - Buddhism|Yes - Other|Yes – Orthodox Christian|Yes - Pentecostal (e.g. Assemblies of God, Elim Pentecostal Church, New Testament Church of God, Redeemed Christian Chur|Yes - Evangelical – independent/non-denominational (e.g. FIEC, Pioneer, Vineyard, Newfrontiers)
+
+Own outright|Own with a mortgage|Own (part-own) through shared ownership scheme (i.e. pay part mortgage, part rent)|Rent from a private landlord|Rent from my local authority|Rent from a housing association|Neither I live with my parents, family or friends but pay some rent to them|Neither I live rent-free with my parents, family or friends
+Own – outright|Own – with a mortgage|Own (part-own) – through shared ownership scheme (i.e. pay part mortgage, part rent)|Rent – from a private landlord|Rent – from my local authority|Neither – I live with my parents, family or friends but pay some rent to them|Neither – I live rent-free with my parents, family or friends
+"Rent from a housing association" missing in second list W6_comb (first time they did the question)
+
+
+
+
+Own the leasehold/freehold outright|Buying leasehold/freehold on a mortgage|Rented from local authority|Rented from private landlord|It belongs to a Housing Association|Don't know
+
+
+############################################
+
+immigSNP	Allow many fewer|2.0|4.0|5.0|6.0|7.0|8.0|9.0|Allow many more	Allow many fewer|1.0|2.0|3.0|4.0|5.0|6.0|7.0|8.0|9.0|Allow many more
+immigPC
+W12_only,W11_only,W10_only,W9_only,W8_only,W7_only
+
+*********************************************
+
+Need missing values added
+
+winConstituencyGreen		W10_only
+winConstituencyGreen		W5_only
+winConstituencyGreen		W4_only
+winConstituencySNP		W10_only
+winConstituencyPC		W10_only
+
+0- Very unlikely to win
+100
+100- Very likely to win
+9999
+Not sure
+
+Confusingly, no text ends here!
+
+*******************************************
+
+scotRefExpectationTurnout	W2_only	W1_only
+
+Same!
+
+
+# function
+
+* start_string = "0% of people will vote"
+* end_string = "100% of people will vote"
+* weasel_strings = ["Don't know"]
+
+* standardise everything not those strings into integer strings
+* then set categories to [start, "1", "2", "3", ... "99", end, weasel]
+
+
+=============================
+housing	W13_only
+Own the leasehold/freehold outright|Buying leasehold/freehold on a mortgage|Rented from local authority|Rented from private landlord|It belongs to a Housing Association
+W13_comb, W12_only, W11_only, W6-1_only, W5-3_comb
+
+
+
+
+Own outright|Own with a mortgage|Own (part-own) through shared ownership scheme (i.e. pay part mortgage, part rent)|Rent from a private landlord|Rent from my local authority|Rent from a housing association|Neither I live with my parents, family or friends but pay some rent to them|Neither I live rent-free with my parents, family or friends
+
+housing W10_comb
+Own outright|Own with a mortgage|Own (part-own) through shared ownership scheme (i.e. pay part mortgage, part rent)|Rent from a private landlord|Rent from my local authority|Rent from a housing association|Neither I live with my parents, family or friends but pay some rent to them|Neither I live rent-free with my parents, family or friends
+
+xprofile_house_tenure W10_only
+Own outright|Own with a mortgage|Own (part-own) through shared ownership scheme (i.e. pay part mortgage, part rent)|Rent from a private landlord|Rent from my local authority|Rent from a housing association|Neither I live with my parents, family or friends but pay some rent to them|Neither I live rent-free with my parents, family or friends
+
+profile_house_tenureW10 W13_comb
+Own outright|Own with a mortgage|Own (part-own) through shared ownership scheme (i.e. pay part mortgage, part rent)|Rent from a private landlord|Rent from my local authority|Rent from a housing association|Neither I live with my parents, family or friends but pay some rent to them|Neither I live rent-free with my parents, family or friends
+
+No, I do not regard myself as belonging to any particular religion.|Yes - Church of England/Anglican/Episcopal|Yes - Roman Catholic|Yes - Presbyterian/Church of Scotland|Yes - Methodist|Yes - Baptist|Yes - United Reformed Church|Yes - Free Presbyterian|Yes - Brethren|Yes - Judaism|Yes - Hinduism|Yes - Islam|Yes - Sikhism|Yes - Buddhism|Yes - Other|Prefer not to say|Yes Orthodox Christian|Yes - Pentecostal (e.g. Assemblies of God, Elim Pentecostal Church, New Testament Church of God, Redeemed Christian Chur|Yes - Evangelical independent/non-denominational (e.g. FIEC, Pioneer, Vineyard, Newfrontiers)No, I do not regard myself as belonging to any particular religion.|Yes - Church of England/Anglican/Episcopal|Yes - Roman Catholic|Yes - Presbyterian/Church of Scotland|Yes - Methodist|Yes - Baptist|Yes - United Reformed Church|Yes - Free Presbyterian|Yes - Brethren|Yes - Judaism|Yes - Hinduism|Yes - Islam|Yes - Sikhism|Yes - Buddhism|Yes - Other|Prefer not to say|Yes Orthodox Christian|Yes - Pentecostal (e.g. Assemblies of God, Elim Pentecostal Church, New Testament Church of God, Redeemed Christian Chur|Yes - Evangelical independent/non-denominational (e.g. FIEC, Pioneer, Vineyard, Newfrontiers)
+
+
+No, I do not regard myself as belonging to any particular religion.|Yes - Church of England/Anglican/Episcopal|Yes - Roman Catholic|Yes - Presbyterian/Church of Scotland|Yes - Methodist|Yes - Baptist|Yes - United Reformed Church|Yes - Free Presbyterian|Yes - Brethren|Yes - Judaism|Yes - Hinduism|Yes - Islam|Yes - Sikhism|Yes - Buddhism|Yes - Other|Yes - Orthodox Christian|Yes - Pentecostal|Yes - Evangelical /independent/non-denominational
+No, I do not regard myself as belonging to any particular religion.|Yes - Church of England/Anglican/Episcopal|Yes - Roman Catholic|Yes - Presbyterian/Church of Scotland|Yes - Methodist|Yes - Baptist|Yes - United Reformed Church|Yes - Free Presbyterian|Yes - Brethren|Yes - Judaism|Yes - Hinduism|Yes - Islam|Yes - Sikhism|Yes - Buddhism|Yes - Other|16.0|17.0|18.0|19.0
+No, I do not regard myself as belonging to any particular religion.|Yes - Church of England/Anglican/Episcopal|Yes - Roman Catholic|Yes - Presbyterian/Church of Scotland|Yes - Methodist|Yes - Baptist|Yes - United Reformed Church|Yes - Free Presbyterian|Yes - Brethren|Yes - Judaism|Yes - Hinduism|Yes - Islam|Yes - Sikhism|Yes - Buddhism|Yes - Other
+
+No, I do not regard myself as belonging to any particular religion.|Yes - Church of England/Anglican/Episcopal|Yes - Roman Catholic|Yes - Presbyterian/Church of Scotland|Yes - Methodist|Yes - Baptist|Yes - United Reformed Church|Yes - Free Presbyterian|Yes - Brethren|Yes - Judaism|Yes - Hinduism|Yes - Islam|Yes - Sikhism|Yes - Buddhism|Yes - Other|Yes - Orthodox Christian|Yes - Pentecostal (e.g. Assemblies of God, Elim Pentecostal Church, New Testament Church of God, Redeemed Christian Chur|Yes - Evangelical - independent/non-denominational (e.g. FIEC, Pioneer, Vineyard, Newfrontiers)
+
+
+No, I do not regard myself as belonging to any particular religion.|Yes - Church of England/Anglican/Episcopal|Yes - Roman Catholic|Yes - Presbyterian/Church of Scotland|Yes - Methodist|Yes - Baptist|Yes - United Reformed Church|Yes - Free Presbyterian|Yes - Brethren|Yes - Judaism|Yes - Hinduism|Yes - Islam|Yes - Sikhism|Yes - Buddhism|Yes - Other|Prefer not to say|Yes Orthodox Christian|Yes - Pentecostal (e.g. Assemblies of God, Elim Pentecostal Church, New Testament Church of God, Redeemed Christian Chur|Yes - Evangelical independent/non-denominational (e.g. FIEC, Pioneer, Vineyard, Newfrontiers)
+No, I do not regard myself as belonging to any particular religion.|Yes - Church of England/Anglican/Episcopal|Yes - Roman Catholic|Yes - Presbyterian/Church of Scotland|Yes - Methodist|Yes - Baptist|Yes - United Reformed Church|Yes - Free Presbyterian|Yes - Brethren|Yes - Judaism|Yes - Hinduism|Yes - Islam|Yes - Sikhism|Yes - Buddhism|Yes - Other|Prefer not to say|Yes - Orthodox Christian|Yes - Pentecostal (e.g. Assemblies of God, Elim Pentecostal Church, New Testament Church of God, Redeemed Christian Chur|Yes - Evangelical - independent/non-denominational (e.g. FIEC, Pioneer, Vineyard, Newfrontiers)
+
+
+================
+
+* housing
+* discussantturnoutName1W2	W13_comb	W6_comb	category	1	discussantturnoutName	No, I think they *will not* vote|Yes, I think they *will* vote	No, didn't vote|Yes, they voted|They were not eligible to vote
+discussantturnoutName1-3W2 W3-6_comb W13_comb
+No, I think they *will not* vote|Yes, I think they *will* vote|Don't know
+'No, didn\x92t vote|Yes, they voted|They were not eligible to vote|Don\x92t know'
+???????????????
+* certaintyEUGreenW2 W3-6_comb, certaintyEUGreenW4 W5-6_comb
+['Not at all certain', 'Somewhat certain', 'Very certain', 98.0, 99.0]
+-> add to weasel_numbers
+-> Warning - forms a sequence!
+
+* Should definitely be illegal|Should probably be illegal|Should probably be legal|Should definitely be legal|5.0|Don't know
+What the hell is 5.0??
+
+* scotReferendumIntentionW6
+
+Scotland should become an independent country|2.0|99.0|111.0
+Will vote no|Will vote 'Yes'|Will not vote|Don't know
+
+*
+econPersonalProspW10	W13_comb	W10_comb	category	1	econPersonalProsp	Get a lot worse|Get a little worse|Stay the same|Get a little better|Get a lot better	Get a lot worse|Get a little worse|Stay the same|Get a little better|Get a lot better|98.0
+econGenProspW10	W13_comb	W10_comb	category	1	econGenProsp	Get a lot worse|Get a little worse|Stay the same|Get a little better|Get a lot better	Get a lot worse|Get a little worse|Stay the same|Get a little better|Get a lot better|98.0
+devoResponsibleScotNHSW10	W13_comb	W10_comb	category	1	devoResponsibleScotNHS	The Scottish Parliament|The UK Parliament
+devoResponsibleScotSchoolsW10	W13_comb	W10_comb	category	1	devoResponsibleScotSchools	The Scottish Parliament|The UK Parliament
+devoResponsibleScotTaxW10	W13_comb	W10_comb	category	1	devoResponsibleScotTax	The Scottish Parliament|The UK Parliament
+econPersonalProsp	W10_only	W6_only	category	1	econPersonalProsp	Get a lot worse|Get a little worse|Stay the same|Get a little better|Get a lot better|98.0|222.0
+econPersonalProsp	W10_only	W2_only	category	1	econPersonalProsp	Get a lot worse|Get a little worse|Stay the same|Get a little better|Get a lot better|98.0|222.0
+econPersonalProsp	W10_only	W1_only	category	1	econPersonalProsp	Get a lot worse|Get a little worse|Stay the same|Get a little better|Get a lot better|98.0|222.0
+econGenProsp	W10_only	W6_only	category	1	econGenProsp	Get a lot worse|Get a little worse|Stay the same|Get a little better|Get a lot better|98.0	Get a lot worse|Get a little worse|Stay the same|Get a little better|Get a lot better
+econGenProsp	W10_only	W2_only	category	1	econGenProsp	Get a lot worse|Get a little worse|Stay the same|Get a little better|Get a lot better|98.0	Get a lot worse|Get a little worse|Stay the same|Get a little better|Get a lot better
+econGenProsp	W10_only	W1_only	category	1	econGenProsp	Get a lot worse|Get a little worse|Stay the same|Get a little better|Get a lot better|98.0	Get a lot worse|Get a little worse|Stay the same|Get a little better|Get a lot better
+
+
+*
+discussantturnoutName1-3	W4_only,W2_only
+No, I think they did not vote|Yes, I think they voted|There were no elections in their area|They were not eligible to vote|Don't know
+No, I think they *will not* vote|Yes, I think they *will* vote|Don't know
+
+* W10_only
+The Scottish Parliament|The UK Parliament|Other|98.0|Don't know
+98.0 is very low numbers - maybe just mislabelled Other??
+devoResponsibleScotNHS
+devoResponsibleScotSchools
+devoResponsibleScotTax
+
+* approveEU	W10_only	W2_only	category	1	approveEU	Strongly disapprove|Disapprove|Neither approve nor disapprove|Approve|Strongly approve	Approve|Disapprove
+
+* noDependentsInHousehold	W7_only	W6_comb	category	1	noDependentsInHousehold	No|Yes	No|Yes|2.0
+noDependentsInHousehold	W7_only	W5_only	category	1	noDependentsInHousehold	No|Yes	No|Yes|2.0
+?????
+
+
+
+
+
+
+'housing', 'profile_turnout', 'discussantturnoutName',
+       'certaintyEUGreen', 'bestLeaderCampaign', 'worstLeaderCampaign',
+       'zeroHourContract', 'econPersonalProsp', 'approveEU',
+       'noDependentsInHousehold'
+	   
+==================	   
+
+'bestLeaderCampaign', 'worstLeaderCampaign'
+bestLeaderCampaignW5, worstLeaderCampaignW5
+W13_comb,W10_comb,W9_comb,W8_comb,W7_comb,W6_comb,W5_comb
+-> fixed, rerun everything to test!
+
+housing W6 -> Done - test W6_comb intake
+
+'housing'
+* 
+8	housing	W13_only	W6_comb	category	3	housing	Own the leasehold/freehold outright|Buying leasehold/freehold on a mortgage|Rented from local authority|Rented from private landlord|It belongs to a Housing Association	Own - outright|Own - with a mortgage|Own (part-own) - through shared ownership scheme (i.e. pay part mortgage, part rent)|Rent - from a private landlord|Rent - from my local authority|Neither - I live with my parents, family or friends but pay some rent to them|Neither - I live rent-free with my parents, family or friends
+* recategories housing variables
+
+*
+discussantturnoutName1W2	W13_comb	W6_comb	category	1	discussantturnoutName	No, I think they *will not* vote|Yes, I think they *will* vote	No, didn't vote|Yes, they voted|They were not eligible to vote
+Same variable, recoded somehow!
+-> broken
+
+*
+approveEU	W10_only	W2_only	category	1	approveEU	Strongly disapprove|Disapprove|Neither approve nor disapprove|Approve|Strongly approve	Approve|Disapprove
+
+
+Changeable:
+approveEU
+discussantturnoutName
+housing -> we can fix this later!
+
+
+
+
+'profile_turnout'
+profile_turnout_2015 W10_comb, W13_comb
+No, did not vote|Yes, voted|2.0|99.0|Don't know
+-> broken!
+
+* zeroHourContractW6 W6_comb
+Should definitely be illegal|Should probably be illegal|Should probably be legal|Should definitely be legal|5.0|Don't know
+zeroHourContractW6 W6_comb
+Should definitely be illegal    9718
+Should probably be illegal      7417
+Should definitely be legal      5267
+Should probably be legal        4493
+Don't know                      1615
+5.0                             1517
+
+zeroHourContract W6_only
+Should definitely be illegal    9733
+Should probably be illegal      7426
+Should definitely be legal      5278
+Should probably be legal        4501
+Don't know                      1615
+
+-> broken!
+
+certaintyEUGreen
+Not at all certain|Somewhat certain|Very certain|98.0|99.0
+Not at all certain|Somewhat certain|Very certain|Don't know
+
+W7_comb certaintyEUGreenW2
+Don't know            856
+Somewhat certain      836
+Not at all certain    564
+Very certain          461
+
+W6_comb certaintyEUGreenW2
+99.0                  856
+Somewhat certain      836
+Not at all certain    564
+Very certain          461
+98.0                   20
+Name: certaintyEUGreenW2, dtype: int64
+-> broken!
+
+
+
+
+econPersonalProspW10 in W13_comb, W10_comb
+econPersonalProsp in W10_only
+
+Get a lot worse|Get a little worse|Stay the same|Get a little better|Get a lot better|98|222|Don't know
+Get a lot worse|Get a little worse|Stay the same|Get a little better|Get a lot better|Don't know
+
+
+* noDependentsInHousehold	W7_only	W6_comb	category	1	noDependentsInHousehold	No|Yes	No|Yes|2.0
+noDependentsInHousehold	W7_only	W5_only	category	1	noDependentsInHousehold	No|Yes	No|Yes|2.0
+-> broken
 
 
 

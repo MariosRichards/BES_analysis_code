@@ -5,7 +5,7 @@ from matplotlib import mlab, cm
 import pickle, os
 
 
-def display_components(n_components, decomp, cols, BES_decomp,
+def display_components(n_components, decomp, cols, BES_decomp, manifest, 
                        save_folder = False, show_first_x_comps=4,
                        show_histogram=True, flip_axes=True):
     
@@ -52,12 +52,16 @@ def display_components(n_components, decomp, cols, BES_decomp,
             BES_decomp[comp_no]         = -BES_decomp[comp_no]
 
 #         ax = axes[0]
+        dataset_description = manifest["Friendlier_Description"].values[0]
         title = "Comp. "+str(comp_no)+" (" + comp.index[-1:][0] + ")"
         comp_labels[comp_no] = title
-        comp_ax.set_title( title )
+        comp_ax.set_title( dataset_description + "\n" + title )
         comp_ax.set_xlabel("variable coeffs")
         xlim = (min(comp["components_"].min(),-1) , max(comp["components_"].max(),1) )
         comp["components_"].tail(30).plot( kind='barh', ax=comp_ax, figsize=(10,6), xlim=xlim )
+        dataset_citation = manifest["Citation"].values[0]
+        comp_ax.annotate(dataset_citation, (0,0), (0, -20),
+                         xycoords='axes fraction', textcoords='offset points', va='top', fontsize = 8)
         
         if (save_folder != False):
             fname = save_folder + os.sep + title.replace("/","_").replace(":","_") + ".png"

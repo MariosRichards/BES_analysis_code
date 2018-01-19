@@ -40,7 +40,6 @@ def display_components(n_components, decomp, cols, BES_decomp, manifest,
         else:
             comp_ax = axes
             
-
         # set top abs_mag variable to label
         comp_labels[comp_no] = comp.index[-1:][0] # last label (= highest magnitude)
         # if top abs_mag variable is negative
@@ -51,7 +50,6 @@ def display_components(n_components, decomp, cols, BES_decomp, manifest,
             decomp_components[comp_no]  = -decomp_components[comp_no]
             BES_decomp[comp_no]         = -BES_decomp[comp_no]
 
-#         ax = axes[0]
         dataset_description = manifest["Friendlier_Description"].values[0]
         title = "Comp. "+str(comp_no)+" (" + comp.index[-1:][0] + ")"
         comp_labels[comp_no] = title
@@ -59,11 +57,11 @@ def display_components(n_components, decomp, cols, BES_decomp, manifest,
         comp_ax.set_xlabel("variable coeffs")
         xlim = (min(comp["components_"].min(),-1) , max(comp["components_"].max(),1) )
         comp["components_"].tail(30).plot( kind='barh', ax=comp_ax, figsize=(10,6), xlim=xlim )
-        dataset_citation = manifest["Citation"].values[0]
-        comp_ax.annotate(dataset_citation, (0,0), (0, -20),
-                         xycoords='axes fraction', textcoords='offset points', va='top', fontsize = 8)
-        
+        dataset_citation = "Source: " + manifest["Citation"].values[0]
+
         if (save_folder != False):
+            comp_ax.annotate(dataset_citation, (0,0), (0, -40),
+                             xycoords='axes fraction', textcoords='offset points', va='top', fontsize = 7)            
             fname = save_folder + os.sep + title.replace("/","_").replace(":","_") + ".png"
             fig.savefig( fname, bbox_inches='tight' )
 

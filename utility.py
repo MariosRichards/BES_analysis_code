@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 from matplotlib import mlab, cm
 import pickle, os
+from gaussian_kde import gaussian_kde
 
 
 def display_components(n_components, decomp, cols, BES_decomp, manifest, 

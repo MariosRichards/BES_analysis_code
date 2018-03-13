@@ -1,0 +1,41 @@
+Friday 23/02/2018
+4+ pomodoros
+notebook: Bayesian Belief Network
+output: al&lr_by_leftRight
+- (re)setting up Bayesian Belief Networks (reinstalling R/Rstudio/reacquiring bnlearn library)
+- looking at interactions between core values (lr/al variables) and leftRight self placement
+- some bonus files with related extra variables thrown in (confusing!)
+- obs: leftRight always linked to lr1 and al2 (al1 added in W13 -> presumably age-shift)
+-      
+- lr2/lr5/al3 least connected/most 'downstream' lr/al vars
+
+- lr4->al2, lr1->al5
+- lr4->al2, lr1->al5
+- lr4->al2, lr3->al5
+- lr4<-al2, lr4->al1, lr2<-al4
+- lr4<-al2, lr4<-al3, lr3<-al4
+-           lr3<-al1, lr1<-al4
+
+"There is one law for the rich and one for the poor" <-> "death penalty"
+- if you run it on all waves simultaneously, you get ... a very confusing result
+  leftRight places mostly based on other leftRight variables *and lr1* variables and a bit of al1 (if ethno and populism are in the mix, then it's back to lr1 and al2)
+
+Saturday-Sunday 24-25/02/2018
+- whole dataset (at least, all ordinal variables) Bayesian Belieft Network inference (still only takes ~3 minutes)
+- tried different inference algorithms
+- looking into some means of actually visualising the resulting output that doesn't require just manually zooming in on pdfs!
+
+Monday 26/02/2018
+- looking at interesting causal interactions it throws up - e.g. Party Membership and Private School
+
+Tuesday 27/02/2018
+- Labour held constituencies/marginals x Labour Leave/Labour Remain
+- all the other weird pairs
+- figured out how to bootstrap lots of bayesian networks in bnlearn - probably overnight run 500x 3 minutes = 25 hrs? Hmmm
+
+
+
+
+
+
+

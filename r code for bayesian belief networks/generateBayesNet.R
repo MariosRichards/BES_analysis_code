@@ -7,8 +7,10 @@ library(bnlearn)
 library(foreign)
 library(Rgraphviz)
 
-dataset = "W13_voting_path_small"
-fn = paste("C://Users//Marios//Desktop//BES_analysis//BES_analysis_data//",dataset,".dta",sep="") 
+rdata_dir = "C://Users//Marios//Documents//GitHub//BES_analysis//BES_analysis_data//R_data//"
+
+filename = 'W13_onlycore_values_with_nans'
+fn = paste(rdata_dir,filename,".dta",sep="") 
 df = read.dta( fn )
 df$index <- NULL
 
@@ -104,12 +106,18 @@ ptm2 = proc.time()
 # data is being treated as if continuous!
 
 
-
+hl_var = "leftRight__Right"
 # bleh still hard to make out
-strength.plot(res, strength, layout="dot", shape="rectangle", highlight = c("voting_path", mb(res, "voting_path")))
+# strength.plot(res, strength, layout="dot", shape="rectangle") 
+strength.plot( res, strength, layout="dot", shape="rectangle")
+               
+               #, mb(res, hl_var))  )
 
 
 # df$generalElectionVote = factor(df$generalElectionVote)
 
 # arc.strength(res, df[0:50], criterion = "loglik-g")
+fitted = bn.fit(res, df)
+net = bn.net(fitted)
+graphviz.plot(net, layout="dot", shape="rectangle")
 

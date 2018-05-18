@@ -29,11 +29,16 @@ pip install --user mca
 
 conda update --all
 
-# problem with pytables
+# problem with pytables, fixed with this downgrade
 
 conda install pytables=3.4.2
 
 
+conda install -c pyviz holoviews
+conda install -c conda-forge jupyterlab
+# nodejs install broken in latest version!
+conda install -c conda-forge nodejs=8.9.1
 
+jupyter labextension install @pyviz/jupyterlab_pyviz
 
 

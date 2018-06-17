@@ -35,6 +35,19 @@ Tuesday 27/02/2018
 
 
 
+28/05/2018
+Shifts in Immigration Sentiment
+* Who are centrists?
+
+* Factor Analysis/Clustering on <other placement> variables
+
+
+3/06/2018
+Shifts in Immigrant Sentiment II
+* Factor Analysis on ChangedMind -> not very interesting
+
+
+
 
 
 

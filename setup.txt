@@ -41,4 +41,19 @@ conda install -c conda-forge nodejs=8.9.1
 
 jupyter labextension install @pyviz/jupyterlab_pyviz
 
+pip install boruta
+pip install git+https://github.com/scikit-learn-contrib/boruta_py
+conda install xgboost
+
+conda install graphviz
+conda install python-graphviz
+# shap - https://libraries.io/pypi/shap - helps explain machine learning models
+pip install shap
+
+
+
+
+
+
+
 

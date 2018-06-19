@@ -1,0 +1,79 @@
+Immigration shifts
+
+Shift periods!
+Wave 3->4+
+
+Wave 8->9+
+
+Variables with vis changes
+immigEcon +++
+immigCultural ++
+immigSelf +
+
+immigrantsWelfareState ++++
+
+
+changeImmig
+"Do you think that [The level of immigration is] getting higher, getting lower or staying about the same?"
+- no change in first shift, huge change in second shift
+
+changeImmigLab +
+"If there were a *Labour* UK government today, do you think that [The level of immigration is] would be getting higher, getting lower or staying about the same?
+
+controlImmig ++++
+"How much control do you think Britain has over immigration to the UK? (W8)"
+"After Britain negotiates leaving terms with the EU, how much control do you think Britain will have over immigration to the UK (W9)"
+huge shift W8->W9
+slight shift back W9->W10 (A lot of control -> Some control)
+
+asylumMore - just small towards disliking it less
+euMore/noneuMore ++
+substantial shift W8->W13 from Many Fewer -> Neutral (on top of intermediate steps)
+
+similar with families/students
+-> think in terms of distribution of step shift (i.e. mostly 0, but where is mode? maybe Don't Know and Neutral should be merged?)
+
+effectsEUImmigration ++
+"Do you think [Immigration to the UK] would be higher, lower or about the same if the UK leaves the European Union?"
+W7->W8 increased conviction leaving EU would make imm much lower
+W8->W10 massively decreased - steady thereafter
+
+euPriorityBalance W10-W13
+"Brexit priority: access to single market versus controlling immigration?"
+Hard to read, but surprisingly static
+(maybe try with reduced categories?)
+
+eumiismall - boring!
+
+miilabel W1-6
+- interesting
+- Don't know and Immigration quite stable categories
+- 'economy general' had 'weakest gravity'
+- RERUN with just ECON/IMM/DK/OTHER
+
+
+
+Correlations with al_scale (al_scale averaged over whole period)
+
+immigCultural, immigEcon, immigrantsWelfareState
+W1->W8 mono rise, W8->W10 sharp drop, W10-W13 rise
+- cultural less change, more static
+
+immigSelf - much more static - W8->W9 v small drop, not sure if last two results reliable
+
+euPriorityBalance mono inc W10->W13
+
+
+
+(overall top -corr with al_Scale immigSelf (+XMore/immigEcon *not* immigCultural!),
+immigrantsWelfareState +corr with al_scale
+
+
+
+
+
+
+
+
+
+

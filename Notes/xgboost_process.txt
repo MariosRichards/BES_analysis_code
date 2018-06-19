@@ -1,0 +1,38 @@
+
+* Set up data
+
+XGBoost
+* Find basic optimal settings
+* Find overfitting cutoff with estimators
+
+Shap
+* import values
+* plot summary plot for top X regressors
+* plot dependencies for top X regressors
+
+
+
+
+
+https://www.newstatesman.com/politics/elections/2018/06/nine-voter-groups-who-are-more-important-labour-leavers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

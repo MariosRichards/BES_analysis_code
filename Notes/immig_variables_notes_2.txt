@@ -1,0 +1,59 @@
+Immigration Variables Observations
+
+- link to Rob Ford's medium, maybe also the recent ipsos mori poll on it
+https://medium.com/@robfordmancs/how-have-attitudes-to-immigration-changed-since-brexit-e37881f55530
+- purpose of notes
+
+- dataset
+
+
+
+* immigration variables - do they represent one underlying thing or is there complex underlying structure
+Factor Analysis - pretty much just one thing
+immigEcon, immigCultural, immigSelf, immigrantsWelfareState, euPriorityBalance
+
+
+
+
+
+[* immigrationNarrower -> Bayesian Belief Plot]
+
+
+* Mean variable position by wave
+
+* immigration variables - sankey
+- how they've changed
+
+
+
+
+
+* ChangeMind raw correlations
+- BES_reduced variable setup (DK's/NaNs mean replaced, categories to numbers or dummied)
+
+
+
+
+
+
+
+[* Correlation with authoritarianism over waves]
+
+
+
+
+
+
+
+
+
+
+
+
+Footnotes
+
+[1] There's a lot of interesting structure - but it's all second-order party-political stuff, next three components are basically BlameLabour Yes/No, BlameConservatives Yes/No, UKIP Yay/Boo
+
+[2] Ipsos Mori saw the same thing in their own dataset, but find people who are pro-immigration more stable - not clear if that's a confound with nowhere to go from "most favourable" when there's a shift in favour of immigration, but I would hazard they accounted for that: https://www.ipsos.com/ipsos-mori/en-uk/shifting-ground-attitudes-towards-immigration-and-brexit
+
+[3] Some winnowing on coverage, dropping/mean-replacing DKs, linear-ish variables turned into numbers, categorical variables dummied). I left directly related variables in there as a sanity check (/reasonable baseline /laziness).

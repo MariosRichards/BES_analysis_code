@@ -1,0 +1,55 @@
+1,churchAttendanceW6__Once a week or more
+2,europeannessW7__Very strongly European
+3,trustMPsW7__A great deal of trust
+4,infoSourceInternetW7__More than 2 hours
+5,infoSourcePeopleW7__More than 2 hours
+6,euMoreW7__Many more
+7,familiesMoreW7__Many more
+8,euRefExpectationW8__100 - UK will definitely vote to leave the EU
+9,leaveImpactSelfW8__A very large impact
+10,euCloserW8__Strongly agree
+11,leaveToneW8__5 - Hope
+12,campaigninfoRemainW8__Strongly agree
+13,immigrantsWelfareStateW8__Strongly agree
+15,euMoreW8__Many more
+16,noneuMoreW8__Many more
+17,familiesMoreW8__Many more
+18,immigSelfW8__Allow many more
+19,immigConW8__Allow many more
+20,immigLabW8__Allow many more
+21,immigLDW8__Allow many more
+23,likeGrnW9__Strongly like
+24,socialIdentityGlobalLeaveW9__A great deal in common
+26,happyEULeaveW10__Extremely happy
+27,polAttentionW10__Pay a great deal of attention
+28,europeannessW10__Very strongly European
+29,trustMPsW10__A great deal of trust
+30,EUIntegrationUKIPW10__Protect our independence
+31,satDemUKW10__Very satisfied
+32,euPriorityBalanceW10__Control immigration
+33,ukCoopMovementW10__Bad for Britain
+34,socialIdentityGlobalRemainW10__A great deal in common
+35,effectsEUTradeW10__Much higher
+36,effectsEUImmigrationW10__Much higher
+37,effectsEUFinanceW10__Much better
+39,euID3W10__Strongly agree
+40,immigSelfW10__Allow many more
+41,leaveImpactSelfW10__A very large impact
+42,leaveImpactBritainW10__A very large impact
+43,ptvLDW10__Very likely
+44,changeImmigW10__Getting a lot higher
+45,natSecuritySelfW10__Protect civil liberties
+46,discrimChristiansW10__A lot of discrimination against
+47,discrimMuslimsW10__A lot of discrimination against
+48,discrimBMEW10__A lot of discrimination against
+49,discrimWhiteW10__A lot of discrimination against
+50,immigrantsWelfareStateW10__Strongly agree
+51,populism1W10__Strongly agree
+52,Delta_immigSelfW9
+53,Delta_immigSelfW10
+54,Delta_immigrantsWelfareStateW10
+55,Delta_ukCoopMovementW10
+56,Delta_changeImmigW10
+57,Delta_euMoreW8
+58,Delta_familiesMoreW8
+59,Delta_effectsEUFinanceW10

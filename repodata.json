@@ -1,0 +1,21 @@
+{
+  "info": {
+    "subdir": "BES_analysis_code"
+  },
+  "packages": {
+    "unknown-0.0-py36_0.tar.bz2": {
+      "build": "py36_0",
+      "build_number": 0,
+      "depends": [
+        "python 3.6*"
+      ],
+      "file_hash": "14af43a2fe2a0194e09bc9ffef2fd156a4b06173",
+      "md5": "5a028db68dc3c3515ba1e4659a8e8892",
+      "name": "unknown",
+      "sha256": "569e890e134e95ece974e2dab066a7e9bf45d8b3d15ea530ddf80a464f37f3bb",
+      "size": 16097728,
+      "timestamp": 1533809835,
+      "version": "0.0"
+    }
+  }
+}

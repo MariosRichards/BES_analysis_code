@@ -1,0 +1,18 @@
+{
+  "unknown-0.0-py36_0.tar.bz2": {
+    "arch": "x86_64",
+    "build": "py36_0",
+    "build_number": 0,
+    "depends": [
+      "python 3.6*"
+    ],
+    "file_hash": "14af43a2fe2a0194e09bc9ffef2fd156a4b06173",
+    "md5": "5a028db68dc3c3515ba1e4659a8e8892",
+    "mtime": 1533809835.1816092,
+    "name": "unknown",
+    "platform": "win",
+    "sha256": "569e890e134e95ece974e2dab066a7e9bf45d8b3d15ea530ddf80a464f37f3bb",
+    "size": 16097728,
+    "version": "0.0"
+  }
+}

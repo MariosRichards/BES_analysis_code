@@ -6,6 +6,72 @@ import pickle, os
 from gaussian_kde import gaussian_kde
 
 
+
+def get_manifest(dataset_name, BES_file_manifest):
+    manifest = BES_file_manifest[ BES_file_manifest["Name"] == dataset_name ]
+    dataset_filename = manifest["Stata_Filename"].values[0]
+    dataset_description = manifest["Friendlier_Description"].values[0]
+    dataset_citation = manifest["Citation"].values[0]
+    dataset_start = manifest["Date_Start"].values[0]
+    dataset_stop = manifest["Date_Stop"].values[0]
+    dataset_wave = manifest["Wave No"].values[0]
+    return (manifest, dataset_filename, dataset_description, dataset_citation, dataset_start, dataset_stop, dataset_wave)
+
+
+def get_small_files(data_subfolder, encoding):
+    try:
+        var_type    = pd.read_msgpack( data_subfolder + "var_type.msgpack")
+    except:
+        var_type    = pd.read_csv( data_subfolder + "var_type.csv", encoding=encoding)
+        var_type.set_index("Unnamed: 0", inplace=True)
+    print("var_type",  var_type.shape )
+
+    fname = data_subfolder + "cat_dictionary.pkl"
+    with open(fname, "rb") as f:
+        cat_dictionary = pickle.load( f )
+
+    fname = data_subfolder + "new_old_col_names.pkl"
+    with open(fname, "rb") as f:
+        new_old_col_names = pickle.load(f)
+    old_new_col_names = {v: k for k, v in new_old_col_names.items()}
+    return (var_type, cat_dictionary, new_old_col_names, old_new_col_names)
+
+def hdf_shrink_to_msgpack(hdf_file):
+    df = pd.read_hdf( data_subfolder + hdf_file+".hdf" )
+    df = df.apply(pd.to_numeric,downcast='float')
+    df.to_msgpack(data_subfolder + hdf_file+".hdf".replace('.hdf','.msgpack'))
+    del df
+    gc.collect()
+    
+
+
+def setup_directories():
+    if os.getcwd().split(os.sep)[-1] != 'BES_analysis_code':
+        raise Exception("Stop! You're in the wrong directory - should be in 'BES_analysis_code'")
+
+    BES_code_folder   = "../BES_analysis_code/" # we should be here!
+    BES_small_data_files = BES_code_folder + "small data files" + os.sep
+    if not os.path.exists( BES_small_data_files ):
+        os.makedirs( BES_small_data_files )
+
+    # we should create these if they don't already exist
+    BES_data_folder   = "../BES_analysis_data/"
+    if not os.path.exists( BES_data_folder ):
+        os.makedirs( BES_data_folder )
+
+    BES_output_folder = "../BES_analysis_output/"
+    if not os.path.exists( BES_output_folder ):
+        os.makedirs( BES_output_folder )
+        
+    BES_file_manifest = pd.read_csv( BES_small_data_files + "BES_file_manifest.csv" )
+
+    BES_R_data_files = BES_data_folder + "R_data" + os.sep
+    if not os.path.exists( BES_R_data_files ):
+        os.makedirs( BES_R_data_files )
+    return (BES_code_folder, BES_small_data_files, BES_data_folder, BES_output_folder, BES_file_manifest, BES_R_data_files)
+
+
+
 def display_components(n_components, decomp, cols, BES_decomp, manifest, 
                        save_folder = False, show_first_x_comps=4,
                        show_histogram=True, flip_axes=True):

@@ -1,0 +1,48 @@
+Small Functions
+---------------
+
+* update -> make filenames OS-acceptable 
+
+* AmalgamateWaves function (backwards/forwards/preserve category structure)
+
+* save "fixed" BES_Panel?
+
+* redownload and process all BES files
+
+===========================
+Shap/Xgboost
+
+- add sample size to shap output
+- add label for "approx"
+- add timing for each regression
+
+- fix bug in get_base
+- add intermediate value option (e.g. Leave/Remain/middle
+
+==========================
+Pan Dataset Values
+- redo for W14_comb
+- add sovereignty
+- add don't knowishness
+
+======================================
+Latent Class Analysis - basically, clustering
+    - pan data set
+        -> subset of "value" variables???
+
+
+
+Sovereignty
+===========
+
+* Redo original Sov/Imm breakdown DONE - but fiddly to reproduce
+* Redo for W14_comb - PARTIAL!
+* Redo for Remainers
+* W7->W8 MII transition into network graph!
+* Sovereignty factor???
+    - try to build
+* umap on MII
+
+
+
+

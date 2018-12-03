@@ -5,6 +5,54 @@ from matplotlib import mlab, cm
 import pickle, os
 from gaussian_kde import gaussian_kde
 
+import re
+
+def amalgamate_waves(df, pattern, forward_fill=True):
+    # euref_imm = amalgamate_waves(BES_reduced_with_na,"euRefVoteW",forward_fill=False)
+    # assumes simple wave structure, give a pattern that works!
+    df_cols_dict = {int(re.search("W(\d+)", x).groups()[0]):x for x in df.columns if re.match(pattern, x)}
+    # sort columns
+    df_cols = [df_cols_dict[x] for x in sorted(df_cols_dict.keys())]
+    # forward fill and and pick last column - or backward fill and pick first column
+    if forward_fill:
+        latest_series = df[df_cols].fillna(method="ffill",axis=1)[df_cols[-1]]
+    else:
+        latest_series = df[df_cols].fillna(method="bfill",axis=1)[df_cols[0]]
+    # if it's a category, retain category type/options/order
+    if df[df_cols[0]].dtype.name == "category":
+        latest_series = latest_series.astype(
+                    pd.api.types.CategoricalDtype(categories = df[df_cols[0]].cat.categories) )
+    return latest_series
+
+import unicodedata
+import string
+
+valid_filename_chars = "-_.() %s%s" % (string.ascii_letters, string.digits)
+char_limit = 30
+
+def clean_filename(filename, whitelist=valid_filename_chars, replace=' '):
+    # replace spaces
+    for r in replace:
+        filename = filename.replace(r,'_')
+    
+    # keep only valid ascii chars
+    cleaned_filename = unicodedata.normalize('NFKD', filename).encode('ASCII', 'ignore').decode()
+    
+    # keep only whitelisted chars
+    cleaned_filename = ''.join(c for c in cleaned_filename if c in whitelist)
+    if len(cleaned_filename)>char_limit:
+        print("Warning, filename truncated because it was over {}. Filenames may no longer be unique".format(char_limit))
+    return cleaned_filename[:char_limit]    
+
+def create_subdir(base_dir,subdir):
+    output_subfolder = base_dir + os.sep + clean_filename(subdir) + os.sep
+    if not os.path.exists( output_subfolder ):
+        os.makedirs( output_subfolder )
+    return output_subfolder
+
+
+
+
 
 
 def get_manifest(dataset_name, BES_file_manifest):

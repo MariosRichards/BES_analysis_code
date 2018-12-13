@@ -22,6 +22,13 @@ def amalgamate_waves(df, pattern, forward_fill=True):
     if df[df_cols[0]].dtype.name == "category":
         latest_series = latest_series.astype(
                     pd.api.types.CategoricalDtype(categories = df[df_cols[0]].cat.categories) )
+    # update name
+    re.match("(.*?)W\d+","climateChangeW11").groups()[0]
+    print("Amalgamating variables: ")
+    print(df_cols_dict)
+    name_stub = re.match("(.*?)W\d+",  list(df_cols_dict.values())[0]).groups()[0]
+    latest_series.name = name_stub+"W"+"&".join([str(x) for x in sorted(df_cols_dict.keys())])
+    
     return latest_series
 
 import unicodedata

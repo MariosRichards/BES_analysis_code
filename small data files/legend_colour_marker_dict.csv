@@ -1,0 +1,60 @@
+,colour,marker
+Conservative,b,.
+Conservative Party,b,.
+The Conservative candidate,b,x
+Labour,r,.
+Labour Party,r,.
+The Labour candidate,r,x
+Green Party,g,.
+The Green candidate,g,x
+Plaid Cymru,k,.
+The Plaid Cymru candidate,k,x
+Scottish National Party,c,.
+United Kingdom Independence Party,m,.
+The UKIP candidate,m,x
+Liberal Democrat,orange,.
+Liberal Democrats,orange,.
+The Liberal Democrat candidate,orange,x
+Sovereignty/EU bureaucracy,b,>
+Immigration,m,8
+Campaign/outcome fairness,k,s
+Economy,g,p
+No content to reason,c,P
+EU spending/regulations/cost,y,*
+British/english identity,r,h
+Foreign policy,b,H
+EU integration/stability,m,+
+Cosmopolitanism,g,X
+Protection of rights,c,D
+Other stability or uncertainty concern,y,d
+Social identity/partisanship,r,|
+Family,b,_
+immigration,m,1
+sovereignty,k,2
+democratic deficit,g,3
+truth,c,4
+general concerns,y,.
+fiscal,r,","
+economy general,b,o
+british greatness,m,v
+other,k,^
+British identity,g,<
+security,c,>
+EU identity/cosmopolitan,y,8
+trade,r,s
+unemployment,b,p
+economic stability,m,P
+human rights,k,*
+worker rights,g,h
+stability in general,c,H
+freedom of movement,y,+
+international cooperation,b,X
+peace,m,D
+partisan-neg,k,d
+uncertainty,g,|
+equality,c,_
+family,y,1
+scotland,r,2
+british influence in the world,b,3
+economy personal,m,4
+EU reform,g,","

@@ -7,6 +7,13 @@ from gaussian_kde import gaussian_kde
 
 import re
 
+def intersection(lst1, lst2): 
+  
+    # Use of hybrid method 
+    temp = set(lst2) 
+    lst3 = [value for value in lst1 if value in temp] 
+    return lst3 
+
 def amalgamate_waves(df, pattern, forward_fill=True):
     # euref_imm = amalgamate_waves(BES_reduced_with_na,"euRefVoteW",forward_fill=False)
     # assumes simple wave structure, give a pattern that works!

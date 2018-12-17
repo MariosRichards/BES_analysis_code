@@ -42,9 +42,9 @@ import unicodedata
 import string
 
 valid_filename_chars = "-_.() %s%s" % (string.ascii_letters, string.digits)
-char_limit = 30
 
-def clean_filename(filename, whitelist=valid_filename_chars, replace=' '):
+
+def clean_filename(filename, whitelist=valid_filename_chars, replace=' ', char_limit = 30):
     # replace spaces
     for r in replace:
         filename = filename.replace(r,'_')

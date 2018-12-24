@@ -7,6 +7,26 @@ from gaussian_kde import gaussian_kde
 
 import re
 
+import sys, gc
+
+global BES_code_folder, BES_small_data_files, BES_data_folder, BES_output_folder, BES_file_manifest, BES_R_data_files
+
+def sizeof_fmt(num, suffix='B'):
+    ''' By Fred Cirera, after https://stackoverflow.com/a/1094933/1870254'''
+    for unit in ['','Ki','Mi','Gi','Ti','Pi','Ei','Zi']:
+        if abs(num) < 1024.0:
+            return "%3.1f%s%s" % (num, unit, suffix)
+        num /= 1024.0
+    return "%.1f%s%s" % (num, 'Yi', suffix)
+
+def memory_use(locs = locals().items()):
+    gc.collect()
+    # locals().items()
+    for name, size in sorted(((name, sys.getsizeof(value)) for name,value in locs),
+                             key= lambda x: -x[1])[:10]:
+        print("{:>30}: {:>8}".format(name,sizeof_fmt(size)))
+
+
 def intersection(lst1, lst2): 
   
     # Use of hybrid method 
@@ -203,7 +223,7 @@ def display_components(n_components, decomp, cols, BES_decomp, manifest,
     return (BES_decomp, comp_labels, comp_dict)
     
 
-def display_pca_data(n_components, decomp, BES_std):    
+def display_pca_data(n_components, decomp, BES_std, y=[]):    
     
     figsz = (16,3)
     
@@ -232,8 +252,12 @@ def display_pca_data(n_components, decomp, BES_std):
                   % str(decomp.noise_variance_) )
         
     if hasattr(decomp, 'score'):
-        print('average log-likelihood of all samples: %s'
-              % str(decomp.score(BES_std)) )
+        if len(y)==0:
+            print('average log-likelihood of all samples: %s'
+                  % str(decomp.score(BES_std)) )
+        else:
+            print('mean classification accuracy (harsh if many cats.): %s'
+                  % str(decomp.score(BES_std, y)) )
         
     if hasattr(decomp, 'score_samples') and not np.isinf( decomp.score(BES_std) ):
         pd.DataFrame( decomp.score_samples(BES_std) ).hist(bins=100,figsize = figsz, ax=axs[axno])
@@ -287,3 +311,81 @@ def weighted_kde(xlim, ylim, samples, weights):
     plt.xlabel( comp_labels[x_axis] )
     plt.ylabel( comp_labels[y_axis] ) 
     plt.title('Decomposition of BES dataset; Overview')    
+
+    
+from scipy.stats import pearsonr, spearmanr
+def corr_simple_pearsonr(df1,df2):
+    mask = df1.notnull()&df2.notnull()
+    (r,p) = pearsonr(df1[mask],df2[mask])
+    return [r, p, mask.sum()]
+
+def corr_simple_spearmanr(df1,df2):
+    mask = df1.notnull()&df2.notnull()
+    (r,p) = spearmanr(df1[mask],df2[mask])
+    return [r, p, mask.sum()]
+
+def get_pruned(x):
+    if x in new_old_col_names.keys():
+        x = new_old_col_names[x]
+    if x in var_type.index:
+        x = var_type.loc[x,"pruned"]
+    return x
+
+def match(df, pattern):
+    return [x for x in df.columns if re.match(pattern,x)]
+
+def search(df, pattern):
+    return [x for x in df.columns if re.search(pattern,x)]
+
+def remove_wave(x):
+    return re.sub("(W\d+)+","",x)    
+
+#cat_col_mar_df = pd.read_csv(BES_small_data_files+"legend_colour_marker_dict.csv",index_col=0)
+#cat_col_mar_df
+
+#col_str = 'rbmkgcy'
+#mar_str = ".,ov^<>8spP*hH+xXDd|_1234"
+#global colours, markers
+#colours = cycle(col_str)
+#markers = cycle(mar_str)
+
+
+from itertools import cycle
+global colours, markers
+def get_cat_col_mar(label):
+    global BES_code_folder, BES_small_data_files, BES_data_folder, BES_output_folder, BES_file_manifest, BES_R_data_files
+    col_str = 'rbmkgcy'
+    mar_str = ".,ov^<>8spP*hH+xXDd|_1234"    
+# first use
+    if 'cat_col_mar_df' not in globals():
+        global cat_col_mar_df, colours, markers
+        cat_col_mar_df = pd.read_csv(BES_small_data_files+"legend_colour_marker_dict.csv",index_col=0)
+    
+        colours = cycle(col_str)
+        markers = cycle(mar_str)        
+        
+        
+    if label in cat_col_mar_df.index:
+        row = cat_col_mar_df.loc[label]
+        return (row["colour"],row["marker"])
+    else:
+        (col, mar) = get_next_col_mar()
+        count = 0
+        while col_mar_comb_already_exists(col+mar):
+            (col, mar) = get_next_col_mar()
+            count = count+1
+            if count>=(len(col_str)-1)*(len(mar_str)-1):
+                raise Exception("stuck hunting for next col mar combinations!")
+        cat_col_mar_df.loc[label] = [col, mar]
+        cat_col_mar_df.to_csv(BES_small_data_files+"legend_colour_marker_dict.csv")
+        return (col, mar)
+           
+def get_next_col_mar():
+    return (next(colours),next(markers))
+    
+    
+def col_mar_comb_already_exists(colmar):
+    return colmar in (cat_col_mar_df["colour"] + cat_col_mar_df["marker"]).values
+    
+    
+ 

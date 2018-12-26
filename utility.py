@@ -10,6 +10,7 @@ import re
 import sys, gc
 
 global BES_code_folder, BES_small_data_files, BES_data_folder, BES_output_folder, BES_file_manifest, BES_R_data_files
+global BES_Panel
 
 def sizeof_fmt(num, suffix='B'):
     ''' By Fred Cirera, after https://stackoverflow.com/a/1094933/1870254'''
@@ -352,13 +353,13 @@ def remove_wave(x):
 
 from itertools import cycle
 global colours, markers
-def get_cat_col_mar(label):
-    global BES_code_folder, BES_small_data_files, BES_data_folder, BES_output_folder, BES_file_manifest, BES_R_data_files
+def get_cat_col_mar(label, BES_small_data_files):
+#    global BES_code_folder, BES_small_data_files, BES_data_folder, BES_output_folder, BES_file_manifest, BES_R_data_files
     col_str = 'rbmkgcy'
     mar_str = ".,ov^<>8spP*hH+xXDd|_1234"    
 # first use
     if 'cat_col_mar_df' not in globals():
-        global cat_col_mar_df, colours, markers
+        global cat_col_mar_df
         cat_col_mar_df = pd.read_csv(BES_small_data_files+"legend_colour_marker_dict.csv",index_col=0)
     
         colours = cycle(col_str)
@@ -388,4 +389,34 @@ def col_mar_comb_already_exists(colmar):
     return colmar in (cat_col_mar_df["colour"] + cat_col_mar_df["marker"]).values
     
     
- 
+def drop_zero_var(df):
+    # remove zero variance columns
+    df = df.drop( df.columns[df.var()==0] , axis=1)
+    return df
+    
+  
+def get_weights(dataset_name, BES_Panel):
+    max_wave = int(re.match("W(\d+)_",dataset_name).groups()[0])
+    num_to_wave = {x:"W"+str(x) for x in range(1,max_wave+1)}
+    num_to_weight = { y:[x for x in BES_Panel.columns.sort_values(ascending=False) if re.match("wt_(new|full)_W"+str(y)+"$",x)][0] for y in range(1,max_wave+1) }
+    weights = BES_Panel[list(num_to_weight.values())].copy()
+    return max_wave, num_to_wave, num_to_weight, weights
+    
+    
+def standard_scale(df):
+    return pd.DataFrame( StandardScaler().fit_transform(df.values ),
+                         columns = df.columns,
+                         index   = df.index      )
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

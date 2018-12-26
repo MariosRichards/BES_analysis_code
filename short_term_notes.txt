@@ -1,0 +1,91 @@
+Tuesday
+=======
+
+Imm vs Sov
+
+* crosstabs!
+
+* wpca/epca -> pan dataset variables
+
+* categorical density plot
+
+
+- summarise list of vars by stub!
+- shorten variables and put a clear [...]
+- remove v high correlates
+
+Untitled 10
+
+* get diff / get base
+* xgboost
+
+
+* Welshness/regional corr.
+
+
+Random Graphs
+
+* climate change
+
+* simple corr graphs
+
+* categorical density plot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+from wpca import PCA, WPCA, EMPCA
+# train.sample(10,axis=1)
+target.shape
+
+small_train = train.copy()#.sample(1000,axis=1)
+# PCA: 2 mins 40s
+small_train.shape
+
+small_train = small_train[intersection(small_train.columns,BES_reduced_with_na.columns)]
+small_train.drop(small_train.columns[small_train.var()<.5],axis=1,inplace=True)
+
+weights = BES_reduced_with_na[small_train.columns].loc[small_train.index].notnull().astype('float')
+weights.shape
+
+weights[weights==0] = 0.01
+
+n_components=10
+
+%%time
+
+decomp = WPCA(n_components=n_components)
+decomp_method = str(decomp).split("(")[0] 
+
+X_r = decomp.fit_transform(small_train, weights = weights)
+
+n_components = X_r.shape[1]
+
+BES_decomp = pd.DataFrame(   X_r,
+                             columns = range(0,n_components),
+                             index   = train.index)
+# print("Score: ", decomp.score(train, target))
+
+load_suff = decomp_method
+save = True # False => Load
+subdir = save_load_decomp(decomp, BES_decomp, train, load_suff, save)
+
+
+(BES_decomp, comp_labels, comp_dict) = display_components(n_components, decomp,
+                                                          small_train.columns, BES_decomp, manifest, 
+                                                          save_folder = subdir,  
+                                                          show_first_x_comps= 4, show_histogram = False)
+                                                          
+gc.collect()
+

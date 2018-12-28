@@ -35,13 +35,19 @@ def intersection(lst1, lst2):
     lst3 = [value for value in lst1 if value in temp] 
     return lst3 
 
-def amalgamate_waves(df, pattern, forward_fill=True):
+def amalgamate_waves(df, pattern, forward_fill=True, specify_wave_order = None):
     # euref_imm = amalgamate_waves(BES_reduced_with_na,"euRefVoteW",forward_fill=False)
     # assumes simple wave structure, give a pattern that works!
     df_cols_dict = {int(re.search("W(\d+)", x).groups()[0]):x for x in df.columns if re.match(pattern, x)}
     # sort columns
-    df_cols = [df_cols_dict[x] for x in sorted(df_cols_dict.keys())]
+    if specify_wave_order is not None:
+        df_cols = df_cols_dict[specify_wave_order]
+    else:
+        df_cols = [df_cols_dict[x] for x in sorted(df_cols_dict.keys())]
+    
     # forward fill and and pick last column - or backward fill and pick first column
+    if len(df_cols)>1:
+        raise Exception("Can't amalgamate less than two variables!")
     if forward_fill:
         latest_series = df[df_cols].fillna(method="ffill",axis=1)[df_cols[-1]]
     else:

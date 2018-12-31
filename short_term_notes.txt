@@ -89,3 +89,38 @@ subdir = save_load_decomp(decomp, BES_decomp, train, load_suff, save)
                                                           
 gc.collect()
 
+
+
+
+
+
+###############################################
+
+
+
+
+
+
+
+# [53]	validation_0-rmse:0.451407
+
+# MSE: 0.20, MAE: 0.40, EV: 0.18, R2: 0.18
+# SCORE: 0.451407
+# ------------------------------------
+# The best hyperparameters are:  
+
+# {'colsample_bytree': 0.7000000000000001, 'gamma': 0.65, 'learning_rate': 0.2, 'max_depth': 1, 'min_child_weight': 4.0, 'n_estimators': 891.0, 'subsample': 0.7000000000000001}
+# Wall time: 10min 12s
+
+
+# [439]	validation_0-rmse:0.445123
+# Stopping. Best iteration:
+# [272]	validation_0-rmse:0.440647
+
+# MSE: 0.20, MAE: 0.40, EV: 0.21, R2: 0.21
+# SCORE: 0.440647
+
+# The best hyperparameters are:  
+
+# {'colsample_bylevel': 0.8250000000000001, 'colsample_bytree': 0.625, 'gamma': 0.75, 'learning_rate': 0.15000000000000002, 'max_depth': 0, 'min_child_weight': 8.0, 'n_estimators': 1566, 'subsample': 0.75}
+# Wall time: 8h 17min 46s

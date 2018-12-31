@@ -46,7 +46,7 @@ def amalgamate_waves(df, pattern, forward_fill=True, specify_wave_order = None):
         df_cols = [df_cols_dict[x] for x in sorted(df_cols_dict.keys())]
     
     # forward fill and and pick last column - or backward fill and pick first column
-    if len(df_cols)>1:
+    if len(df_cols)<=1:
         raise Exception("Can't amalgamate less than two variables!")
     if forward_fill:
         latest_series = df[df_cols].fillna(method="ffill",axis=1)[df_cols[-1]]

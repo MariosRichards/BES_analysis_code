@@ -85,8 +85,8 @@ def clean_filename(filename, whitelist=valid_filename_chars, replace=' ', char_l
         print("Warning, filename truncated because it was over {}. Filenames may no longer be unique".format(char_limit))
     return cleaned_filename[:char_limit]    
 
-def create_subdir(base_dir,subdir):
-    output_subfolder = base_dir + os.sep + clean_filename(subdir) + os.sep
+def create_subdir(base_dir, subdir, char_limit=50):
+    output_subfolder = base_dir + os.sep + clean_filename(subdir, char_limit=char_limit) + os.sep
     if not os.path.exists( output_subfolder ):
         os.makedirs( output_subfolder )
     return output_subfolder

@@ -338,11 +338,25 @@ def get_pruned(x):
         x = var_type.loc[x,"pruned"]
     return x
 
-def match(df, pattern):
-    return [x for x in df.columns if re.match(pattern,x)]
+# case sensitive search/match
+# return with notnull count
+# accept a mask to filter notnulls by
 
-def search(df, pattern):
-    return [x for x in df.columns if re.search(pattern,x)]
+def match(df, pattern, case_sensitive=True, mask=None):
+    if mask is None:
+           mask = pd.Series(np.ones( (df.shape[0]) )).astype('bool')
+    if case_sensitive:
+        return df[[x for x in df.columns if re.match(pattern,x)]][mask].notnull().sum()
+    else:
+        return df[[x for x in df.columns if re.match(pattern, x, re.IGNORECASE)]][mask].notnull().sum()
+
+def search(df, pattern, case_sensitive=False, mask=None):
+    if mask is None:
+           mask = pd.Series(np.ones( (df.shape[0]) )).astype('bool')
+    if case_sensitive:
+        return df[[x for x in df.columns if re.search(pattern,x)]][mask].notnull().sum()
+    else:
+        return df[[x for x in df.columns if re.search(pattern, x, re.IGNORECASE)]][mask].notnull().sum()
 
 def remove_wave(x):
     return re.sub("(W\d+)+","",x)    
@@ -413,16 +427,9 @@ def standard_scale(df):
     return pd.DataFrame( StandardScaler().fit_transform(df.values ),
                          columns = df.columns,
                          index   = df.index      )
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+                         
+                         
+                         
+                         
+                         

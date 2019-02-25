@@ -218,7 +218,7 @@ def display_components(n_components, decomp, cols, BES_decomp, manifest,
         if (save_folder != False):
             comp_ax.annotate(dataset_citation, (0,0), (0, -40),
                              xycoords='axes fraction', textcoords='offset points', va='top', fontsize = 7)            
-            fname = save_folder + os.sep + title.replace("/","_").replace(":","_") + ".png"
+            fname = save_folder + clean_filename(title) + ".png"
             fig.savefig( fname, bbox_inches='tight' )
 
         comp_dict[comp_no] = comp
@@ -321,13 +321,13 @@ def weighted_kde(xlim, ylim, samples, weights):
 
     
 from scipy.stats import pearsonr, spearmanr
-def corr_simple_pearsonr(df1,df2):
-    mask = df1.notnull()&df2.notnull()
+def corr_simple_pearsonr(df1,df2, mask=1):
+    mask = df1.notnull()&df2.notnull()&mask
     (r,p) = pearsonr(df1[mask],df2[mask])
     return [r, p, mask.sum()]
 
-def corr_simple_spearmanr(df1,df2):
-    mask = df1.notnull()&df2.notnull()
+def corr_simple_spearmanr(df1,df2, mask=1):
+    mask = df1.notnull()&df2.notnull()&mask
     (r,p) = spearmanr(df1[mask],df2[mask])
     return [r, p, mask.sum()]
 
@@ -374,14 +374,17 @@ def remove_wave(x):
 from itertools import cycle
 global colours, markers
 def get_cat_col_mar(label, BES_small_data_files):
+   # global colours, markers
 #    global BES_code_folder, BES_small_data_files, BES_data_folder, BES_output_folder, BES_file_manifest, BES_R_data_files
     col_str = 'rbmkgcy'
     mar_str = ".,ov^<>8spP*hH+xXDd|_1234"    
 # first use
+    #print("GOT HERE!!!!")
     if 'cat_col_mar_df' not in globals():
+        #print("INSIDE IF STATEMENT!!!")
         global cat_col_mar_df
         cat_col_mar_df = pd.read_csv(BES_small_data_files+"legend_colour_marker_dict.csv",index_col=0)
-    
+      #  global colours, markers
         colours = cycle(col_str)
         markers = cycle(mar_str)        
         
@@ -422,7 +425,7 @@ def get_weights(dataset_name, BES_Panel):
     weights = BES_Panel[list(num_to_weight.values())].copy()
     return max_wave, num_to_wave, num_to_weight, weights
     
-    
+from sklearn.preprocessing import StandardScaler
 def standard_scale(df):
     return pd.DataFrame( StandardScaler().fit_transform(df.values ),
                          columns = df.columns,

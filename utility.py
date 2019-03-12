@@ -12,6 +12,9 @@ import sys, gc
 global BES_code_folder, BES_small_data_files, BES_data_folder, BES_output_folder, BES_file_manifest, BES_R_data_files
 global BES_Panel
 
+def pretty_print(df):
+    return display( HTML( df.to_html().replace("\\n","<br>") ) )
+
 def sizeof_fmt(num, suffix='B'):
     ''' By Fred Cirera, after https://stackoverflow.com/a/1094933/1870254'''
     for unit in ['','Ki','Mi','Gi','Ti','Pi','Ei','Zi']:
@@ -462,10 +465,12 @@ def display_corr(df, name, corr_type, top_num = 20, round_places = 2,
     display_html(df1_styler._repr_html_().replace("\\n","<br />")+df2_styler._repr_html_().replace("\\n","<br />"), raw=True)
 
 
-def make_corr_summary(input_df, name,  corr_type = "spearman", pattern="", sample_size_text = "N", correlation_text = "r",
+def make_corr_summary(input_df, name,  corr_type = "spearman", pattern=None, sample_size_text = "N", correlation_text = "r",
                       abs_correlation_text = "abs_r", p_value_text = "p",
                       min_p_value = 0.01, min_variance = 0.0, min_sample_size = 500):
 
+    if pattern is None:
+        pattern=name
     df1 = input_df.copy()
     focal_var = df1[name]
     focal_mask = focal_var.notnull()

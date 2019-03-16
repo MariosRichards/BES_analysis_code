@@ -522,3 +522,106 @@ def make_corr_summary(input_df, name,  corr_type = "spearman", pattern=None, sam
             stub_dict[waveless] = [ind]
     df.drop(drop_list,inplace=True)
     return df, corr_type    
+    
+    
+def get_all_weights(mask, BES_Panel, specific_wave = None):
+    #global BES_Panel
+
+    if specific_wave is None:
+        wts = BES_Panel[list(num_to_weight.values())][mask]
+    else:
+        wts = BES_Panel[specific_wave][mask]
+
+    wts = wts/wts.mean()
+
+    wts = wts.mean(axis=1)
+    wts =wts/wts.mean()
+    return wts
+
+    
+def nice_bar_plot(ser1, ser2, output_folder, BES_Panel, normalize = 'columns', sort_labels=False,
+                  text_width=8, text_fontsize=14, min_sample_size=100, title=None, drop_insig=True, fuckErrors=True,
+                  mask=1, title_fontsize=14):
+    var1 = ser1.name
+    var2 = ser2.name
+    
+    mask = ser1.notnull() & ser2.notnull() & mask
+    ct = pd.crosstab( ser1, ser2,
+                      values= get_all_weights(mask, BES_Panel), aggfunc=sum, normalize=normalize)*100
+    if sort_labels:
+        sorted_labels = list(ser2.value_counts().index)
+    else:
+        sorted_labels = list(ser2.cat.categories)
+           
+
+    unweighted = pd.crosstab( ser1, ser2 )
+    errors = 100 * np.sqrt(unweighted)/unweighted     
+
+    labels_by_sample_size = {unweighted.sum().values[x]:sorted_labels[x]+" (N="+str(unweighted.sum().values[x])+")" for x in range(0,len(sorted_labels))}    
+    labels_by_sample_size = {sorted_labels[x]+" (N="+str(unweighted.sum().values[x])+")":unweighted.sum().values[x] for x in range(0,len(sorted_labels))}    
+    labels_restricted = [x for x in labels_by_sample_size.keys() if labels_by_sample_size[x] > min_sample_size] 
+#     return labels_by_sample_size, labels_restricted
+    if drop_insig:
+        rubbish_entries = ct<errors
+        ct[rubbish_entries]=np.nan
+        errors[rubbish_entries]=np.nan
+#     return(sorted_labels, errors, labels_by_sample_size)
+    all_nan_rows = ~errors.isnull().any(axis=1)
+    errors.columns = list( labels_by_sample_size.keys() )
+   
+    ct.columns = list( labels_by_sample_size.keys() )
+    ct = ct.loc[all_nan_rows, labels_restricted]
+#     return errors, labels_restricted
+    errors = errors.loc[all_nan_rows, labels_restricted]
+#     errors=errors.T
+#     return errors
+#     return errors, ct
+    treatment = var2 +" by " + var1
+    output_subfolder = create_subdir(output_folder, treatment)
+    
+    import textwrap 
+
+    wrapper = textwrap.TextWrapper(width=text_width) 
+
+    stacked = ct.stack().reset_index().rename(columns={0:'%',"level_1":var2})
+    err_stacked = errors.stack().reset_index().rename(columns={0:'%',"level_1":var2})
+    fig = plt.figure(figsize=(20, 8))
+    ax = fig.subplots()
+
+#     a = [np.ones(16),np.ones(16)]
+#     a = errors.values
+#     return a
+#     iter(a)    
+    
+    stacked[var1] = stacked[var1].apply( lambda x: x +" (N="+str(unweighted.sum(axis=1).loc[x])+")" )
+    stacked[var1].cat.set_categories(stacked[var1].cat.categories[all_nan_rows],inplace=True)
+#     return stacked
+#     return stacked['%'].shape,err_stacked["%"].values.reshape(len(stacked),1).shape
+    if fuckErrors:
+        sns.barplot(x = stacked[var2],
+                    y = stacked['%'],
+                    hue = stacked[var1],
+                    ax = ax, order = labels_restricted);
+    else:
+        sns.barplot(x = stacked[var2],
+                    y = stacked['%'],
+                    hue = stacked[var1],
+                    ax = ax, order = labels_restricted,
+                    yerr = errors.values);        
+                    # err_stacked["%"].values );
+# .reshape(len(stacked),1)
+    if title is None:
+        title = var2 +" by " + var1
+    plt.title(title, fontsize=title_fontsize)
+    sorted_labels = [sorted_labels[x]+" (N="+str(unweighted.sum().values[x])+")" for x in range(0,len(sorted_labels))]
+    ax.set_xticklabels([ wrapper.fill(text=x) for x in labels_restricted], rotation=0, fontsize=text_fontsize);
+
+    ax.annotate(dataset_citation, (0,0), (0, -140),
+                     xycoords='axes fraction', textcoords='offset points', va='top', fontsize = 7) ;           
+    fname = output_subfolder + clean_filename(title) + ".png"
+    fig.savefig( fname, bbox_inches='tight' )    
+    
+def sort_by_wave(lst):
+    dict_by_wave = {int(x.split("W")[-1]):x for x in lst}
+    return [dict_by_wave[x] for x in sorted(dict_by_wave.keys())]
+        

@@ -60,3 +60,19 @@ economy personal,m,4
 EU reform,g,","
 living standards,b,","
 Other,m,o
+The Sun,k,v
+The Daily Mail / The Scottish Daily Mail,g,^
+The Mirror / Daily Record,c,<
+The Guardian,y,>
+Other Newspaper,r,8
+The Daily Telegraph,b,s
+The Times,m,p
+Other local daily morning newspaper,k,P
+The Independent,g,*
+The Express,c,h
+The Herald (Glasgow),y,H
+The Daily Star / The Daily Star of Scotland,r,+
+The Scotsman,m,X
+The Financial Times,k,D
+The Western Mail,g,d
+None,c,|

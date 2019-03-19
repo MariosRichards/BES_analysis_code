@@ -420,7 +420,7 @@ def drop_zero_var(df):
     df = df.drop( df.columns[df.var()==0] , axis=1)
     return df
     
-  
+global num_to_weight
 def get_weights(dataset_name, BES_Panel):
     max_wave = int(re.match("W(\d+)_",dataset_name).groups()[0])
     num_to_wave = {x:"W"+str(x) for x in range(1,max_wave+1)}
@@ -620,6 +620,7 @@ def nice_bar_plot(ser1, ser2, output_folder, BES_Panel, normalize = 'columns', s
                      xycoords='axes fraction', textcoords='offset points', va='top', fontsize = 7) ;           
     fname = output_subfolder + clean_filename(title) + ".png"
     fig.savefig( fname, bbox_inches='tight' )    
+
     
 def sort_by_wave(lst):
     dict_by_wave = {int(x.split("W")[-1]):x for x in lst}

@@ -1,0 +1,98 @@
+
+
+GOALS:
+
+- process wave 14
+- would we like to save a "fixed" BES_Panel?
+
+
+
+
+* pconW1 this time showed South Down (previous ones didn't - edit them to include South Down)
+
+* profile_socialgrade_cie : a|b|C1|C2|d|e|Refused|Unknown
+profile_socgrade: a|b|C1|C2|d|e (newer)
+
+* mii_cat/LRAL_mii_cat/small_mii_cat - categories just vary!
+
+* taxSpendSelfW14 screwed up category order
+
+* nhsEUW14 rename categories (99.0 -> Don't know)
+
+* homeOwnW14
+- Own the leasehold/freehold outright|Buying leasehold/freehold on a mortgage|Rented from local authority|Rented from private landlord|It belongs to a Housing Association|Don't know
+
+- all housing variables a mess!
+
+* messy 
+
+Â£0-Â£49,999|Â£50,000-Â£99,999|Â£100,000-Â£149,999|Â£150,000-Â£199,999|Â£200,000-Â£249,999|Â£250,000-Â£299,999|Â£300,000-Â£399,999|Â£400,000-Â£499,999|Â£500,000-Â£599,999|Â£600,000-Â£699,999|Â£700,000-Â£799,999|Â£800,000-Â£899,999|Â£900,000-Â£999,999|Â£1 million or above|Don't know / Prefer not to say
+
+* No|Yes|Don't know/Prefer not to say -> add "Don't know/Prefer not to say" to weasel word list! : savingsW14
+FIXED
+
+* "Don't know / Prefer not to say" : savingsAmtbW14|debtAmtbW14
+FIXED
+
+* No|Yes|99.0 : debtW14|studentloanW14
+FIXED
+
+* Yes|2.0|Don't know:
+smallEmergency_1W14|smallEmergency_2W14|smallEmergency_3W14|smallEmergency_4W14|smallEmergency_5W14|childvalues_1W14|childvalues_2W14|childvalues_3W14|childvalues_4W14|childvalues_5W14|childvalues_6W14|childvalues_7W14|childvalues_8W14|childvalues_9W14|childvalues_10W14|childvalues_11W14
+FIXED
+
+* 1|2|3|4|5|More than 5|111.0|Prefer not to say : numChildrenW14
+111.0 -> 0
+
+0|1|2|3|4|5|6 or more|Prefer not to say|Don't know : profile_household_children
+
+<added to rename and reorder>
+FIXED
+
+* 0 - None of them|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21.0|22.0|23.0|24.0|25.0|26.0|27.0|28.0|29.0|30.0|31|32|33|34|35|36|37|38|39|40|41|42|43|44|45|46|47|48|49|50|51|52|53|54|55|56|57|58|59|60|61|62|63|64|65|66|67|68|69|70|71|72|73|74|75|76|77|78|79|80|81|82|83|84|85|86|87|88|89|90|91|92|93|94|96|97|98|99|100 - All of them|Don't know
+propMPLocalW14
+propMPWCW14
+propMPFemaleW14
+propMPDisabW14
+propMPYoungW14
+propMPRaceW14
+propMPChristW14
+propMPLGBTW14
+propMPMuslimW14
+propMPDegreeW14
+
+FIXED
+
+
+* Not at all important|Not very important|Important|Very important|Don't know
+-> Not at all important|Not very important|Somewhat important|Very important|Don't know
+impOccW14|impRaceW14|ImpReligW14|impLocalW14|impGenderW14|impAgeW14|impEdW14|impGayW14
+
+FIXED
+
+* Strongly oppose|Oppose|Neither oppose nor support|Support|Strongly support:
+wcVmc1W14|wcVmc2W14|wcVself1W14|wcVself2W14|mcVSelf1W14|mcVSelf2W14
+Strongly oppose|Oppose|Neither support nor oppose|Support|Strongly support|Don't know
+FIXED (ish - didn't add Don't know)
+
+* 247	0 Not at all important|1|2|3|4|5|6|7|8|9|10- Very important|997.0	1	65	12	localismImportanceW4	1
+?????????????
+
+* None|1|2 to 5|6 to 10|11 to 20|51 to 100|Over 100|21 to 50|Not applicable:
+profile_work_responsibilityW14
+
+- Not applicable add to weasel words
+
+*
+[('ptvexpgrpW14', dtype('float64')),
+ ('cogempathyIRTW14', dtype('float32')),
+ ('affempathyIRTW14', dtype('float32')),
+ ('zeroSumIRTW14', dtype('float32'))]
+FIXED -> added to personality measures value 0/random value 9 stuff
+ 
+* profile_pcon fucked!
+
+
+
+
+

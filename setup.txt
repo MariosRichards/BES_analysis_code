@@ -1,6 +1,6 @@
 conda create -n BES_analysis pandas numpy matplotlib
 
-conda install -n BES_analysis jupyter nb_conda statsmodels pandas numpy matplotlib scikit-learn seaborn scipy
+conda install -n BES_analysis jupyter nb_conda statsmodels scikit-learn seaborn scipy
 
 conda install -n BES_analysis holoviews ipywidgets pytables
 
@@ -50,7 +50,8 @@ conda install python-graphviz
 # shap - https://libraries.io/pypi/shap - helps explain machine learning models
 pip install shap
 
-
+pip install boostaroota
+pip install xgboost-tuner  
 
 
 

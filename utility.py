@@ -527,10 +527,16 @@ def make_corr_summary(input_df, name,  corr_type = "spearman", pattern=None, sam
 def get_all_weights(mask, BES_Panel, specific_wave = None):
     #global BES_Panel
 
-    if specific_wave is None:
-        wts = BES_Panel[list(num_to_weight.values())][mask]
-    else:
-        wts = BES_Panel[specific_wave][mask]
+    if mask is None:
+        if specific_wave is None:
+            wts = BES_Panel[list(num_to_weight.values())]
+        else:
+            wts = BES_Panel[specific_wave]    
+    else:   
+        if specific_wave is None:
+            wts = BES_Panel[list(num_to_weight.values())][mask]
+        else:
+            wts = BES_Panel[specific_wave][mask]
 
     wts = wts/wts.mean()
 

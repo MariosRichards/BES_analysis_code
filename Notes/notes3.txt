@@ -1,0 +1,61 @@
+Observations - wave 10 - all ord vars
+
+* (polAttention ->) partyMember -> private school
+* sickElderlyInHouse -> scotReferendumVote
+* discrimMen -> gender
+
+* labUnited -> efficacyUnderstand
+* efficacyUnderstand -> gender
+* ageGroup -> gayMarriage
+
+* labLookAfterWC -> discrimMuslims
+
+(Gender - discrimMen, ageGroup, edlevel, efficacyUnderstand)
+
+Observations - wave 10 - all ord vars algo_hc
+
+
+* likeFarage -> happyTrump
+
+* radical -> harkBack
+
+* overseasAid -> genderRoles, ethno4, gayMarriage
+
+* auth4 -> pidWeThey <missing values>
+
+
+ldLookAfterMC
+
+
+marital -> gor -> headHouseholdPast -> ukipLookAfterWC
+profile_eurefturnout -> neverPrivSchoolW1W2W3W4W7W9
+
+<lot of categories>
+* authLong4 -> (winConstituencyGreen, winConstituencyCon, winConstituencyLab)
+* authLong2 -> (winConstituencySNP, winConstituencyUKIP, redistUKIP, pidWeThey)
+* winConstituencyLD -> authLong2
+
+#######################################
+
+gor -> headHouseholdPast
+education -> gender
+education -> profile_newspaper_readership_201 -> too many values, bit more work
+
+blackEquality -> ukipLookAfterUnemp
+leftRight -> grammar|lrUKIP
+deficitReduce -> grammar
+gender -> housing ??? (->ageGroup)
+
+
+
+immigSelf -> leftRight 
+
+
+
+
+
+Another giant Bayesian Belief Network inferred from BES data (wave 10) - this time with bootstrapping and a (very!) conservative threshold on inclusion.
+
+Arrows indicate inferred direction of causal influence between variables (thickness relates to size of influence).
+
+

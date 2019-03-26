@@ -1,0 +1,99 @@
+WEDNESDAY BES stuff
+===================
+
+
+* general process for amalgamating multiple waves (have to decide priority to older/newer waves) using fillna with bfill/ffill options
+- .bfill(axis=1).iloc[:, 0]
+
+
+
+
+
+
+
+- trying to moderate memory of BES_redueced dataframes
+
+- panda 0.24 allows for int arrays with nans ... but isn't quite out yet
+
+
+
+
+BES_reduced_with_na.info(memory_usage='deep')
+
+gl_float.apply(pd.to_numeric,downcast='float')
+
+
+
+* update file extraction
+* update grab W14
+
+* update -> make filenames OS-acceptable 
+
+* made (W1->W2) variable names cleare (incl. top category) DONE
+
+
+
+* kind of inconvenient having some variable data in new_old_names and some in var_type
+- e.g. variables that didn't make into BES_reduced
+
+* Run into problems using BES_Panel directly (to whit - it's not reliable!)
+
+* why are we using BES_Panel? Seems like the only reason is
+- easier to infer range than BES_reduced (already normed?)
+- not missing low coverage series
+
+
+* decent key for var types!
+
+
+#
+
+# types
+# -99 - Uncategorised!
+# -5 - id
+# -4 - text
+# -3 - datetimes
+# -2 - ignore_list
+# -1 - weights/wave indicators/campaign day indicators/miilabeluncertainty
+# 0 - personality measures (in steps of .5?), personality_agreeableness ...etc, riskScale
+# 1 - linear category, just use  (some made linear by dropping "Weasel_answers")
+# 2 - categories need to be modified - order changed
+# 3 - set of non-ordered options
+# 4 - indirect variables - did someone fill something in in the free text box or not?
+# 5 - categories need to modified - things removed
+    # not so clear when this one applies - is it supposed to be whenever weasel words are removed?
+    # or when variables are *changed*
+# 6 - categories are integers - should maybe be transformed directly into numbers (mostly "how much money do people need minimum/well off"?)
+# 7 - soc2010(W3-6_comb,W5_only), v1(W5_comb), RandomIDW1(W3-6_comb), mapNames(W3_only), mapNamesW3 (W3-10_comb,W13_comb)        
+# 8 - pano, electoratepcon, <party>sh10pcon, turnout10pcon, winnersh10pcon, runnerupsh10pcon, marginsh10pcon
+#     all relate to parliamentary constituency (pano applies to different waves - rest are about 2010 general election)
+# 9 - 'cciW1W2W3W4W5','ccinoITW1W2W3W4W5','justITW1W2W3W4W5','cciW6W7W8W9','ccinoITW6W7W8W9','justITW6W7W8W9'
+#     floats - otherwise, no idea what these variables are!
+#     they are 0/1 - look like wave related indicator variables
+
+
+# [-5, -4, -3, -2, -1, 4, 7, 8, 9] -> meta list
+# [0, 1, 2, 3, 5, 6] -> 
+
+# ordinal: 0, 1, 2, 5, 6
+# non-ordinal: 3, 7
+
+# load question_categories_correct.csv
+# sanity check by type!
+# turn into list of variables by type
+# 1, 5 handled the same way -> cat.codes
+# 6 -> int()
+# 4 ignored
+# 3 ignored for now (-> vectorized?)
+# 2 direct modification
+
+
+
+conda update --all
+
+CALL "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat"
+
+
+
+
+

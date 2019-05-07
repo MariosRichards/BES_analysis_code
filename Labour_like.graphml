@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key attr.name="Leave_remain" attr.type="string" for="edge" id="d3" />
+  <key attr.name="str_label" attr.type="string" for="edge" id="d2" />
+  <key attr.name="weight" attr.type="float" for="edge" id="d1" />
+  <key attr.name="node_size" attr.type="float" for="node" id="d0" />
+  <graph edgedefault="directed">
+    <node id="Lab2017&#10;Remain&#10;(74%)">
+      <data key="d0">73.6555602231773</data>
+    </node>
+    <node id="Lab2017&#10;Leave&#10;(26%)">
+      <data key="d0">26.344439776822707</data>
+    </node>
+    <node id="Lab&#10;(79%)">
+      <data key="d0">78.91366530502556</data>
+    </node>
+    <node id="Con&#10;(8%)">
+      <data key="d0">7.791137218819149</data>
+    </node>
+    <node id="LD&#10;(28%)">
+      <data key="d0">28.021292383405065</data>
+    </node>
+    <node id="SNP&#10;(23%)">
+      <data key="d0">23.351788521073576</data>
+    </node>
+    <node id="PC&#10;(36%)">
+      <data key="d0">35.77367738822614</data>
+    </node>
+    <node id="UKIP&#10;(6%)">
+      <data key="d0">6.113399947794074</data>
+    </node>
+    <node id="Grn&#10;(31%)">
+      <data key="d0">31.313621245520878</data>
+    </node>
+    <edge source="Lab2017&#10;Remain&#10;(74%)" target="Lab&#10;(79%)">
+      <data key="d1">6.0560743231063725</data>
+      <data key="d2">82%</data>
+      <data key="d3">Lab2017
+Remain
+(74%)</data>
+    </edge>
+    <edge source="Lab2017&#10;Remain&#10;(74%)" target="Con&#10;(8%)">
+      <data key="d1">0.46166739343114493</data>
+      <data key="d2">6%</data>
+      <data key="d3">Lab2017
+Remain
+(74%)</data>
+    </edge>
+    <edge source="Lab2017&#10;Remain&#10;(74%)" target="LD&#10;(28%)">
+      <data key="d1">2.4674334371816036</data>
+      <data key="d2">33%</data>
+      <data key="d3">Lab2017
+Remain
+(74%)</data>
+    </edge>
+    <edge source="Lab2017&#10;Remain&#10;(74%)" target="SNP&#10;(23%)">
+      <data key="d1">1.7374988903055288</data>
+      <data key="d2">23%</data>
+      <data key="d3">Lab2017
+Remain
+(74%)</data>
+    </edge>
+    <edge source="Lab2017&#10;Remain&#10;(74%)" target="PC&#10;(36%)">
+      <data key="d1">2.815806429632578</data>
+      <data key="d2">40%</data>
+      <data key="d3">Lab2017
+Remain
+(74%)</data>
+    </edge>
+    <edge source="Lab2017&#10;Remain&#10;(74%)" target="UKIP&#10;(6%)">
+      <data key="d1">0.12457096403310115</data>
+      <data key="d2">2%</data>
+      <data key="d3">Lab2017
+Remain
+(74%)</data>
+    </edge>
+    <edge source="Lab2017&#10;Remain&#10;(74%)" target="Grn&#10;(31%)">
+      <data key="d1">2.7200344136498518</data>
+      <data key="d2">37%</data>
+      <data key="d3">Lab2017
+Remain
+(74%)</data>
+    </edge>
+    <edge source="Lab2017&#10;Leave&#10;(26%)" target="Lab&#10;(79%)">
+      <data key="d1">1.8352922073961833</data>
+      <data key="d2">70%</data>
+      <data key="d3">Lab2017
+Leave
+(26%)</data>
+    </edge>
+    <edge source="Lab2017&#10;Leave&#10;(26%)" target="Con&#10;(8%)">
+      <data key="d1">0.3174463284507699</data>
+      <data key="d2">12%</data>
+      <data key="d3">Lab2017
+Leave
+(26%)</data>
+    </edge>
+    <edge source="Lab2017&#10;Leave&#10;(26%)" target="LD&#10;(28%)">
+      <data key="d1">0.33469580115890324</data>
+      <data key="d2">13%</data>
+      <data key="d3">Lab2017
+Leave
+(26%)</data>
+    </edge>
+    <edge source="Lab2017&#10;Leave&#10;(26%)" target="SNP&#10;(23%)">
+      <data key="d1">0.5976799618018288</data>
+      <data key="d2">23%</data>
+      <data key="d3">Lab2017
+Leave
+(26%)</data>
+    </edge>
+    <edge source="Lab2017&#10;Leave&#10;(26%)" target="PC&#10;(36%)">
+      <data key="d1">0.7615613091900356</data>
+      <data key="d2">26%</data>
+      <data key="d3">Lab2017
+Leave
+(26%)</data>
+    </edge>
+    <edge source="Lab2017&#10;Leave&#10;(26%)" target="UKIP&#10;(6%)">
+      <data key="d1">0.4867690307463062</data>
+      <data key="d2">18%</data>
+      <data key="d3">Lab2017
+Leave
+(26%)</data>
+    </edge>
+    <edge source="Lab2017&#10;Leave&#10;(26%)" target="Grn&#10;(31%)">
+      <data key="d1">0.41132771090223574</data>
+      <data key="d2">16%</data>
+      <data key="d3">Lab2017
+Leave
+(26%)</data>
+    </edge>
+  </graph>
+</graphml>

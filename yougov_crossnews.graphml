@@ -1,237 +1,57 @@
 <?xml version='1.0' encoding='utf-8'?>
 <graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
-  <key attr.name="from" attr.type="string" for="edge" id="d3" />
-  <key attr.name="weight" attr.type="double" for="edge" id="d2" />
-  <key attr.name="popularity" attr.type="double" for="node" id="d1" />
-  <key attr.name="name" attr.type="string" for="node" id="d0" />
+  <key attr.name="weight" attr.type="float" for="edge" id="d0" />
   <graph edgedefault="directed">
-    <node id="FT">
-      <data key="d0">FT</data>
-      <data key="d1">138.0</data>
-    </node>
-    <node id="Guardian">
-      <data key="d0">Guardian</data>
-      <data key="d1">491.0</data>
-    </node>
-    <node id="Independent">
-      <data key="d0">Independent</data>
-      <data key="d1">368.0</data>
-    </node>
-    <node id="i">
-      <data key="d0">i</data>
-      <data key="d1">126.0</data>
-    </node>
-    <node id="Telegraph">
-      <data key="d0">Telegraph</data>
-      <data key="d1">368.0</data>
-    </node>
-    <node id="Times">
-      <data key="d0">Times</data>
-      <data key="d1">211.0</data>
-    </node>
-    <node id="Express">
-      <data key="d0">Express</data>
-      <data key="d1">207.0</data>
-    </node>
-    <node id="Mirror">
-      <data key="d0">Mirror</data>
-      <data key="d1">305.0</data>
-    </node>
-    <node id="Daily Mail">
-      <data key="d0">Daily Mail</data>
-      <data key="d1">475.0</data>
-    </node>
-    <node id="Sun">
-      <data key="d0">Sun</data>
-      <data key="d1">254.0</data>
-    </node>
-    <node id="Star">
-      <data key="d0">Star</data>
-      <data key="d1">79.0</data>
-    </node>
-    <edge source="FT" target="Guardian">
-      <data key="d2">0.1425661914460285</data>
-      <data key="d3">FT</data>
+    <node id="Labour Remain" />
+    <node id="Labour Leave" />
+    <node id="Lab" />
+    <node id="Con" />
+    <node id="LD" />
+    <node id="SNP" />
+    <node id="PC" />
+    <node id="UKIP" />
+    <node id="Grn" />
+    <edge source="Labour Remain" target="Lab">
+      <data key="d0">6.0560743231063725</data>
     </edge>
-    <edge source="FT" target="Independent">
-      <data key="d2">0.13043478260869565</data>
-      <data key="d3">FT</data>
+    <edge source="Labour Remain" target="Con">
+      <data key="d0">0.46166739343114493</data>
     </edge>
-    <edge source="FT" target="i">
-      <data key="d2">0.1746031746031746</data>
-      <data key="d3">FT</data>
+    <edge source="Labour Remain" target="LD">
+      <data key="d0">2.4674334371816036</data>
     </edge>
-    <edge source="FT" target="Telegraph">
-      <data key="d2">0.15489130434782608</data>
-      <data key="d3">FT</data>
+    <edge source="Labour Remain" target="SNP">
+      <data key="d0">1.7374988903055288</data>
     </edge>
-    <edge source="FT" target="Times">
-      <data key="d2">0.1895734597156398</data>
-      <data key="d3">FT</data>
+    <edge source="Labour Remain" target="PC">
+      <data key="d0">2.815806429632578</data>
     </edge>
-    <edge source="FT" target="Express">
-      <data key="d2">0.10144927536231885</data>
-      <data key="d3">FT</data>
+    <edge source="Labour Remain" target="UKIP">
+      <data key="d0">0.12457096403310115</data>
     </edge>
-    <edge source="Guardian" target="FT">
-      <data key="d2">0.11594202898550725</data>
-      <data key="d3">Guardian</data>
+    <edge source="Labour Remain" target="Grn">
+      <data key="d0">2.7200344136498518</data>
     </edge>
-    <edge source="Guardian" target="Independent">
-      <data key="d2">0.15217391304347827</data>
-      <data key="d3">Guardian</data>
+    <edge source="Labour Leave" target="Lab">
+      <data key="d0">1.8352922073961833</data>
     </edge>
-    <edge source="Guardian" target="i">
-      <data key="d2">0.15079365079365079</data>
-      <data key="d3">Guardian</data>
+    <edge source="Labour Leave" target="Con">
+      <data key="d0">0.3174463284507699</data>
     </edge>
-    <edge source="Guardian" target="Telegraph">
-      <data key="d2">0.10054347826086957</data>
-      <data key="d3">Guardian</data>
+    <edge source="Labour Leave" target="LD">
+      <data key="d0">0.33469580115890324</data>
     </edge>
-    <edge source="Independent" target="FT">
-      <data key="d2">0.13043478260869565</data>
-      <data key="d3">Independent</data>
+    <edge source="Labour Leave" target="SNP">
+      <data key="d0">0.5976799618018288</data>
     </edge>
-    <edge source="Independent" target="Guardian">
-      <data key="d2">0.1710794297352342</data>
-      <data key="d3">Independent</data>
+    <edge source="Labour Leave" target="PC">
+      <data key="d0">0.7615613091900356</data>
     </edge>
-    <edge source="Independent" target="i">
-      <data key="d2">0.21428571428571427</data>
-      <data key="d3">Independent</data>
+    <edge source="Labour Leave" target="UKIP">
+      <data key="d0">0.4867690307463062</data>
     </edge>
-    <edge source="Independent" target="Telegraph">
-      <data key="d2">0.13043478260869565</data>
-      <data key="d3">Independent</data>
-    </edge>
-    <edge source="Independent" target="Times">
-      <data key="d2">0.11374407582938388</data>
-      <data key="d3">Independent</data>
-    </edge>
-    <edge source="Independent" target="Mirror">
-      <data key="d2">0.11147540983606558</data>
-      <data key="d3">Independent</data>
-    </edge>
-    <edge source="i" target="FT">
-      <data key="d2">0.21014492753623187</data>
-      <data key="d3">i</data>
-    </edge>
-    <edge source="i" target="Guardian">
-      <data key="d2">0.1629327902240326</data>
-      <data key="d3">i</data>
-    </edge>
-    <edge source="i" target="Independent">
-      <data key="d2">0.20108695652173914</data>
-      <data key="d3">i</data>
-    </edge>
-    <edge source="i" target="Telegraph">
-      <data key="d2">0.11956521739130435</data>
-      <data key="d3">i</data>
-    </edge>
-    <edge source="i" target="Times">
-      <data key="d2">0.14691943127962084</data>
-      <data key="d3">i</data>
-    </edge>
-    <edge source="i" target="Mirror">
-      <data key="d2">0.12459016393442623</data>
-      <data key="d3">i</data>
-    </edge>
-    <edge source="Telegraph" target="FT">
-      <data key="d2">0.13043478260869565</data>
-      <data key="d3">Telegraph</data>
-    </edge>
-    <edge source="Telegraph" target="Guardian">
-      <data key="d2">0.12016293279022404</data>
-      <data key="d3">Telegraph</data>
-    </edge>
-    <edge source="Telegraph" target="Independent">
-      <data key="d2">0.11684782608695653</data>
-      <data key="d3">Telegraph</data>
-    </edge>
-    <edge source="Telegraph" target="Times">
-      <data key="d2">0.14218009478672985</data>
-      <data key="d3">Telegraph</data>
-    </edge>
-    <edge source="Telegraph" target="Daily Mail">
-      <data key="d2">0.12</data>
-      <data key="d3">Telegraph</data>
-    </edge>
-    <edge source="Telegraph" target="Express">
-      <data key="d2">0.14492753623188406</data>
-      <data key="d3">Telegraph</data>
-    </edge>
-    <edge source="Times" target="FT">
-      <data key="d2">0.18115942028985507</data>
-      <data key="d3">Times</data>
-    </edge>
-    <edge source="Times" target="Guardian">
-      <data key="d2">0.11405295315682282</data>
-      <data key="d3">Times</data>
-    </edge>
-    <edge source="Times" target="Independent">
-      <data key="d2">0.10054347826086957</data>
-      <data key="d3">Times</data>
-    </edge>
-    <edge source="Times" target="i">
-      <data key="d2">0.10317460317460317</data>
-      <data key="d3">Times</data>
-    </edge>
-    <edge source="Times" target="Telegraph">
-      <data key="d2">0.1331521739130435</data>
-      <data key="d3">Times</data>
-    </edge>
-    <edge source="Express" target="Telegraph">
-      <data key="d2">0.13858695652173914</data>
-      <data key="d3">Express</data>
-    </edge>
-    <edge source="Express" target="Daily Mail">
-      <data key="d2">0.16421052631578947</data>
-      <data key="d3">Express</data>
-    </edge>
-    <edge source="Express" target="Mirror">
-      <data key="d2">0.12786885245901639</data>
-      <data key="d3">Express</data>
-    </edge>
-    <edge source="Express" target="Sun">
-      <data key="d2">0.14173228346456693</data>
-      <data key="d3">Express</data>
-    </edge>
-    <edge source="Express" target="Star">
-      <data key="d2">0.189873417721519</data>
-      <data key="d3">Express</data>
-    </edge>
-    <edge source="Mirror" target="Sun">
-      <data key="d2">0.12992125984251968</data>
-      <data key="d3">Mirror</data>
-    </edge>
-    <edge source="Mirror" target="Star">
-      <data key="d2">0.189873417721519</data>
-      <data key="d3">Mirror</data>
-    </edge>
-    <edge source="Sun" target="Mirror">
-      <data key="d2">0.10819672131147541</data>
-      <data key="d3">Sun</data>
-    </edge>
-    <edge source="Sun" target="Star">
-      <data key="d2">0.189873417721519</data>
-      <data key="d3">Sun</data>
-    </edge>
-    <edge source="Star" target="Daily Mail">
-      <data key="d2">0.12210526315789473</data>
-      <data key="d3">Star</data>
-    </edge>
-    <edge source="Star" target="Mirror">
-      <data key="d2">0.20327868852459016</data>
-      <data key="d3">Star</data>
-    </edge>
-    <edge source="Star" target="Sun">
-      <data key="d2">0.2677165354330709</data>
-      <data key="d3">Star</data>
-    </edge>
-    <edge source="Star" target="Express">
-      <data key="d2">0.1497584541062802</data>
-      <data key="d3">Star</data>
+    <edge source="Labour Leave" target="Grn">
+      <data key="d0">0.41132771090223574</data>
     </edge>
   </graph>
 </graphml>

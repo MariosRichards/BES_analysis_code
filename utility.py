@@ -35,7 +35,7 @@ def intersection(lst1, lst2):
   
     # Use of hybrid method 
     temp = set(lst2) 
-    lst3 = [value for value in lst1 if value in temp] 
+    lst3 = [value for value in set(lst1) if value in temp] 
     return lst3 
 
 def amalgamate_waves(df, pattern, forward_fill=True, specify_wave_order = None):
@@ -62,7 +62,7 @@ def amalgamate_waves(df, pattern, forward_fill=True, specify_wave_order = None):
     # update name
     re.match("(.*?)W\d+","climateChangeW11").groups()[0]
     print("Amalgamating variables: ")
-    print(df_cols_dict)
+    print(df_cols_dict,df_cols)
     name_stub = re.match("(.*?)W\d+",  list(df_cols_dict.values())[0]).groups()[0]
     latest_series.name = name_stub+"W"+"&".join([str(x) for x in sorted(df_cols_dict.keys())])
     
@@ -344,6 +344,8 @@ def get_pruned(x):
 # case sensitive search/match
 # return with notnull count
 # accept a mask to filter notnulls by
+
+flatten = lambda l: [item for sublist in l for item in sublist]
 
 def match(df, pattern, case_sensitive=True, mask=None):
     if mask is None:

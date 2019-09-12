@@ -633,4 +633,296 @@ def nice_bar_plot(ser1, ser2, output_folder, BES_Panel, normalize = 'columns', s
 def sort_by_wave(lst):
     dict_by_wave = {int(x.split("W")[-1]):x for x in lst}
     return [dict_by_wave[x] for x in sorted(dict_by_wave.keys())]
+
+
+
+       
+# transform a column of data until it's as approximately normally distributed as can be
+# because most Machine Learning/Statistical methods assume data is ~normally distributed
+# basically, what people normally do randomly logging/square-rooting data, only automatically
+
+from scipy import stats
+def box_cox_normalise(ser, offset = 3, bw='scott'):
+    
+    
+    # box cox lr_scale
+    fig = plt.figure()
+    ax1 = fig.add_subplot(311)
+    x = ser.values +ser.values.min()+offset
+    prob = stats.probplot(x, dist=stats.norm, plot=ax1)
+    ax1.set_xlabel('')
+    ax1.set_title('Probplot against normal distribution')
+    ax2 = fig.add_subplot(312)
+    xt, _ = stats.boxcox(x)
+    prob = stats.probplot(xt, dist=stats.norm, plot=ax2)
+    ax2.set_title('Probplot after Box-Cox transformation')
+    ax3 = fig.add_subplot(313)
+    xt_std = (xt-xt.mean())/xt.std()
+    sns.kdeplot(xt_std, ax=ax3, bw=bw, cut=0);
+    sns.kdeplot(np.random.normal(size=len(xt_std)), ax=ax3, cut=0);
+    plt.suptitle(ser.name)
+    return xt_std
+    
+
+def corrank(X):
+    import itertools
+    df = pd.DataFrame([[(i,j),X.loc[i,j]] for i,j in list(itertools.combinations(X.corr(), 2))],columns=['pairs','corr'])    
+    print(df.sort_values(by='corr',ascending=False).dropna())
+    
+    
+# messy but time saver
+    
+   
+import shap
+import xgboost as xgb
+from sklearn.preprocessing import Imputer
+from sklearn.pipeline import Pipeline
+from sklearn.model_selection import cross_val_score, GridSearchCV, train_test_split
+from sklearn.linear_model import ElasticNet
+from xgboost import XGBClassifier, XGBRegressor
+from sklearn.metrics import accuracy_score, mean_squared_error, mean_absolute_error, explained_variance_score, r2_score
+
+def shap_outputs(shap_values, train, target_var, output_subfolder,
+                 dependence_plots = False, threshold = .1, min_features = 30,
+                 title=None):
+
+    #################################
+#     threshold = .1
+#     min_features = 30
+    global_shap_vals = np.abs(shap_values).mean(0)#[::-1]
+    n_top_features = max( sum(global_shap_vals[np.argsort(global_shap_vals)]>=threshold),
+                          min_features )
+#     if n_top_features <min_features:
+#         n_top_features = min_features
+
+    ##########################
+
+    inds = np.argsort(global_shap_vals)[-n_top_features:]
+
+    y_pos = np.arange(n_top_features)
+    plt.figure(figsize=(16,10))
+    plt.title(target_var);
+    plt.barh(y_pos, global_shap_vals[inds], color="#1E88E5")
+    plt.yticks(y_pos, train.columns[inds])
+    plt.gca().spines['right'].set_visible(False)
+    plt.gca().spines['top'].set_visible(False)
+    plt.xlabel("mean SHAP value magnitude (change in log odds)")
+    plt.gcf().set_size_inches(6, 4.5)
+
+    plt.savefig( output_subfolder + "mean_impact" + ".png", bbox_inches='tight' )
+
+    plt.show()
+
+    ####################
+    
+    fig = plt.figure()
+    if title is None:
+        fig.suptitle(target_var);
+    else:
+        fig.suptitle(title);
         
+    shap.summary_plot( shap_values, train, max_display=n_top_features, plot_type='dot' );
+    shap_problem = np.isnan(np.abs(shap_values).mean(0)).any()
+    if shap_problem:
+        summary_text = "summary_plot(approx)"
+    else:
+        summary_text = "summary_plot"
+    
+    fig.savefig( output_subfolder + summary_text + ".png", bbox_inches='tight' )
+    
+        ##################
+    if dependence_plots:
+        count = 0
+        for name in train.columns[inds[::-1]]:
+            fig = plt.figure(figsize = (16,10))
+            fig.suptitle(target_var);
+            shap.dependence_plot(name, shap_values, train)
+            clean_filename(name)
+            fig.savefig(output_subfolder + "featureNo "+str(count) + " " + clean_filename(name) + ".png", bbox_inches='tight')
+            count = count + 1
+            
+def get_non_overfit_settings( train, target, alg, seed, early_stoppping_fraction, test_size, eval_metric, verbose = True,
+                              sample_weights = None ):
+
+    if sample_weights is not None:
+
+        X_train, X_test, y_train, y_test = train_test_split( pd.concat( [train,sample_weights], axis=1 ),
+                                                             target, test_size=test_size,
+                                                             random_state=seed, stratify=pd.qcut( pd.Series( target ),
+                                                                                                  q=10,
+                                                                                                  duplicates = 'drop',
+                                                                                                ).cat.codes )
+
+        eval_set = [(X_test, y_test)]
+
+        sample_weight = X_train[weight_var].values
+        sample_weight_eval_set = X_test[weight_var].values
+        X_train.drop(weight_var, axis=1, inplace=True)
+        X_test.drop(weight_var, axis=1, inplace=True)
+
+        alg.fit(X_train, y_train, eval_metric=eval_metric, 
+                early_stopping_rounds = alg.get_params()['n_estimators']*early_stoppping_fraction,
+                eval_set=eval_set, verbose=True, sample_weight = sample_weight)
+        
+    else:
+        X_train, X_test, y_train, y_test = train_test_split( train,
+                                                             target, test_size=test_size,
+                                                             random_state=seed, stratify=pd.qcut( pd.Series( target ),
+                                                                                                  q=10,
+                                                                                                  duplicates = 'drop',
+                                                                                                ).cat.codes )
+          
+            
+
+        eval_set = [(X_test, y_test)]
+
+        alg.fit(X_train, y_train, eval_metric=eval_metric, 
+                early_stopping_rounds = alg.get_params()['n_estimators']*early_stoppping_fraction,
+                eval_set=eval_set, verbose=True )        
+        
+
+    # make predictions for test data
+    predictions = alg.predict(X_test)
+
+    # evaluate predictions
+    MSE = mean_squared_error(y_test, predictions)
+    MAE = mean_absolute_error(y_test, predictions)
+    EV = explained_variance_score(y_test, predictions)
+    R2 = r2_score(y_test, predictions)
+
+    print("MSE: %.2f, MAE: %.2f, EV: %.2f, R2: %.2f" % (MSE, MAE, EV, R2) )
+    alg.set_params(n_estimators=alg.best_iteration)            
+    
+global var_list
+def xgboost_run(title, subdir=None, min_features=30, dependence_plots=False , output_folder=".."+os.sep+"Output"+os.sep,Treatment="default"):
+    # for target_var,base_var in zip(var_list,base_list):
+    treatment_subfolder = create_subdir(output_folder,Treatment)
+
+    for target_var in var_list:
+        if sample_wts:
+            wave_no = get_wave_no( target_var )
+            weight_var = num_to_weight[wave_no]    
+            print( target_var, wave_no )
+
+        target = create_target(target_var)
+        mask   = target.notnull()
+        if optional_mask & sample_wts:
+            mask = mask&optional_mask_fn(wave_no)
+        else:
+            mask = mask&optional_mask_fn()
+        target = target[mask]
+
+        if sum(mask) < minimum_sample:
+            continue
+
+        train = create_train(drop_other_waves)
+
+        if subdir is None:
+            output_subfolder = create_subdir(treatment_subfolder,target_var)
+        else:
+            output_subfolder = create_subdir(treatment_subfolder,subdir)
+
+        if sample_wts:
+            sample_weights = weights[weight_var][mask]
+            print("missing vals in sample weights: "+ str( sample_weights.isnull().sum() ) )
+            sample_weights = sample_weights.fillna(sample_weights.median())
+        else:
+            sample_weights = None
+    #         get_non_overfit_settings( train, target, alg, seed, early_stoppping_fraction, test_size, sample_weights )
+    #         # fit to full dataset at non-overfitting level
+    #         alg.fit(train, target, verbose = True, sample_weight = sample_weights)        
+    #     else:
+
+        get_non_overfit_settings( train, target, alg, seed, early_stoppping_fraction, test_size, eval_metric, verbose = True,
+                                  sample_weights=sample_weights )
+        # fit to full dataset at non-overfitting level
+        alg.fit(train, target, verbose = True, sample_weight = sample_weights)
+
+
+    #################
+
+        explainer = shap.TreeExplainer(alg)
+        shap_values = explainer.shap_values(train)
+        
+#         shap_values = shap.TreeExplainer(alg).shap_values(train);
+
+        shap_problem = np.isnan(np.abs(shap_values).mean(0)).any()
+        if shap_problem:
+            print("hit problem!")
+            shap_values = shap.TreeExplainer(alg).shap_values(train, approximate=True);
+
+        shap_outputs(shap_values, train, target_var, output_subfolder, threshold = .1,
+                     min_features = min_features, title=title,
+                     dependence_plots=dependence_plots)
+        
+    return (explainer, shap_values)
+
+
+
+
+
+
+
+############################ BASIC SETTINGS
+
+from sklearn import datasets
+from sklearn.decomposition import PCA, IncrementalPCA, NMF, TruncatedSVD, FastICA, FactorAnalysis, SparsePCA
+from sklearn.preprocessing import StandardScaler
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
+    
+optional_mask = False
+sample_wts = False
+drop_other_waves = False
+
+
+# Leavers only
+def optional_mask_fn(wave=[]):
+    return 1
+
+
+
+def create_train(drop_other_waves):
+    keep_list = df.columns
+    
+    if drop_other_waves:
+        # drop variables from other waves
+        other_waves = get_other_wave_pattern(wave_no, max_wave, num_to_wave)
+        keep_list = [x for x in keep_list if not re.search( other_waves, x )]
+        
+    # drop key variables
+    keep_list = [x for x in keep_list if not any([var_stub in x for var_stub in var_stub_list])] 
+    
+    return df[keep_list]
+
+
+def create_target(target_var):
+    
+    return df[target_var]
+
+objective = 'reg:linear'
+eval_metric = 'rmse'
+
+seed = 27
+test_size = 0.33
+minimum_sample = 100
+early_stoppping_fraction = .1
+
+alg = XGBRegressor(
+ learning_rate =0.05,
+ n_estimators= 508,
+ max_depth=6,
+ min_child_weight=6,
+ gamma=0,
+ subsample=0.8,
+ colsample_bytree=0.6,
+ colsample_bylevel=.85,
+ objective= objective,
+ scale_pos_weight=1.0,
+ reg_alpha=5e-05,
+ reg_lambda=1,
+ njobs=3,
+ seed=seed**2)
+
+
+
+

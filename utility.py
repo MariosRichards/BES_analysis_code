@@ -166,7 +166,7 @@ def setup_directories():
 
 def display_components(n_components, decomp, cols, BES_decomp, manifest, 
                        save_folder = False, show_first_x_comps=4,
-                       show_histogram=True, flip_axes=True):
+                       show_histogram=True, flip_axes=True, max_comp=20, max_var_per_comp = 30):
     
     if hasattr(decomp, 'coef_'):
         decomp_components = decomp.coef_
@@ -176,7 +176,7 @@ def display_components(n_components, decomp, cols, BES_decomp, manifest,
         raise ValueError('no component attribute in decomp')    
 
     # hardcoded at 20?    
-    n_comps = min(n_components,20)
+    n_comps = min(n_components,max_comp)
     comp_labels = {}
     comp_dict = {}
 
@@ -215,7 +215,7 @@ def display_components(n_components, decomp, cols, BES_decomp, manifest,
         comp_ax.set_title( dataset_description + "\n" + title )
         comp_ax.set_xlabel("variable coeffs")
         xlim = (min(comp["components_"].min(),-1) , max(comp["components_"].max(),1) )
-        comp["components_"].tail(30).plot( kind='barh', ax=comp_ax, figsize=(10,6), xlim=xlim )
+        comp["components_"].tail(max_var_per_comp).plot( kind='barh', ax=comp_ax, figsize=(10,6), xlim=xlim )
         dataset_citation = "Source: " + manifest["Citation"].values[0]
 
         if (save_folder != False):

@@ -1,0 +1,633 @@
+constituency,gssId,PANO,declarationTime,partyClassNew,partyClassOld,partyCodeNew,partyCodeOld,cardBanner,cardMessage,cardSecondary,altCardBanner,status,declared,majorityLastPct,minsAfter10
+Aldershot,E14000530,7,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,23.438202,300
+Aldridge-Brownhills,E14000531,8,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,35.558593,300
+Altrincham & Sale West,E14000532,9,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,12.17276,360
+Amber Valley,E14000533,11,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,18.117919,300
+Arundel & South Downs,E14000534,18,Expected at 05:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,39.635887,420
+Ashfield,E14000535,19,Expected at 05:00,con,lab,CON,LAB,Likely Conservative gain from Labour,99+% chance,,,forecast,FALSE,0.882123,420
+Ashford,E14000536,20,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,29.188864,300
+Aylesbury,E14000538,22,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,24.932378,360
+Banbury,E14000539,26,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,20.140671,360
+Barking,E14000540,28,Expected at 03:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,45.319742,300
+Barnsley Central,E14000541,29,Expected at 02:30,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,39.772814,270
+Barnsley East,E14000542,30,Expected at 02:30,lab,lab,LAB,LAB,Likely Labour hold,99% chance,1% chance of Conservative gain from Labour,,forecast,FALSE,32.575535,270
+Barrow & Furness,E14000543,31,Expected at 05:30,con,lab,CON,LAB,Likely Conservative gain from Labour,99+% chance,,,forecast,FALSE,0.439168,450
+Basildon & Billericay,E14000544,32,Expected at 01:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,29.832139,180
+Basingstoke,E14000545,34,Expected at 05:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,16.915654,420
+Bassetlaw,E14000546,35,Expected at 04:00,con,lab,CON,LAB,Likely Conservative gain from Labour,99% chance,1% chance of Labour hold,,forecast,FALSE,9.286124,360
+Bath,E14000547,36,Expected at 03:00,ld,ld,LD,LD,Likely Liberal Democrat hold,99+% chance,,,forecast,FALSE,11.483775,300
+Batley & Spen,E14000548,37,Expected at 04:00,tctf,lab,,LAB,Too close to forecast winning party,"72% chance of Conservative gain, 28% chance of Labour hold",,,forecast,FALSE,16.662328,360
+Battersea,E14000549,38,Expected at 02:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,4.3881,240
+Beaconsfield,E14000550,39,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,43.804883,300
+Beckenham,E14000551,40,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,29.221383,360
+Bedford,E14000552,41,Expected at 03:00,con,lab,CON,LAB,Likely Conservative gain from Labour,99+% chance,,,forecast,FALSE,1.627475,300
+Bermondsey & Old Southwark,E14000553,49,Expected at 05:00,lab,lab,LAB,LAB,Likely Labour hold,99% chance,1% chance of Liberal Democrat gain from Labour,,forecast,FALSE,22.166402,420
+Berwick-Upon-Tweed,E14000554,50,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,27.909125,360
+Bethnal Green & Bow,E14000555,52,Expected at 05:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,59.160886,420
+Beverley & Holderness,E14000556,53,Expected at 04:30,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,25.238147,390
+Bexhill & Battle,E14000557,54,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,37.269639,360
+Bexleyheath & Crayford,E14000558,55,Expected at 03:30,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,20.077895,330
+Birkenhead,E14000559,56,Expected at 02:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,58.433914,240
+Birmingham Edgbaston,E14000560,57,Expected at 03:00,lab,lab,LAB,LAB,Likely Labour hold,95% chance,5% chance of Conservative gain from Labour,,forecast,FALSE,15.860314,300
+Birmingham Erdington,E14000561,58,Expected at 03:00,tctf,lab,,LAB,Too close to forecast winning party,"55% chance of Conservative gain, 45% chance of Labour hold",,,forecast,FALSE,19.574388,300
+Birmingham Hall Green,E14000562,59,Expected at 04:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,62.50046,360
+Birmingham Hodge Hill,E14000563,60,Expected at 04:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,66.875027,360
+Birmingham Ladywood,E14000564,61,Expected at 03:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,69.513642,300
+Birmingham Northfield,E14000565,62,Expected at 03:00,con,lab,CON,LAB,Likely Conservative gain from Labour,98% chance,2% chance of Labour hold,,forecast,FALSE,10.523586,300
+Birmingham Perry Barr,E14000566,63,Expected at 04:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,41.593321,360
+Birmingham Selly Oak,E14000567,64,Expected at 04:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,31.044197,360
+Birmingham Yardley,E14000568,65,Expected at 03:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,37.24327,300
+Bishop Auckland,E14000569,66,Expected at 03:00,con,lab,CON,LAB,Likely Conservative gain from Labour,99+% chance,,,forecast,FALSE,1.159862,300
+Blackburn,E14000570,67,Expected at 02:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,42.866463,240
+Blackley & Broughton,E14000571,68,Expected at 04:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,48.864458,360
+Blackpool North & Cleveleys,E14000572,69,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,4.933304,300
+Blackpool South,E14000573,70,Expected at 03:00,con,lab,CON,LAB,Likely Conservative gain from Labour,99+% chance,,,forecast,FALSE,7.218265,300
+Blaydon,E14000574,72,Expected at 02:00,lab,lab,LAB,LAB,Possible Labour hold,94% chance,6% chance of Conservative gain from Labour,,forecast,FALSE,28.028034,240
+Blyth Valley,E14000575,73,Expected at 05:00,tctf,lab,,LAB,Too close to forecast winning party,"56% chance of Conservative gain, 44% chance of Labour hold",,,forecast,FALSE,18.627912,420
+Bognor Regis & Littlehampton,E14000576,74,Expected at 04:30,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,34.066833,390
+Bolsover,E14000577,75,Expected at 05:00,con,lab,CON,LAB,Possible Conservative gain from Labour,94% chance,6% chance of Labour hold,,forecast,FALSE,11.367398,420
+Bolton North East,E14000578,76,Expected at 03:00,con,lab,CON,LAB,Likely Conservative gain from Labour,99% chance,1% chance of Labour hold,,forecast,FALSE,8.403603,300
+Bolton South East,E14000579,77,Expected at 03:00,lab,lab,LAB,LAB,Likely Labour hold,98% chance,2% chance of Conservative gain from Labour,,forecast,FALSE,31.01387,300
+Bolton West,E14000580,78,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,97% chance,3% chance of Labour gain from Conservative,,forecast,FALSE,1.833353,300
+Bootle,E14000581,79,Expected at 02:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,71.985364,240
+Boston & Skegness,E14000582,80,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,38.648289,360
+Bosworth,E14000583,81,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,32.671628,360
+Bournemouth East,E14000584,82,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,16.325229,360
+Bournemouth West,E14000585,83,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,17.325365,360
+Bracknell,E14000586,84,Expected at 02:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,28.655264,240
+Bradford East,E14000587,85,Expected at 05:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,45.022138,420
+Bradford South,E14000588,86,Expected at 05:00,tctf,lab,,LAB,Too close to forecast winning party,"72% chance of Conservative gain, 28% chance of Labour hold",,,forecast,FALSE,16.321957,420
+Bradford West,E14000589,87,Expected at 05:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,48.10666,420
+Braintree,E14000590,88,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,35.206207,360
+Brent Central,E14000591,90,Expected at 04:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,53.535643,360
+Brent North,E14000592,91,Expected at 04:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,30.226419,360
+Brentford & Isleworth,E14000593,92,Expected at 04:00,lab,lab,LAB,LAB,Likely Labour hold,99% chance,1% chance of Conservative gain from Labour,,forecast,FALSE,19.766668,360
+Brentwood & Ongar,E14000594,93,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,45.363825,300
+Brigg & Goole,E14000596,96,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,27.438578,360
+Brighton Kemptown,E14000597,97,Expected at 07:00,lab,lab,LAB,LAB,Likely Labour hold,99% chance,1% chance of Conservative gain from Labour,,forecast,FALSE,20.054057,540
+Brighton Pavilion,E14000598,98,Expected at 07:00,grn,grn,GRN,GRN,Likely Green hold,99+% chance,,,forecast,FALSE,25.480611,540
+Bristol East,E14000599,99,Expected at 03:00,lab,lab,LAB,LAB,Possible Labour hold,80% chance,20% chance of Conservative gain from Labour,,forecast,FALSE,26.366661,300
+Bristol North West,E14000600,100,Expected at 03:00,tctf,lab,,LAB,Too close to forecast winning party,"55% chance of Labour hold, 45% chance of Conservative gain",,,forecast,FALSE,8.80102,300
+Bristol South,E14000601,101,Expected at 03:00,lab,lab,LAB,LAB,Likely Labour hold,96% chance,4% chance of Conservative gain from Labour,,forecast,FALSE,29.397595,300
+Bristol West,E14000602,102,Expected at 03:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,52.139426,300
+Broadland,E14000603,103,Expected at 05:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,28.25749,420
+Bromley & Chislehurst,E14000604,104,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,20.552055,360
+Bromsgrove,E14000605,105,Expected at 03:30,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,30.668024,330
+Broxbourne,E14000606,106,Expected at 01:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,33.256818,180
+Broxtowe,E14000607,107,Expected at 05:00,con,con,CON,CON,Likely Conservative hold,97% chance,3% chance of Labour gain from Conservative,,forecast,FALSE,1.554731,420
+Buckingham,E14000608,108,Expected at 05:00,con,spe,CON,SPE,Likely Conservative win,98% chance,2% chance of Liberal Democrat win,,forecast,FALSE,48.833501,420
+Burnley,E14000609,109,Expected at 02:00,tctf,lab,,LAB,Too close to forecast winning party,"54% chance of Conservative gain, 46% chance of Labour hold",,,forecast,FALSE,15.768181,240
+Burton,E14000610,110,Expected at 02:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,20.129831,240
+Bury North,E14000611,111,Expected at 02:00,tctf,lab,,LAB,Too close to forecast winning party,"55% chance of Labour hold, 45% chance of Conservative gain",,,forecast,FALSE,9.13304,240
+Bury South,E14000612,112,Expected at 02:00,tctf,lab,,LAB,Too close to forecast winning party,"74% chance of Labour hold, 26% chance of Conservative gain",,,forecast,FALSE,11.698372,240
+Bury St Edmunds,E14000613,113,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,29.666988,360
+Calder Valley,E14000614,116,Expected at 05:00,con,con,CON,CON,Likely Conservative hold,95% chance,5% chance of Labour gain from Conservative,,forecast,FALSE,1.049023,420
+Camberwell & Peckham,E14000615,117,Expected at 05:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,64.996865,420
+Camborne & Redruth,E14000616,118,Expected at 05:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,3.254499,420
+Cambridge,E14000617,119,Expected at 03:00,lab,lab,LAB,LAB,Likely Labour hold,99% chance,1% chance of Liberal Democrat gain from Labour,,forecast,FALSE,22.635606,300
+Cannock Chase,E14000618,124,Expected at 02:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,17.527991,240
+Canterbury,E14000619,125,Expected at 04:00,con,lab,CON,LAB,Possible Conservative gain from Labour,88% chance,12% chance of Labour hold,,forecast,FALSE,0.329225,360
+Carlisle,E14000620,130,Expected at 02:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,6.036325,240
+Carshalton & Wallington,E14000621,133,Expected at 04:00,tctf,ld,,LD,Too close to forecast winning party,"65% chance of Conservative gain, 35% chance of Liberal Democrat hold",,,forecast,FALSE,2.697377,360
+Castle Point,E14000622,134,Expected at 02:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,42.209796,240
+Devon Central,E14000623,188,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,27.107392,300
+Suffolk Central & Ipswich North,E14000624,547,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,30.403015,360
+Charnwood,E14000625,136,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,29.616137,360
+Chatham & Aylesford,E14000626,137,Expected at 06:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,23.296948,480
+Cheadle,E14000627,138,Expected at 05:00,tctf,con,,CON,Too close to forecast winning party,"68% chance of Conservative hold, 32% chance of Liberal Democrat gain",,,forecast,FALSE,8.258814,420
+Chelmsford,E14000628,139,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,23.869152,360
+Chelsea & Fulham,E14000629,140,Expected at 03:00,con,con,CON,CON,Possible Conservative hold,94% chance,6% chance of Labour gain from Conservative,,forecast,FALSE,19.436005,300
+Cheltenham,E14000630,141,Expected at 04:00,ld,con,LD,CON,Possible Liberal Democrat gain from Conservative,92% chance,8% chance of Conservative hold,,forecast,FALSE,4.506069,360
+Chesham & Amersham,E14000631,142,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,40.070948,300
+Chesterfield,E14000632,144,Expected at 03:30,tctf,lab,,LAB,Too close to forecast winning party,"51% chance of Labour hold, 49% chance of Conservative gain",,,forecast,FALSE,20.040896,330
+Chichester,E14000633,145,Expected at 02:30,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,37.753263,270
+Chingford & Woodford Green,E14000634,146,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,5.191542,300
+Chippenham,E14000635,147,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,29.103955,360
+Chipping Barnet,E14000636,148,Expected at 05:30,con,con,CON,CON,Possible Conservative hold,91% chance,9% chance of Labour gain from Conservative,,forecast,FALSE,0.63692,450
+Chorley,E14000637,149,Expected at 02:30,spe,lab,SPE,LAB,Speaker win,,,,forecast,FALSE,13.502534,270
+Christchurch,E14000638,150,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,49.711656,300
+Cities Of London & Westminster,E14000639,151,Expected at 03:00,tctf,con,,CON,Too close to forecast winning party,"61% chance of Labour gain, 39% chance of Conservative hold",,,forecast,FALSE,8.144047,300
+"Chester, City of",E14000640,143,Expected at 04:30,lab,lab,LAB,LAB,Possible Labour hold,94% chance,6% chance of Conservative gain from Labour,,forecast,FALSE,16.263448,390
+"Durham, City of",E14000641,214,Expected at 03:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,25.58563,300
+Clacton,E14000642,152,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,35.85457,300
+Cleethorpes,E14000643,153,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,21.737313,300
+Colchester,E14000644,157,Expected at 03:30,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,10.602297,330
+Colne Valley,E14000645,158,Expected at 05:00,con,lab,CON,LAB,Possible Conservative gain from Labour,82% chance,18% chance of Labour hold,,forecast,FALSE,1.514399,420
+Congleton,E14000646,159,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,22.441358,360
+Copeland,E14000647,160,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,3.948564,360
+Corby,E14000648,161,Expected at 05:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,4.483558,420
+Coventry North East,E14000649,165,Expected at 03:00,lab,lab,LAB,LAB,Likely Labour hold,99% chance,1% chance of Conservative gain from Labour,,forecast,FALSE,33.499613,300
+Coventry North West,E14000650,166,Expected at 03:00,tctf,lab,,LAB,Too close to forecast winning party,"64% chance of Conservative gain, 36% chance of Labour hold",,,forecast,FALSE,17.21198,300
+Coventry South,E14000651,167,Expected at 03:00,lab,lab,LAB,LAB,Likely Labour hold,97% chance,3% chance of Conservative gain from Labour,,forecast,FALSE,16.905273,300
+Crawley,E14000652,168,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99% chance,1% chance of Labour gain from Conservative,,forecast,FALSE,4.887315,300
+Crewe & Nantwich,E14000653,169,Expected at 04:00,con,lab,CON,LAB,Likely Conservative gain from Labour,99+% chance,,,forecast,FALSE,0.08723,360
+Croydon Central,E14000654,170,Expected at 04:00,tctf,lab,,LAB,Too close to forecast winning party,"61% chance of Labour hold, 39% chance of Conservative gain",,,forecast,FALSE,9.899984,360
+Croydon North,E14000655,171,Expected at 04:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,54.282743,360
+Croydon South,E14000656,172,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,18.619913,360
+Dagenham & Rainham,E14000657,175,Expected at 03:00,tctf,lab,,LAB,Too close to forecast winning party,"64% chance of Labour hold, 36% chance of Conservative gain",,,forecast,FALSE,10.147678,300
+Darlington,E14000658,176,Expected at 01:30,con,lab,CON,LAB,Likely Conservative gain from Labour,99+% chance,,,forecast,FALSE,7.318651,210
+Dartford,E14000659,177,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,24.317645,300
+Daventry,E14000660,178,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,39.045686,360
+Denton & Reddish,E14000661,180,Expected at 05:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,35.548877,420
+Derby North,E14000662,181,Expected at 05:00,tctf,lab,,LAB,Too close to forecast winning party,"67% chance of Conservative gain, 33% chance of Labour hold",,,forecast,FALSE,4.139957,420
+Derby South,E14000663,182,Expected at 05:00,tctf,lab,,LAB,Too close to forecast winning party,"75% chance of Labour hold, 25% chance of Conservative gain",,,forecast,FALSE,24.826734,420
+Derbyshire Dales,E14000664,183,Expected at 04:30,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,28.901979,390
+Devizes,E14000665,187,Expected at 06:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,41.77653,480
+Dewsbury,E14000666,193,Expected at 05:00,con,lab,CON,LAB,Likely Conservative gain from Labour,99+% chance,,,forecast,FALSE,5.873198,420
+Don Valley,E14000667,194,Expected at 03:00,con,lab,CON,LAB,Likely Conservative gain from Labour,96% chance,4% chance of Labour hold,,forecast,FALSE,11.239889,300
+Doncaster Central,E14000668,195,Expected at 03:00,tctf,lab,,LAB,Too close to forecast winning party,"64% chance of Labour hold, 36% chance of Conservative gain",,,forecast,FALSE,23.547322,300
+Doncaster North,E14000669,196,Expected at 03:00,lab,lab,LAB,LAB,Likely Labour hold,99% chance,1% chance of Conservative gain from Labour,,forecast,FALSE,33.144262,300
+Dover,E14000670,201,Expected at 02:30,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,12.386945,270
+Dudley North,E14000671,204,Expected at 05:00,con,lab,CON,LAB,Likely Conservative gain from Labour,99+% chance,,,forecast,FALSE,0.056541,420
+Dudley South,E14000672,205,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,20.212321,360
+Dulwich & West Norwood,E14000673,206,Expected at 04:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,50.150509,360
+Ealing Central & Acton,E14000674,218,Expected at 03:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,24.948502,300
+Ealing North,E14000675,219,Expected at 03:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,37.499048,300
+Ealing Southall,E14000676,220,Expected at 03:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,48.931222,300
+Easington,E14000677,221,Expected at 03:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,40.95259,300
+Devon East,E14000678,189,Expected at 06:00,oth,con,OTH,CON,Likely Others gain from Conservative,96% chance,4% chance of Conservative hold,,forecast,FALSE,13.308602,480
+East Ham,E14000679,222,Expected at 04:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,70.423605,360
+Hampshire East,E14000680,287,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,46.657522,360
+Surrey East,E14000681,552,Expected at 02:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,40.393223,240
+Worthing East & Shoreham,E14000682,638,Expected at 05:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,9.612742,420
+Yorkshire East,E14000683,650,Expected at 04:30,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,27.81155,390
+Eastbourne,E14000684,225,Expected at 03:00,tctf,ld,,LD,Too close to forecast winning party,"66% chance of Liberal Democrat hold, 34% chance of Conservative gain",,,forecast,FALSE,2.80216,300
+Eastleigh,E14000685,226,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,24.753841,300
+Eddisbury,E14000686,227,Expected at 05:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,23.270134,420
+Edmonton,E14000687,233,Expected at 03:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,48.342415,300
+Ellesmere Port & Neston,E14000688,234,Expected at 04:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,22.360078,360
+Elmet & Rothwell,E14000689,235,Expected at 04:30,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,16.467368,390
+Eltham,E14000690,236,Expected at 03:30,lab,lab,LAB,LAB,Possible Labour hold,86% chance,14% chance of Conservative gain from Labour,,forecast,FALSE,13.640992,330
+Enfield North,E14000691,237,Expected at 04:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,21.099557,360
+Enfield Southgate,E14000692,238,Expected at 05:00,tctf,lab,,LAB,Too close to forecast winning party,"55% chance of Labour hold, 45% chance of Conservative gain",,,forecast,FALSE,9.011339,420
+Epping Forest,E14000693,239,Expected at 02:30,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,35.926269,270
+Epsom & Ewell,E14000694,240,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,34.547633,300
+Erewash,E14000695,241,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,9.107893,300
+Erith & Thamesmead,E14000696,242,Expected at 04:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,22.521591,360
+Esher & Walton,E14000697,243,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,38.932522,300
+Exeter,E14000698,244,Expected at 04:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,29.079985,360
+Fareham,E14000699,246,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,37.806504,300
+Feltham & Heston,E14000701,248,Expected at 04:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,29.424633,360
+Filton & Bradley Stoke,E14000702,251,Expected at 05:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,8.263974,420
+Finchley & Golders Green,E14000703,252,Expected at 05:30,tctf,con,,CON,Too close to forecast winning party,"61% chance of Liberal Democrat gain, 39% chance of Conservative hold",,,forecast,FALSE,3.163119,450
+Folkestone & Hythe,E14000704,253,Expected at 02:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,26.175796,240
+Forest Of Dean,E14000705,254,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,18.355323,300
+Fylde,E14000706,256,Expected at 02:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,25.405126,240
+Gainsborough,E14000707,257,Expected at 02:30,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,33.102577,270
+Garston & Halewood,E14000708,258,Expected at 03:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,60.066888,300
+Gateshead,E14000709,259,Expected at 02:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,41.208465,240
+Gedling,E14000710,260,Expected at 03:00,tctf,lab,,LAB,Too close to forecast winning party,"56% chance of Labour hold, 44% chance of Conservative gain",,,forecast,FALSE,9.082466,300
+Gillingham & Rainham,E14000711,261,Expected at 06:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,19.296881,480
+Gloucester,E14000712,270,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,10.2088,300
+Gosport,E14000713,272,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,34.783048,360
+Grantham & Stamford,E14000714,274,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,35.506158,300
+Gravesham,E14000715,275,Expected at 05:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,19.076678,420
+Great Grimsby,E14000716,276,Expected at 03:00,con,lab,CON,LAB,Likely Conservative gain from Labour,99% chance,1% chance of Labour hold,,forecast,FALSE,7.22108,300
+Great Yarmouth,E14000717,277,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,18.060526,300
+Greenwich & Woolwich,E14000718,278,Expected at 03:30,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,39.005009,330
+Guildford,E14000719,279,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,30.697725,300
+Hackney North & Stoke Newington,E14000720,280,Expected at 04:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,62.416072,360
+Hackney South & Shoreditch,E14000721,281,Expected at 04:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,68.524407,360
+Halesowen & Rowley Regis,E14000722,282,Expected at 05:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,11.83668,420
+Halifax,E14000723,283,Expected at 05:00,con,lab,CON,LAB,Likely Conservative gain from Labour,97% chance,3% chance of Labour hold,,forecast,FALSE,11.135968,420
+Haltemprice & Howden,E14000724,284,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,29.947512,360
+Halton,E14000725,285,Expected at 00:30,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,51.304576,150
+Hammersmith,E14000726,286,Expected at 03:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,35.694327,300
+Hampstead & Kilburn,E14000727,290,Expected at 05:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,26.640642,420
+Harborough,E14000728,291,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,21.578874,360
+Harlow,E14000729,292,Expected at 02:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,15.678098,240
+Harrogate & Knaresborough,E14000730,293,Expected at 02:30,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,32.019739,270
+Harrow East,E14000731,294,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99% chance,1% chance of Labour gain from Conservative,,forecast,FALSE,3.4556,360
+Harrow West,E14000732,295,Expected at 04:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,26.440274,360
+Hartlepool,E14000733,296,Expected at 02:00,tctf,lab,,LAB,Too close to forecast winning party,"52% chance of Conservative gain, 48% chance of Labour hold",,,forecast,FALSE,18.286124,240
+Harwich & Essex North,E14000734,297,Expected at 03:30,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,28.07141,330
+Hastings & Rye,E14000735,298,Expected at 03:30,con,con,CON,CON,Possible Conservative hold,94% chance,6% chance of Labour gain from Conservative,,forecast,FALSE,0.631779,330
+Havant,E14000736,299,Expected at 02:30,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,34.451786,270
+Hayes & Harlington,E14000737,300,Expected at 04:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,37.895904,360
+Hazel Grove,E14000738,301,Expected at 05:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,12.494335,420
+Hemel Hempstead,E14000739,302,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,18.065491,300
+Hemsworth,E14000740,303,Expected at 05:00,tctf,lab,,LAB,Too close to forecast winning party,"58% chance of Labour hold, 42% chance of Conservative gain",,,forecast,FALSE,22.14435,420
+Hendon,E14000741,304,Expected at 05:30,con,con,CON,CON,Likely Conservative hold,96% chance,4% chance of Labour gain from Conservative,,forecast,FALSE,2.05305,450
+Henley,E14000742,305,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,39.044467,360
+Hereford & Herefordshire South,E14000743,306,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,29.738135,360
+Hertford & Stortford,E14000744,308,Expected at 03:30,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,31.729231,330
+Hertsmere,E14000745,311,Expected at 02:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,32.440243,240
+Hexham,E14000746,312,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,19.980962,360
+Heywood & Middleton,E14000747,313,Expected at 03:00,tctf,lab,,LAB,Too close to forecast winning party,"75% chance of Conservative gain, 25% chance of Labour hold",,,forecast,FALSE,15.275243,300
+High Peak,E14000748,314,Expected at 03:00,tctf,lab,,LAB,Too close to forecast winning party,"66% chance of Conservative gain, 34% chance of Labour hold",,,forecast,FALSE,4.311738,300
+Hitchin & Harpenden,E14000749,315,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,20.466802,360
+Holborn & St Pancras,E14000750,316,Expected at 05:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,51.712799,420
+Hornchurch & Upminster,E14000751,317,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,31.622803,300
+Hornsey & Wood Green,E14000752,318,Expected at 04:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,49.344228,360
+Horsham,E14000753,319,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,37.885363,360
+Houghton & Sunderland South,E14000754,320,Expected at 23:00,lab,lab,LAB,LAB,Likely Labour hold,96% chance,4% chance of Conservative gain from Labour,,forecast,FALSE,29.751688,60
+Hove,E14000755,321,Expected at 07:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,32.566498,540
+Huddersfield,E14000756,322,Expected at 04:00,lab,lab,LAB,LAB,Possible Labour hold,88% chance,12% chance of Conservative gain from Labour,,forecast,FALSE,27.387416,360
+Huntingdon,E14000757,326,Expected at 02:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,24.238111,240
+Hyndburn,E14000758,327,Expected at 03:00,con,lab,CON,LAB,Possible Conservative gain from Labour,90% chance,10% chance of Labour hold,,forecast,FALSE,12.864475,300
+Ilford North,E14000759,328,Expected at 04:00,lab,lab,LAB,LAB,Likely Labour hold,98% chance,2% chance of Conservative gain from Labour,,forecast,FALSE,18.207061,360
+Ilford South,E14000760,329,Expected at 04:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,54.888392,360
+Ipswich,E14000761,332,Expected at 04:00,con,lab,CON,LAB,Likely Conservative gain from Labour,99+% chance,,,forecast,FALSE,1.625046,360
+Isle Of Wight,E14000762,333,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,28.288511,300
+Islington North,E14000763,334,Expected at 03:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,60.47007,300
+Islington South & Finsbury,E14000764,335,Expected at 03:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,42.171533,300
+Jarrow,E14000765,337,Expected at 01:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,40.125049,180
+Keighley,E14000766,338,Expected at 05:00,con,lab,CON,LAB,Possible Conservative gain from Labour,90% chance,10% chance of Labour hold,,forecast,FALSE,0.462157,420
+Kenilworth & Southam,E14000767,339,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,35.221449,300
+Kensington,E14000768,340,Expected at 04:30,lab,lab,LAB,LAB,Likely Labour hold,97% chance,3% chance of Conservative gain from Labour,,forecast,FALSE,0.05171,390
+Kettering,E14000769,341,Expected at 02:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,21.378836,240
+Kingston & Surbiton,E14000770,343,Expected at 03:30,ld,ld,LD,LD,Likely Liberal Democrat hold,99+% chance,,,forecast,FALSE,6.632571,330
+Hull East,E14000771,323,Expected at 03:00,lab,lab,LAB,LAB,Likely Labour hold,95% chance,5% chance of Conservative gain from Labour,,forecast,FALSE,28.374911,300
+Hull North,E14000772,324,Expected at 02:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,38.580895,240
+Hull West & Hessle,E14000773,325,Expected at 03:00,tctf,lab,,LAB,Too close to forecast winning party,"79% chance of Labour hold, 21% chance of Conservative gain",,,forecast,FALSE,23.217127,300
+Kingswood,E14000774,344,Expected at 05:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,15.387456,420
+Knowsley,E14000775,346,Expected at 02:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,76.084566,240
+Lancaster & Fleetwood,E14000776,350,Expected at 04:00,lab,lab,LAB,LAB,Possible Labour hold,89% chance,11% chance of Conservative gain from Labour,,forecast,FALSE,14.483898,360
+Leeds Central,E14000777,351,Expected at 03:30,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,49.709479,330
+Leeds East,E14000778,352,Expected at 03:00,lab,lab,LAB,LAB,Likely Labour hold,98% chance,2% chance of Conservative gain from Labour,,forecast,FALSE,30.771458,300
+Leeds North East,E14000779,353,Expected at 05:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,32.059095,420
+Leeds North West,E14000780,354,Expected at 04:00,tctf,lab,,LAB,Too close to forecast winning party,"64% chance of Labour hold, 36% chance of Liberal Democrat gain",,,forecast,FALSE,9.125672,360
+Leeds West,E14000781,355,Expected at 03:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,37.805773,300
+Leicester East,E14000782,356,Expected at 04:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,42.781932,360
+Leicester South,E14000783,357,Expected at 03:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,51.98448,300
+Leicester West,E14000784,358,Expected at 04:00,lab,lab,LAB,LAB,Likely Labour hold,95% chance,5% chance of Conservative gain from Labour,,forecast,FALSE,29.483898,360
+Leigh,E14000785,361,Expected at 02:00,tctf,lab,,LAB,Too close to forecast winning party,"50% chance of Labour hold, 50% chance of Conservative gain",,,forecast,FALSE,20.382301,240
+Lewes,E14000786,362,Expected at 03:30,con,con,CON,CON,Likely Conservative hold,98% chance,2% chance of Liberal Democrat gain from Conservative,,forecast,FALSE,10.163862,330
+Lewisham East,E14000787,364,Expected at 03:00,lab,lab,LAB,LAB,Likely Labour win,99+% chance,,,forecast,FALSE,44.941844,300
+Lewisham West & Penge,E14000788,365,Expected at 03:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,43.540868,300
+Lewisham Deptford,E14000789,363,Expected at 03:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,63.323777,300
+Leyton & Wanstead,E14000790,366,Expected at 03:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,48.961514,300
+Lichfield,E14000791,367,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,34.715268,360
+Lincoln,E14000792,368,Expected at 04:00,con,lab,CON,LAB,Likely Conservative gain from Labour,99+% chance,,,forecast,FALSE,3.156944,360
+Liverpool Riverside,E14000793,370,Expected at 03:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,74.858392,300
+Liverpool Walton,E14000794,371,Expected at 03:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,77.140555,300
+Liverpool Wavertree,E14000795,372,Expected at 03:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,67.520623,300
+Liverpool West Derby,E14000796,373,Expected at 03:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,72.864956,300
+Loughborough,E14000797,377,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,7.883948,360
+Louth & Horncastle,E14000798,378,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,37.219306,360
+Ludlow,E14000799,379,Expected at 05:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,38.595157,420
+Luton North,E14000800,380,Expected at 03:00,lab,lab,LAB,LAB,Likely Labour hold,96% chance,4% chance of Conservative gain from Labour,,forecast,FALSE,30.809489,300
+Luton South,E14000801,381,Expected at 03:00,lab,lab,LAB,LAB,Likely Labour hold,95% chance,5% chance of Conservative gain from Labour,,forecast,FALSE,30.184467,300
+Macclesfield,E14000802,382,Expected at 05:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,15.850627,420
+Maidenhead,E14000803,383,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,45.428321,360
+Maidstone & The Weald,E14000804,384,Expected at 05:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,34.269196,420
+Makerfield,E14000805,385,Expected at 01:00,lab,lab,LAB,LAB,Likely Labour hold,95% chance,5% chance of Conservative gain from Labour,,forecast,FALSE,28.853898,180
+Maldon,E14000806,386,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,46.671447,360
+Manchester Central,E14000807,387,Expected at 04:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,63.244167,360
+Manchester Gorton,E14000808,388,Expected at 04:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,69.048811,360
+Manchester Withington,E14000809,389,Expected at 04:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,55.734861,360
+Mansfield,E14000810,390,Expected at 04:30,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,2.107383,390
+Meon Valley,E14000811,391,Expected at 05:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,47.409212,420
+Meriden,E14000812,392,Expected at 03:30,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,35.133503,330
+Bedfordshire Mid,E14000813,42,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,33.233552,360
+Derbyshire Mid,E14000814,184,Expected at 05:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,23.060888,420
+Dorset Mid & Poole North,E14000815,197,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,31.788038,360
+Norfolk Mid,E14000816,421,Expected at 05:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,28.896314,420
+Sussex Mid,E14000817,555,Expected at 06:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,31.920106,480
+Worcestershire Mid,E14000818,634,Expected at 03:30,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,42.342391,330
+Middlesbrough,E14000819,394,Expected at 01:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,38.928642,180
+Middlesbrough South & Cleveland East,E14000820,395,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,2.141957,300
+Milton Keynes North,E14000821,397,Expected at 05:00,con,con,CON,CON,Likely Conservative hold,98% chance,2% chance of Labour gain from Conservative,,forecast,FALSE,3.089606,420
+Milton Keynes South,E14000822,398,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,98% chance,2% chance of Labour gain from Conservative,,forecast,FALSE,2.579556,360
+Mitcham & Morden,E14000823,399,Expected at 03:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,44.422046,300
+Mole Valley,E14000824,400,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,42.550153,360
+Morecambe & Lunesdale,E14000825,404,Expected at 05:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,3.064152,420
+Morley & Outwood,E14000826,405,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,4.018565,360
+New Forest East,E14000827,409,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,42.820153,300
+New Forest West,E14000828,410,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,47.214218,300
+Newark,E14000829,411,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,32.973002,360
+Newbury,E14000830,412,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,40.066394,300
+Newcastle Upon Tyne Central,E14000831,414,Expected at 23:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,40.267968,60
+Newcastle Upon Tyne East,E14000832,415,Expected at 00:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,46.259337,120
+Newcastle Upon Tyne North,E14000833,416,Expected at 00:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,21.431826,120
+Newcastle-under-Lyme,E14000834,413,Expected at 03:00,con,lab,CON,LAB,Likely Conservative gain from Labour,99+% chance,,,forecast,FALSE,0.068428,300
+Newton Abbot,E14000835,420,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,33.231985,300
+"Normanton, Pontefract & Castleford",E14000836,426,Expected at 05:00,lab,lab,LAB,LAB,Likely Labour hold,96% chance,4% chance of Conservative gain from Labour,,forecast,FALSE,29.474904,420
+Cornwall North,E14000837,162,Expected at 10:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,14.133166,720
+Devon North,E14000838,190,Expected at 03:30,con,con,CON,CON,Likely Conservative hold,99% chance,1% chance of Liberal Democrat gain from Conservative,,forecast,FALSE,7.776681,330
+Dorset North,E14000839,198,Expected at 04:30,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,46.258345,390
+Durham North,E14000840,215,Expected at 03:00,lab,lab,LAB,LAB,Likely Labour hold,95% chance,5% chance of Conservative gain from Labour,,forecast,FALSE,29.893263,300
+Bedfordshire North East,E14000841,43,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,32.485207,360
+Cambridgeshire North East,E14000842,120,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,39.918174,360
+Derbyshire North East,E14000843,185,Expected at 05:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,5.676856,420
+Hampshire North East,E14000844,288,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,48.192687,360
+Hertfordshire North East,E14000845,309,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,30.289673,360
+Somerset North East,E14000846,518,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,18.938623,360
+Herefordshire North,E14000847,307,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,43.051597,360
+Norfolk North,E14000848,422,Expected at 04:00,ld,ld,LD,LD,Possible Liberal Democrat hold,91% chance,9% chance of Conservative gain from Liberal Democrat,,forecast,FALSE,6.729516,360
+Shropshire North,E14000849,511,Expected at 05:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,29.415997,420
+Somerset North,E14000850,517,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,27.588154,300
+Swindon North,E14000851,560,Expected at 02:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,15.179108,240
+Thanet North,E14000852,567,Expected at 05:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,22.220383,420
+Tyneside North,E14000853,583,Expected at 02:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,37.161798,240
+Warwickshire North,E14000854,602,Expected at 02:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,18.038069,240
+Cambridgeshire North West,E14000855,121,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,28.141457,300
+Durham North West,E14000856,216,Expected at 03:00,tctf,lab,,LAB,Too close to forecast winning party,"52% chance of Conservative gain, 48% chance of Labour hold",,,forecast,FALSE,18.35414,300
+Hampshire North West,E14000857,289,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,38.588103,360
+Leicestershire North West,E14000858,359,Expected at 02:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,24.814628,240
+Norfolk North West,E14000859,423,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,28.247731,300
+Wiltshire North,E14000860,619,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,42.59673,360
+Northampton North,E14000861,427,Expected at 05:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,1.998613,420
+Northampton South,E14000862,428,Expected at 05:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,2.824487,420
+Norwich North,E14000863,430,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,1.104696,300
+Norwich South,E14000864,431,Expected at 03:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,30.366635,300
+Nottingham East,E14000865,432,Expected at 04:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,49.813106,360
+Nottingham North,E14000866,433,Expected at 04:00,lab,lab,LAB,LAB,Likely Labour hold,95% chance,5% chance of Conservative gain from Labour,,forecast,FALSE,29.123933,360
+Nottingham South,E14000867,434,Expected at 04:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,31.502836,360
+Nuneaton,E14000868,435,Expected at 01:30,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,10.28719,210
+Old Bexley & Sidcup,E14000869,438,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,32.192665,360
+Oldham East & Saddleworth,E14000870,439,Expected at 04:00,tctf,lab,,LAB,Too close to forecast winning party,"61% chance of Conservative gain, 39% chance of Labour hold",,,forecast,FALSE,17.394817,360
+Oldham West & Royton,E14000871,440,Expected at 04:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,37.560059,360
+Orpington,E14000872,442,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,38.566418,360
+Oxford East,E14000873,443,Expected at 04:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,43.201722,360
+Oxford West & Abingdon,E14000874,444,Expected at 05:00,ld,ld,LD,LD,Likely Liberal Democrat hold,99+% chance,,,forecast,FALSE,1.359547,420
+Pendle,E14000875,447,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,2.851474,300
+Penistone & Stocksbridge,E14000876,448,Expected at 04:00,tctf,lab,,LAB,Too close to forecast winning party,"75% chance of Conservative gain, 25% chance of Labour hold",,,forecast,FALSE,2.655312,360
+Penrith & The Border,E14000877,449,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,34.237142,360
+Peterborough,E14000878,451,Expected at 03:00,con,lab,CON,LAB,Likely Conservative win,99+% chance,,,forecast,FALSE,1.271524,300
+Plymouth Moor View,E14000879,452,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,11.050928,360
+Plymouth Sutton & Devonport,E14000880,453,Expected at 04:00,lab,lab,LAB,LAB,Possible Labour hold,85% chance,15% chance of Conservative gain from Labour,,forecast,FALSE,13.292845,360
+Poole,E14000881,455,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,28.503511,360
+Poplar & Limehouse,E14000882,456,Expected at 05:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,47.118033,420
+Portsmouth North,E14000883,457,Expected at 03:30,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,21.107816,330
+Portsmouth South,E14000884,458,Expected at 03:30,tctf,lab,,LAB,Too close to forecast winning party,"64% chance of Conservative gain, 36% chance of Labour hold",,,forecast,FALSE,3.486963,330
+Preston,E14000885,460,Expected at 03:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,44.169452,300
+Pudsey,E14000886,461,Expected at 05:00,con,con,CON,CON,Possible Conservative hold,93% chance,7% chance of Labour gain from Conservative,,forecast,FALSE,0.613429,420
+Putney,E14000887,462,Expected at 02:00,lab,con,LAB,CON,Possible Labour gain from Conservative,89% chance,11% chance of Conservative hold,,forecast,FALSE,3.313857,240
+Rayleigh & Wickford,E14000888,463,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,42.387434,360
+Reading East,E14000889,464,Expected at 04:00,tctf,lab,,LAB,Too close to forecast winning party,"51% chance of Conservative gain, 49% chance of Labour hold",,,forecast,FALSE,6.786994,360
+Reading West,E14000890,465,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,5.55577,360
+Redcar,E14000891,466,Expected at 03:00,tctf,lab,,LAB,Too close to forecast winning party,"61% chance of Labour hold, 39% chance of Conservative gain",,,forecast,FALSE,22.286184,300
+Redditch,E14000892,467,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,16.288742,360
+Reigate,E14000893,468,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,32.725786,300
+Ribble Valley,E14000894,471,Expected at 02:30,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,23.911232,270
+Richmond Park,E14000896,473,Expected at 06:00,ld,con,LD,CON,Likely Liberal Democrat gain from Conservative,99+% chance,,,forecast,FALSE,0.071056,480
+Rochdale,E14000897,474,Expected at 03:00,lab,lab,LAB,LAB,Likely Labour hold,97% chance,3% chance of Conservative gain from Labour,,forecast,FALSE,29.611941,300
+Rochester & Strood,E14000898,475,Expected at 06:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,18.319106,480
+Rochford & Southend East,E14000899,476,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,11.742296,300
+Romford,E14000900,477,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,27.586897,300
+Romsey & Southampton North,E14000901,478,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,35.99984,360
+Rossendale & Darwen,E14000902,480,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,6.411995,360
+Rother Valley,E14000903,481,Expected at 04:00,con,lab,CON,LAB,Likely Conservative gain from Labour,99% chance,1% chance of Labour hold,,forecast,FALSE,7.844326,360
+Rotherham,E14000904,482,Expected at 04:00,lab,lab,LAB,LAB,Likely Labour hold,99% chance,1% chance of Conservative gain from Labour,,forecast,FALSE,30.026633,360
+Rugby,E14000905,483,Expected at 02:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,15.996572,240
+"Ruislip, Northwood & Pinner",E14000906,484,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,26.188603,360
+Runnymede & Weybridge,E14000907,485,Expected at 02:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,34.97452,240
+Rushcliffe,E14000908,486,Expected at 02:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,13.736688,240
+Rutland & Melton,E14000909,488,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,40.13271,360
+Saffron Walden,E14000910,489,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,40.987671,300
+Salford & Eccles,E14000911,495,Expected at 03:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,40.17724,300
+Salisbury,E14000912,496,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,32.51299,360
+Scarborough & Whitby,E14000913,497,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,6.808856,360
+Scunthorpe,E14000914,498,Expected at 04:00,con,lab,CON,LAB,Likely Conservative gain from Labour,99% chance,1% chance of Labour hold,,forecast,FALSE,8.534401,360
+Sedgefield,E14000915,499,Expected at 03:00,con,lab,CON,LAB,Possible Conservative gain from Labour,81% chance,19% chance of Labour hold,,forecast,FALSE,14.568056,300
+Sefton Central,E14000916,500,Expected at 02:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,29.989055,240
+Selby & Ainsty,E14000917,501,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,24.559526,360
+Sevenoaks,E14000918,502,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,42.791597,300
+Sheffield Central,E14000919,504,Expected at 03:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,57.956848,300
+Sheffield South East,E14000920,507,Expected at 03:00,lab,lab,LAB,LAB,Possible Labour hold,89% chance,11% chance of Conservative gain from Labour,,forecast,FALSE,27.062116,300
+Sheffield Brightside & Hillsborough,E14000921,503,Expected at 03:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,45.720086,300
+Sheffield Hallam,E14000922,505,Expected at 03:00,ld,lab,LD,LAB,Possible Liberal Democrat gain from Labour,86% chance,14% chance of Labour hold,,forecast,FALSE,3.726763,300
+Sheffield Heeley,E14000923,506,Expected at 03:00,lab,lab,LAB,LAB,Likely Labour hold,99% chance,1% chance of Conservative gain from Labour,,forecast,FALSE,31.266676,300
+Sherwood,E14000924,508,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,9.740649,360
+Shipley,E14000925,509,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,8.766738,360
+Shrewsbury & Atcham,E14000926,510,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,11.386011,300
+Sittingbourne & Sheppey,E14000927,512,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,29.59972,300
+Skipton & Ripon,E14000928,513,Expected at 06:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,34.375108,480
+Sleaford & North Hykeham,E14000929,514,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,38.355852,360
+Slough,E14000930,515,Expected at 04:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,31.30675,360
+Solihull,E14000931,516,Expected at 03:30,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,36.249736,330
+Somerton & Frome,E14000932,519,Expected at 05:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,35.851124,420
+Basildon South & Thurrock East,E14000933,33,Expected at 02:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,24.38455,240
+Cambridgeshire South,E14000934,122,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,24.570267,300
+Derbyshire South,E14000935,186,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,22.74325,300
+Dorset South,E14000936,199,Expected at 04:30,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,22.531114,390
+Cambridgeshire South East,E14000937,123,Expected at 05:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,25.646805,420
+Cornwall South East,E14000938,163,Expected at 10:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,32.772809,720
+South Holland & The Deepings,E14000939,520,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,49.482262,300
+Leicestershire South,E14000940,360,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,32.865283,360
+Norfolk South,E14000941,424,Expected at 02:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,27.291322,240
+Northamptonshire South,E14000942,429,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,35.139543,360
+South Ribble,E14000943,521,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,13.533574,300
+South Shields,E14000944,522,Expected at 01:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,35.583243,180
+Staffordshire South,E14000945,530,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,44.479446,360
+Suffolk South,E14000946,549,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,32.726099,360
+Swindon South,E14000947,561,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,4.805836,360
+Thanet South,E14000948,568,Expected at 05:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,12.837417,420
+Bedfordshire South West,E14000949,44,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,25.465984,360
+Devon South West,E14000950,191,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,29.922243,360
+Hertfordshire South West,E14000951,310,Expected at 05:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,32.232536,420
+Norfolk South West,E14000952,425,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,34.935897,360
+Surrey South West,E14000953,554,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,35.726105,360
+Wiltshire South West,E14000954,620,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,33.471535,360
+Southampton Itchen,E14000955,523,Expected at 05:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,0.066263,420
+Southampton Test,E14000956,524,Expected at 06:00,tctf,lab,,LAB,Too close to forecast winning party,"70% chance of Labour hold, 30% chance of Conservative gain",,,forecast,FALSE,24.525084,480
+Southend West,E14000957,525,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,21.190481,300
+Southport,E14000958,526,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99% chance,1% chance of Liberal Democrat gain from Conservative,,forecast,FALSE,6.076403,300
+Spelthorne,E14000959,527,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,26.788387,360
+St Albans,E14000960,490,Expected at 04:00,tctf,con,,CON,Too close to forecast winning party,"59% chance of Liberal Democrat gain, 41% chance of Conservative hold",,,forecast,FALSE,10.71792,360
+St Austell & Newquay,E14000961,491,Expected at 09:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,20.552645,660
+St Helens North,E14000962,492,Expected at 02:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,36.649277,240
+St Helens South & Whiston,E14000963,493,Expected at 02:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,46.029195,240
+St Ives,E14000964,494,Expected at 08:00,tctf,con,,CON,Too close to forecast winning party,"52% chance of Conservative hold, 48% chance of Liberal Democrat gain",,,forecast,FALSE,0.609066,600
+Stafford,E14000965,528,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,14.885217,300
+Staffordshire Moorlands,E14000966,529,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,24.252603,300
+Stalybridge & Hyde,E14000967,531,Expected at 05:00,tctf,lab,,LAB,Too close to forecast winning party,"57% chance of Conservative gain, 43% chance of Labour hold",,,forecast,FALSE,19.040441,420
+Stevenage,E14000968,532,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,6.864395,300
+Stockport,E14000969,534,Expected at 05:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,34.847391,420
+Stockton North,E14000970,535,Expected at 02:00,tctf,lab,,LAB,Too close to forecast winning party,"50% chance of Labour hold, 50% chance of Conservative gain",,,forecast,FALSE,20.395029,240
+Stockton South,E14000971,536,Expected at 02:00,con,lab,CON,LAB,Possible Conservative gain from Labour,85% chance,15% chance of Labour hold,,forecast,FALSE,1.649822,240
+Stoke-on-Trent Central,E14000972,537,Expected at 05:00,con,lab,CON,LAB,Possible Conservative gain from Labour,94% chance,6% chance of Labour hold,,forecast,FALSE,11.757429,420
+Stoke-on-Trent North,E14000973,538,Expected at 05:00,con,lab,CON,LAB,Likely Conservative gain from Labour,99+% chance,,,forecast,FALSE,5.645431,420
+Stoke-on-Trent South,E14000974,539,Expected at 05:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,1.590309,420
+Stone,E14000975,540,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,34.967621,360
+Stourbridge,E14000976,541,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,16.238464,360
+Stratford-on-Avon,E14000977,543,Expected at 02:30,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,41.018456,270
+Streatham,E14000978,544,Expected at 04:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,47.109956,360
+Stretford & Urmston,E14000979,545,Expected at 04:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,39.260027,360
+Stroud,E14000980,546,Expected at 03:00,con,lab,CON,LAB,Possible Conservative gain from Labour,86% chance,14% chance of Labour hold,,forecast,FALSE,1.076533,300
+Suffolk Coastal,E14000981,548,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,27.571719,300
+Sunderland Central,E14000982,551,Expected at 00:00,tctf,lab,,LAB,Too close to forecast winning party,"61% chance of Labour hold, 39% chance of Conservative gain",,,forecast,FALSE,22.160892,120
+Surrey Heath,E14000983,553,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,43.13756,300
+Sutton & Cheam,E14000984,556,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,24.433327,360
+Sutton Coldfield,E14000985,557,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,29.019259,300
+Tamworth,E14000986,562,Expected at 02:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,26.208873,240
+Tatton,E14000987,563,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,30.106279,360
+Taunton Deane,E14000988,564,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,25.196263,360
+Telford,E14000989,565,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,1.611243,300
+Tewkesbury,E14000990,566,Expected at 05:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,38.206621,420
+"Cotswolds, The",E14000991,164,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,42.710462,300
+"Wrekin, The",E14000992,640,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,19.312239,300
+Thirsk & Malton,E14000993,569,Expected at 05:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,33.973431,420
+Thornbury & Yate,E14000994,570,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,23.813375,360
+Thurrock,E14000995,571,Expected at 02:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,0.685544,240
+Tiverton & Honiton,E14000996,572,Expected at 05:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,34.248897,420
+Tonbridge & Malling,E14000997,573,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,41.309505,300
+Tooting,E14000998,574,Expected at 02:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,26.573378,240
+Torbay,E14000999,575,Expected at 02:30,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,27.910658,270
+Devon West & Torridge,E14001000,192,Expected at 05:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,34.778077,420
+Totnes,E14001001,577,Expected at 03:30,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,26.80923,330
+Tottenham,E14001002,578,Expected at 04:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,70.094651,360
+Truro & Falmouth,E14001003,579,Expected at 07:00,con,con,CON,CON,Likely Conservative hold,99% chance,1% chance of Labour gain from Conservative,,forecast,FALSE,6.694088,540
+Tunbridge Wells,E14001004,580,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,30.373185,300
+Twickenham,E14001005,581,Expected at 06:00,ld,ld,LD,LD,Likely Liberal Democrat hold,99+% chance,,,forecast,FALSE,14.726203,480
+Tynemouth,E14001006,582,Expected at 02:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,20.517781,240
+Vauxhall,E14001008,590,Expected at 04:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,36.790088,360
+Wakefield,E14001009,591,Expected at 04:00,con,lab,CON,LAB,Likely Conservative gain from Labour,99+% chance,,,forecast,FALSE,4.701409,360
+Wallasey,E14001010,592,Expected at 02:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,48.228652,240
+Walsall North,E14001011,593,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,6.823548,300
+Walsall South,E14001012,594,Expected at 03:00,tctf,lab,,LAB,Too close to forecast winning party,"51% chance of Conservative gain, 49% chance of Labour hold",,,forecast,FALSE,20.176076,300
+Walthamstow,E14001013,595,Expected at 03:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,66.503957,300
+Wansbeck,E14001014,596,Expected at 06:00,tctf,lab,,LAB,Too close to forecast winning party,"73% chance of Labour hold, 27% chance of Conservative gain",,,forecast,FALSE,24.579545,480
+Wantage,E14001015,597,Expected at 05:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,27.326185,420
+Warley,E14001016,598,Expected at 02:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,40.996369,240
+Warrington North,E14001017,599,Expected at 04:00,tctf,lab,,LAB,Too close to forecast winning party,"52% chance of Conservative gain, 48% chance of Labour hold",,,forecast,FALSE,19.749778,360
+Warrington South,E14001018,600,Expected at 04:00,tctf,lab,,LAB,Too close to forecast winning party,"66% chance of Conservative gain, 34% chance of Labour hold",,,forecast,FALSE,4.111622,360
+Warwick & Leamington,E14001019,601,Expected at 04:00,tctf,lab,,LAB,Too close to forecast winning party,"76% chance of Conservative gain, 24% chance of Labour hold",,,forecast,FALSE,2.231061,360
+Washington & Sunderland West,E14001020,603,Expected at 00:00,lab,lab,LAB,LAB,Likely Labour hold,99% chance,1% chance of Conservative gain from Labour,,forecast,FALSE,31.892345,120
+Watford,E14001021,604,Expected at 02:30,con,con,CON,CON,Likely Conservative hold,98% chance,2% chance of Labour gain from Conservative,,forecast,FALSE,3.569357,270
+Waveney,E14001022,605,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,17.4944,360
+Wealden,E14001023,606,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,39.077798,300
+Weaver Vale,E14001024,607,Expected at 04:30,con,lab,CON,LAB,Likely Conservative gain from Labour,99% chance,1% chance of Labour hold,,forecast,FALSE,7.760852,390
+Wellingborough,E14001025,608,Expected at 02:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,23.403456,240
+Wells,E14001026,609,Expected at 06:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,12.461581,480
+Welwyn Hatfield,E14001027,610,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,14.261937,300
+Wentworth & Dearne,E14001028,611,Expected at 04:00,lab,lab,LAB,LAB,Likely Labour hold,99% chance,1% chance of Conservative gain from Labour,,forecast,FALSE,33.683755,360
+West Bromwich East,E14001029,612,Expected at 02:00,tctf,lab,,LAB,Too close to forecast winning party,"55% chance of Conservative gain, 45% chance of Labour hold",,,forecast,FALSE,19.727352,240
+West Bromwich West,E14001030,613,Expected at 02:00,con,lab,CON,LAB,Possible Conservative gain from Labour,93% chance,7% chance of Labour hold,,forecast,FALSE,12.356624,240
+Dorset West,E14001031,200,Expected at 04:30,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,32.032954,390
+West Ham,E14001032,614,Expected at 04:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,60.542268,360
+Lancashire West,E14001033,349,Expected at 04:00,tctf,lab,,LAB,Too close to forecast winning party,"51% chance of Labour hold, 49% chance of Conservative gain",,,forecast,FALSE,21.491478,360
+Suffolk West,E14001034,550,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,32.974529,300
+Worcestershire West,E14001035,635,Expected at 03:30,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,37.768058,330
+Westminster North,E14001036,615,Expected at 03:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,26.589675,300
+Westmorland & Lonsdale,E14001037,616,Expected at 03:30,tctf,ld,,LD,Too close to forecast winning party,"56% chance of Liberal Democrat hold, 44% chance of Conservative gain",,,forecast,FALSE,1.503279,330
+Weston-super-Mare,E14001038,617,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,20.462643,300
+Wigan,E14001039,618,Expected at 01:00,lab,lab,LAB,LAB,Likely Labour hold,99% chance,1% chance of Conservative gain from Labour,,forecast,FALSE,33.711245,180
+Wimbledon,E14001040,621,Expected at 03:00,tctf,con,,CON,Too close to forecast winning party,"49% chance of Conservative hold, 47% chance of Labour gain, 4% chance of Liberal Democrat gain",,,forecast,FALSE,10.910996,300
+Winchester,E14001041,622,Expected at 05:00,tctf,con,,CON,Too close to forecast winning party,"63% chance of Liberal Democrat gain, 37% chance of Conservative hold",,,forecast,FALSE,17.494226,420
+Windsor,E14001042,623,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,41.512583,360
+Wirral South,E14001043,624,Expected at 02:00,lab,lab,LAB,LAB,Likely Labour hold,98% chance,2% chance of Conservative gain from Labour,,forecast,FALSE,18.415754,240
+Wirral West,E14001044,625,Expected at 02:00,tctf,lab,,LAB,Too close to forecast winning party,"75% chance of Labour hold, 25% chance of Conservative gain",,,forecast,FALSE,12.206776,240
+Witham,E14001045,626,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,37.866818,360
+Witney,E14001046,627,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,34.863033,360
+Woking,E14001047,628,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,30.271875,360
+Wokingham,E14001048,629,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,31.492712,300
+Wolverhampton North East,E14001049,630,Expected at 02:00,con,lab,CON,LAB,Possible Conservative gain from Labour,93% chance,7% chance of Labour hold,,forecast,FALSE,12.564369,240
+Wolverhampton South East,E14001050,631,Expected at 03:00,tctf,lab,,LAB,Too close to forecast winning party,"64% chance of Labour hold, 36% chance of Conservative gain",,,forecast,FALSE,23.451961,300
+Wolverhampton South West,E14001051,632,Expected at 03:00,tctf,lab,,LAB,Too close to forecast winning party,"61% chance of Conservative gain, 39% chance of Labour hold",,,forecast,FALSE,5.159873,300
+Worcester,E14001052,633,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99% chance,1% chance of Labour gain from Conservative,,forecast,FALSE,4.877195,300
+Workington,E14001053,636,Expected at 01:00,con,lab,CON,LAB,Likely Conservative gain from Labour,98% chance,2% chance of Labour hold,,forecast,FALSE,9.41789,180
+Worsley & Eccles South,E14001054,637,Expected at 03:00,tctf,lab,,LAB,Too close to forecast winning party,"61% chance of Conservative gain, 39% chance of Labour hold",,,forecast,FALSE,18.358091,300
+Worthing West,E14001055,639,Expected at 05:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,22.182265,420
+Wycombe,E14001056,642,Expected at 02:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,12.296936,240
+Wyre & Preston North,E14001057,643,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,23.261026,360
+Wyre Forest,E14001058,644,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,26.079133,300
+Wythenshawe & Sale East,E14001059,645,Expected at 04:00,lab,lab,LAB,LAB,Likely Labour hold,99% chance,1% chance of Conservative gain from Labour,,forecast,FALSE,32.596083,360
+Yeovil,E14001060,646,Expected at 02:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,24.784526,240
+York Central,E14001061,648,Expected at 05:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,34.989075,420
+York Outer,E14001062,649,Expected at 05:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,14.433977,420
+Aberdeen North,S14000001,3,Expected at 03:00,snp,snp,SNP,SNP,Likely Scottish National Party hold,99+% chance,,,forecast,FALSE,11.26044,300
+Aberdeen South,S14000002,4,Expected at 03:00,snp,con,SNP,CON,Possible Scottish National Party gain from Conservative,93% chance,7% chance of Conservative hold,Possible SNP gain from Conservative,forecast,FALSE,10.680332,300
+Airdrie & Shotts,S14000003,6,Expected at 03:00,snp,snp,SNP,SNP,Likely Scottish National Party hold,99+% chance,,,forecast,FALSE,0.513131,300
+Angus,S14000004,12,Expected at 02:30,snp,con,SNP,CON,Likely Scottish National Party gain from Conservative,99+% chance,,Likely SNP gain from Conservative,forecast,FALSE,6.580912,270
+Argyll & Bute,S14000005,17,Expected at 05:00,snp,snp,SNP,SNP,Likely Scottish National Party hold,99+% chance,,,forecast,FALSE,2.762695,420
+"Ayr, Carrick & Cumnock",S14000006,23,Expected at 03:00,snp,con,SNP,CON,Possible Scottish National Party gain from Conservative,83% chance,17% chance of Conservative hold,Possible SNP gain from Conservative,forecast,FALSE,6.001471,300
+Banff & Buchan,S14000007,27,Expected at 05:00,snp,con,SNP,CON,Likely Scottish National Party gain from Conservative,99% chance,1% chance of Conservative hold,Likely SNP gain from Conservative,forecast,FALSE,8.868237,420
+"Berwickshire, Roxburgh & Selkirk",S14000008,51,Expected at 04:00,tctf,con,,CON,Too close to forecast winning party,"55% chance of Conservative hold, 45% chance of Scottish National Party gain",,,forecast,FALSE,21.120171,360
+"Caithness, Sutherland & Easter Ross",S14000009,115,Expected at 04:00,snp,ld,SNP,LD,Likely Scottish National Party gain from Liberal Democrat,99+% chance,,Likely SNP gain from LD,forecast,FALSE,6.614673,360
+Ayrshire Central,S14000010,24,Expected at 04:00,snp,snp,SNP,SNP,Likely Scottish National Party hold,99+% chance,,,forecast,FALSE,2.810123,360
+"Coatbridge, Chryston & Bellshill",S14000011,156,Expected at 04:00,snp,lab,SNP,LAB,Likely Scottish National Party gain from Labour,99+% chance,,,forecast,FALSE,3.521314,360
+"Cumbernauld, Kilsyth & Kirkintilloch East",S14000012,173,Expected at 04:00,snp,snp,SNP,SNP,Likely Scottish National Party hold,99+% chance,,,forecast,FALSE,9.727831,360
+Dumfries & Galloway,S14000013,207,Expected at 05:00,tctf,con,,CON,Too close to forecast winning party,"53% chance of Scottish National Party gain, 47% chance of Conservative hold",,,forecast,FALSE,10.936258,420
+"Dumfriesshire, Clydesdale & Tweeddale",S14000014,208,Expected at 05:00,con,con,CON,CON,Possible Conservative hold,90% chance,10% chance of Scottish National Party gain from Conservative,,forecast,FALSE,19.281513,420
+Dundee East,S14000015,211,Expected at 02:30,snp,snp,SNP,SNP,Possible Scottish National Party hold,94% chance,6% chance of Conservative gain from Scottish National Party,,forecast,FALSE,15.479407,270
+Dundee West,S14000016,212,Expected at 02:30,snp,snp,SNP,SNP,Likely Scottish National Party hold,99+% chance,,,forecast,FALSE,13.604985,270
+Dunbartonshire East,S14000018,209,Expected at 03:00,snp,ld,SNP,LD,Likely Scottish National Party gain from Liberal Democrat,95% chance,5% chance of Liberal Democrat hold,Likely SNP gain from LD,forecast,FALSE,10.306751,300
+"East Kilbride, Strathaven & Lesmahagow",S14000019,223,Expected at 02:00,snp,snp,SNP,SNP,Likely Scottish National Party hold,99+% chance,,,forecast,FALSE,7.145762,240
+East Lothian,S14000020,224,Expected at 03:00,snp,lab,SNP,LAB,Likely Scottish National Party gain from Labour,99+% chance,,,forecast,FALSE,5.517377,300
+Renfrewshire East,S14000021,469,Expected at 03:00,snp,con,SNP,CON,Possible Scottish National Party gain from Conservative,94% chance,6% chance of Conservative hold,Possible SNP gain from Conservative,forecast,FALSE,8.768469,300
+Edinburgh East,S14000022,228,Expected at 05:00,snp,snp,SNP,SNP,Likely Scottish National Party hold,99+% chance,,,forecast,FALSE,7.869402,420
+Edinburgh North & Leith,S14000023,229,Expected at 05:00,snp,snp,SNP,SNP,Likely Scottish National Party hold,99+% chance,,,forecast,FALSE,2.873462,420
+Edinburgh South,S14000024,230,Expected at 05:00,tctf,lab,,LAB,Too close to forecast winning party,"53% chance of Labour hold, 47% chance of Scottish National Party gain",,,forecast,FALSE,32.42893,420
+Edinburgh South West,S14000025,231,Expected at 05:00,snp,snp,SNP,SNP,Likely Scottish National Party hold,99+% chance,,,forecast,FALSE,2.221097,420
+Edinburgh West,S14000026,232,Expected at 05:00,snp,ld,SNP,LD,Likely Scottish National Party gain from Liberal Democrat,99% chance,1% chance of Liberal Democrat hold,Likely SNP gain from LD,forecast,FALSE,5.659627,420
+Falkirk,S14000028,245,Expected at 02:30,snp,snp,SNP,SNP,Likely Scottish National Party hold,99+% chance,,,forecast,FALSE,9.149027,270
+Glasgow Central,S14000029,262,Expected at 03:00,snp,snp,SNP,SNP,Likely Scottish National Party hold,99+% chance,,,forecast,FALSE,6.300022,300
+Glasgow East,S14000030,263,Expected at 03:00,snp,snp,SNP,SNP,Likely Scottish National Party hold,99+% chance,,,forecast,FALSE,0.207377,300
+Glasgow North,S14000031,264,Expected at 03:00,snp,snp,SNP,SNP,Likely Scottish National Party hold,99+% chance,,,forecast,FALSE,3.166731,300
+Glasgow North East,S14000032,265,Expected at 03:00,snp,lab,SNP,LAB,Likely Scottish National Party gain from Labour,99+% chance,,,forecast,FALSE,0.761605,300
+Glasgow North West,S14000033,266,Expected at 03:00,snp,snp,SNP,SNP,Likely Scottish National Party hold,99+% chance,,,forecast,FALSE,6.593039,300
+Glasgow South,S14000034,267,Expected at 03:00,snp,snp,SNP,SNP,Likely Scottish National Party hold,99+% chance,,,forecast,FALSE,4.549944,300
+Glasgow South West,S14000035,268,Expected at 03:00,snp,snp,SNP,SNP,Likely Scottish National Party hold,99+% chance,,,forecast,FALSE,0.169597,300
+Glenrothes,S14000036,269,Expected at 03:00,snp,snp,SNP,SNP,Likely Scottish National Party hold,99+% chance,,,forecast,FALSE,8.086834,300
+Gordon,S14000037,271,Expected at 05:00,snp,con,SNP,CON,Likely Scottish National Party gain from Conservative,99+% chance,,Likely SNP gain from Conservative,forecast,FALSE,4.856105,420
+Inverclyde,S14000038,330,Expected at 02:30,snp,snp,SNP,SNP,Likely Scottish National Party hold,99+% chance,,,forecast,FALSE,0.982273,270
+"Inverness, Nairn, Badenoch & Strathspey",S14000039,331,Expected at 04:00,snp,snp,SNP,SNP,Likely Scottish National Party hold,99+% chance,,,forecast,FALSE,9.325581,360
+Kilmarnock & Loudoun,S14000040,342,Expected at 01:30,snp,snp,SNP,SNP,Likely Scottish National Party hold,99+% chance,,,forecast,FALSE,13.479112,210
+Kirkcaldy & Cowdenbeath,S14000041,345,Expected at 03:00,snp,lab,SNP,LAB,Likely Scottish National Party gain from Labour,99+% chance,,,forecast,FALSE,0.560691,300
+Lanark & Hamilton East,S14000042,348,Expected at 02:00,snp,snp,SNP,SNP,Likely Scottish National Party hold,97% chance,3% chance of Conservative gain from Scottish National Party,,forecast,FALSE,0.527046,240
+Linlithgow & Falkirk East,S14000043,369,Expected at 03:00,snp,snp,SNP,SNP,Likely Scottish National Party hold,99+% chance,,,forecast,FALSE,5.203765,300
+Livingston,S14000044,374,Expected at 03:00,snp,snp,SNP,SNP,Likely Scottish National Party hold,99+% chance,,,forecast,FALSE,7.385963,300
+Midlothian,S14000045,396,Expected at 02:00,snp,lab,SNP,LAB,Likely Scottish National Party gain from Labour,99+% chance,,,forecast,FALSE,1.954808,240
+Moray,S14000046,403,Expected at 03:30,snp,con,SNP,CON,Likely Scottish National Party gain from Conservative,99% chance,1% chance of Conservative hold,Likely SNP gain from Conservative,forecast,FALSE,8.736477,330
+Motherwell & Wishaw,S14000047,406,Expected at 04:00,snp,snp,SNP,SNP,Likely Scottish National Party hold,99+% chance,,,forecast,FALSE,0.758479,360
+Ayrshire North & Arran,S14000048,25,Expected at 03:00,snp,snp,SNP,SNP,Likely Scottish National Party hold,99+% chance,,,forecast,FALSE,7.659225,300
+Fife North East,S14000049,250,Expected at 04:00,snp,snp,SNP,SNP,Likely Scottish National Party hold,99+% chance,,,forecast,FALSE,0.004782,360
+Orkney & Shetland,S14000051,441,Expected at 06:00,snp,ld,SNP,LD,Possible Scottish National Party gain from Liberal Democrat,81% chance,19% chance of Liberal Democrat hold,Possible SNP gain from LD,forecast,FALSE,19.603042,480
+Paisley & Renfrewshire North,S14000052,445,Expected at 02:30,snp,snp,SNP,SNP,Likely Scottish National Party hold,99+% chance,,,forecast,FALSE,5.605492,270
+Paisley & Renfrewshire South,S14000053,446,Expected at 02:30,snp,snp,SNP,SNP,Likely Scottish National Party hold,99+% chance,,,forecast,FALSE,6.091772,270
+Perth & Perthshire North,S14000054,450,Expected at 03:30,tctf,snp,,SNP,Too close to forecast winning party,"54% chance of Scottish National Party hold, 46% chance of Conservative gain",,,forecast,FALSE,0.040757,330
+"Ross, Skye & Lochaber",S14000055,479,Expected at 05:00,snp,snp,SNP,SNP,Likely Scottish National Party hold,99+% chance,,,forecast,FALSE,15.392417,420
+Rutherglen & Hamilton West,S14000056,487,Expected at 01:00,snp,lab,SNP,LAB,Likely Scottish National Party gain from Labour,99+% chance,,,forecast,FALSE,0.520915,180
+Stirling,S14000057,533,Expected at 03:00,snp,con,SNP,CON,Likely Scottish National Party gain from Conservative,99+% chance,,Likely SNP gain from Conservative,forecast,FALSE,0.299862,300
+Aberdeenshire West & Kincardine,S14000058,5,Expected at 05:00,snp,con,SNP,CON,Possible Scottish National Party gain from Conservative,88% chance,12% chance of Conservative hold,Possible SNP gain from Conservative,forecast,FALSE,15.399516,420
+Dunbartonshire West,S14000059,210,Expected at 02:00,snp,snp,SNP,SNP,Likely Scottish National Party hold,99+% chance,,,forecast,FALSE,5.190209,240
+Ynys Mon,W07000041,647,Expected at 03:00,lab,lab,LAB,LAB,Possible Labour hold,93% chance,5% chance of Conservative gain from Labour,,forecast,FALSE,14.073915,300
+Delyn,W07000042,179,Expected at 03:00,con,lab,CON,LAB,Likely Conservative gain from Labour,97% chance,3% chance of Labour hold,,forecast,FALSE,10.756507,300
+Alyn & Deeside,W07000043,10,Expected at 03:00,con,lab,CON,LAB,Likely Conservative gain from Labour,95% chance,5% chance of Labour hold,,forecast,FALSE,11.69571,300
+Wrexham,W07000044,641,Expected at 02:00,con,lab,CON,LAB,Likely Conservative gain from Labour,99+% chance,,,forecast,FALSE,5.220563,240
+Llanelli,W07000045,375,Expected at 02:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,29.805166,240
+Gower,W07000046,273,Expected at 02:30,tctf,lab,,LAB,Too close to forecast winning party,"50% chance of Conservative gain, 50% chance of Labour hold",,,forecast,FALSE,7.172635,270
+Swansea West,W07000047,559,Expected at 01:30,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,28.426587,210
+Swansea East,W07000048,558,Expected at 02:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,37.452715,240
+Aberavon,W07000049,1,Expected at 02:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,50.381748,240
+Cardiff Central,W07000050,126,Expected at 03:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,42.599153,300
+Cardiff North,W07000051,127,Expected at 03:00,tctf,lab,,LAB,Too close to forecast winning party,"51% chance of Labour hold, 49% chance of Conservative gain",,,forecast,FALSE,8.023529,300
+Rhondda,W07000052,470,Expected at 03:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,41.735487,300
+Torfaen,W07000053,576,Expected at 02:00,lab,lab,LAB,LAB,Possible Labour hold,87% chance,13% chance of Conservative gain from Labour,,forecast,FALSE,26.646543,240
+Monmouth,W07000054,401,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,16.499779,360
+Newport East,W07000055,417,Expected at 02:00,tctf,lab,,LAB,Too close to forecast winning party,"55% chance of Labour hold, 45% chance of Conservative gain",,,forecast,FALSE,21.73547,240
+Newport West,W07000056,418,Expected at 02:00,lab,lab,LAB,LAB,Possible Labour win,83% chance,17% chance of Conservative win,,forecast,FALSE,13.025462,240
+Arfon,W07000057,16,Expected at 02:00,pc,pc,PC,PC,Likely Plaid Cymru hold,99% chance,1% chance of Labour gain from Plaid Cymru,,forecast,FALSE,0.326149,240
+Aberconwy,W07000058,2,Expected at 03:30,con,con,CON,CON,Likely Conservative hold,97% chance,3% chance of Labour gain from Conservative,,forecast,FALSE,1.975117,330
+Clwyd West,W07000059,155,Expected at 03:30,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,8.454273,330
+Vale Of Clwyd,W07000060,588,Expected at 03:00,con,lab,CON,LAB,Likely Conservative gain from Labour,99+% chance,,,forecast,FALSE,6.149829,300
+Dwyfor Meirionnydd,W07000061,217,Expected at 02:00,pc,pc,PC,PC,Possible Plaid Cymru hold,91% chance,9% chance of Conservative gain from Plaid Cymru,,forecast,FALSE,15.981284,240
+Clwyd South,W07000062,154,Expected at 02:00,con,lab,CON,LAB,Possible Conservative gain from Labour,94% chance,6% chance of Labour hold,,forecast,FALSE,11.624059,240
+Montgomeryshire,W07000063,402,Expected at 03:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,26.611447,300
+Ceredigion,W07000064,135,Expected at 04:00,tctf,pc,,PC,Too close to forecast winning party,"48% chance of Liberal Democrat gain, 46% chance of Plaid Cymru hold, 6% chance of Conservative gain",,,forecast,FALSE,0.261523,360
+Preseli Pembrokeshire,W07000065,459,Expected at 04:30,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,0.744129,390
+Carmarthen West & Pembrokeshire South,W07000066,132,Expected at 04:30,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,7.36513,390
+Carmarthen East & Dinefwr,W07000067,131,Expected at 03:00,pc,pc,PC,PC,Likely Plaid Cymru hold,97% chance,3% chance of Conservative gain from Plaid Cymru,,forecast,FALSE,9.52497,300
+Brecon & Radnorshire,W07000068,89,Expected at 03:00,con,con,CON,CON,Likely Conservative win,99+% chance,,,forecast,FALSE,19.446461,300
+Neath,W07000069,408,Expected at 02:30,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,32.992033,270
+Cynon Valley,W07000070,174,Expected at 03:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,41.626313,300
+Merthyr Tydfil & Rhymney,W07000071,393,Expected at 04:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,48.692801,360
+Blaenau Gwent,W07000072,71,Expected at 02:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,36.768157,240
+Bridgend,W07000073,94,Expected at 03:00,con,lab,CON,LAB,Likely Conservative gain from Labour,96% chance,4% chance of Labour hold,,forecast,FALSE,10.865796,300
+Ogmore,W07000074,437,Expected at 03:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,37.283625,300
+Pontypridd,W07000075,454,Expected at 02:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,28.696045,240
+Caerphilly,W07000076,114,Expected at 02:00,lab,lab,LAB,LAB,Likely Labour hold,99% chance,1% chance of Conservative gain from Labour,,forecast,FALSE,29.246677,240
+Islwyn,W07000077,336,Expected at 02:00,lab,lab,LAB,LAB,Likely Labour hold,99% chance,1% chance of Conservative gain from Labour,,forecast,FALSE,31.618319,240
+Vale Of Glamorgan,W07000078,589,Expected at 02:00,con,con,CON,CON,Likely Conservative hold,99% chance,1% chance of Labour gain from Conservative,,forecast,FALSE,4.076846,240
+Cardiff West,W07000079,129,Expected at 04:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,26.916726,360
+Cardiff South & Penarth,W07000080,128,Expected at 04:00,lab,lab,LAB,LAB,Likely Labour hold,99+% chance,,,forecast,FALSE,29.296752,360
+Dunfermline & West Fife,S14000017,#N/A,Expected at 03:00,snp,snp,SNP,SNP,Likely Scottish National Party hold,99+% chance,,,forecast,FALSE,1.654578,300
+Ochil & South Perthshire,S14000050,#N/A,Expected at 03:00,snp,con,SNP,CON,Possible Scottish National Party gain from Conservative,88% chance,12% chance of Conservative hold,Possible SNP gain from Conservative,forecast,FALSE,6.201078,300
+Na H-Eileanan An Iar [Western Isles],S14000027,#N/A,Expected at 03:00,snp,snp,SNP,SNP,Likely Scottish National Party hold,99+% chance,,,forecast,FALSE,6.795789,300
+Uxbridge & South Ruislip,E14001007,#N/A,Expected at 04:30,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,10.780828,390
+Bridgwater & West Somerset,E14000595,#N/A,Expected at 05:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,26.512434,420
+Ashton-under-Lyne,E14000537,#N/A,Expected at 05:00,lab,lab,LAB,LAB,Possible Labour hold,92% chance,8% chance of Conservative gain from Labour,,forecast,FALSE,28.398662,420
+Faversham & Mid Kent,E14000700,#N/A,Expected at 05:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,35.001709,420
+Richmond [Yorks],E14000895,#N/A,Expected at 04:00,con,con,CON,CON,Likely Conservative hold,99+% chance,,,forecast,FALSE,40.531107,360

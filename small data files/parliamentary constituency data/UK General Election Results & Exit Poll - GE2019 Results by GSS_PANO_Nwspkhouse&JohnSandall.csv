@@ -1,0 +1,651 @@
+Constituency,PANO,ONSConstID,Constituency,Region,Estimated declaration time,Day,Day/Time,CON,LAB,LIBDEM,GRN,SNP,PC,BXP,UKIP,OTHER,Registered Voters,Turnout
+Houghton & Sunderland South,320,E14000754,Houghton & Sunderland South,North East,23:00,4-Thursday,4-Thursday 23:00,13095,16210,2319,1125,,,6165,897,0,68828,57.84%
+Newcastle upon Tyne Central,414,E14000831,Newcastle upon Tyne Central,North East,23:00,4-Thursday,4-Thursday 23:00,9290,21568,2709,1365,,,2542,,0,57845,64.78%
+Newcastle upon Tyne East,415,E14000832,Newcastle upon Tyne East,North East,00:00,5-Friday,5-Friday 00:00,10586,26049,4535,2195,,,,,0,63796,67.97%
+Newcastle upon Tyne North,416,E14000833,Newcastle upon Tyne North,North East,00:00,5-Friday,5-Friday 00:00,15589,21354,4357,1368,,,4331,,0,68486,68.63%
+Sunderland Central,551,E14000982,Sunderland Central,North East,00:00,5-Friday,5-Friday 00:00,15372,18336,3025,1212,,,5047,,484,72672,59.82%
+Washington & Sunderland West,603,E14001020,Washington & Sunderland West,North East,00:00,5-Friday,5-Friday 00:00,12218,15941,2071,1005,,,5439,839,0,66273,56.60%
+Halton,285,E14000725,Halton,North West,00:30,5-Friday,5-Friday 00:30,10358,29333,1800,982,,,3730,,0,71930,64.23%
+Basildon & Billericay,32,E14000544,Basildon & Billericay,East,01:00,5-Friday,5-Friday 01:00,29590,9178,3741,1395,,,,,224,69906,63.12%
+Broxbourne,106,E14000606,Broxbourne,East,01:00,5-Friday,5-Friday 01:00,30631,10824,3970,1281,,,,,0,73182,63.82%
+Jarrow,337,E14000765,Jarrow,North East,01:00,5-Friday,5-Friday 01:00,11243,18363,2360,831,,,4122,,826,65103,57.98%
+Makerfield,385,E14000805,Makerfield,North West,01:00,5-Friday,5-Friday 01:00,15214,19954,2108,1166,,,5817,,0,74190,59.66%
+Middlesbrough,394,E14000819,Middlesbrough,North East,01:00,5-Friday,5-Friday 01:00,8812,17202,816,546,,,216,,4548,60759,52.90%
+South Shields,522,E14000944,South Shields,North East,01:00,5-Friday,5-Friday 01:00,7688,17273,1514,1303,,,6446,,3658,62793,60.33%
+Wigan,618,E14001039,Wigan,North West,01:00,5-Friday,5-Friday 01:00,14314,21042,2428,1299,,,5959,,0,75680,59.52%
+Workington,636,E14001053,Workington,North West,01:00,5-Friday,5-Friday 01:00,20488,16312,1525,596,,,1749,,87,61370,66.41%
+Down North,202,N06000013,Down North,Northern Ireland,01:00,5-Friday,5-Friday 01:00,1959,,,,,,,,38684,67099,60.57%
+Rutherglen & Hamilton West,487,S14000056,Rutherglen & Hamilton West,Scotland,01:00,5-Friday,5-Friday 01:00,8054,18545,2791,,23775,,,629,0,80918,66.48%
+Darlington,176,E14000658,Darlington,North East,01:30,5-Friday,5-Friday 01:30,20901,17607,2097,1057,,,1544,,292,66395,65.51%
+Nuneaton,435,E14000868,Nuneaton,West Midlands,01:30,5-Friday,5-Friday 01:30,27390,14246,1862,1692,,,,,0,70226,64.35%
+Kilmarnock & Loudoun,342,S14000040,Kilmarnock & Loudoun,Scotland,01:30,5-Friday,5-Friday 01:30,11557,9009,2444,,24216,,,,405,74517,63.92%
+Swansea West,559,W07000047,Swansea West,Wales,01:30,5-Friday,5-Friday 01:30,10377,18493,2993,,,1984,1983,,0,57078,62.77%
+Battersea,38,E14000549,Battersea,London,02:00,5-Friday,5-Friday 02:00,21622,27290,9150,1529,,,386,,0,79309,75.62%
+Birkenhead,56,E14000559,Birkenhead,North West,02:00,5-Friday,5-Friday 02:00,5540,24990,1620,1405,,,1489,,7285,63762,66.39%
+Blackburn,67,E14000570,Blackburn,North West,02:00,5-Friday,5-Friday 02:00,10736,29040,1130,741,,,2770,,319,71228,62.81%
+Blaydon,72,E14000574,Blaydon,North East,02:00,5-Friday,5-Friday 02:00,14263,19794,3703,1279,,,5833,,809,67853,67.32%
+Bootle,79,E14000581,Bootle,North West,02:00,5-Friday,5-Friday 02:00,4510,39066,1822,1166,,,2610,,0,74832,65.71%
+Bracknell,84,E14000586,Bracknell,South East,02:00,5-Friday,5-Friday 02:00,31894,12065,7749,2089,,,,,553,79206,68.62%
+Burnley,109,E14000609,Burnley,North West,02:00,5-Friday,5-Friday 02:00,15720,14368,3501,739,,,3362,,1294,64343,60.59%
+Burton,110,E14000610,Burton,West Midlands,02:00,5-Friday,5-Friday 02:00,29560,15064,2681,1433,,,,,0,75030,64.96%
+Bury North,111,E14000611,Bury North,North West,02:00,5-Friday,5-Friday 02:00,21660,21555,1584,802,,,1240,,0,68802,68.08%
+Bury South,112,E14000612,Bury South,North West,02:00,5-Friday,5-Friday 02:00,22034,21632,2315,848,,,1672,,407,75152,65.08%
+Cannock Chase,124,E14000618,Cannock Chase,West Midlands,02:00,5-Friday,5-Friday 02:00,31636,11757,,2920,,,,,0,74813,61.91%
+Carlisle,130,E14000620,Carlisle,North West,02:00,5-Friday,5-Friday 02:00,23659,15340,2829,,,,,1045,0,65105,65.85%
+Castle Point,134,E14000622,Castle Point,East,02:00,5-Friday,5-Friday 02:00,33971,7337,2969,,,,,,0,69643,63.58%
+Surrey East,552,E14000681,Surrey East,South East,02:00,5-Friday,5-Friday 02:00,35624,8247,11584,2340,,,,,1895,83148,71.79%
+Folkestone & Hythe,253,E14000704,Folkestone & Hythe,South East,02:00,5-Friday,5-Friday 02:00,35483,14146,5755,2706,,,,,915,88273,66.84%
+Fylde,256,E14000706,Fylde,North West,02:00,5-Friday,5-Friday 02:00,28432,11821,3748,1731,,,,,927,66847,69.80%
+Gateshead,259,E14000709,Gateshead,North East,02:00,5-Friday,5-Friday 02:00,13250,20450,2792,1653,,,,,0,64449,59.19%
+Harlow,292,E14000729,Harlow,East,02:00,5-Friday,5-Friday 02:00,27510,13447,2397,,,,,,0,68078,63.68%
+Hartlepool,296,E14000733,Hartlepool,North East,02:00,5-Friday,5-Friday 02:00,11869,15464,1696,,,,10603,,1405,70855,57.92%
+Hertsmere,311,E14000745,Hertsmere,East,02:00,5-Friday,5-Friday 02:00,32651,11338,6561,1653,,,,,0,73971,70.57%
+Huntingdon,326,E14000757,Huntingdon,East,02:00,5-Friday,5-Friday 02:00,32386,13003,9432,2233,,,,,304,84657,67.75%
+Kettering,341,E14000769,Kettering,East Midlands,02:00,5-Friday,5-Friday 02:00,29787,13022,3367,1543,,,,,1642,73187,67.45%
+Hull North,324,E14000772,Hull North,Yorkshire and The Humber,02:00,5-Friday,5-Friday 02:00,9440,17033,2084,875,,,4771,,0,65515,52.21%
+Knowsley,346,E14000775,Knowsley,North West,02:00,5-Friday,5-Friday 02:00,4432,44374,1117,1262,,,3348,,405,84060,65.36%
+Leigh,361,E14000785,Leigh,North West,02:00,5-Friday,5-Friday 02:00,21266,19301,2252,,,,3161,448,551,77417,60.68%
+Swindon North,560,E14000851,Swindon North,South West,02:00,5-Friday,5-Friday 02:00,32584,16413,4408,1710,,,,,0,82441,66.85%
+Tyneside North,583,E14000853,Tyneside North,North East,02:00,5-Friday,5-Friday 02:00,15490,25051,3241,1393,,,5254,,0,78902,63.91%
+Warwickshire North,602,E14000854,Warwickshire North,West Midlands,02:00,5-Friday,5-Friday 02:00,30249,12293,2069,1303,,,,,0,70271,65.34%
+Leicestershire North West,359,E14000858,Leicestershire North West,East Midlands,02:00,5-Friday,5-Friday 02:00,33811,13411,3614,2478,,,,,507,78935,68.18%
+Putney,462,E14000887,Putney,London,02:00,5-Friday,5-Friday 02:00,18006,22780,8548,1133,,,,,0,65542,77.00%
+Rugby,483,E14000905,Rugby,West Midlands,02:00,5-Friday,5-Friday 02:00,29225,15808,4207,1544,,,,,0,72340,70.20%
+Runnymede & Weybridge,485,E14000907,Runnymede & Weybridge,South East,02:00,5-Friday,5-Friday 02:00,29262,10992,9236,1876,,,,476,670,77196,68.02%
+Rushcliffe,486,E14000908,Rushcliffe,East Midlands,02:00,5-Friday,5-Friday 02:00,28765,21122,9600,,,,,591,427,77055,78.52%
+Sefton Central,500,E14000916,Sefton Central,North West,02:00,5-Friday,5-Friday 02:00,14132,29254,3386,1261,,,2425,,422,69760,72.94%
+Basildon South & Thurrock East,33,E14000933,Basildon South & Thurrock East,East,02:00,5-Friday,5-Friday 02:00,29973,10051,1957,,,,,,3316,74441,60.85%
+Norfolk South,424,E14000941,Norfolk South,East,02:00,5-Friday,5-Friday 02:00,36258,14983,8744,2499,,,,,0,86214,72.48%
+St Helens North,492,E14000962,St Helens North,North West,02:00,5-Friday,5-Friday 02:00,12661,24870,2668,1966,,,5396,,0,75593,62.92%
+St Helens South & Whiston,493,E14000963,St Helens South & Whiston,North West,02:00,5-Friday,5-Friday 02:00,10335,29457,2886,2282,,,5353,,0,79058,63.64%
+Stockton North,535,E14000970,Stockton North,North East,02:00,5-Friday,5-Friday 02:00,16701,17728,1631,,,,3907,,1189,66676,61.73%
+Stockton South,536,E14000971,Stockton South,North East,02:00,5-Friday,5-Friday 02:00,27764,22504,2338,,,,2196,,0,76895,71.27%
+Tamworth,562,E14000986,Tamworth,West Midlands,02:00,5-Friday,5-Friday 02:00,30542,10908,2426,935,,,,814,431,71580,64.34%
+Thurrock,571,E14000995,Thurrock,East,02:00,5-Friday,5-Friday 02:00,27795,16313,1510,807,,,,,1042,79655,59.59%
+Tooting,574,E14000998,Tooting,London,02:00,5-Friday,5-Friday 02:00,16504,30811,8305,2314,,,462,,77,76933,76.01%
+Tynemouth,582,E14001006,Tynemouth,North East,02:00,5-Friday,5-Friday 02:00,22071,26928,3791,1281,,,1963,,0,77261,72.53%
+Wallasey,592,E14001010,Wallasey,North West,02:00,5-Friday,5-Friday 02:00,11579,29901,1843,1132,,,2037,,0,66310,70.11%
+Warley,598,E14001016,Warley,West Midlands,02:00,5-Friday,5-Friday 02:00,10390,21901,1588,891,,,2469,,0,62421,59.66%
+Wellingborough,608,E14001025,Wellingborough,East Midlands,02:00,5-Friday,5-Friday 02:00,32277,13737,4078,1821,,,,,0,80764,64.28%
+West Bromwich East,612,E14001029,West Bromwich East,West Midlands,02:00,5-Friday,5-Friday 02:00,16804,15211,1313,627,,,1475,,545,62111,57.92%
+West Bromwich West,613,E14001030,West Bromwich West,West Midlands,02:00,5-Friday,5-Friday 02:00,17419,13620,915,664,,,1841,,0,64576,53.36%
+Wirral South,624,E14001043,Wirral South,North West,02:00,5-Friday,5-Friday 02:00,16179,22284,2917,948,,,1219,,0,57280,76.02%
+Wirral West,625,E14001044,Wirral West,North West,02:00,5-Friday,5-Friday 02:00,17692,20695,2706,965,,,860,,0,55550,77.26%
+Wolverhampton North East,630,E14001049,Wolverhampton North East,West Midlands,02:00,5-Friday,5-Friday 02:00,17722,13642,960,603,,,1354,,0,61829,55.44%
+Wycombe,642,E14001056,Wycombe,South East,02:00,5-Friday,5-Friday 02:00,24766,20552,6543,1454,,,,324,1117,78094,70.12%
+Yeovil,646,E14001060,Yeovil,South West,02:00,5-Friday,5-Friday 02:00,34588,3761,18407,1629,,,,,875,82468,71.86%
+Belfast West,48,N06000004,Belfast West,Northern Ireland,02:00,5-Friday,5-Friday 02:00,,,,,,,,,38782,65644,59.08%
+Londonderry East,376,N06000006,Londonderry East,Northern Ireland,02:00,5-Friday,5-Friday 02:00,,,,,,,,,39302,69246,56.76%
+Lagan Valley,347,N06000009,Lagan Valley,Northern Ireland,02:00,5-Friday,5-Friday 02:00,955,,,,,,,315,44135,75735,59.95%
+Strangford,542,N06000016,Strangford,Northern Ireland,02:00,5-Friday,5-Friday 02:00,1476,,,790,,,,308,34911,66928,56.01%
+"East Kilbride, Strathaven & Lesmahagow",223,S14000019,"East Kilbride, Strathaven & Lesmahagow",Scotland,02:00,5-Friday,5-Friday 02:00,11961,12791,3760,1153,26113,,,559,0,81224,69.36%
+Lanark & Hamilton East,348,S14000042,Lanark & Hamilton East,Scotland,02:00,5-Friday,5-Friday 02:00,17056,10736,3037,,22243,,,,0,77659,68.34%
+Midlothian,396,S14000045,Midlothian,Scotland,02:00,5-Friday,5-Friday 02:00,10467,14328,3393,,20033,,,,0,70544,68.36%
+Dunbartonshire West,210,S14000059,Dunbartonshire West,Scotland,02:00,5-Friday,5-Friday 02:00,6436,12843,1890,867,22396,,,,708,66517,67.86%
+Wrexham,641,W07000044,Wrexham,Wales,02:00,5-Friday,5-Friday 02:00,15199,13068,1447,445,,2151,1222,,0,49734,67.42%
+Llanelli,375,W07000045,Llanelli,Wales,02:00,5-Friday,5-Friday 02:00,11455,16125,,,,7048,3605,,0,60513,63.18%
+Swansea East,558,W07000048,Swansea East,Wales,02:00,5-Friday,5-Friday 02:00,9435,17405,1409,583,,1905,2842,,0,58450,57.45%
+Aberavon,1,W07000049,Aberavon,Wales,02:00,5-Friday,5-Friday 02:00,6518,17008,1072,450,,2711,3108,,731,50747,62.27%
+Torfaen,576,W07000053,Torfaen,Wales,02:00,5-Friday,5-Friday 02:00,11804,15546,1831,812,,1441,5742,,0,61743,60.21%
+Newport East,417,W07000055,Newport East,Wales,02:00,5-Friday,5-Friday 02:00,14133,16125,2121,577,,872,2454,,0,58554,61.96%
+Newport West,418,W07000056,Newport West,Wales,02:00,5-Friday,5-Friday 02:00,18075,18977,2565,902,,1187,1727,,0,66657,65.16%
+Arfon,16,W07000057,Arfon,Wales,02:00,5-Friday,5-Friday 02:00,4428,10353,,,,13134,1159,,0,42215,68.87%
+Dwyfor Meirionnydd,217,W07000061,Dwyfor Meirionnydd,Wales,02:00,5-Friday,5-Friday 02:00,9707,3998,,,,14447,1776,,0,44362,67.46%
+Clwyd South,154,W07000062,Clwyd South,Wales,02:00,5-Friday,5-Friday 02:00,16222,14983,1496,,,2137,1468,,0,53919,67.33%
+Blaenau Gwent,71,W07000072,Blaenau Gwent,Wales,02:00,5-Friday,5-Friday 02:00,5749,14862,1285,386,,1722,6215,,0,50736,59.56%
+Pontypridd,454,W07000075,Pontypridd,Wales,02:00,5-Friday,5-Friday 02:00,11494,17381,,,,4990,2917,,149,60327,61.22%
+Caerphilly,114,W07000076,Caerphilly,Wales,02:00,5-Friday,5-Friday 02:00,11185,18018,,,,6424,4490,,0,63166,63.51%
+Islwyn,336,W07000077,Islwyn,Wales,02:00,5-Friday,5-Friday 02:00,9892,15356,1313,669,,2286,4834,,0,55423,61.98%
+Vale of Glamorgan,589,W07000078,Vale of Glamorgan,Wales,02:00,5-Friday,5-Friday 02:00,27305,23743,,3251,,,,,508,76508,71.64%
+Barnsley Central,29,E14000541,Barnsley Central,Yorkshire and The Humber,02:30,5-Friday,5-Friday 02:30,7892,14804,1176,900,,,11233,,898,65277,56.53%
+Barnsley East,30,E14000542,Barnsley East,Yorkshire and The Humber,02:30,5-Friday,5-Friday 02:30,10377,14329,1330,922,,,11112,,0,69504,54.77%
+Chichester,145,E14000633,Chichester,South East,02:30,5-Friday,5-Friday 02:30,35402,9069,13912,2527,,,,,333,85499,71.63%
+Chorley,149,E14000637,Chorley,North West,02:30,5-Friday,5-Friday 02:30,,,,3600,,,,,36270,78177,51.00%
+Dover,201,E14000670,Dover,South East,02:30,5-Friday,5-Friday 02:30,28830,16552,2895,1371,,,,,1053,76355,66.40%
+Epping Forest,239,E14000693,Epping Forest,East,02:30,5-Friday,5-Friday 02:30,32364,10191,5387,1975,,,,,351,74305,67.65%
+Gainsborough,257,E14000707,Gainsborough,East Midlands,02:30,5-Friday,5-Friday 02:30,33893,10926,5157,,,,,,1070,76343,66.86%
+Harrogate & Knaresborough,293,E14000730,Harrogate & Knaresborough,Yorkshire and The Humber,02:30,5-Friday,5-Friday 02:30,29962,5480,20287,,,,,,1208,77914,73.08%
+Havant,299,E14000736,Havant,South East,02:30,5-Friday,5-Friday 02:30,30051,8259,5708,1597,,,,,344,72130,63.72%
+Ribble Valley,471,E14000894,Ribble Valley,North West,02:30,5-Friday,5-Friday 02:30,33346,14907,4776,1704,,,,,551,79247,69.76%
+Stratford-on-Avon,543,E14000977,Stratford-on-Avon,West Midlands,02:30,5-Friday,5-Friday 02:30,33343,6222,13371,2112,,,,,0,74038,74.35%
+Torbay,575,E14000999,Torbay,South West,02:30,5-Friday,5-Friday 02:30,29863,6562,12114,1239,,,,,648,75054,67.19%
+Watford,604,E14001021,Watford,East,02:30,5-Friday,5-Friday 02:30,26421,21988,9323,,,,,,333,83359,69.66%
+Angus,12,S14000004,Angus,Scotland,02:30,5-Friday,5-Friday 02:30,17421,2051,2482,,21216,,,,0,63952,67.50%
+Dundee East,211,S14000015,Dundee East,Scotland,02:30,5-Friday,5-Friday 02:30,0,0,0,,0,,,,0,66210,0.00%
+Dundee West,212,S14000016,Dundee West,Scotland,02:30,5-Friday,5-Friday 02:30,5149,10096,2468,,22355,,1271,,240,64431,64.53%
+Falkirk,245,S14000028,Falkirk,Scotland,02:30,5-Friday,5-Friday 02:30,14403,6243,3990,1885,29351,,,,0,84472,66.14%
+Inverclyde,330,S14000038,Inverclyde,Scotland,02:30,5-Friday,5-Friday 02:30,6265,11783,2560,,19295,,,,0,60622,65.82%
+Paisley & Renfrewshire North,445,S14000052,Paisley & Renfrewshire North,Scotland,02:30,5-Friday,5-Friday 02:30,11217,11451,3661,,23353,,,,0,72007,69.00%
+Paisley & Renfrewshire South,446,S14000053,Paisley & Renfrewshire South,Scotland,02:30,5-Friday,5-Friday 02:30,7571,10958,2918,,21637,,,,0,64385,66.92%
+Gower,273,W07000046,Gower,Wales,02:30,5-Friday,5-Friday 02:30,18371,20208,2236,,,2288,1379,,0,61762,72.02%
+Neath,408,W07000069,Neath,Wales,02:30,5-Friday,5-Friday 02:30,10283,15920,1485,728,,4495,3184,,661,56416,65.15%
+Aldershot,7,E14000530,Aldershot,South East,03:00,5-Friday,5-Friday 03:00,27980,11282,6920,1750,,,,,0,72617,66.01%
+Aldridge-Brownhills,8,E14000531,Aldridge-Brownhills,West Midlands,03:00,5-Friday,5-Friday 03:00,27850,8014,2371,771,,,,,336,60138,65.42%
+Amber Valley,11,E14000533,Amber Valley,East Midlands,03:00,5-Friday,5-Friday 03:00,29096,12210,2873,1388,,,,,0,69976,65.12%
+Ashford,20,E14000536,Ashford,South East,03:00,5-Friday,5-Friday 03:00,37270,13241,6048,2638,,,,,862,89550,67.07%
+Barking,28,E14000540,Barking,London,03:00,5-Friday,5-Friday 03:00,11792,27219,1482,820,,,3186,,0,77946,57.09%
+Bath,36,E14000547,Bath,South West,03:00,5-Friday,5-Friday 03:00,16097,6639,28419,,,,642,,341,67725,76.98%
+Beaconsfield,39,E14000550,Beaconsfield,South East,03:00,5-Friday,5-Friday 03:00,32477,5756,,2033,,,,,837,77720,52.89%
+Bedford,41,E14000552,Bedford,East,03:00,5-Friday,5-Friday 03:00,20346,20491,4608,960,,,896,,0,71579,66.08%
+Birmingham Edgbaston,57,E14000560,Birmingham Edgbaston,West Midlands,03:00,5-Friday,5-Friday 03:00,15603,21217,3349,1112,,,1047,,0,68828,61.50%
+Birmingham Erdington,58,E14000561,Birmingham Erdington,West Midlands,03:00,5-Friday,5-Friday 03:00,14119,17720,1301,648,,,1441,,0,66148,53.26%
+Birmingham Ladywood,61,E14000564,Birmingham Ladywood,West Midlands,03:00,5-Friday,5-Friday 03:00,4773,33355,2228,931,,,831,,0,74912,56.22%
+Birmingham Northfield,62,E14000565,Birmingham Northfield,West Midlands,03:00,5-Friday,5-Friday 03:00,19957,18317,1961,954,,,1655,254,0,73694,58.48%
+Birmingham Yardley,65,E14000568,Birmingham Yardley,West Midlands,03:00,5-Friday,5-Friday 03:00,12720,23379,3754,579,,,2246,,0,74704,57.13%
+Bishop Auckland,66,E14000569,Bishop Auckland,North East,03:00,5-Friday,5-Friday 03:00,24067,16105,2133,,,,2500,,0,68170,65.73%
+Blackpool North & Cleveleys,69,E14000572,Blackpool North & Cleveleys,North West,03:00,5-Friday,5-Friday 03:00,22364,13768,1494,735,,,,,443,63691,60.93%
+Blackpool South,70,E14000573,Blackpool South,North West,03:00,5-Friday,5-Friday 03:00,16247,12557,1008,563,,,2009,,368,57688,56.77%
+Bolton North East,76,E14000578,Bolton North East,North West,03:00,5-Friday,5-Friday 03:00,19759,19381,1847,689,,,1880,,0,67564,64.47%
+Bolton South East,77,E14000579,Bolton South East,North West,03:00,5-Friday,5-Friday 03:00,13918,21516,1411,791,,,2968,,0,69163,58.71%
+Bolton West,78,E14000580,Bolton West,North West,03:00,5-Friday,5-Friday 03:00,27255,18400,2704,939,,,,,0,73191,67.36%
+Brentwood & Ongar,93,E14000594,Brentwood & Ongar,East,03:00,5-Friday,5-Friday 03:00,36308,7243,1644,1679,,,,,103,75253,62.43%
+Bristol East,99,E14000599,Bristol East,South West,03:00,5-Friday,5-Friday 03:00,16923,27717,3527,2106,,,1881,,0,73867,70.61%
+Bristol North West,100,E14000600,Bristol North West,South West,03:00,5-Friday,5-Friday 03:00,21638,27330,4940,1977,,,,,0,76273,73.27%
+Bristol South,101,E14000601,Bristol South,South West,03:00,5-Friday,5-Friday 03:00,18036,27895,4227,2713,,,2325,,0,84079,65.65%
+Bristol West,102,E14000602,Bristol West,South West,03:00,5-Friday,5-Friday 03:00,8822,47028,,18809,,,869,,0,99253,76.10%
+Cambridge,119,E14000617,Cambridge,East,03:00,5-Friday,5-Friday 03:00,8342,25776,16137,2164,,,1041,,269,79951,67.20%
+Devon Central,188,E14000623,Devon Central,South West,03:00,5-Friday,5-Friday 03:00,32095,14374,8770,2833,,,,,0,74926,77.51%
+Chelsea & Fulham,140,E14000629,Chelsea & Fulham,London,03:00,5-Friday,5-Friday 03:00,23345,10872,12104,,,,,,500,67110,69.77%
+Chesham & Amersham,142,E14000631,Chesham & Amersham,South East,03:00,5-Friday,5-Friday 03:00,30850,7166,14627,3042,,,,,0,72542,76.76%
+Chingford & Woodford Green,146,E14000634,Chingford & Woodford Green,London,03:00,5-Friday,5-Friday 03:00,23481,22219,2744,,,,,,0,65393,74.08%
+Christchurch,150,E14000638,Christchurch,South West,03:00,5-Friday,5-Friday 03:00,33894,6568,9277,2212,,,,,0,71521,72.64%
+Cities of London & Westminster,151,E14000639,Cities of London & Westminster,London,03:00,5-Friday,5-Friday 03:00,17049,11624,13096,728,,,,,226,63700,67.07%
+"Durham, City of",214,E14000641,"Durham, City of",North East,03:00,5-Friday,5-Friday 03:00,15506,20531,7935,1635,,,3252,,0,71271,68.55%
+Clacton,152,E14000642,Clacton,East,03:00,5-Friday,5-Friday 03:00,31438,6736,2541,1225,,,,,467,70930,59.79%
+Cleethorpes,153,E14000643,Cleethorpes,Yorkshire and The Humber,03:00,5-Friday,5-Friday 03:00,31969,10551,2535,1284,,,,,0,73689,62.88%
+Coventry North East,165,E14000649,Coventry North East,West Midlands,03:00,5-Friday,5-Friday 03:00,15720,23412,2061,1141,,,2110,,0,76002,58.48%
+Coventry North West,166,E14000650,Coventry North West,West Midlands,03:00,5-Friday,5-Friday 03:00,20710,20918,2717,1443,,,1956,,0,75240,63.46%
+Coventry South,167,E14000651,Coventry South,West Midlands,03:00,5-Friday,5-Friday 03:00,19143,19544,3398,1092,,,1432,,435,70970,63.47%
+Crawley,168,E14000652,Crawley,South East,03:00,5-Friday,5-Friday 03:00,27040,18680,2728,1451,,,,,0,74207,67.24%
+Dagenham & Rainham,175,E14000657,Dagenham & Rainham,London,03:00,5-Friday,5-Friday 03:00,19175,19468,1182,602,,,2887,,209,71043,61.26%
+Dartford,177,E14000659,Dartford,South East,03:00,5-Friday,5-Friday 03:00,34006,14846,3735,1435,,,,,0,82209,65.71%
+Don Valley,194,E14000667,Don Valley,Yorkshire and The Humber,03:00,5-Friday,5-Friday 03:00,19609,15979,1907,872,,,6247,,823,75356,60.30%
+Doncaster Central,195,E14000668,Doncaster Central,Yorkshire and The Humber,03:00,5-Friday,5-Friday 03:00,14360,16638,1748,981,,,6842,,1012,71389,58.25%
+Doncaster North,196,E14000669,Doncaster North,Yorkshire and The Humber,03:00,5-Friday,5-Friday 03:00,13370,15740,1476,,,,8297,,1410,72362,55.68%
+Ealing Central & Acton,218,E14000674,Ealing Central & Acton,London,03:00,5-Friday,5-Friday 03:00,14832,28132,9444,1735,,,664,,0,75510,72.58%
+Ealing North,219,E14000675,Ealing North,London,03:00,5-Friday,5-Friday 03:00,15767,28036,4370,1458,,,,,0,74473,66.64%
+Ealing Southall,220,E14000676,Ealing Southall,London,03:00,5-Friday,5-Friday 03:00,9594,25678,3933,1688,,,867,,457,64580,65.37%
+Easington,221,E14000677,Easington,North East,03:00,5-Friday,5-Friday 03:00,9142,15723,1526,,,,6744,,1448,61182,56.52%
+Eastbourne,225,E14000684,Eastbourne,South East,03:00,5-Friday,5-Friday 03:00,26951,3848,22620,,,,1530,,185,79307,69.52%
+Eastleigh,226,E14000685,Eastleigh,South East,03:00,5-Friday,5-Friday 03:00,32690,7559,17083,1639,,,,,0,83880,70.30%
+Edmonton,233,E14000687,Edmonton,London,03:00,5-Friday,5-Friday 03:00,10202,26217,2145,862,,,840,,75,65568,61.53%
+Epsom & Ewell,240,E14000694,Epsom & Ewell,South East,03:00,5-Friday,5-Friday 03:00,31819,10226,13946,2047,,,,,1413,81138,73.27%
+Erewash,241,E14000695,Erewash,East Midlands,03:00,5-Friday,5-Friday 03:00,27560,16954,2487,1115,,,,,122,72519,66.52%
+Esher & Walton,243,E14000697,Esher & Walton,South East,03:00,5-Friday,5-Friday 03:00,31132,2838,28389,,,,,,725,81184,77.70%
+Fareham,246,E14000699,Fareham,South East,03:00,5-Friday,5-Friday 03:00,36459,10373,8006,2412,,,,,0,78337,73.08%
+Forest of Dean,254,E14000705,Forest of Dean,South West,03:00,5-Friday,5-Friday 03:00,30680,14811,,4681,,,,,1303,71438,72.06%
+Garston & Halewood,258,E14000708,Garston & Halewood,North West,03:00,5-Friday,5-Friday 03:00,6954,38578,3324,1183,,,2943,,344,76116,70.06%
+Gedling,260,E14000710,Gedling,East Midlands,03:00,5-Friday,5-Friday 03:00,22718,22039,2279,1097,,,1820,,0,71438,69.92%
+Gloucester,270,E14000712,Gloucester,South West,03:00,5-Friday,5-Friday 03:00,29159,18882,4338,1385,,,,,0,81332,66.10%
+Grantham & Stamford,274,E14000714,Grantham & Stamford,East Midlands,03:00,5-Friday,5-Friday 03:00,36794,10791,6153,2265,,,,,0,81502,68.71%
+Great Grimsby,276,E14000716,Great Grimsby,Yorkshire and The Humber,03:00,5-Friday,5-Friday 03:00,18150,10819,1070,514,,,2378,,156,61409,53.88%
+Great Yarmouth,277,E14000717,Great Yarmouth,East,03:00,5-Friday,5-Friday 03:00,28593,10930,1661,1064,,,,,785,71957,59.80%
+Guildford,279,E14000719,Guildford,South East,03:00,5-Friday,5-Friday 03:00,26375,4515,22980,,,,,,4839,77729,75.53%
+Hammersmith,286,E14000726,Hammersmith,London,03:00,5-Friday,5-Friday 03:00,12227,30074,6947,1744,,,974,,0,74759,69.51%
+Hemel Hempstead,302,E14000739,Hemel Hempstead,East,03:00,5-Friday,5-Friday 03:00,28968,14405,6317,1581,,,,,0,73737,69.53%
+Heywood & Middleton,313,E14000747,Heywood & Middleton,North West,03:00,5-Friday,5-Friday 03:00,20453,19790,2073,1220,,,3952,,0,80162,59.24%
+High Peak,314,E14000748,High Peak,East Midlands,03:00,5-Friday,5-Friday 03:00,24844,24254,2750,1148,,,1177,,0,74343,72.87%
+Hornchurch & Upminster,317,E14000751,Hornchurch & Upminster,London,03:00,5-Friday,5-Friday 03:00,35495,12187,3862,1920,,,,,510,80765,66.83%
+Hyndburn,327,E14000758,Hyndburn,North West,03:00,5-Friday,5-Friday 03:00,20565,17614,1226,845,,,2156,,0,70910,59.80%
+Isle of Wight,333,E14000762,Isle of Wight,South East,03:00,5-Friday,5-Friday 03:00,41815,18078,,11338,,,,,2337,113021,65.09%
+Islington North,334,E14000763,Islington North,London,03:00,5-Friday,5-Friday 03:00,5483,34603,8415,4326,,,742,,236,75162,71.59%
+Islington South & Finsbury,335,E14000764,Islington South & Finsbury,London,03:00,5-Friday,5-Friday 03:00,8045,26897,9569,1987,,,1136,,182,70489,67.83%
+Kenilworth & Southam,339,E14000767,Kenilworth & Southam,West Midlands,03:00,5-Friday,5-Friday 03:00,30351,9440,9998,2351,,,,,457,68156,77.17%
+Hull East,323,E14000771,Hull East,Yorkshire and The Humber,03:00,5-Friday,5-Friday 03:00,11474,12713,1707,784,,,5764,,0,65745,49.35%
+Hull West & Hessle,325,E14000773,Hull West & Hessle,Yorkshire and The Humber,03:00,5-Friday,5-Friday 03:00,10528,13384,1756,50,,,5638,,0,60409,51.91%
+Leeds East,352,E14000778,Leeds East,Yorkshire and The Humber,03:00,5-Friday,5-Friday 03:00,13933,19464,1796,878,,,2981,,0,67286,58.04%
+Leeds West,355,E14000781,Leeds West,Yorkshire and The Humber,03:00,5-Friday,5-Friday 03:00,11622,22186,1787,1274,,,2685,,727,67727,59.48%
+Leicester South,357,E14000783,Leicester South,East Midlands,03:00,5-Friday,5-Friday 03:00,10931,33606,2754,1669,,,1187,,0,77665,64.57%
+Lewisham East,364,E14000787,Lewisham East,London,03:00,5-Friday,5-Friday 03:00,9653,26661,5039,1706,,,1234,,370,67857,65.82%
+Lewisham West & Penge,365,E14000788,Lewisham West & Penge,London,03:00,5-Friday,5-Friday 03:00,10317,31860,6260,2390,,,1060,,213,74615,69.83%
+Lewisham Deptford,363,E14000789,Lewisham Deptford,London,03:00,5-Friday,5-Friday 03:00,6303,39216,5774,3085,,,789,,201,80617,68.68%
+Leyton & Wanstead,366,E14000790,Leyton & Wanstead,London,03:00,5-Friday,5-Friday 03:00,8028,28836,4666,1805,,,785,,427,64852,68.69%
+Liverpool Riverside,370,E14000793,Liverpool Riverside,North West,03:00,5-Friday,5-Friday 03:00,4127,41170,2696,3017,,,1779,,0,80310,65.73%
+Liverpool Walton,371,E14000794,Liverpool Walton,North West,03:00,5-Friday,5-Friday 03:00,4018,34538,756,814,,,,,660,62628,65.12%
+Liverpool Wavertree,372,E14000795,Liverpool Wavertree,North West,03:00,5-Friday,5-Friday 03:00,4225,31310,4055,1365,,,1921,,501,63458,68.36%
+Liverpool West Derby,373,E14000796,Liverpool West Derby,North West,03:00,5-Friday,5-Friday 03:00,4133,34117,1296,605,,,2012,,1826,65640,67.02%
+Luton North,380,E14000800,Luton North,East,03:00,5-Friday,5-Friday 03:00,14249,23496,3063,771,,,1250,,795,68185,63.98%
+Luton South,381,E14000801,Luton South,East,03:00,5-Friday,5-Friday 03:00,13031,21787,,995,,,1601,,757,69338,55.05%
+Middlesbrough South & Cleveland East,395,E14000820,Middlesbrough South & Cleveland East,North East,03:00,5-Friday,5-Friday 03:00,28135,16509,1953,1220,,,,,0,72339,66.10%
+Mitcham & Morden,399,E14000823,Mitcham & Morden,London,03:00,5-Friday,5-Friday 03:00,11482,27978,3717,1160,,,1202,,216,70014,65.35%
+New Forest East,409,E14000827,New Forest East,South East,03:00,5-Friday,5-Friday 03:00,32769,7518,7390,2434,,,,,675,73552,69.05%
+New Forest West,410,E14000828,New Forest West,South East,03:00,5-Friday,5-Friday 03:00,32113,6595,7710,3888,,,,,0,70867,70.99%
+Newbury,412,E14000830,Newbury,South East,03:00,5-Friday,5-Friday 03:00,34431,4404,18384,2454,,,,,325,83414,71.93%
+Newcastle-under-Lyme,413,E14000834,Newcastle-under-Lyme,West Midlands,03:00,5-Friday,5-Friday 03:00,23485,16039,2361,933,,,1921,,0,68211,65.59%
+Newton Abbot,420,E14000835,Newton Abbot,South West,03:00,5-Friday,5-Friday 03:00,29190,9329,11689,1508,,,,,840,72533,72.46%
+Durham North,215,E14000840,Durham North,North East,03:00,5-Friday,5-Friday 03:00,13897,18639,2879,1126,,,4693,,961,66796,63.17%
+Somerset North,517,E14000850,Somerset North,South West,03:00,5-Friday,5-Friday 03:00,32801,15265,11051,2938,,,,,0,80194,77.38%
+Cambridgeshire North West,121,E14000855,Cambridgeshire North West,East,03:00,5-Friday,5-Friday 03:00,40307,14324,6881,3021,,,,,0,94909,67.99%
+Durham North West,216,E14000856,Durham North West,North East,03:00,5-Friday,5-Friday 03:00,19990,18846,2831,1173,,,3193,,414,72166,64.36%
+Norfolk North West,423,E14000859,Norfolk North West,East,03:00,5-Friday,5-Friday 03:00,30627,10705,3625,1645,,,,,0,72080,64.65%
+Norwich North,430,E14000863,Norwich North,East,03:00,5-Friday,5-Friday 03:00,23397,18659,2663,1078,,,,488,0,67172,68.91%
+Norwich South,431,E14000864,Norwich South,East,03:00,5-Friday,5-Friday 03:00,15006,27766,4776,2469,,,1656,,0,77845,66.38%
+Pendle,447,E14000875,Pendle,North West,03:00,5-Friday,5-Friday 03:00,24076,17890,1548,678,,,,,268,65289,68.10%
+Peterborough,451,E14000878,Peterborough,East,03:00,5-Friday,5-Friday 03:00,22334,19754,2334,728,,,2127,,524,72560,65.88%
+Preston,460,E14000885,Preston,North West,03:00,5-Friday,5-Friday 03:00,8724,20870,1737,660,,,1799,,0,59672,56.63%
+Redcar,466,E14000891,Redcar,North East,03:00,5-Friday,5-Friday 03:00,18811,15284,2018,491,,,2915,,1323,65855,62.02%
+Reigate,468,E14000893,Reigate,South East,03:00,5-Friday,5-Friday 03:00,28665,10355,10320,3169,,,,647,0,74842,71.02%
+Rochdale,474,E14000897,Rochdale,North West,03:00,5-Friday,5-Friday 03:00,14807,24475,3312,986,,,3867,,0,78909,60.13%
+Rochford & Southend East,476,E14000899,Rochford & Southend East,East,03:00,5-Friday,5-Friday 03:00,27063,14777,2822,,,,,,1474,75624,61.01%
+Romford,477,E14000900,Romford,London,03:00,5-Friday,5-Friday 03:00,30494,12601,2708,1428,,,,,0,72350,65.28%
+Saffron Walden,489,E14000910,Saffron Walden,East,03:00,5-Friday,5-Friday 03:00,39714,8305,12120,2947,,,,,0,87017,72.50%
+Salford & Eccles,495,E14000911,Salford & Eccles,North West,03:00,5-Friday,5-Friday 03:00,12428,28755,3099,2060,,,4290,,0,82202,61.59%
+Sedgefield,499,E14000915,Sedgefield,North East,03:00,5-Friday,5-Friday 03:00,19609,15096,1955,994,,,3518,,394,64325,64.62%
+Sevenoaks,502,E14000918,Sevenoaks,South East,03:00,5-Friday,5-Friday 03:00,30932,6946,10114,1974,,,,,990,71777,70.99%
+Sheffield Central,504,E14000919,Sheffield Central,Yorkshire and The Humber,03:00,5-Friday,5-Friday 03:00,6695,33968,3237,4570,,,1969,,474,89849,56.67%
+Sheffield South East,507,E14000920,Sheffield South East,Yorkshire and The Humber,03:00,5-Friday,5-Friday 03:00,15070,19359,2125,,,,4478,,966,67832,61.91%
+Sheffield Brightside & Hillsborough,503,E14000921,Sheffield Brightside & Hillsborough,Yorkshire and The Humber,03:00,5-Friday,5-Friday 03:00,10095,22369,1517,1179,,,3855,585,0,69333,57.12%
+Sheffield Hallam,505,E14000922,Sheffield Hallam,Yorkshire and The Humber,03:00,5-Friday,5-Friday 03:00,14696,19709,18997,1630,,,1562,168,123,72763,78.18%
+Sheffield Heeley,506,E14000923,Sheffield Heeley,Yorkshire and The Humber,03:00,5-Friday,5-Friday 03:00,12955,21475,2916,1811,,,3538,,0,66940,63.78%
+Shrewsbury & Atcham,510,E14000926,Shrewsbury & Atcham,West Midlands,03:00,5-Friday,5-Friday 03:00,31021,19804,5906,1762,,,,,572,82237,71.82%
+Sittingbourne & Sheppey,512,E14000927,Sittingbourne & Sheppey,South East,03:00,5-Friday,5-Friday 03:00,34742,10263,3213,1188,,,,,731,83917,59.75%
+Cambridgeshire South,122,E14000934,Cambridgeshire South,East,03:00,5-Friday,5-Friday 03:00,31015,7803,28111,,,,,,0,87288,76.68%
+Derbyshire South,186,E14000935,Derbyshire South,East Midlands,03:00,5-Friday,5-Friday 03:00,33502,14167,3924,1788,,,,,0,79365,67.26%
+South Holland & The Deepings,520,E14000939,South Holland & The Deepings,East Midlands,03:00,5-Friday,5-Friday 03:00,37338,6500,3225,1613,,,,,503,75990,64.72%
+South Ribble,521,E14000943,South Ribble,North West,03:00,5-Friday,5-Friday 03:00,30028,18829,3720,1207,,,,,0,75344,71.38%
+Southend West,525,E14000957,Southend West,East,03:00,5-Friday,5-Friday 03:00,27555,13096,5312,,,,,,574,69043,67.40%
+Southport,526,E14000958,Southport,North West,03:00,5-Friday,5-Friday 03:00,22914,18767,6499,,,,,,0,70837,68.02%
+Stafford,528,E14000965,Stafford,West Midlands,03:00,5-Friday,5-Friday 03:00,29992,15615,3175,2367,,,,,0,72572,70.48%
+Staffordshire Moorlands,529,E14000966,Staffordshire Moorlands,West Midlands,03:00,5-Friday,5-Friday 03:00,28192,11764,2469,1231,,,,,0,65485,66.67%
+Stevenage,532,E14000968,Stevenage,East,03:00,5-Friday,5-Friday 03:00,25328,16766,4132,1457,,,,,0,71562,66.63%
+Stroud,546,E14000980,Stroud,South West,03:00,5-Friday,5-Friday 03:00,31582,27742,,4954,,,1085,,567,84536,77.99%
+Suffolk Coastal,548,E14000981,Suffolk Coastal,East,03:00,5-Friday,5-Friday 03:00,32958,12425,8719,2713,,,,,1493,81910,71.19%
+Surrey Heath,553,E14000983,Surrey Heath,South East,03:00,5-Friday,5-Friday 03:00,34358,5407,16009,2252,,,,628,0,81349,72.10%
+Sutton Coldfield,557,E14000985,Sutton Coldfield,West Midlands,03:00,5-Friday,5-Friday 03:00,31604,12332,6358,2031,,,,,0,75638,69.18%
+Telford,565,E14000989,Telford,West Midlands,03:00,5-Friday,5-Friday 03:00,25546,14605,2674,,,,,,0,68921,62.14%
+"Cotswolds, The",164,E14000991,"Cotswolds, The",South West,03:00,5-Friday,5-Friday 03:00,35484,7110,15270,3312,,,,,0,81939,74.66%
+"Wrekin, The",640,E14000992,"Wrekin, The",West Midlands,03:00,5-Friday,5-Friday 03:00,31029,12303,4067,1491,,,,,0,70693,69.16%
+Tonbridge & Malling,573,E14000997,Tonbridge & Malling,South East,03:00,5-Friday,5-Friday 03:00,35784,8286,8843,4090,,,,,0,77380,73.67%
+Tunbridge Wells,580,E14001004,Tunbridge Wells,South East,03:00,5-Friday,5-Friday 03:00,30119,8098,15474,,,,,,471,74816,72.39%
+Walsall North,593,E14001011,Walsall North,West Midlands,03:00,5-Friday,5-Friday 03:00,23334,11369,1236,617,,,,,0,67177,54.42%
+Walsall South,594,E14001012,Walsall South,West Midlands,03:00,5-Friday,5-Friday 03:00,17416,20872,1602,634,,,1660,,288,68024,62.44%
+Walthamstow,595,E14001013,Walthamstow,London,03:00,5-Friday,5-Friday 03:00,5922,36784,2874,1733,,,768,,254,70268,68.79%
+Wealden,606,E14001023,Wealden,South East,03:00,5-Friday,5-Friday 03:00,37043,9377,11388,3099,,,,,0,83038,73.35%
+Welwyn Hatfield,610,E14001027,Welwyn Hatfield,East,03:00,5-Friday,5-Friday 03:00,27394,16439,6602,1618,,,,,0,74892,69.50%
+Suffolk West,550,E14001034,Suffolk West,East,03:00,5-Friday,5-Friday 03:00,33842,10648,4685,2262,,,,,0,80192,64.14%
+Westminster North,615,E14001036,Westminster North,London,03:00,5-Friday,5-Friday 03:00,12481,23240,5593,1064,,,418,,115,65519,65.49%
+Weston-Super-Mare,617,E14001038,Weston-Super-Mare,South West,03:00,5-Friday,5-Friday 03:00,31983,14862,6935,1834,,,,,0,82526,67.39%
+Wimbledon,621,E14001040,Wimbledon,London,03:00,5-Friday,5-Friday 03:00,20373,12543,19745,,,,,,366,68232,77.72%
+Wokingham,629,E14001048,Wokingham,South East,03:00,5-Friday,5-Friday 03:00,30734,6450,23351,1382,,,,,80,83953,73.85%
+Wolverhampton South East,631,E14001050,Wolverhampton South East,West Midlands,03:00,5-Friday,5-Friday 03:00,14287,15522,1019,521,,,2094,,0,63006,53.08%
+Wolverhampton South West,632,E14001051,Wolverhampton South West,West Midlands,03:00,5-Friday,5-Friday 03:00,19864,18203,2041,,,,1028,,0,60895,67.55%
+Worcester,633,E14001052,Worcester,West Midlands,03:00,5-Friday,5-Friday 03:00,25856,19098,3666,1694,,,,,584,73475,69.27%
+Worsley & Eccles South,637,E14001054,Worsley & Eccles South,North West,03:00,5-Friday,5-Friday 03:00,17345,20446,2510,1300,,,3224,,0,75219,59.59%
+Wyre Forest,644,E14001058,Wyre Forest,West Midlands,03:00,5-Friday,5-Friday 03:00,32960,11547,4081,1973,,,,,0,78079,64.76%
+Belfast East,45,N06000001,Belfast East,Northern Ireland,03:00,5-Friday,5-Friday 03:00,,,,,,,,,42445,66245,64.07%
+Belfast North,46,N06000002,Belfast North,Northern Ireland,03:00,5-Friday,5-Friday 03:00,,,,,,,,,49037,72225,67.89%
+Belfast South,47,N06000003,Belfast South,Northern Ireland,03:00,5-Friday,5-Friday 03:00,,,,,,,,,47352,69984,67.66%
+Antrim East,13,N06000005,Antrim East,Northern Ireland,03:00,5-Friday,5-Friday 03:00,1043,,,685,,,,,35533,64830,57.47%
+Foyle,255,N06000008,Foyle,Northern Ireland,03:00,5-Friday,5-Friday 03:00,,,,,,,,,47143,74346,63.41%
+Ulster Mid,585,N06000010,Ulster Mid,Northern Ireland,03:00,5-Friday,5-Friday 03:00,,,,,,,,,44620,70449,63.34%
+Antrim North,14,N06000012,Antrim North,Northern Ireland,03:00,5-Friday,5-Friday 03:00,,,,,,,,,44051,77134,57.11%
+Antrim South,15,N06000014,Antrim South,Northern Ireland,03:00,5-Friday,5-Friday 03:00,,,,,,,,,42974,71711,59.93%
+Down South,203,N06000015,Down South,Northern Ireland,03:00,5-Friday,5-Friday 03:00,,,,,,,,,49762,79175,62.85%
+Aberdeen North,3,S14000001,Aberdeen North,Scotland,03:00,5-Friday,5-Friday 03:00,7535,4939,2846,880,20205,,1008,,0,62489,59.87%
+Aberdeen South,4,S14000002,Aberdeen South,Scotland,03:00,5-Friday,5-Friday 03:00,16398,3834,5018,,20388,,,,0,65719,69.44%
+Airdrie & Shotts,6,S14000003,Airdrie & Shotts,Scotland,03:00,5-Friday,5-Friday 03:00,7011,12728,1419,685,17929,,,,0,64008,62.14%
+"Ayr, Carrick & Cumnock",23,S14000006,"Ayr, Carrick & Cumnock",Scotland,03:00,5-Friday,5-Friday 03:00,17943,6219,2158,,20272,,,,0,71970,64.74%
+Dunfermline & Fife West,213,S14000017,Dunfermline & Fife West,Scotland,03:00,5-Friday,5-Friday 03:00,11207,13028,4262,1258,23727,,,,0,76652,69.77%
+Dunbartonshire East,209,S14000018,Dunbartonshire East,Scotland,03:00,5-Friday,5-Friday 03:00,7455,4839,19523,916,19672,,,208,418,66075,80.26%
+East Lothian,224,S14000020,East Lothian,Scotland,03:00,5-Friday,5-Friday 03:00,15523,17270,4071,,21156,,,493,0,81600,71.71%
+Renfrewshire East,469,S14000021,Renfrewshire East,Scotland,03:00,5-Friday,5-Friday 03:00,19451,6855,4174,,24877,,,,0,72232,76.64%
+Na h-Eileanan an Iar,407,S14000027,Na h-Eileanan an Iar,Scotland,03:00,5-Friday,5-Friday 03:00,3216,4093,637,,6531,,,,0,21106,68.59%
+Glasgow Central,262,S14000029,Glasgow Central,Scotland,03:00,5-Friday,5-Friday 03:00,3698,13276,1952,1429,19750,,,,0,69230,57.93%
+Glasgow East,263,S14000030,Glasgow East,Scotland,03:00,5-Friday,5-Friday 03:00,5709,12791,1626,,18357,,,,0,67381,57.11%
+Glasgow North,264,S14000031,Glasgow North,Scotland,03:00,5-Friday,5-Friday 03:00,3806,11381,2394,1308,16982,,320,,0,57130,63.35%
+Glasgow North East,265,S14000032,Glasgow North East,Scotland,03:00,5-Friday,5-Friday 03:00,3558,13363,1093,,15911,,,,0,61075,55.55%
+Glasgow North West,266,S14000033,Glasgow North West,Scotland,03:00,5-Friday,5-Friday 03:00,6022,11319,2716,,19678,,,,0,63402,62.67%
+Glasgow South,267,S14000034,Glasgow South,Scotland,03:00,5-Friday,5-Friday 03:00,6237,13824,2786,1251,22829,,516,,0,70891,66.92%
+Glasgow South West,268,S14000035,Glasgow South West,Scotland,03:00,5-Friday,5-Friday 03:00,4224,12743,1435,,17643,,802,,0,64575,57.06%
+Glenrothes,269,S14000036,Glenrothes,Scotland,03:00,5-Friday,5-Friday 03:00,6920,9477,2639,,21234,,1276,,0,65762,63.18%
+Kirkcaldy & Cowdenbeath,345,S14000041,Kirkcaldy & Cowdenbeath,Scotland,03:00,5-Friday,5-Friday 03:00,9449,15325,2903,1628,16568,,1132,,0,72853,64.52%
+Linlithgow & Falkirk East,369,S14000043,Linlithgow & Falkirk East,Scotland,03:00,5-Friday,5-Friday 03:00,14285,10517,4393,1184,25551,,1257,,588,87044,66.37%
+Livingston,374,S14000044,Livingston,Scotland,03:00,5-Friday,5-Friday 03:00,12182,11915,3457,1421,25617,,,,0,82285,66.35%
+Ayrshire North & Arran,25,S14000048,Ayrshire North & Arran,Scotland,03:00,5-Friday,5-Friday 03:00,14855,6702,2107,114,23376,,,,0,73534,64.13%
+Ochil & Perthshire South,436,S14000050,Ochil & Perthshire South,Scotland,03:00,5-Friday,5-Friday 03:00,22384,4961,3204,,26882,,,382,0,78776,73.39%
+Stirling,533,S14000057,Stirling,Scotland,03:00,5-Friday,5-Friday 03:00,17641,4275,2867,942,26895,,,,0,68473,76.85%
+Ynys Mon,647,W07000041,Ynys Mon,Wales,03:00,5-Friday,5-Friday 03:00,12959,10991,,,,10418,2184,,0,51925,70.39%
+Delyn,179,W07000042,Delyn,Wales,03:00,5-Friday,5-Friday 03:00,16756,15891,2346,,,1406,1971,,0,54552,70.34%
+Alyn & Deeside,10,W07000043,Alyn & Deeside,Wales,03:00,5-Friday,5-Friday 03:00,18058,18271,2548,,,1453,2678,,0,62783,68.50%
+Cardiff Central,126,W07000050,Cardiff Central,Wales,03:00,5-Friday,5-Friday 03:00,8426,25605,6298,,,,1006,,487,64037,65.31%
+Cardiff North,127,W07000051,Cardiff North,Wales,03:00,5-Friday,5-Friday 03:00,19082,26064,3580,820,,1606,1311,,203,68438,76.95%
+Rhondda,470,W07000052,Rhondda,Wales,03:00,5-Friday,5-Friday 03:00,4675,16115,612,438,,4069,3733,,0,50262,58.97%
+Vale of Clwyd,588,W07000060,Vale of Clwyd,Wales,03:00,5-Friday,5-Friday 03:00,17270,15443,1471,,,1552,1477,,0,56649,65.69%
+Montgomeryshire,402,W07000063,Montgomeryshire,Wales,03:00,5-Friday,5-Friday 03:00,20020,5585,7882,,,,,,727,48997,69.83%
+Carmarthen East & Dinefwr,131,W07000067,Carmarthen East & Dinefwr,Wales,03:00,5-Friday,5-Friday 03:00,14130,8622,,,,15939,2311,,0,57407,71.42%
+Brecon & Radnorshire,89,W07000068,Brecon & Radnorshire,Wales,03:00,5-Friday,5-Friday 03:00,21958,3944,14827,,,,,,590,55490,74.46%
+Cynon Valley,174,W07000070,Cynon Valley,Wales,03:00,5-Friday,5-Friday 03:00,6711,15533,949,,,2562,3045,,1436,51134,59.13%
+Bridgend,94,W07000073,Bridgend,Wales,03:00,5-Friday,5-Friday 03:00,18193,17036,2368,815,,2013,1811,,0,63303,66.72%
+Ogmore,437,W07000074,Ogmore,Wales,03:00,5-Friday,5-Friday 03:00,9797,17602,1460,621,,2919,2991,,0,57581,61.46%
+Bexleyheath & Crayford,55,E14000558,Bexleyheath & Crayford,London,03:30,5-Friday,5-Friday 03:30,25856,12753,2819,1298,,,,,520,65466,66.06%
+Bromsgrove,105,E14000605,Bromsgrove,West Midlands,03:30,5-Friday,5-Friday 03:30,34408,11302,6779,1783,,,,,0,75079,72.29%
+Chesterfield,144,E14000632,Chesterfield,East Midlands,03:30,5-Friday,5-Friday 03:30,16720,18171,3985,1148,,,4771,,391,70994,63.65%
+Colchester,157,E14000644,Colchester,East,03:30,5-Friday,5-Friday 03:30,26917,17494,7432,1530,,,,,0,82625,64.60%
+Eltham,236,E14000690,Eltham,London,03:30,5-Friday,5-Friday 03:30,17353,20550,2941,1322,,,1523,,0,64084,68.17%
+Greenwich & Woolwich,278,E14000718,Greenwich & Woolwich,London,03:30,5-Friday,5-Friday 03:30,11721,30185,7253,2363,,,1228,,370,79997,66.40%
+Harwich & Essex North,297,E14000734,Harwich & Essex North,East,03:30,5-Friday,5-Friday 03:30,31830,11648,5866,1945,,,,,263,74153,69.52%
+Hastings & Rye,298,E14000735,Hastings & Rye,South East,03:30,5-Friday,5-Friday 03:30,26896,22853,3960,,,,,,565,80524,67.40%
+Hertford & Stortford,308,E14000744,Hertford & Stortford,East,03:30,5-Friday,5-Friday 03:30,33712,14092,8596,2705,,,,681,308,82407,72.92%
+Kingston & Surbiton,343,E14000770,Kingston & Surbiton,London,03:30,5-Friday,5-Friday 03:30,20614,6528,31103,1038,,,788,124,651,81975,74.23%
+Leeds Central,351,E14000777,Leeds Central,Yorkshire and The Humber,03:30,5-Friday,5-Friday 03:30,11143,30413,2343,2105,,,2999,,281,90971,54.18%
+Lewes,362,E14000786,Lewes,South East,03:30,5-Friday,5-Friday 03:30,26268,3206,23811,1453,,,,,113,71503,76.71%
+Meriden,392,E14000812,Meriden,West Midlands,03:30,5-Friday,5-Friday 03:30,34358,11522,5614,2667,,,,,0,85368,63.44%
+Worcestershire Mid,634,E14000818,Worcestershire Mid,West Midlands,03:30,5-Friday,5-Friday 03:30,37426,9408,6474,2177,,,,,638,78221,71.75%
+Devon North,190,E14000838,Devon North,South West,03:30,5-Friday,5-Friday 03:30,31479,5097,16666,1759,,,,,580,75853,73.27%
+Portsmouth North,457,E14000883,Portsmouth North,South East,03:30,5-Friday,5-Friday 03:30,28172,12392,3419,1304,,,,,623,71299,64.39%
+Portsmouth South,458,E14000884,Portsmouth South,South East,03:30,5-Friday,5-Friday 03:30,17705,23068,5418,,,,994,,240,74186,63.93%
+Solihull,516,E14000931,Solihull,West Midlands,03:30,5-Friday,5-Friday 03:30,32309,11036,9977,2022,,,,,0,78760,70.27%
+Totnes,577,E14001001,Totnes,South West,03:30,5-Friday,5-Friday 03:30,27751,8860,15027,,,,,,544,69863,74.69%
+Worcestershire West,635,E14001035,Worcestershire West,West Midlands,03:30,5-Friday,5-Friday 03:30,34909,9496,10410,2715,,,,,0,76267,75.43%
+Westmorland & Lonsdale,616,E14001037,Westmorland & Lonsdale,North West,03:30,5-Friday,5-Friday 03:30,23861,2293,25795,,,,763,,0,67789,77.76%
+Moray,403,S14000046,Moray,Scotland,03:30,5-Friday,5-Friday 03:30,22112,2432,2269,,21599,,,413,0,71035,68.73%
+Perth & Perthshire North,450,S14000054,Perth & Perthshire North,Scotland,03:30,5-Friday,5-Friday 03:30,19812,2471,3780,,27362,,651,,0,72600,74.48%
+Aberconwy,2,W07000058,Aberconwy,Wales,03:30,5-Friday,5-Friday 03:30,14687,12653,1821,,,2704,,,0,44699,71.29%
+Clwyd West,155,W07000059,Clwyd West,Wales,03:30,5-Friday,5-Friday 03:30,20403,13656,2237,,,3907,,,0,57714,69.66%
+Altrincham & Sale West,9,E14000532,Altrincham & Sale West,North West,04:00,5-Friday,5-Friday 04:00,26311,20172,6036,1566,,,,,678,73096,74.92%
+Aylesbury,22,E14000538,Aylesbury,South East,04:00,5-Friday,5-Friday 04:00,32737,15364,10081,2394,,,,,0,86665,69.90%
+Banbury,26,E14000539,Banbury,South East,04:00,5-Friday,5-Friday 04:00,34148,17335,8831,2607,,,,,0,90113,69.82%
+Bassetlaw,35,E14000546,Bassetlaw,East Midlands,04:00,5-Friday,5-Friday 04:00,28078,14065,3332,,,,5366,,0,80035,63.52%
+Batley & Spen,37,E14000548,Batley & Spen,Yorkshire and The Humber,04:00,5-Friday,5-Friday 04:00,19069,22594,2462,692,,,1678,,6432,79558,66.53%
+Beckenham,40,E14000551,Beckenham,London,04:00,5-Friday,5-Friday 04:00,27282,13024,8194,2055,,,,,0,68671,73.62%
+Berwick-upon-Tweed,50,E14000554,Berwick-upon-Tweed,North East,04:00,5-Friday,5-Friday 04:00,23947,9112,7656,1394,,,,,0,59939,70.25%
+Bexhill & Battle,54,E14000557,Bexhill & Battle,South East,04:00,5-Friday,5-Friday 04:00,37590,11531,7280,2692,,,,,0,81968,72.09%
+Birmingham Hall Green,59,E14000562,Birmingham Hall Green,West Midlands,04:00,5-Friday,5-Friday 04:00,7381,35889,3673,818,,,877,,4273,80283,65.91%
+Birmingham Hodge Hill,60,E14000563,Birmingham Hodge Hill,West Midlands,04:00,5-Friday,5-Friday 04:00,6742,35397,760,328,,,1519,,257,78295,57.48%
+Birmingham Perry Barr,63,E14000566,Birmingham Perry Barr,West Midlands,04:00,5-Friday,5-Friday 04:00,11277,26594,1901,845,,,1382,,148,72006,58.53%
+Birmingham Selly Oak,64,E14000567,Birmingham Selly Oak,West Midlands,04:00,5-Friday,5-Friday 04:00,15300,27714,3169,1848,,,1436,,0,82665,59.84%
+Blackley & Broughton,68,E14000571,Blackley & Broughton,North West,04:00,5-Friday,5-Friday 04:00,9485,23887,1590,920,,,2736,,0,73372,52.63%
+Boston & Skegness,80,E14000582,Boston & Skegness,East Midlands,04:00,5-Friday,5-Friday 04:00,31963,6342,1963,,,,,,1428,69265,60.20%
+Bosworth,81,E14000583,Bosworth,East Midlands,04:00,5-Friday,5-Friday 04:00,36056,9778,9096,1502,,,,,0,81537,69.21%
+Bournemouth East,82,E14000584,Bournemouth East,South West,04:00,5-Friday,5-Friday 04:00,24926,16120,5418,2049,,,,,314,74127,65.87%
+Bournemouth West,83,E14000585,Bournemouth West,South West,04:00,5-Friday,5-Friday 04:00,24550,14400,4931,2096,,,,,0,74211,61.95%
+Braintree,88,E14000590,Braintree,East,04:00,5-Friday,5-Friday 04:00,34112,9439,4779,,,,,,261,75208,64.61%
+Brent Central,90,E14000591,Brent Central,London,04:00,5-Friday,5-Friday 04:00,10909,31779,4844,1600,,,,,0,84204,58.35%
+Brent North,91,E14000592,Brent North,London,04:00,5-Friday,5-Friday 04:00,18832,26911,4065,850,,,951,,101,83772,61.73%
+Brentford & Isleworth,92,E14000593,Brentford & Isleworth,London,04:00,5-Friday,5-Friday 04:00,18752,29266,7314,1829,,,1165,,0,85770,68.00%
+Brigg & Goole,96,E14000596,Brigg & Goole,Yorkshire and The Humber,04:00,5-Friday,5-Friday 04:00,30941,9000,2180,1281,,,,,0,65939,65.82%
+Bromley & Chislehurst,104,E14000604,Bromley & Chislehurst,London,04:00,5-Friday,5-Friday 04:00,23958,13067,6621,1546,,,,,374,66711,68.30%
+Bury St Edmunds,113,E14000613,Bury St Edmunds,East,04:00,5-Friday,5-Friday 04:00,37770,12782,,9711,,,,,1694,89644,69.11%
+Canterbury,125,E14000619,Canterbury,South East,04:00,5-Friday,5-Friday 04:00,27182,29018,3408,,,,,,505,80203,74.95%
+Carshalton & Wallington,133,E14000621,Carshalton & Wallington,London,04:00,5-Friday,5-Friday 04:00,20822,6081,20193,759,,,1043,,200,72926,67.33%
+Suffolk Central & Ipswich North,547,E14000624,Suffolk Central & Ipswich North,East,04:00,5-Friday,5-Friday 04:00,35253,11862,6485,2650,,,,,0,76201,73.82%
+Charnwood,136,E14000625,Charnwood,East Midlands,04:00,5-Friday,5-Friday 04:00,35121,12724,4856,2664,,,,,0,79556,69.59%
+Chelmsford,139,E14000628,Chelmsford,East,04:00,5-Friday,5-Friday 04:00,31934,10295,14313,,,,,,580,80481,70.98%
+Cheltenham,141,E14000630,Cheltenham,South West,04:00,5-Friday,5-Friday 04:00,28486,2921,27505,,,,,,445,81043,73.24%
+Chippenham,147,E14000635,Chippenham,South West,04:00,5-Friday,5-Friday 04:00,30994,6399,19706,,,,,,0,77225,73.94%
+Congleton,159,E14000646,Congleton,North West,04:00,5-Friday,5-Friday 04:00,33747,15186,6026,1616,,,,,658,80930,70.72%
+Copeland,160,E14000647,Copeland,North West,04:00,5-Friday,5-Friday 04:00,22856,17014,1888,765,,,,,0,61693,68.93%
+Crewe & Nantwich,169,E14000653,Crewe & Nantwich,North West,04:00,5-Friday,5-Friday 04:00,28704,20196,2618,975,,,1390,,149,80321,67.27%
+Croydon Central,170,E14000654,Croydon Central,London,04:00,5-Friday,5-Friday 04:00,21175,27124,3532,1215,,,999,,0,81410,66.39%
+Croydon North,171,E14000655,Croydon North,London,04:00,5-Friday,5-Friday 04:00,11822,36495,4476,1629,,,839,,348,88466,62.86%
+Croydon South,172,E14000656,Croydon South,London,04:00,5-Friday,5-Friday 04:00,30985,18646,7503,1782,,,,442,0,83977,70.68%
+Daventry,178,E14000660,Daventry,East Midlands,04:00,5-Friday,5-Friday 04:00,37055,10975,7032,2341,,,,,0,77521,74.05%
+Dudley South,205,E14000672,Dudley South,West Midlands,04:00,5-Friday,5-Friday 04:00,24835,9270,1608,863,,,,,0,60731,60.23%
+Dulwich & West Norwood,206,E14000673,Dulwich & West Norwood,London,04:00,5-Friday,5-Friday 04:00,9160,36521,,9211,,,571,73,242,84663,65.88%
+East Ham,222,E14000679,East Ham,London,04:00,5-Friday,5-Friday 04:00,8527,41703,2158,883,,,1107,,250,88316,61.86%
+Hampshire East,287,E14000680,Hampshire East,South East,04:00,5-Friday,5-Friday 04:00,33446,6287,13750,2600,,,,616,196,76478,74.39%
+Ellesmere Port & Neston,234,E14000688,Ellesmere Port & Neston,North West,04:00,5-Friday,5-Friday 04:00,17237,26001,2406,964,,,2138,,0,70327,69.31%
+Enfield North,237,E14000691,Enfield North,London,04:00,5-Friday,5-Friday 04:00,16848,23340,2950,1115,,,797,,0,68066,66.19%
+Erith & Thamesmead,242,E14000696,Erith & Thamesmead,London,04:00,5-Friday,5-Friday 04:00,16124,19882,1984,876,,,2246,,272,65399,63.28%
+Exeter,244,E14000698,Exeter,South West,04:00,5-Friday,5-Friday 04:00,19479,29882,,4838,,,1428,259,306,82043,68.49%
+Feltham & Heston,248,E14000701,Feltham & Heston,London,04:00,5-Friday,5-Friday 04:00,17017,24876,3127,1133,,,1658,,0,80932,59.08%
+Gosport,272,E14000713,Gosport,South East,04:00,5-Friday,5-Friday 04:00,32226,8948,5473,1806,,,,,0,73569,65.86%
+Hackney North & Stoke Newington,280,E14000720,Hackney North & Stoke Newington,London,04:00,5-Friday,5-Friday 04:00,6784,39972,4283,4989,,,609,,227,92451,61.51%
+Hackney South & Shoreditch,281,E14000721,Hackney South & Shoreditch,London,04:00,5-Friday,5-Friday 04:00,5899,39884,4853,2948,,,744,,111,89380,60.91%
+Haltemprice & Howden,284,E14000724,Haltemprice & Howden,Yorkshire and The Humber,04:00,5-Friday,5-Friday 04:00,31045,10716,5215,1764,,,,,1039,71062,70.05%
+Harborough,291,E14000728,Harborough,East Midlands,04:00,5-Friday,5-Friday 04:00,31698,14420,9103,1709,,,,,389,80480,71.22%
+Harrow East,294,E14000731,Harrow East,London,04:00,5-Friday,5-Friday 04:00,26935,18765,3791,,,,,,0,72120,68.62%
+Harrow West,295,E14000732,Harrow West,London,04:00,5-Friday,5-Friday 04:00,16440,25132,4310,1109,,,931,,0,72477,66.12%
+Hayes & Harlington,300,E14000737,Hayes & Harlington,London,04:00,5-Friday,5-Friday 04:00,15284,24545,1947,739,,,1292,,187,72356,60.80%
+Henley,305,E14000742,Henley,South East,04:00,5-Friday,5-Friday 04:00,32189,5698,18136,2736,,,,,0,76660,76.65%
+Hereford & Herefordshire South,306,E14000743,Hereford & Herefordshire South,West Midlands,04:00,5-Friday,5-Friday 04:00,30390,10704,6181,2371,,,,,0,72085,68.87%
+Hexham,312,E14000746,Hexham,North East,04:00,5-Friday,5-Friday 04:00,25152,14603,4672,1723,,,,,0,61324,75.26%
+Hitchin & Harpenden,315,E14000749,Hitchin & Harpenden,East,04:00,5-Friday,5-Friday 04:00,27719,9959,20824,,,,,,369,76321,77.14%
+Hornsey & Wood Green,318,E14000752,Hornsey & Wood Green,London,04:00,5-Friday,5-Friday 04:00,6829,35126,15884,2192,,,763,,311,81814,74.69%
+Horsham,319,E14000753,Horsham,South East,04:00,5-Friday,5-Friday 04:00,35900,9424,14773,2668,,,,,477,86730,72.92%
+Huddersfield,322,E14000756,Huddersfield,Yorkshire and The Humber,04:00,5-Friday,5-Friday 04:00,15572,20509,2367,1768,,,1666,,0,65525,63.92%
+Ilford North,328,E14000759,Ilford North,London,04:00,5-Friday,5-Friday 04:00,20105,25323,2680,845,,,960,,201,72963,68.68%
+Ilford South,329,E14000760,Ilford South,London,04:00,5-Friday,5-Friday 04:00,10984,35085,1795,714,,,1008,,3891,84957,62.95%
+Ipswich,332,E14000761,Ipswich,East,04:00,5-Friday,5-Friday 04:00,24952,19473,2439,1283,,,1432,,0,75525,65.65%
+Lancaster & Fleetwood,350,E14000776,Lancaster & Fleetwood,North West,04:00,5-Friday,5-Friday 04:00,18804,21184,2018,1396,,,1817,,0,70059,64.54%
+Leeds North West,354,E14000780,Leeds North West,Yorkshire and The Humber,04:00,5-Friday,5-Friday 04:00,13222,23971,9397,1389,,,1304,,0,67741,72.75%
+Leicester East,356,E14000782,Leicester East,East Midlands,04:00,5-Friday,5-Friday 04:00,19071,25090,2800,888,,,1243,,329,78432,63.01%
+Leicester West,358,E14000784,Leicester West,East Midlands,04:00,5-Friday,5-Friday 04:00,13079,17291,1808,977,,,1620,,0,64918,53.57%
+Lichfield,367,E14000791,Lichfield,West Midlands,04:00,5-Friday,5-Friday 04:00,34844,11206,5632,1743,,,,,568,76751,70.35%
+Lincoln,368,E14000792,Lincoln,East Midlands,04:00,5-Friday,5-Friday 04:00,24267,20753,2422,1195,,,1079,,913,74778,67.71%
+Loughborough,377,E14000797,Loughborough,East Midlands,04:00,5-Friday,5-Friday 04:00,27954,20785,4153,1504,,,,,235,79776,68.48%
+Louth & Horncastle,378,E14000798,Louth & Horncastle,East Midlands,04:00,5-Friday,5-Friday 04:00,38021,9153,4114,,,,,,1044,79648,65.70%
+Maidenhead,383,E14000803,Maidenhead,South East,04:00,5-Friday,5-Friday 04:00,32620,7882,13774,2216,,,,,0,76668,73.68%
+Maldon,386,E14000806,Maldon,East,04:00,5-Friday,5-Friday 04:00,36304,6263,5990,1851,,,,,0,72641,69.39%
+Manchester Central,387,E14000807,Manchester Central,North West,04:00,5-Friday,5-Friday 04:00,7734,36823,3420,1870,,,2335,,107,94247,55.48%
+Manchester Gorton,388,E14000808,Manchester Gorton,North West,04:00,5-Friday,5-Friday 04:00,4244,34583,2448,1697,,,1573,,0,76419,58.29%
+Manchester Withington,389,E14000809,Manchester Withington,North West,04:00,5-Friday,5-Friday 04:00,5820,35902,7997,1968,,,1308,,0,76530,69.25%
+Bedfordshire Mid,42,E14000813,Bedfordshire Mid,East,04:00,5-Friday,5-Friday 04:00,38692,14028,8171,2478,,,,,1348,87795,73.71%
+Dorset Mid & Poole North,197,E14000815,Dorset Mid & Poole North,South West,04:00,5-Friday,5-Friday 04:00,29548,3402,14650,1330,,,,,0,65426,74.79%
+Milton Keynes South,398,E14000822,Milton Keynes South,South East,04:00,5-Friday,5-Friday 04:00,32011,25067,4688,1495,,,,,746,96343,66.44%
+Mole Valley,400,E14000824,Mole Valley,South East,04:00,5-Friday,5-Friday 04:00,31656,2965,19615,1874,,,,464,536,74665,76.49%
+Morley & Outwood,405,E14000826,Morley & Outwood,Yorkshire and The Humber,04:00,5-Friday,5-Friday 04:00,29424,18157,2285,1107,,,,,957,78803,65.90%
+Newark,411,E14000829,Newark,East Midlands,04:00,5-Friday,5-Friday 04:00,34660,12844,5308,1950,,,,,0,75855,72.19%
+Bedfordshire North East,43,E14000841,Bedfordshire North East,East,04:00,5-Friday,5-Friday 04:00,38443,14160,7999,1891,,,,,2525,90679,71.70%
+Cambridgeshire North East,120,E14000842,Cambridgeshire North East,East,04:00,5-Friday,5-Friday 04:00,38423,8430,4298,1813,,,,,0,83699,63.28%
+Hampshire North East,288,E14000844,Hampshire North East,South East,04:00,5-Friday,5-Friday 04:00,35280,5760,15069,1754,,,,,1407,78954,75.07%
+Hertfordshire North East,309,E14000845,Hertfordshire North East,East,04:00,5-Friday,5-Friday 04:00,31293,13104,8563,2367,,,,,0,76123,72.68%
+Somerset North East,518,E14000846,Somerset North East,South West,04:00,5-Friday,5-Friday 04:00,28360,13631,12422,1423,,,,,472,73665,76.44%
+Herefordshire North,307,E14000847,Herefordshire North,West Midlands,04:00,5-Friday,5-Friday 04:00,32158,6804,7302,4769,,,,,0,70252,72.64%
+Norfolk North,422,E14000848,Norfolk North,East,04:00,5-Friday,5-Friday 04:00,29792,3895,15397,,,,1739,,0,70729,71.86%
+Hampshire North West,289,E14000857,Hampshire North West,South East,04:00,5-Friday,5-Friday 04:00,36591,9327,10283,2717,,,,,0,83083,70.91%
+Wiltshire North,619,E14000860,Wiltshire North,South West,04:00,5-Friday,5-Friday 04:00,32373,5699,14747,1939,,,,,0,73283,74.72%
+Nottingham East,432,E14000865,Nottingham East,East Midlands,04:00,5-Friday,5-Friday 04:00,8342,25735,1954,1183,,,1343,,1447,66262,60.37%
+Nottingham North,433,E14000866,Nottingham North,East Midlands,04:00,5-Friday,5-Friday 04:00,12847,17337,1582,868,,,2686,,0,66495,53.12%
+Nottingham South,434,E14000867,Nottingham South,East Midlands,04:00,5-Friday,5-Friday 04:00,14018,26586,3935,1583,,,2012,,0,79485,60.56%
+Old Bexley & Sidcup,438,E14000869,Old Bexley & Sidcup,London,04:00,5-Friday,5-Friday 04:00,29786,10834,3822,1477,,,,,226,66104,69.81%
+Oldham East & Saddleworth,439,E14000870,Oldham East & Saddleworth,North West,04:00,5-Friday,5-Friday 04:00,18589,20088,2423,778,,,2980,,1306,72173,63.96%
+Oldham West & Royton,440,E14000871,Oldham West & Royton,North West,04:00,5-Friday,5-Friday 04:00,13452,24579,1484,681,,,3316,389,533,73063,60.82%
+Orpington,442,E14000872,Orpington,London,04:00,5-Friday,5-Friday 04:00,30882,8504,7552,1783,,,,,0,68884,70.73%
+Oxford East,443,E14000873,Oxford East,South East,04:00,5-Friday,5-Friday 04:00,10303,28135,6884,2392,,,1146,,118,77947,62.84%
+Penistone & Stocksbridge,448,E14000876,Penistone & Stocksbridge,Yorkshire and The Humber,04:00,5-Friday,5-Friday 04:00,23688,16478,5054,,,,4300,,0,70925,69.82%
+Penrith & The Border,449,E14000877,Penrith & The Border,North West,04:00,5-Friday,5-Friday 04:00,28875,10356,5364,2159,,,,,1070,67555,70.79%
+Plymouth Moor View,452,E14000879,Plymouth Moor View,South West,04:00,5-Friday,5-Friday 04:00,26831,13934,2301,1173,,,,,0,69430,63.72%
+Plymouth Sutton & Devonport,453,E14000880,Plymouth Sutton & Devonport,South West,04:00,5-Friday,5-Friday 04:00,20704,25461,2545,1557,,,2909,,0,77852,68.30%
+Poole,455,E14000881,Poole,South West,04:00,5-Friday,5-Friday 04:00,29599,10483,7819,1702,,,,,848,73992,68.18%
+Rayleigh & Wickford,463,E14000888,Rayleigh & Wickford,East,04:00,5-Friday,5-Friday 04:00,39864,8864,4171,2002,,,,,0,78959,69.53%
+Reading East,464,E14000889,Reading East,South East,04:00,5-Friday,5-Friday 04:00,21178,27102,5035,1549,,,852,,202,77465,72.18%
+Reading West,465,E14000890,Reading West,South East,04:00,5-Friday,5-Friday 04:00,24393,20276,4460,1263,,,,,0,74623,67.53%
+Redditch,467,E14000892,Redditch,West Midlands,04:00,5-Friday,5-Friday 04:00,27907,11871,2905,1384,,,,,0,65391,67.39%
+Richmond (Yorks),472,E14000895,Richmond (Yorks),Yorkshire and The Humber,04:00,5-Friday,5-Friday 04:00,36693,9483,6989,2500,,,,,2038,82601,69.86%
+Romsey & Southampton North,478,E14000901,Romsey & Southampton North,South East,04:00,5-Friday,5-Friday 04:00,27862,5898,16990,,,,,640,0,68228,75.32%
+Rossendale & Darwen,480,E14000902,Rossendale & Darwen,North West,04:00,5-Friday,5-Friday 04:00,27570,18048,2011,1193,,,,,0,72771,67.09%
+Rother Valley,481,E14000903,Rother Valley,Yorkshire and The Humber,04:00,5-Friday,5-Friday 04:00,21970,15652,2553,1219,,,6264,,1040,74802,65.10%
+Rotherham,482,E14000904,Rotherham,Yorkshire and The Humber,04:00,5-Friday,5-Friday 04:00,11615,14736,2090,,,,6125,,1085,61688,57.79%
+"Ruislip, Northwood & Pinner",484,E14000906,"Ruislip, Northwood & Pinner",London,04:00,5-Friday,5-Friday 04:00,29391,12997,7986,1646,,,,,589,73389,71.69%
+Rutland & Melton,488,E14000909,Rutland & Melton,East Midlands,04:00,5-Friday,5-Friday 04:00,36507,9583,7970,2875,,,,917,458,82711,70.50%
+Salisbury,496,E14000912,Salisbury,South West,04:00,5-Friday,5-Friday 04:00,30280,9675,10544,2486,,,,,745,74560,72.06%
+Scarborough & Whitby,497,E14000913,Scarborough & Whitby,Yorkshire and The Humber,04:00,5-Friday,5-Friday 04:00,27593,17323,3038,,,,,,1770,74393,66.84%
+Scunthorpe,498,E14000914,Scunthorpe,Yorkshire and The Humber,04:00,5-Friday,5-Friday 04:00,20306,13855,875,670,,,2044,,0,61955,60.93%
+Selby & Ainsty,501,E14000917,Selby & Ainsty,Yorkshire and The Humber,04:00,5-Friday,5-Friday 04:00,33995,13858,4842,1823,,,,,1900,78715,71.67%
+Sherwood,508,E14000924,Sherwood,East Midlands,04:00,5-Friday,5-Friday 04:00,32049,15863,2883,1214,,,,,700,77948,67.62%
+Shipley,509,E14000925,Shipley,Yorkshire and The Humber,04:00,5-Friday,5-Friday 04:00,27437,21195,3188,1301,,,,,883,74029,72.95%
+Sleaford & North Hykeham,514,E14000929,Sleaford & North Hykeham,East Midlands,04:00,5-Friday,5-Friday 04:00,44683,12118,5355,1742,,,,,2656,94761,70.23%
+Slough,515,E14000930,Slough,South East,04:00,5-Friday,5-Friday 04:00,15781,29421,3357,1047,,,1432,,0,87632,58.24%
+Leicestershire South,360,E14000940,Leicestershire South,East Midlands,04:00,5-Friday,5-Friday 04:00,36791,12787,5452,2439,,,,,0,80520,71.37%
+Northamptonshire South,429,E14000942,Northamptonshire South,East Midlands,04:00,5-Friday,5-Friday 04:00,41755,13994,7891,2634,,,,,171,90840,73.15%
+Staffordshire South,530,E14000945,Staffordshire South,West Midlands,04:00,5-Friday,5-Friday 04:00,36520,8270,3280,1935,,,,,0,73680,67.87%
+Suffolk South,549,E14000946,Suffolk South,East,04:00,5-Friday,5-Friday 04:00,33276,10373,6702,3144,,,,,0,76201,70.20%
+Swindon South,561,E14000947,Swindon South,South West,04:00,5-Friday,5-Friday 04:00,26536,19911,4299,,,,,,0,73118,69.40%
+Bedfordshire South West,44,E14000949,Bedfordshire South West,East,04:00,5-Friday,5-Friday 04:00,32212,13629,5435,2031,,,,,0,79926,66.70%
+Devon South West,191,E14000950,Devon South West,South West,04:00,5-Friday,5-Friday 04:00,33286,11856,6207,2018,,,,,0,72535,73.57%
+Norfolk South West,425,E14000952,Norfolk South West,East,04:00,5-Friday,5-Friday 04:00,35507,9312,4166,1645,,,,,836,78455,65.60%
+Surrey South West,554,E14000953,Surrey South West,South East,04:00,5-Friday,5-Friday 04:00,32191,4775,23374,,,,,,0,79129,76.26%
+Wiltshire South West,620,E14000954,Wiltshire South West,South West,04:00,5-Friday,5-Friday 04:00,33038,11408,8015,2434,,,,,0,77970,70.41%
+Spelthorne,527,E14000959,Spelthorne,South East,04:00,5-Friday,5-Friday 04:00,29141,10748,7499,2122,,,,,0,70929,69.80%
+St Albans,490,E14000960,St Albans,East,04:00,5-Friday,5-Friday 04:00,22574,5000,28867,1004,,,,,154,73721,78.13%
+Stone,540,E14000975,Stone,West Midlands,04:00,5-Friday,5-Friday 04:00,31687,11742,4412,2002,,,,,0,69378,71.84%
+Stourbridge,541,E14000976,Stourbridge,West Midlands,04:00,5-Friday,5-Friday 04:00,27534,13963,2523,1048,,,,,621,69891,65.37%
+Streatham,544,E14000978,Streatham,London,04:00,5-Friday,5-Friday 04:00,9060,30976,13286,2567,,,624,,0,84788,66.65%
+Stretford & Urmston,545,E14000979,Stretford & Urmston,North West,04:00,5-Friday,5-Friday 04:00,13778,30195,2969,1357,,,1768,,0,72356,69.20%
+Sutton & Cheam,556,E14000984,Sutton & Cheam,London,04:00,5-Friday,5-Friday 04:00,25235,7200,16884,1168,,,,,0,71760,70.36%
+Tatton,563,E14000987,Tatton,North West,04:00,5-Friday,5-Friday 04:00,28277,10890,7712,2088,,,,,0,69018,70.95%
+Taunton Deane,564,E14000988,Taunton Deane,South West,04:00,5-Friday,5-Friday 04:00,34164,4715,22464,,,,,,2390,88675,71.87%
+Thornbury & Yate,570,E14000994,Thornbury & Yate,South West,04:00,5-Friday,5-Friday 04:00,30202,4208,17833,,,,,,0,69492,75.18%
+Tottenham,578,E14001002,Tottenham,London,04:00,5-Friday,5-Friday 04:00,5446,35621,3168,1873,,,527,,221,75740,61.86%
+Vauxhall,590,E14001008,Vauxhall,London,04:00,5-Friday,5-Friday 04:00,9422,31615,12003,2516,,,641,,136,88647,63.55%
+Wakefield,591,E14001009,Wakefield,Yorkshire and The Humber,04:00,5-Friday,5-Friday 04:00,21283,17925,1772,,,,2725,,1322,70192,64.15%
+Warrington North,599,E14001017,Warrington North,North West,04:00,5-Friday,5-Friday 04:00,19102,20611,3071,1257,,,2626,,0,72235,64.60%
+Warrington South,600,E14001018,Warrington South,North West,04:00,5-Friday,5-Friday 04:00,28187,26177,5732,,,,1635,,168,86015,71.96%
+Warwick & Leamington,601,E14001019,Warwick & Leamington,West Midlands,04:00,5-Friday,5-Friday 04:00,22929,23718,4995,1536,,,807,,220,76373,70.97%
+Waveney,605,E14001022,Waveney,East,04:00,5-Friday,5-Friday 04:00,31778,13776,2603,2727,,,,,245,82791,61.76%
+Wentworth & Dearne,611,E14001028,Wentworth & Dearne,Yorkshire and The Humber,04:00,5-Friday,5-Friday 04:00,14577,16742,1705,,,,7019,,1514,74536,55.75%
+West Ham,614,E14001032,West Ham,London,04:00,5-Friday,5-Friday 04:00,9793,42181,4161,1780,,,1679,,606,97942,61.46%
+Lancashire West,349,E14001033,Lancashire West,North West,04:00,5-Friday,5-Friday 04:00,19122,27458,2560,1248,,,2275,,0,73346,71.80%
+Windsor,623,E14001042,Windsor,South East,04:00,5-Friday,5-Friday 04:00,31501,8147,11422,1796,,,,,376,75038,70.95%
+Witham,626,E14001045,Witham,East,04:00,5-Friday,5-Friday 04:00,32876,8794,4584,3090,,,,,0,70402,70.09%
+Witney,627,E14001046,Witney,South East,04:00,5-Friday,5-Friday 04:00,33856,8770,18679,,,,,,0,83845,73.12%
+Woking,628,E14001047,Woking,South East,04:00,5-Friday,5-Friday 04:00,26396,8827,16629,1485,,,,600,0,75455,71.48%
+Wyre & Preston North,643,E14001057,Wyre & Preston North,North West,04:00,5-Friday,5-Friday 04:00,31589,14808,4463,1729,,,,,335,75168,70.41%
+Wythenshawe & Sale East,645,E14001059,Wythenshawe & Sale East,North West,04:00,5-Friday,5-Friday 04:00,13459,23855,3111,1559,,,2717,,58,76313,58.65%
+Fermanagh & South Tyrone,249,N06000007,Fermanagh & South Tyrone,Northern Ireland,04:00,5-Friday,5-Friday 04:00,,,,,,,,,50762,72848,69.68%
+Newry & Armagh,419,N06000011,Newry & Armagh,Northern Ireland,04:00,5-Friday,5-Friday 04:00,,,,,,,,,50779,81226,62.52%
+Upper Bann,586,N06000017,Upper Bann,Northern Ireland,04:00,5-Friday,5-Friday 04:00,,,,,,,,,50045,82887,60.38%
+Tyrone West,584,N06000018,Tyrone West,Northern Ireland,04:00,5-Friday,5-Friday 04:00,,,,521,,,,,40665,66259,62.16%
+"Berwickshire, Roxburgh & Selkirk",51,S14000008,"Berwickshire, Roxburgh & Selkirk",Scotland,04:00,5-Friday,5-Friday 04:00,25747,2513,4287,,20599,,,,0,74518,71.32%
+"Caithness, Sutherland & Easter Ross",115,S14000009,"Caithness, Sutherland & Easter Ross",Scotland,04:00,5-Friday,5-Friday 04:00,5176,1936,11705,,11501,,1139,,0,46930,67.03%
+Ayrshire Central,24,S14000010,Ayrshire Central,Scotland,04:00,5-Friday,5-Friday 04:00,16182,6583,2283,,21486,,,,0,69742,66.72%
+"Coatbridge, Chryston & Bellshill",156,S14000011,"Coatbridge, Chryston & Bellshill",Scotland,04:00,5-Friday,5-Friday 04:00,6113,17056,1564,808,22680,,,,0,72943,66.11%
+"Cumbernauld, Kilsyth & Kirkintilloch East",173,S14000012,"Cumbernauld, Kilsyth & Kirkintilloch East",Scotland,04:00,5-Friday,5-Friday 04:00,7380,11182,2966,,24158,,,,0,66079,69.14%
+"Inverness, Nairn, Badenoch & Strathspey",331,S14000039,"Inverness, Nairn, Badenoch & Strathspey",Scotland,04:00,5-Friday,5-Friday 04:00,15807,4123,5846,1709,26247,,1078,,0,78057,70.22%
+Motherwell & Wishaw,406,S14000047,Motherwell & Wishaw,Scotland,04:00,5-Friday,5-Friday 04:00,7150,14354,1675,,20622,,,619,0,68856,64.51%
+Fife North East,250,S14000049,Fife North East,Scotland,04:00,5-Friday,5-Friday 04:00,5961,1707,19763,,18447,,,,0,60905,75.33%
+Monmouth,401,W07000054,Monmouth,Wales,04:00,5-Friday,5-Friday 04:00,26160,16178,4909,1353,,1182,,,435,67094,74.85%
+Ceredigion,135,W07000064,Ceredigion,Wales,04:00,5-Friday,5-Friday 04:00,8879,6317,6975,663,,15208,2063,,0,56250,71.30%
+Merthyr Tydfil & Rhymney,393,W07000071,Merthyr Tydfil & Rhymney,Wales,04:00,5-Friday,5-Friday 04:00,6307,16913,1116,,,2446,3604,,1860,56322,57.25%
+Cardiff West,129,W07000079,Cardiff West,Wales,04:00,5-Friday,5-Friday 04:00,12922,23908,2731,1133,,3864,1619,,0,68508,67.40%
+Cardiff South & Penarth,128,W07000080,Cardiff South & Penarth,Wales,04:00,5-Friday,5-Friday 04:00,14645,27382,2985,1182,,2386,1999,,0,78837,64.16%
+Beverley & Holderness,53,E14000556,Beverley & Holderness,Yorkshire and The Humber,04:30,5-Friday,5-Friday 04:30,33250,12802,4671,1378,,,,,1441,79683,67.19%
+Bognor Regis & Littlehampton,74,E14000576,Bognor Regis & Littlehampton,South East,04:30,5-Friday,5-Friday 04:30,32521,10018,5645,1826,,,,846,367,77488,66.10%
+"Chester, City of",143,E14000640,"Chester, City of",North West,04:30,5-Friday,5-Friday 04:30,20918,27082,3734,1438,,,1388,,0,76057,71.74%
+Derbyshire Dales,183,E14000664,Derbyshire Dales,East Midlands,04:30,5-Friday,5-Friday 04:30,29356,11975,6627,2058,,,,,0,65060,76.88%
+Yorkshire East,650,E14000683,Yorkshire East,Yorkshire and The Humber,04:30,5-Friday,5-Friday 04:30,33988,11201,4219,1675,,,,,1686,80871,65.25%
+Elmet & Rothwell,235,E14000689,Elmet & Rothwell,Yorkshire and The Humber,04:30,5-Friday,5-Friday 04:30,33726,16373,5155,1775,,,,,1196,80957,71.92%
+Kensington,340,E14000768,Kensington,London,04:30,5-Friday,5-Friday 04:30,16768,16618,9312,535,,,384,,145,64609,67.73%
+Mansfield,390,E14000810,Mansfield,East Midlands,04:30,5-Friday,5-Friday 04:30,31484,15178,1626,,,,,,458,77131,63.20%
+Dorset North,198,E14000839,Dorset North,South West,04:30,5-Friday,5-Friday 04:30,35705,6737,11404,2261,,,,,0,75956,73.87%
+Dorset South,199,E14000936,Dorset South,South West,04:30,5-Friday,5-Friday 04:30,30024,12871,5432,2246,,,,,485,72924,70.02%
+Uxbridge & Ruislip South,587,E14001007,Uxbridge & Ruislip South,London,04:30,5-Friday,5-Friday 04:30,25351,18141,3026,1090,,,,283,130,70369,68.24%
+Weaver Vale,607,E14001024,Weaver Vale,North West,04:30,5-Friday,5-Friday 04:30,22210,22772,3300,1051,,,1380,,0,70551,71.88%
+Dorset West,200,E14001031,Dorset West,South West,04:30,5-Friday,5-Friday 04:30,33589,5729,19483,2124,,,,,0,80963,75.25%
+Preseli Pembrokeshire,459,W07000065,Preseli Pembrokeshire,Wales,04:30,5-Friday,5-Friday 04:30,21381,16319,1943,,,2776,,,0,59586,71.19%
+Carmarthen West & Pembrokeshire South,132,W07000066,Carmarthen West & Pembrokeshire South,Wales,04:30,5-Friday,5-Friday 04:30,22183,14438,1860,,,3633,,,0,58629,71.83%
+Arundel & South Downs,18,E14000534,Arundel & South Downs,South East,05:00,5-Friday,5-Friday 05:00,35566,9722,13045,2519,,,,,556,81726,75.14%
+Ashfield,19,E14000535,Ashfield,East Midlands,05:00,5-Friday,5-Friday 05:00,19231,11971,1105,674,,,2501,,13498,78204,62.63%
+Ashton Under Lyne,21,E14000537,Ashton Under Lyne,North West,05:00,5-Friday,5-Friday 05:00,14281,18544,1395,1208,,,3151,,0,68497,56.32%
+Basingstoke,34,E14000545,Basingstoke,South East,05:00,5-Friday,5-Friday 05:00,29593,15395,6841,2138,,,,,746,82926,65.98%
+Bermondsey & Old Southwark,49,E14000553,Bermondsey & Old Southwark,London,05:00,5-Friday,5-Friday 05:00,9678,31723,15597,,,,1617,,0,93313,62.82%
+Bethnal Green & Bow,52,E14000555,Bethnal Green & Bow,London,05:00,5-Friday,5-Friday 05:00,6528,44052,5892,2570,,,1081,,439,88169,68.69%
+Blyth Valley,73,E14000575,Blyth Valley,North East,05:00,5-Friday,5-Friday 05:00,17440,16728,2151,1146,,,3394,,0,64429,63.42%
+Bolsover,75,E14000577,Bolsover,East Midlands,05:00,5-Friday,5-Friday 05:00,21791,16492,1759,758,,,4151,,470,75157,60.43%
+Bradford East,85,E14000587,Bradford East,Yorkshire and The Humber,05:00,5-Friday,5-Friday 05:00,9681,27825,3316,662,,,2700,,0,73206,60.36%
+Bradford South,86,E14000588,Bradford South,Yorkshire and The Humber,05:00,5-Friday,5-Friday 05:00,16044,18390,1505,983,,,2819,,0,69046,57.56%
+Bradford West,87,E14000589,Bradford West,Yorkshire and The Humber,05:00,5-Friday,5-Friday 05:00,6717,33736,1349,813,,,1556,,90,70694,62.61%
+Bridgwater & Somerset West,95,E14000595,Bridgwater & Somerset West,South West,05:00,5-Friday,5-Friday 05:00,35827,11388,7805,1877,,,,,755,85327,67.57%
+Broadland,103,E14000603,Broadland,East,05:00,5-Friday,5-Friday 05:00,33934,12073,9195,1412,,,,,363,78151,72.91%
+Broxtowe,107,E14000607,Broxtowe,East Midlands,05:00,5-Friday,5-Friday 05:00,26602,21271,,1806,,,,,5593,73052,75.66%
+Buckingham,108,E14000608,Buckingham,South East,05:00,5-Friday,5-Friday 05:00,37035,7638,16624,,,,1286,,875,83146,76.32%
+Calder Valley,116,E14000614,Calder Valley,Yorkshire and The Humber,05:00,5-Friday,5-Friday 05:00,29981,24207,2884,,,,,,721,79287,72.89%
+Camberwell & Peckham,117,E14000615,Camberwell & Peckham,London,05:00,5-Friday,5-Friday 05:00,6478,40258,5087,3501,,,1041,,127,89042,63.44%
+Camborne & Redruth,118,E14000616,Camborne & Redruth,South West,05:00,5-Friday,5-Friday 05:00,26764,18064,3504,1359,,,,,676,70250,71.70%
+Cheadle,138,E14000627,Cheadle,North West,05:00,5-Friday,5-Friday 05:00,25694,6851,23358,,,,,,0,74639,74.90%
+Colne Valley,158,E14000645,Colne Valley,Yorkshire and The Humber,05:00,5-Friday,5-Friday 05:00,29482,24379,3815,1068,,,1286,230,650,84174,72.36%
+Corby,161,E14000648,Corby,East Midlands,05:00,5-Friday,5-Friday 05:00,33410,23142,3932,,,,,,0,86151,70.21%
+Denton & Reddish,180,E14000661,Denton & Reddish,North West,05:00,5-Friday,5-Friday 05:00,13142,19317,1642,1124,,,3039,,324,66234,58.26%
+Derby North,181,E14000662,Derby North,East Midlands,05:00,5-Friday,5-Friday 05:00,21259,18719,3450,1046,,,1908,,635,73212,64.22%
+Derby South,182,E14000663,Derby South,East Midlands,05:00,5-Friday,5-Friday 05:00,15671,21690,2621,,,,2480,,0,73079,58.10%
+Dewsbury,193,E14000666,Dewsbury,Yorkshire and The Humber,05:00,5-Friday,5-Friday 05:00,26179,24618,2406,1060,,,1874,,252,81252,69.40%
+Dudley North,204,E14000671,Dudley North,West Midlands,05:00,5-Friday,5-Friday 05:00,23134,11601,1210,739,,,,,0,61936,59.23%
+Worthing East & Shoreham,638,E14000682,Worthing East & Shoreham,South East,05:00,5-Friday,5-Friday 05:00,27104,19663,4127,2006,,,,,255,75195,70.69%
+Eddisbury,227,E14000686,Eddisbury,North West,05:00,5-Friday,5-Friday 05:00,30095,11652,9582,1191,,,,451,0,73700,71.87%
+Enfield Southgate,238,E14000692,Enfield Southgate,London,05:00,5-Friday,5-Friday 05:00,18473,22923,4344,1042,,,494,,0,65055,72.67%
+Faversham & Kent Mid,247,E14000700,Faversham & Kent Mid,South East,05:00,5-Friday,5-Friday 05:00,31864,9888,6170,2103,,,,,369,73404,68.65%
+Filton & Bradley Stoke,251,E14000702,Filton & Bradley Stoke,South West,05:00,5-Friday,5-Friday 05:00,26293,20647,4992,1563,,,,,257,74016,72.62%
+Gravesham,275,E14000715,Gravesham,South East,05:00,5-Friday,5-Friday 05:00,29580,13999,2584,1397,,,,,0,73234,64.94%
+Halesowen & Rowley Regis,282,E14000722,Halesowen & Rowley Regis,West Midlands,05:00,5-Friday,5-Friday 05:00,25607,13533,1738,934,,,,,111,68300,61.38%
+Halifax,283,E14000723,Halifax,Yorkshire and The Humber,05:00,5-Friday,5-Friday 05:00,18927,21496,2276,946,,,2813,,0,71904,64.61%
+Hampstead & Kilburn,290,E14000727,Hampstead & Kilburn,London,05:00,5-Friday,5-Friday 05:00,13892,28080,13121,1608,,,684,,0,82432,69.61%
+Hazel Grove,301,E14000738,Hazel Grove,North West,05:00,5-Friday,5-Friday 05:00,21592,5508,17169,,,,,,0,65457,67.63%
+Hemsworth,303,E14000740,Hemsworth,Yorkshire and The Humber,05:00,5-Friday,5-Friday 05:00,15280,16460,1734,916,,,5930,,1129,73726,56.22%
+Holborn & St Pancras,316,E14000750,Holborn & St Pancras,London,05:00,5-Friday,5-Friday 05:00,8878,36641,7314,2746,,,1032,138,37,87236,65.09%
+Keighley,338,E14000766,Keighley,Yorkshire and The Humber,05:00,5-Friday,5-Friday 05:00,25298,23080,2573,,,,850,,799,72778,72.27%
+Kingswood,344,E14000774,Kingswood,South West,05:00,5-Friday,5-Friday 05:00,27712,16492,3421,1200,,,,,489,68972,71.50%
+Leeds North East,353,E14000779,Leeds North East,Yorkshire and The Humber,05:00,5-Friday,5-Friday 05:00,11935,29024,5665,1931,,,1769,,176,70580,71.55%
+Ludlow,379,E14000799,Ludlow,West Midlands,05:00,5-Friday,5-Friday 05:00,32185,7591,8537,1912,,,,,0,69442,72.33%
+Macclesfield,382,E14000802,Macclesfield,North West,05:00,5-Friday,5-Friday 05:00,28292,17581,5684,2310,,,,,0,76216,70.68%
+Maidstone & The Weald,384,E14000804,Maidstone & The Weald,South East,05:00,5-Friday,5-Friday 05:00,31220,9448,8482,2172,,,,,358,76110,67.90%
+Meon Valley,391,E14000811,Meon Valley,South East,05:00,5-Friday,5-Friday 05:00,35271,5644,11716,2198,,,,,0,75737,72.39%
+Derbyshire Mid,184,E14000814,Derbyshire Mid,East Midlands,05:00,5-Friday,5-Friday 05:00,29027,13642,4756,1931,,,,,0,67437,73.19%
+Norfolk Mid,421,E14000816,Norfolk Mid,East,05:00,5-Friday,5-Friday 05:00,35051,12457,7739,,,,,,939,81975,68.54%
+Milton Keynes North,397,E14000821,Milton Keynes North,South East,05:00,5-Friday,5-Friday 05:00,30938,24683,4991,1931,,,,,0,91535,68.33%
+Morecambe & Lunesdale,404,E14000825,Morecambe & Lunesdale,North West,05:00,5-Friday,5-Friday 05:00,23925,17571,2328,938,,,,,548,67397,67.23%
+"Normanton, Pontefract & Castleford",426,E14000836,"Normanton, Pontefract & Castleford",Yorkshire and The Humber,05:00,5-Friday,5-Friday 05:00,17021,18297,3147,,,,8032,,1762,84527,57.09%
+Derbyshire North East,185,E14000843,Derbyshire North East,East Midlands,05:00,5-Friday,5-Friday 05:00,28897,16021,3021,1278,,,,,0,72360,68.02%
+Shropshire North,511,E14000849,Shropshire North,West Midlands,05:00,5-Friday,5-Friday 05:00,35444,12495,5643,1790,,,,,1141,83257,67.88%
+Thanet North,567,E14000852,Thanet North,South East,05:00,5-Friday,5-Friday 05:00,30066,12877,3439,1796,,,,,0,72811,66.17%
+Northampton North,427,E14000861,Northampton North,East Midlands,05:00,5-Friday,5-Friday 05:00,21031,15524,2031,953,,,,,0,59265,66.72%
+Northampton South,428,E14000862,Northampton South,East Midlands,05:00,5-Friday,5-Friday 05:00,20914,16217,2482,1222,,,,,0,62172,65.68%
+Oxford West & Abingdon,444,E14000874,Oxford West & Abingdon,South East,05:00,5-Friday,5-Friday 05:00,22397,4258,31340,,,,829,,0,76953,76.44%
+Poplar & Limehouse,456,E14000882,Poplar & Limehouse,London,05:00,5-Friday,5-Friday 05:00,9756,38660,8832,2159,,,1493,,376,91760,66.78%
+Pudsey,461,E14000886,Pudsey,Yorkshire and The Humber,05:00,5-Friday,5-Friday 05:00,26453,22936,3088,894,,,,,844,73212,74.05%
+Somerton & Frome,519,E14000932,Somerton & Frome,South West,05:00,5-Friday,5-Friday 05:00,36230,8354,17017,3295,,,,,0,85866,75.58%
+Cambridgeshire South East,123,E14000937,Cambridgeshire South East,East,05:00,5-Friday,5-Friday 05:00,32187,10492,20697,,,,,,1009,86769,74.20%
+Thanet South,568,E14000948,Thanet South,South East,05:00,5-Friday,5-Friday 05:00,27084,16497,2727,1949,,,,,0,73302,65.83%
+Hertfordshire South West,310,E14000951,Hertfordshire South West,East,05:00,5-Friday,5-Friday 05:00,30327,7228,6251,1466,,,,,15919,80449,76.06%
+Southampton Itchen,523,E14000955,Southampton Itchen,South East,05:00,5-Friday,5-Friday 05:00,23952,19454,2503,1040,,,,472,0,72293,65.60%
+Stalybridge & Hyde,531,E14000967,Stalybridge & Hyde,North West,05:00,5-Friday,5-Friday 05:00,16079,19025,1827,1411,,,3591,,435,73873,57.35%
+Stockport,534,E14000969,Stockport,North West,05:00,5-Friday,5-Friday 05:00,11656,21695,5043,1403,,,1918,,0,65457,63.73%
+Stoke-on-Trent Central,537,E14000972,Stoke-on-Trent Central,West Midlands,05:00,5-Friday,5-Friday 05:00,14557,13887,1116,819,,,1691,,0,55424,57.86%
+Stoke-on-Trent North,538,E14000973,Stoke-on-Trent North,West Midlands,05:00,5-Friday,5-Friday 05:00,20974,14688,1268,508,,,2374,,322,84357,47.58%
+Stoke-on-Trent South,539,E14000974,Stoke-on-Trent South,West Midlands,05:00,5-Friday,5-Friday 05:00,24632,13361,1611,,,,,,0,64499,61.40%
+Tewkesbury,566,E14000990,Tewkesbury,South West,05:00,5-Friday,5-Friday 05:00,35728,9310,13318,2784,,,,,0,83958,72.82%
+Thirsk & Malton,569,E14000993,Thirsk & Malton,Yorkshire and The Humber,05:00,5-Friday,5-Friday 05:00,35634,10480,6774,2263,,,,,1192,80979,69.58%
+Tiverton & Honiton,572,E14000996,Tiverton & Honiton,South West,05:00,5-Friday,5-Friday 05:00,35893,11654,8807,2291,,,,968,0,82953,71.86%
+Devon West & Torridge,192,E14001000,Devon West & Torridge,South West,05:00,5-Friday,5-Friday 05:00,35904,10290,10912,2077,,,,,547,79831,74.82%
+Wantage,597,E14001015,Wantage,South East,05:00,5-Friday,5-Friday 05:00,34085,10181,21432,,,,,,1475,90875,73.92%
+Winchester,622,E14001041,Winchester,South East,05:00,5-Friday,5-Friday 05:00,28430,2723,27445,,,,,,292,75582,77.92%
+Worthing West,639,E14001055,Worthing West,South East,05:00,5-Friday,5-Friday 05:00,30475,15652,6024,2008,,,,,489,78587,69.54%
+York Central,648,E14001061,York Central,Yorkshire and The Humber,05:00,5-Friday,5-Friday 05:00,13767,27312,4149,2107,,,1479,,691,74801,66.18%
+York Outer,649,E14001062,York Outer,Yorkshire and The Humber,05:00,5-Friday,5-Friday 05:00,27324,17339,9992,,,,,,692,74673,74.12%
+Argyll & Bute,17,S14000005,Argyll & Bute,Scotland,05:00,5-Friday,5-Friday 05:00,16930,3248,6832,,21040,,,,0,66525,72.23%
+Banff & Buchan,27,S14000007,Banff & Buchan,Scotland,05:00,5-Friday,5-Friday 05:00,21182,1734,2280,,17064,,,,0,66655,63.40%
+Dumfries & Galloway,207,S14000013,Dumfries & Galloway,Scotland,05:00,5-Friday,5-Friday 05:00,22678,4745,3133,,20873,,,,0,74580,68.96%
+"Dumfriesshire, Clydesdale & Tweeddale",208,S14000014,"Dumfriesshire, Clydesdale & Tweeddale",Scotland,05:00,5-Friday,5-Friday 05:00,22611,4172,3540,,18830,,,,0,68330,71.93%
+Edinburgh East,228,S14000022,Edinburgh East,Scotland,05:00,5-Friday,5-Friday 05:00,6549,12748,3289,2064,23165,,,,0,69424,68.87%
+Edinburgh North & Leith,229,S14000023,Edinburgh North & Leith,Scotland,05:00,5-Friday,5-Friday 05:00,11000,13117,6635,1971,25925,,558,,138,81336,72.96%
+Edinburgh South,230,S14000024,Edinburgh South,Scotland,05:00,5-Friday,5-Friday 05:00,8161,23745,3819,1357,12650,,,,0,66188,75.14%
+Edinburgh South West,231,S14000025,Edinburgh South West,Scotland,05:00,5-Friday,5-Friday 05:00,12848,7478,4971,1265,24830,,625,,114,73501,70.93%
+Edinburgh West,232,S14000026,Edinburgh West,Scotland,05:00,5-Friday,5-Friday 05:00,9283,4460,21766,1027,17997,,,,0,72507,75.21%
+Gordon,271,S14000037,Gordon,Scotland,05:00,5-Friday,5-Friday 05:00,23066,3052,5913,,23885,,,,0,79629,70.22%
+"Ross, Skye & Lochaber",479,S14000055,"Ross, Skye & Lochaber",Scotland,05:00,5-Friday,5-Friday 05:00,6900,2448,9820,,19263,,710,,728,54229,73.52%
+Aberdeenshire West & Kincardine,5,S14000058,Aberdeenshire West & Kincardine,Scotland,05:00,5-Friday,5-Friday 05:00,22752,2431,6253,,21909,,,,0,72640,73.44%
+Barrow & Furness,31,E14000543,Barrow & Furness,North West,05:30,5-Friday,5-Friday 05:30,23876,18087,2025,703,,,1355,,0,70158,65.63%
+Chipping Barnet,148,E14000636,Chipping Barnet,London,05:30,5-Friday,5-Friday 05:30,25745,24533,5932,1288,,,,,71,79960,72.00%
+Finchley & Golders Green,252,E14000703,Finchley & Golders Green,London,05:30,5-Friday,5-Friday 05:30,24162,13347,17600,,,,,,0,77573,71.04%
+Hendon,304,E14000741,Hendon,London,05:30,5-Friday,5-Friday 05:30,26878,22648,4628,921,,,,,0,82661,66.63%
+Chatham & Aylesford,137,E14000626,Chatham & Aylesford,South East,06:00,5-Friday,5-Friday 06:00,28856,10316,2866,1090,,,,,212,73305,59.12%
+Devizes,187,E14000665,Devizes,South West,06:00,5-Friday,5-Friday 06:00,32150,7838,8157,2809,,,,,0,73379,69.44%
+Devon East,189,E14000678,Devon East,South West,06:00,5-Friday,5-Friday 06:00,32577,2870,1771,711,,,,,275,86841,43.99%
+Gillingham & Rainham,261,E14000711,Gillingham & Rainham,South East,06:00,5-Friday,5-Friday 06:00,28173,13054,2503,1043,,,,837,348,73549,62.49%
+Sussex Mid,555,E14000817,Sussex Mid,South East,06:00,5-Friday,5-Friday 06:00,33455,11218,15258,2234,,,,,597,85140,73.72%
+Richmond Park,473,E14000896,Richmond Park,London,06:00,5-Friday,5-Friday 06:00,26793,3407,34559,,,,,,61,82696,78.38%
+Rochester & Strood,475,E14000898,Rochester & Strood,South East,06:00,5-Friday,5-Friday 06:00,31151,14079,3717,1312,,,,1080,587,82056,63.28%
+Skipton & Ripon,513,E14000928,Skipton & Ripon,Yorkshire and The Humber,06:00,5-Friday,5-Friday 06:00,34919,11225,8701,2748,,,,,1131,78673,74.64%
+Southampton Test,524,E14000956,Southampton Test,South East,06:00,5-Friday,5-Friday 06:00,16043,22256,3449,1433,,,1591,,222,70113,64.17%
+Twickenham,581,E14001005,Twickenham,London,06:00,5-Friday,5-Friday 06:00,22045,5476,36166,,,,816,,0,84901,75.97%
+Wansbeck,596,E14001014,Wansbeck,North East,06:00,5-Friday,5-Friday 06:00,16310,17124,2539,1217,,,3141,,178,63339,63.96%
+Wells,609,E14001026,Wells,South West,06:00,5-Friday,5-Friday 06:00,33336,4304,23345,,,,,,580,84124,73.18%
+Orkney & Shetland,441,S14000051,Orkney & Shetland,Scotland,06:00,5-Friday,5-Friday 06:00,2287,1550,10381,,7874,,900,,168,34211,67.70%
+Brighton Kemptown,97,E14000597,Brighton Kemptown,South East,07:00,5-Friday,5-Friday 07:00,16972,25033,2964,2237,,,1327,,0,69833,69.50%
+Brighton Pavilion,98,E14000598,Brighton Pavilion,South East,07:00,5-Friday,5-Friday 07:00,10176,13211,,33151,,,770,177,513,79057,73.36%
+Hove,321,E14000755,Hove,South East,07:00,5-Friday,5-Friday 07:00,15832,32876,3731,2496,,,1111,,345,74313,75.88%
+Truro & Falmouth,579,E14001003,Truro & Falmouth,South West,07:00,5-Friday,5-Friday 07:00,27237,22676,7150,1714,,,,,413,76719,77.15%
+St Ives,494,E14000964,St Ives,South West,08:00,5-Friday,5-Friday 08:00,25365,3553,21081,954,,,,,446,68795,74.70%
+St Austell & Newquay,491,E14000961,St Austell & Newquay,South West,09:00,5-Friday,5-Friday 09:00,31273,14747,5861,1609,,,,,2286,79930,69.78%
+Cornwall North,162,E14000837,Cornwall North,South West,10:00,5-Friday,5-Friday 10:00,30671,4516,15919,,,,,,572,69935,73.89%
+Cornwall South East,163,E14000938,Cornwall South East,South West,10:00,5-Friday,5-Friday 10:00,31807,10836,8650,1493,,,,,869,71825,74.70%

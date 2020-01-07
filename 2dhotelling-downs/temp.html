@@ -1,12 +1,24 @@
 <html>
     <head>
-        
-    <script type="text/javascript" src="http://d3js.org/d3.v3.js"></script>
-        <!--<script src="d3.min.js" ></script>-->
-        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">    
+        <title>Bootstrap 101 Template</title>        
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+            <!--<script src="d3.min.js" ></script>-->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="styles.css" />        
     </head>
     <body>
        <div id="grid"></div>
+       <div>
+           <input name="updateButton" 
+           type="button" 
+           value="Update" 
+           onclick="setup()" />
+       </div>
+
+        <script src="grid2.js" type="text/javascript"></script>
+        <script src="https://cdn.jsdelivr.net/gh/sebt3/d3-bootstrap@0.5.2/dist/d3-bootstrap-withextra.min.js"></script>
     </body>
-<script src="grid2.js" type="text/javascript"></script>
 </html>

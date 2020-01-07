@@ -3,16 +3,16 @@ function gridData(granularity) {
     var xpos = 1; //starting xpos and ypos at 1 so the stroke will show when we make the grid below
     var ypos = 1;
    
-for(var cell = 0; cell < granularity * granularity; cell++) {
-        data.push( {
-            id: cell,
-            color: '#ffffff',
-            xpos: cell % granularity,
-            ypos: Math.floor( cell / granularity),
-            support: 0,
-        } );
-}
-    return data;
+    for(var cell = 0; cell < granularity * granularity; cell++) {
+            data.push( {
+                id: cell,
+                color: '#ffffff',
+                xpos: cell % granularity,
+                ypos: Math.floor( cell / granularity),
+                support: 0,
+            } );
+    }
+        return data;
 }
 
 var window_x = 700;
@@ -25,13 +25,49 @@ var width = window_x/granularity;
 var height = window_y/granularity;
 var turn_delay = .001;
 
-var gridData = gridData(granularity);
-var partyData = new Array();
-partyData.push( { xpos: 7, ypos: 12, color:'#597cf4', support:0, last_support:0, dx:0, dy:0  } );
-partyData.push( { xpos: 33, ypos: 46, color:'#f45962', support:0, last_support:0, dx:0, dy:0  } );
-// red = #f45962 , blue =#597cf4, white=#ffffff
-var grid = d3.select("#grid")
-    .append("svg")
+var gridData;
+// gridData = gridData(granularity);
+var partyData;
+ // = new Array();
+// partyData.push( { xpos: 7, ypos: 12, color:'#597cf4', support:0, last_support:0, dx:0, dy:0  } );
+// partyData.push( { xpos: 33, ypos: 46, color:'#f45962', support:0, last_support:0, dx:0, dy:0  } );
+var party_turn=0;
+var grid;
+
+
+function setup(){
+    var data = new Array();
+    var xpos = 1; //starting xpos and ypos at 1 so the stroke will show when we make the grid below
+    var ypos = 1;
+   
+    for(var cell = 0; cell < granularity * granularity; cell++) {
+            data.push( {
+                id: cell,
+                color: '#ffffff',
+                xpos: cell % granularity,
+                ypos: Math.floor( cell / granularity),
+                support: 0,
+            } );
+    }
+    gridData = data;
+    partyData = new Array();
+    partyData.push( { xpos: 7, ypos: 12, color:'#597cf4', support:0, last_support:0, dx:0, dy:0  } );
+    partyData.push( { xpos: 33, ypos: 46, color:'#f45962', support:0, last_support:0, dx:0, dy:0  } );
+    party_turn=0;
+    
+    d3.select("svg").remove();
+    grid = d3.select("#grid")
+    // .append("svg")
+   .append("div")
+   // Container class to make it responsive.
+   .classed("svg-container", true) 
+   .append("svg")
+   // Responsive SVG needs these 2 attributes and no width and height attr.
+   .attr("preserveAspectRatio", "xMinYMin meet")
+   .attr("viewBox", "0 0 600 400")
+   // Class to make it responsive.
+   .classed("svg-content-responsive", true)
+   // Fill with a rectangle for visualization.        
     .attr("width",window_x.toString().concat("px"))
     .attr("height",window_y.toString().concat("px"))
     .on('click', function() {
@@ -39,6 +75,23 @@ var grid = d3.select("#grid")
         partyData.push( { xpos: Math.floor(coords[0]*granularity/window_x), ypos: Math.floor(coords[1]*granularity/window_y), color:'#'+Math.floor(Math.random()*16777215).toString(16), support:0, last_support:0, dx:0,dy:0  } );
         // drawCircle(coords[0], coords[1], getRandom(5,50));
     });
+    
+    
+
+    
+}
+setup();
+
+// red = #f45962 , blue =#597cf4, white=#ffffff
+// var grid = d3.select("#grid")
+    // .append("svg")
+    // .attr("width",window_x.toString().concat("px"))
+    // .attr("height",window_y.toString().concat("px"))
+    // .on('click', function() {
+        // var coords = d3.mouse(this);
+        // partyData.push( { xpos: Math.floor(coords[0]*granularity/window_x), ypos: Math.floor(coords[1]*granularity/window_y), color:'#'+Math.floor(Math.random()*16777215).toString(16), support:0, last_support:0, dx:0,dy:0  } );
+        // // drawCircle(coords[0], coords[1], getRandom(5,50));
+    // });
 
 // Create data = list of groups
 var allGroup = [".001", "1", "100", "1500"]
@@ -140,7 +193,7 @@ function choose_move( move )
     return [dx,dy]
 }
     
-var party_turn=0;
+
 
 function update(){
   // move parties  
@@ -257,6 +310,10 @@ var party = grid.selectAll(".party")
     // .style("fill", "#222") 
     .style("fill", "#ffffff") 
     .style("stroke", "#222")
+    // .append("text")
+    // .attr("x", function(d) { return d.xpos * width; })
+    // .attr("y", function(d) { return d.ypos * width; })
+    // .text(function(d){return d.support.toString()});
 
 
     
@@ -280,6 +337,8 @@ var party = grid.selectAll(".party")
                 function(d){ 
                     return d.color;
                      })
+                .attr("x", function(d) { return d.xpos * width; })
+                .attr("y", function(d) { return d.ypos * width; })                     
                 // .attr("dx", function(d){return -20})
                 // .append("text")
                 // .text(function(d){return d.support.toString()});
@@ -292,10 +351,12 @@ var party = grid.selectAll(".party")
                     // return d.r / ((d.r * 25) / 100);
                   // }
                 // });
-                .selectAll('circle')
-    party.enter()    
-        .append("text")
-        .text(function(d){return d.support.toString()});
+                // .selectAll('circle')
+    // party.enter()    
+        // .append("text")
+        // .attr("x", function(d) { return d.xpos * width; })
+        // .attr("y", function(d) { return d.ypos * width; })
+        // .text(function(d){return d.support.toString()});
 }
 
 setInterval(update, turn_delay   );
@@ -303,6 +364,13 @@ setInterval(update, turn_delay   );
 
 
 
+// Resources
+// https://strongriley.github.io/d3/ex/voronoi.html
+// https://www.visualcinnamon.com/2015/07/voronoi.html
+// https://www.d3-graph-gallery.com/graph/heatmap_basic.html
+// http://cs.tau.ac.il/~mfeldman/papers/FFOc16.pdf
+// https://hashtagcolor.com/828282
+// https://gist.github.com/MariosRichards/e2abce29f925fe22a6a8d7f1885026dc
 
 
 

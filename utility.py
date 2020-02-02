@@ -679,7 +679,7 @@ def corrank(X):
    
 import shap
 import xgboost as xgb
-from sklearn.preprocessing import Imputer
+# from sklearn.preprocessing import SimpleImputer
 from sklearn.pipeline import Pipeline
 from sklearn.model_selection import cross_val_score, GridSearchCV, train_test_split
 from sklearn.linear_model import ElasticNet

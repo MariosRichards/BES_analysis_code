@@ -1,0 +1,6 @@
+name: BES_analysis
+channels:
+  - conda-forge
+  - defaults
+prefix: C:\ProgramData\Anaconda3\envs\BES_analysis\envs\BES_analysis
+

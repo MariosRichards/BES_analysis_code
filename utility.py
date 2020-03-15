@@ -352,7 +352,7 @@ flatten = lambda l: [item for sublist in l for item in sublist]
 
 def match(df, pattern, case_sensitive=True, mask=None):
     if mask is None:
-           mask = pd.Series(np.ones( (df.shape[0]) )).astype('bool')
+           mask = pd.Series(np.ones( (df.shape[0]) ) , index=df.index).astype('bool')
     if case_sensitive:
         return df[[x for x in df.columns if re.match(pattern,x)]][mask].notnull().sum()
     else:
@@ -360,7 +360,7 @@ def match(df, pattern, case_sensitive=True, mask=None):
 
 def search(df, pattern, case_sensitive=False, mask=None):
     if mask is None:
-           mask = pd.Series(np.ones( (df.shape[0]) )).astype('bool')
+        mask = pd.Series(np.ones( (df.shape[0]) ), index=df.index).astype('bool')
     if case_sensitive:
         return df[[x for x in df.columns if re.search(pattern,x)]][mask].notnull().sum()
     else:

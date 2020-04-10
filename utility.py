@@ -30,6 +30,65 @@ def memory_use(locs = locals().items()):
                              key= lambda x: -x[1])[:10]:
         print("{:>30}: {:>8}".format(name,sizeof_fmt(size)))
 
+# helper functions
+global best_weight_series
+def weighted_mean(series):
+    return (series*best_weight_series.loc[series.index]).sum()/(best_weight_series.loc[series.index]).sum()
+
+from pandas._libs.lib import is_integer
+
+def weighted_qcut(values, weights, q, **kwargs):
+    if is_integer(q):
+        quantiles = np.linspace(0, 1, q + 1)
+    else:
+        quantiles = q
+    order = weights[values.argsort()].cumsum()
+    bins = pd.cut(order / order.iloc[-1], quantiles, **kwargs)
+    return bins.sort_index()
+
+# CHEATY FIX FOR WEIGHTING SEABORN KDES BEFORE THEY FIX SEABORN TO PASS WEIGHTS
+
+# so we take in a series of weights - either assumes/force it to be non-null floats [0-inf)
+# flip coins for the fractional parts of the weights to round up/down proportionately
+# then replicate rows on the basis of the resulting weights
+
+def lazy_weighted_indices(weights):
+    x = weights.apply(lambda x: np.floor(x) if (np.random.rand() > x%1) else np.ceil(x)).astype('int')
+    return flatten( [[weights.index[ind]]*x.values[ind] for ind in range(weights.shape[0])] )
+
+def weighted_value_counts(x, wts, *args, **kwargs):
+    normalize = kwargs.get('normalize', False)
+    perc = kwargs.get('perc', False)
+    decimal_places = kwargs.get('decimal_places', 2)
+    suppress_raw_samplesize = kwargs.get('suppress_raw_samplesize', False)
+    
+    ascending = kwargs.get('ascending', True)
+    c0 = x.name 
+    c1 = wts.name
+    df = pd.concat([x,wts],axis=1)
+    xtmp = df.groupby(c0).agg({c1:'sum'}).sort_values(c1,ascending=False)
+    s = pd.Series(index=xtmp.index, data=xtmp[c1], name=c0)
+    s.name = "weighted_sample_size"
+    if normalize:
+        s = s / df[c1].sum()
+        s.name = "weighted_sample_fraction"
+    if normalize and perc:
+        s = s*100
+        s.name = "weighted_sample_percentage"
+    s = s.round(decimal_places)
+    if decimal_places==0:
+        s=s.astype('int')
+        
+    if not suppress_raw_samplesize:
+        output = pd.DataFrame([s,x[wts.notnull()].value_counts()]).T
+        output.columns = [s.name,"raw_sample_size"]
+        output.index.name = x.name
+        output.sort_values(by=s.name,inplace=True, ascending=ascending)
+    else:
+        output = s
+    return output
+
+
 
 def intersection(lst1, lst2): 
   
@@ -60,7 +119,7 @@ def amalgamate_waves(df, pattern, forward_fill=True, specify_wave_order = None):
         latest_series = latest_series.astype(
                     pd.api.types.CategoricalDtype(categories = df[df_cols[0]].cat.categories) )
     # update name
-    re.match("(.*?)W\d+","climateChangeW11").groups()[0]
+    # re.match("(.*?)W\d+","climateChangeW11").groups()[0]
     print("Amalgamating variables: ")
     print(df_cols_dict,df_cols)
     name_stub = re.match("(.*?)W\d+",  list(df_cols_dict.values())[0]).groups()[0]

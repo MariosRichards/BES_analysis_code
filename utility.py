@@ -42,7 +42,8 @@ def weighted_qcut(values, weights, q, **kwargs):
         quantiles = np.linspace(0, 1, q + 1)
     else:
         quantiles = q
-    order = weights[values.argsort()].cumsum()
+    #order = weights[values.argsort()].cumsum()
+    order = weights[weights.index[values.argsort()]].cumsum()
     bins = pd.cut(order / order.iloc[-1], quantiles, **kwargs)
     return bins.sort_index()
 
@@ -409,7 +410,7 @@ def get_pruned(x):
 
 flatten = lambda l: [item for sublist in l for item in sublist]
 
-def match(df, pattern, case_sensitive=True, mask=None):
+def match(df, pattern, case_sensitive=False, mask=None):
     if mask is None:
            mask = pd.Series(np.ones( (df.shape[0]) ) , index=df.index).astype('bool')
     if case_sensitive:
@@ -536,25 +537,25 @@ def make_corr_summary(input_df, name,  corr_type = "spearman", pattern=None, sam
 
     if pattern is None:
         pattern=name
-    df1 = input_df.copy()
-    focal_var = df1[name]
+    #df1 = input_df
+    focal_var = input_df[name]
     focal_mask = focal_var.notnull()
 
 
-    pattern_list = [x for x in df1.columns if re.search(pattern,x)]
+    pattern_list = [x for x in input_df.columns if re.search(pattern,x)]
 
-    variances = df1[focal_mask].var()
+    variances = input_df[focal_mask].astype('float32').var()
     low_var_list = list(variances[variances<min_variance].index)
-    sample_sizes = df1[focal_mask].notnull().sum()
+    sample_sizes = input_df[focal_mask].notnull().sum()
     low_sample_size_list = list(sample_sizes[sample_sizes<min_sample_size].index)
 
     drop_list = pattern_list+low_var_list+low_sample_size_list
-    df1.drop(drop_list,axis=1,inplace=True)
+
 
     if corr_type == "pearson":
-        df = df1.apply(lambda x: corr_simple_pearsonr(x,focal_var)).apply(pd.Series)
+        df = input_df.drop(drop_list,axis=1).astype('float32').apply(lambda x: corr_simple_pearsonr(x,focal_var)).apply(pd.Series)
     elif corr_type == "spearman":
-        df = df1.apply(lambda x: corr_simple_spearmanr(x,focal_var)).apply(pd.Series)
+        df = input_df.drop(drop_list,axis=1).astype('float32').apply(lambda x: corr_simple_spearmanr(x,focal_var)).apply(pd.Series)
 
     if len(df.columns)!=3:
         df=df.T

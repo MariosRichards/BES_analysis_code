@@ -31,31 +31,41 @@ def memory_use(locs = locals().items()):
         print("{:>30}: {:>8}".format(name,sizeof_fmt(size)))
 
 # helper functions
-global best_weight_series
-def weighted_mean(series):
-    return (series*best_weight_series.loc[series.index]).sum()/(best_weight_series.loc[series.index]).sum()
+#global best_weight_series
+#def weighted_mean(series):
+#    return (series*best_weight_series.loc[series.index]).sum()/(best_weight_series.loc[series.index]).sum()
+    
+def weighted_mean(x, **kws):
+    val, weight = map(np.asarray, zip(*x))
+    val, weight = val[~np.isnan(val)],weight[~np.isnan(val)]
+#     raise Exception
+    return (val * weight).sum() / weight.sum()
+        
+
+def datetime_weighted_mean(x, **kws):
+    val, weight = map(np.asarray, zip(*x))
+    val = pd.Series(val).apply(lambda x: x.timestamp() if pd.notnull(x) else np.nan)
+    mask = (~np.isnan(val))
+    val, weight = val[mask],weight[mask]
+    result = (val * weight).sum() / np.sum(weight)
+#     raise Exception
+    result = datetime.fromtimestamp(result,tz=pytz.timezone('GMT')) if pd.notnull(result) else np.nan  # turn back from timestamp
+    return result    
+    
 
 from pandas._libs.lib import is_integer
+
+
+
 
 def weighted_qcut(values, weights, q, **kwargs):
     if is_integer(q):
         quantiles = np.linspace(0, 1, q + 1)
     else:
         quantiles = q
-    #order = weights[values.argsort()].cumsum()
-    order = weights[weights.index[values.argsort()]].cumsum()
+    order = weights.loc[weights.index[values.argsort()]].cumsum()
     bins = pd.cut(order / order.iloc[-1], quantiles, **kwargs)
     return bins.sort_index()
-
-# CHEATY FIX FOR WEIGHTING SEABORN KDES BEFORE THEY FIX SEABORN TO PASS WEIGHTS
-
-# so we take in a series of weights - either assumes/force it to be non-null floats [0-inf)
-# flip coins for the fractional parts of the weights to round up/down proportionately
-# then replicate rows on the basis of the resulting weights
-
-def lazy_weighted_indices(weights):
-    x = weights.apply(lambda x: np.floor(x) if (np.random.rand() > x%1) else np.ceil(x)).astype('int')
-    return flatten( [[weights.index[ind]]*x.values[ind] for ind in range(weights.shape[0])] )
 
 def weighted_value_counts(x, wts, *args, **kwargs):
     normalize = kwargs.get('normalize', False)
@@ -64,6 +74,8 @@ def weighted_value_counts(x, wts, *args, **kwargs):
     suppress_raw_samplesize = kwargs.get('suppress_raw_samplesize', False)
     
     ascending = kwargs.get('ascending', True)
+    if not x.name:
+        x.name = "value"
     c0 = x.name 
     c1 = wts.name
     df = pd.concat([x,wts],axis=1)
@@ -88,6 +100,18 @@ def weighted_value_counts(x, wts, *args, **kwargs):
     else:
         output = s
     return output
+    
+    
+# CHEATY FIX FOR WEIGHTING SEABORN KDES BEFORE THEY FIX SEABORN TO PASS WEIGHTS
+
+# so we take in a series of weights - either assumes/force it to be non-null floats [0-inf)
+# flip coins for the fractional parts of the weights to round up/down proportionately
+# then replicate rows on the basis of the resulting weights
+
+def lazy_weighted_indices(weights):
+    x = weights.apply(lambda x: np.floor(x) if (np.random.rand() > x%1) else np.ceil(x)).astype('int')
+    return flatten( [[weights.index[ind]]*x.values[ind] for ind in range(weights.shape[0])] )
+
 
 
 
@@ -98,10 +122,13 @@ def intersection(lst1, lst2):
     lst3 = [value for value in set(lst1) if value in temp] 
     return lst3 
 
-def amalgamate_waves(df, pattern, forward_fill=True, specify_wave_order = None):
+def amalgamate_waves(df, pattern, forward_fill=True, specify_wave_order = None, low_priority_values = [], match=True):
     # euref_imm = amalgamate_waves(BES_reduced_with_na,"euRefVoteW",forward_fill=False)
     # assumes simple wave structure, give a pattern that works!
-    df_cols_dict = {int(re.search("W(\d+)", x).groups()[0]):x for x in df.columns if re.match(pattern, x)}
+    if match:
+        df_cols_dict = {int(re.search("W(\d+)", x).groups()[0]):x for x in df.columns if re.match(pattern, x)}
+    else:
+        df_cols_dict = {int(re.search("W(\d+)", x).groups()[0]):x for x in df.columns if re.search(pattern, x)}
     # sort columns
     if specify_wave_order is not None:
         df_cols = [df_cols_dict[x] for x in specify_wave_order]
@@ -112,13 +139,27 @@ def amalgamate_waves(df, pattern, forward_fill=True, specify_wave_order = None):
     if len(df_cols)<=1:
         raise Exception("Can't amalgamate less than two variables!")
     if forward_fill:
-        latest_series = df[df_cols].fillna(method="ffill",axis=1)[df_cols[-1]]
+        pick_col = -1
+        method = "ffill"        
     else:
-        latest_series = df[df_cols].fillna(method="bfill",axis=1)[df_cols[0]]
+        pick_col = 0
+        method = "bfill"
+    latest_series = df[df_cols]\
+        .replace(low_priority_values,[np.nan]*len(low_priority_values))\
+        .fillna(method=method,axis=1)[df_cols[pick_col]]
+    # stop values in low_priority from cascading, overwrite where possible, otherwise reinsert where there are only nans 
+    categories = df[df_cols[0]].cat.categories
+    if low_priority_values:
+        high_priority_values = [x for x in categories if x not in low_priority_values]
+        low_priority_series = df[df_cols]\
+                .replace(high_priority_values,[np.nan]*len(high_priority_values))\
+                .fillna(method=method,axis=1)[df_cols[pick_col]]
+        low_priority_mask = low_priority_series.apply(lambda x: x in low_priority_values) & latest_series.isnull()
+        latest_series.loc[low_priority_mask] = low_priority_series.loc[low_priority_mask]
     # if it's a category, retain category type/options/order
     if df[df_cols[0]].dtype.name == "category":
         latest_series = latest_series.astype(
-                    pd.api.types.CategoricalDtype(categories = df[df_cols[0]].cat.categories) )
+                    pd.api.types.CategoricalDtype(categories) )
     # update name
     # re.match("(.*?)W\d+","climateChangeW11").groups()[0]
     print("Amalgamating variables: ")

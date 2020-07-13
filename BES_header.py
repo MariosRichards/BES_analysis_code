@@ -1,5 +1,3 @@
-
-
 import warnings
 warnings.filterwarnings('ignore')
 
@@ -18,7 +16,7 @@ di.display_html('''<button onclick="jQuery('.input_area').toggle(); jQuery('.pro
 import numpy as np, pandas as pd, matplotlib.pyplot as plt, seaborn as sns
 import pickle, os, gc, re, sys
 dataset_name = sys.argv[1]
-df_list = eval(sys.argv[2])
+df_list = [x for x in sys.argv[2].split("|")]
 
 sns.set();
 sns.set_palette("colorblind")
@@ -52,10 +50,16 @@ data_subfolder = BES_data_folder + dataset_name + os.sep
 
 for df in df_list:
     if df=="BES_Panel":
-        globals()[df]  = pd.read_pickle(data_subfolder + dataset_filename.replace('.dta','.zip'),compression='zip')
+        if os.path.isfile(data_subfolder + "BES_Panel.zip"):
+            globals()[df]  = pd.read_pickle(data_subfolder + "BES_Panel.zip" ,compression='zip')
+        else:
+            globals()[df]  = pd.read_pickle(data_subfolder + dataset_filename.replace('.dta','.zip'),compression='zip')
     else:
         globals()[df]  = pd.read_pickle(data_subfolder + df + '.zip',compression='zip' )
         globals()[df].replace(-1,np.nan,inplace=True)
+        
+    if isinstance(globals()[df],pd.DataFrame) and ("id" in globals()[df].columns) :
+        globals()[df] = globals()[df].set_index("id").sort_index()        
   
 #(var_type, cat_dictionary, new_old_col_names, old_new_col_names) = get_small_files(data_subfolder, encoding)
 

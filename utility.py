@@ -63,6 +63,13 @@ def weighted_qcut(values, weights, q, **kwargs):
         quantiles = np.linspace(0, 1, q + 1)
     else:
         quantiles = q
+        
+    if values.isnull().sum()>0:
+        raise Exception("nans in values")
+        
+    if weights.isnull().sum()>0:
+        raise Exception("nans in weights")
+        
     order = weights.loc[weights.index[values.argsort()]].cumsum()
     bins = pd.cut(order / order.iloc[-1], quantiles, **kwargs)
     return bins.sort_index()
@@ -172,9 +179,9 @@ def amalgamate_waves(df, pattern, forward_fill=True, specify_wave_order = None, 
 import unicodedata
 import string
 
+
+
 valid_filename_chars = "-_.() %s%s" % (string.ascii_letters, string.digits)
-
-
 def clean_filename(filename, whitelist=valid_filename_chars, replace=' ', char_limit = 30):
     import warnings
     # replace spaces
@@ -268,7 +275,7 @@ def setup_directories():
 
 
 
-def display_components(n_components, decomp, cols, BES_decomp, manifest, 
+def display_components(n_components, decomp, cols, BES_decomp, manifest=None, 
                        save_folder = False, show_first_x_comps=4,
                        show_histogram=True, flip_axes=True, max_comp=20, max_var_per_comp = 30):
     
@@ -313,18 +320,22 @@ def display_components(n_components, decomp, cols, BES_decomp, manifest,
             decomp_components[comp_no]  = -decomp_components[comp_no]
             BES_decomp[comp_no]         = -BES_decomp[comp_no]
 
-        dataset_description = manifest["Friendlier_Description"].values[0]
         title = "Comp. "+str(comp_no)+" (" + comp.index[-1:][0] + ")"
-        comp_labels[comp_no] = title
-        comp_ax.set_title( dataset_description + "\n" + title )
+        comp_labels[comp_no] = title            
+        if manifest is not None:
+            dataset_description = manifest["Friendlier_Description"].values[0]
+            comp_ax.set_title( dataset_description + "\n" + title )
+        else:
+            comp_ax.set_title( title )
         comp_ax.set_xlabel("variable coeffs")
         xlim = (min(comp["components_"].min(),-1) , max(comp["components_"].max(),1) )
         comp["components_"].tail(max_var_per_comp).plot( kind='barh', ax=comp_ax, figsize=(10,6), xlim=xlim )
-        dataset_citation = "Source: " + manifest["Citation"].values[0]
-
-        if (save_folder != False):
+        if manifest is not None:
+            dataset_citation = "Source: " + manifest["Citation"].values[0]
             comp_ax.annotate(dataset_citation, (0,0), (0, -40),
                              xycoords='axes fraction', textcoords='offset points', va='top', fontsize = 7)            
+
+        if (save_folder != False):
             fname = save_folder + clean_filename(title) + ".png"
             fig.savefig( fname, bbox_inches='tight' )
 
@@ -398,7 +409,6 @@ def display_pca_data(n_components, decomp, BES_std, y=[]):
         axs[axno].set_ylabel('error')
         axs[axno].set_title('LL by iter')
         axno = axno + 1
-    
     
 # xlim, ylim, samples, weights
 def weighted_kde(xlim, ylim, samples, weights):
@@ -797,6 +807,8 @@ def shap_outputs(shap_values, train, target_var, output_subfolder,
     global_shap_vals = np.abs(shap_values).mean(0)#[::-1]
     n_top_features = max( sum(global_shap_vals[np.argsort(global_shap_vals)]>=threshold),
                           min_features )
+    n_top_features = min(n_top_features,global_shap_vals.shape[0])# can't display more features than present!
+    
 #     if n_top_features <min_features:
 #         n_top_features = min_features
 
@@ -859,7 +871,7 @@ def get_non_overfit_settings( train, target, alg, seed, early_stoppping_fraction
                                                                                                 ).cat.codes )
 
         eval_set = [(X_test, y_test)]
-
+        weight_var = sample_weights.name
         sample_weight = X_train[weight_var].values
         sample_weight_eval_set = X_test[weight_var].values
         X_train.drop(weight_var, axis=1, inplace=True)
@@ -896,10 +908,22 @@ def get_non_overfit_settings( train, target, alg, seed, early_stoppping_fraction
     R2 = r2_score(y_test, predictions)
 
     print("MSE: %.2f, MAE: %.2f, EV: %.2f, R2: %.2f" % (MSE, MAE, EV, R2) )
-    alg.set_params(n_estimators=alg.best_iteration)            
+    alg.set_params(n_estimators=alg.best_iteration)   
+
+def shap_array(shap_values, train_columns, threshold = .1, min_features = 50):
+
+    global_shap_vals = np.abs(shap_values).mean(0)#[::-1]
+    n_top_features = max( sum(global_shap_vals[np.argsort(global_shap_vals)]>=threshold),
+                          min_features )
+
+    inds = np.argsort(global_shap_vals)[-n_top_features:]
+
+    return pd.Series(global_shap_vals[inds][::-1],index = train_columns[inds][::-1])       
     
-global var_list
-def xgboost_run(title, subdir=None, min_features=30, dependence_plots=False , output_folder=".."+os.sep+"Output"+os.sep,Treatment="default"):
+#global var_list
+def xgboost_run(title, dataset, var_list,var_stub_list=[], subdir=None, min_features=30, dependence_plots=False , output_folder=".."+os.sep+"Output"+os.sep,Treatment="default",
+                use_mean_weights=False):
+    global BES_Panel
     # for target_var,base_var in zip(var_list,base_list):
     treatment_subfolder = create_subdir(output_folder,Treatment)
 
@@ -909,7 +933,7 @@ def xgboost_run(title, subdir=None, min_features=30, dependence_plots=False , ou
             weight_var = num_to_weight[wave_no]    
             print( target_var, wave_no )
 
-        target = create_target(target_var)
+        target = create_target(dataset,target_var)
         mask   = target.notnull()
         if optional_mask & sample_wts:
             mask = mask&optional_mask_fn(wave_no)
@@ -920,7 +944,7 @@ def xgboost_run(title, subdir=None, min_features=30, dependence_plots=False , ou
         if sum(mask) < minimum_sample:
             continue
 
-        train = create_train(drop_other_waves)
+        train = create_train(dataset,drop_other_waves,var_stub_list,mask)
 
         if subdir is None:
             output_subfolder = create_subdir(treatment_subfolder,target_var)
@@ -931,6 +955,12 @@ def xgboost_run(title, subdir=None, min_features=30, dependence_plots=False , ou
             sample_weights = weights[weight_var][mask]
             print("missing vals in sample weights: "+ str( sample_weights.isnull().sum() ) )
             sample_weights = sample_weights.fillna(sample_weights.median())
+        elif use_mean_weights:
+            weight_vars = list(search(BES_Panel,"(wt_new_W\d+|wt_full_W\d)($|_result)").index)
+            sample_weights = BES_Panel[weight_vars].mean(axis=1)
+            sample_weights = sample_weights.fillna(sample_weights.median())
+            sample_weights = sample_weights.loc[mask[mask].index]
+            sample_weights.name = "sample_weights"
         else:
             sample_weights = None
     #         get_non_overfit_settings( train, target, alg, seed, early_stoppping_fraction, test_size, sample_weights )
@@ -960,7 +990,7 @@ def xgboost_run(title, subdir=None, min_features=30, dependence_plots=False , ou
                      min_features = min_features, title=title,
                      dependence_plots=dependence_plots)
         
-    return (explainer, shap_values)
+    return (explainer, shap_values, train.columns, alg)
 
 
 
@@ -986,8 +1016,8 @@ def optional_mask_fn(wave=[]):
 
 
 
-def create_train(drop_other_waves):
-    keep_list = df.columns
+def create_train(dataset,drop_other_waves,var_stub_list,mask):
+    keep_list = dataset.columns
     
     if drop_other_waves:
         # drop variables from other waves
@@ -997,12 +1027,12 @@ def create_train(drop_other_waves):
     # drop key variables
     keep_list = [x for x in keep_list if not any([var_stub in x for var_stub in var_stub_list])] 
     
-    return df[keep_list]
+    return dataset[keep_list][mask]
 
 
-def create_target(target_var):
+def create_target(dataset,target_var):
     
-    return df[target_var]
+    return dataset[target_var]
 
 objective = 'reg:linear'
 eval_metric = 'rmse'

@@ -918,30 +918,40 @@ def shap_array(shap_values, train_columns, threshold = .1, min_features = 50):
 
     inds = np.argsort(global_shap_vals)[-n_top_features:]
 
-    return pd.Series(global_shap_vals[inds][::-1],index = train_columns[inds][::-1])       
+    return pd.Series(global_shap_vals[inds][::-1],index = train_columns[inds][::-1])     
+
+    
+def get_generic_weights(BES_Panel):
+    weight_vars = list(search(BES_Panel,"(wt_new_W\d+|wt_full_W\d)($|_result)").index)
+    sample_weights = BES_Panel[weight_vars].mean(axis=1)
+    sample_weights = sample_weights.fillna(sample_weights.median())
+    sample_weights.name = "sample_weights"    
+    return sample_weights
+    
     
 #global var_list
 def xgboost_run(title, dataset, var_list,var_stub_list=[], subdir=None, min_features=30, dependence_plots=False , output_folder=".."+os.sep+"Output"+os.sep,Treatment="default",
-                use_mean_weights=False):
-    global BES_Panel
+                use_specific_weights = None, automatic_weights_from_wave_no = False):
+    # global BES_Panel
     # for target_var,base_var in zip(var_list,base_list):
     treatment_subfolder = create_subdir(output_folder,Treatment)
 
     for target_var in var_list:
-        if sample_wts:
+        if automatic_weights_from_wave_no:
             wave_no = get_wave_no( target_var )
             weight_var = num_to_weight[wave_no]    
             print( target_var, wave_no )
 
         target = create_target(dataset,target_var)
         mask   = target.notnull()
-        if optional_mask & sample_wts:
+        if optional_mask & automatic_weights_from_wave_no:
             mask = mask&optional_mask_fn(wave_no)
         else:
             mask = mask&optional_mask_fn()
         target = target[mask]
 
         if sum(mask) < minimum_sample:
+            print("Skipping - sample size beneath minimum: ",minimum_sample)
             continue
 
         train = create_train(dataset,drop_other_waves,var_stub_list,mask)
@@ -951,16 +961,17 @@ def xgboost_run(title, dataset, var_list,var_stub_list=[], subdir=None, min_feat
         else:
             output_subfolder = create_subdir(treatment_subfolder,subdir)
 
-        if sample_wts:
+        if use_specific_weights is not None:
+            sample_weights = use_specific_weights[mask].fillna(use_specific_weights[mask].median())
+
+
+
+
+        elif automatic_weights_from_wave_no:
             sample_weights = weights[weight_var][mask]
             print("missing vals in sample weights: "+ str( sample_weights.isnull().sum() ) )
             sample_weights = sample_weights.fillna(sample_weights.median())
-        elif use_mean_weights:
-            weight_vars = list(search(BES_Panel,"(wt_new_W\d+|wt_full_W\d)($|_result)").index)
-            sample_weights = BES_Panel[weight_vars].mean(axis=1)
-            sample_weights = sample_weights.fillna(sample_weights.median())
-            sample_weights = sample_weights.loc[mask[mask].index]
-            sample_weights.name = "sample_weights"
+        
         else:
             sample_weights = None
     #         get_non_overfit_settings( train, target, alg, seed, early_stoppping_fraction, test_size, sample_weights )

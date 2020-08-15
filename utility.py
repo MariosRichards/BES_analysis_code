@@ -796,10 +796,12 @@ from sklearn.model_selection import cross_val_score, GridSearchCV, train_test_sp
 from sklearn.linear_model import ElasticNet
 from xgboost import XGBClassifier, XGBRegressor
 from sklearn.metrics import accuracy_score, mean_squared_error, mean_absolute_error, explained_variance_score, r2_score
+import pickle
 
 def shap_outputs(shap_values, train, target_var, output_subfolder,
                  dependence_plots = False, threshold = .1, min_features = 30,
-                 title=None):
+                 title=None,save_shap_values=False):
+
 
     #################################
 #     threshold = .1
@@ -857,6 +859,17 @@ def shap_outputs(shap_values, train, target_var, output_subfolder,
             clean_filename(name)
             fig.savefig(output_subfolder + "featureNo "+str(count) + " " + clean_filename(name) + ".png", bbox_inches='tight')
             count = count + 1
+    if save_shap_values:     
+        pd.DataFrame(shap_values, columns = train.columns, index=train.index).to_pickle(output_subfolder+ "shap_values.zip", compression='zip')
+
+
+objective = 'reg:squarederror'
+eval_metric = 'rmse'
+
+seed = 27
+test_size = 0.33
+minimum_sample = 100
+early_stoppping_fraction = .1            
             
 def get_non_overfit_settings( train, target, alg, seed, early_stoppping_fraction, test_size, eval_metric, verbose = True,
                               sample_weights = None ):
@@ -909,6 +922,7 @@ def get_non_overfit_settings( train, target, alg, seed, early_stoppping_fraction
 
     print("MSE: %.2f, MAE: %.2f, EV: %.2f, R2: %.2f" % (MSE, MAE, EV, R2) )
     alg.set_params(n_estimators=alg.best_iteration)   
+    return (MSE, MAE, EV, R2, alg.best_iteration)
 
 def shap_array(shap_values, train_columns, threshold = .1, min_features = 50):
 
@@ -918,7 +932,19 @@ def shap_array(shap_values, train_columns, threshold = .1, min_features = 50):
 
     inds = np.argsort(global_shap_vals)[-n_top_features:]
 
-    return pd.Series(global_shap_vals[inds][::-1],index = train_columns[inds][::-1])     
+    return pd.Series(global_shap_vals[inds][::-1],index = train_columns[inds][::-1])
+    
+# def shap_df(shap_values, train_columns, train_index, threshold = .1, min_features = 50):
+
+    # global_shap_vals = np.abs(shap_values).mean(0)#[::-1]
+    # n_top_features = max( sum(global_shap_vals[np.argsort(global_shap_vals)]>=threshold),
+                          # min_features )
+
+    # inds = np.argsort(global_shap_vals)[-n_top_features:]
+
+    # return pd.Series(global_shap_vals[inds][::-1],index = train_columns[inds][::-1])
+    
+    
 
     
 def get_generic_weights(BES_Panel):
@@ -928,14 +954,58 @@ def get_generic_weights(BES_Panel):
     sample_weights.name = "sample_weights"    
     return sample_weights
     
+
+    
+
+def get_xgboost_alg(learning_rate =0.05,
+     n_estimators= 500,
+     max_depth=6,
+     min_child_weight=6,
+     min_split_loss=0.00065,
+     subsample=0.8,
+     colsample_bytree=0.7,
+     colsample_bylevel=.9,
+     colsample_bynode=.85,
+     objective= 'reg:squarederror',
+     scale_pos_weight=1.09,
+     reg_alpha=1.075,
+     reg_lambda=1.011,
+     sketch_eps=0.0,
+     refresh_leaf=0,
+     nthread=8,
+     n_jobs =8,
+     random_state=27**2):
+     
+    alg = XGBRegressor(
+     learning_rate =learning_rate,
+     n_estimators= n_estimators,
+     max_depth = max_depth,
+     min_child_weight = min_child_weight,
+     min_split_loss = min_split_loss,
+     subsample = subsample,
+     colsample_bytree = colsample_bytree,
+     colsample_bylevel = colsample_bylevel,
+     colsample_bynode = colsample_bynode,
+     objective = objective,
+     scale_pos_weight = scale_pos_weight,
+     reg_alpha=reg_alpha,
+     reg_lambda=reg_lambda,
+     sketch_eps=sketch_eps,
+     refresh_leaf=refresh_leaf,
+     nthread = nthread,
+     n_jobs  = n_jobs ,
+     random_state = random_state)
+    return alg
+    
     
 #global var_list
 def xgboost_run(title, dataset, var_list,var_stub_list=[], subdir=None, min_features=30, dependence_plots=False , output_folder=".."+os.sep+"Output"+os.sep,Treatment="default",
-                use_specific_weights = None, automatic_weights_from_wave_no = False):
+                use_specific_weights = None, automatic_weights_from_wave_no = False, alg = get_xgboost_alg()):
     # global BES_Panel
     # for target_var,base_var in zip(var_list,base_list):
     treatment_subfolder = create_subdir(output_folder,Treatment)
 
+    
     for target_var in var_list:
         if automatic_weights_from_wave_no:
             wave_no = get_wave_no( target_var )
@@ -952,7 +1022,9 @@ def xgboost_run(title, dataset, var_list,var_stub_list=[], subdir=None, min_feat
 
         if sum(mask) < minimum_sample:
             print("Skipping - sample size beneath minimum: ",minimum_sample)
+            skipping = True
             continue
+        skipping=False
 
         train = create_train(dataset,drop_other_waves,var_stub_list,mask)
 
@@ -979,8 +1051,10 @@ def xgboost_run(title, dataset, var_list,var_stub_list=[], subdir=None, min_feat
     #         alg.fit(train, target, verbose = True, sample_weight = sample_weights)        
     #     else:
 
-        get_non_overfit_settings( train, target, alg, seed, early_stoppping_fraction, test_size, eval_metric, verbose = True,
+        (MSE, MAE, EV, R2, alg_best_iteration) = get_non_overfit_settings( train, target, alg, seed, early_stoppping_fraction, test_size, eval_metric, verbose = True,
                                   sample_weights=sample_weights )
+        pd.Series([MSE, MAE, EV, R2, alg_best_iteration],index = ["MSE", "MAE", "EV", "R2", "alg_best_iteration"]).to_csv(output_subfolder+"scores.csv")
+                                        
         # fit to full dataset at non-overfitting level
         alg.fit(train, target, verbose = True, sample_weight = sample_weights)
 
@@ -997,11 +1071,19 @@ def xgboost_run(title, dataset, var_list,var_stub_list=[], subdir=None, min_feat
             print("hit problem!")
             shap_values = shap.TreeExplainer(alg).shap_values(train, approximate=True);
 
+        pickle.dump( explainer, open( output_subfolder+"explainer.pkl", "wb" ) )
+        pickle.dump( explainer, open( output_subfolder+"alg.pkl", "wb" ) )
+
+        subtitle = "MSE: %.2f, MAE: %.2f, EV: %.2f, R2: %.2f" % (MSE, MAE, EV, R2)
         shap_outputs(shap_values, train, target_var, output_subfolder, threshold = .1,
-                     min_features = min_features, title=title,
+                     min_features = min_features, title=title+"\n"+subtitle,
                      dependence_plots=dependence_plots)
-        
-    return (explainer, shap_values, train.columns, alg)
+                     
+    
+    if skipping:
+        return (None,None,None,None,None,None)
+    else:
+        return (explainer, shap_values, train.columns, train.index, alg,output_subfolder)
 
 
 
@@ -1045,29 +1127,9 @@ def create_target(dataset,target_var):
     
     return dataset[target_var]
 
-objective = 'reg:linear'
-eval_metric = 'rmse'
 
-seed = 27
-test_size = 0.33
-minimum_sample = 100
-early_stoppping_fraction = .1
 
-alg = XGBRegressor(
- learning_rate =0.05,
- n_estimators= 508,
- max_depth=6,
- min_child_weight=6,
- gamma=0,
- subsample=0.8,
- colsample_bytree=0.6,
- colsample_bylevel=.85,
- objective= objective,
- scale_pos_weight=1.0,
- reg_alpha=5e-05,
- reg_lambda=1,
- njobs=3,
- seed=seed**2)
+
 
 
 

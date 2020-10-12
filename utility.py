@@ -34,11 +34,13 @@ def memory_use(locs = locals().items()):
 #global best_weight_series
 #def weighted_mean(series):
 #    return (series*best_weight_series.loc[series.index]).sum()/(best_weight_series.loc[series.index]).sum()
-    
+
+
+# quietly drops row with np.nan weights!    
 def weighted_mean(x, **kws):
     val, weight = map(np.asarray, zip(*x))
-    val, weight = val[~np.isnan(val)],weight[~np.isnan(val)]
-#     raise Exception
+    mask = (~np.isnan(val))&(~np.isnan(weight))
+    val, weight = val[mask],weight[mask]
     return (val * weight).sum() / weight.sum()
         
 

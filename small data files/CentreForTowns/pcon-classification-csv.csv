@@ -1,0 +1,1590 @@
+constituency_code,constituency_name,classification,population,percent_of_constituency
+W07000049,Aberavon,Medium Town,52165,0.773502372
+W07000049,Aberavon,Village or smaller,15275,0.226497628
+W07000058,Aberconwy,Village or smaller,31029,0.529134906
+W07000058,Aberconwy,Small Town,27612,0.470865094
+S14000001,Aberdeen North,Other City,94559,0.944475519
+S14000001,Aberdeen North,Village or smaller,5559,0.055524481
+S14000002,Aberdeen South,Other City,80080,0.811133845
+S14000002,Aberdeen South,Village or smaller,11840,0.119927881
+S14000002,Aberdeen South,Small Town,6806,0.068938274
+S14000003,Airdrie and Shotts,Village or smaller,41663,0.48001613
+S14000003,Airdrie and Shotts,Medium Town,37089,0.427317242
+S14000003,Airdrie and Shotts,Small Town,8043,0.092666628
+E14000530,Aldershot,Large Town,59144,0.554795741
+E14000530,Aldershot,Medium Town,38165,0.358003846
+E14000530,Aldershot,Village or smaller,9296,0.087200413
+E14000531,Aldridge-Brownhills,Medium Town,39527,0.509808727
+E14000531,Aldridge-Brownhills,Small Town,20931,0.269962468
+E14000531,Aldridge-Brownhills,Large Town,14241,0.183676628
+E14000531,Aldridge-Brownhills,Village or smaller,2834,0.036552178
+E14000532,Altrincham and Sale West,Medium Town,55415,0.550987333
+E14000532,Altrincham and Sale West,Large Town,27036,0.26881699
+E14000532,Altrincham and Sale West,Small Town,17319,0.172201563
+E14000532,Altrincham and Sale West,Village or smaller,804,0.007994114
+W07000043,Alyn and Deeside,Small Town,49463,0.582788401
+W07000043,Alyn and Deeside,Village or smaller,30262,0.356556266
+W07000043,Alyn and Deeside,Large Town,5148,0.060655332
+E14000533,Amber Valley,Small Town,44756,0.500833678
+E14000533,Amber Valley,Medium Town,26084,0.291888142
+E14000533,Amber Valley,Village or smaller,18523,0.20727818
+S14000004,Angus,Small Town,50313,0.58104191
+S14000004,Angus,Village or smaller,36278,0.41895809
+W07000057,Arfon,Village or smaller,34120,0.547479221
+W07000057,Arfon,Small Town,28202,0.452520779
+S14000005,Argyll and Bute,Village or smaller,56893,0.652966831
+S14000005,Argyll and Bute,Small Town,30237,0.347033169
+E14000534,Arundel and South Downs,Village or smaller,51678,0.519820953
+E14000534,Arundel and South Downs,Small Town,40009,0.402444299
+E14000534,Arundel and South Downs,Medium Town,7728,0.077734748
+E14000535,Ashfield,Medium Town,75561,0.71688393
+E14000535,Ashfield,Village or smaller,17114,0.162368836
+E14000535,Ashfield,Small Town,12727,0.120747234
+E14000536,Ashford,Large Town,73105,0.604193527
+E14000536,Ashford,Village or smaller,47891,0.395806473
+E14000537,Ashton-under-Lyne,Medium Town,46944,0.508536268
+E14000537,Ashton-under-Lyne,Small Town,43198,0.467956495
+E14000537,Ashton-under-Lyne,Core City (outside London),1455,0.015761764
+E14000537,Ashton-under-Lyne,Large Town,398,0.004311465
+E14000537,Ashton-under-Lyne,Village or smaller,317,0.003434006
+E14000538,Aylesbury,Large Town,83516,0.69197627
+E14000538,Aylesbury,Village or smaller,29000,0.240281046
+E14000538,Aylesbury,Small Town,8176,0.067742684
+S14000006,"Ayr, Carrick and Cumnock",Medium Town,42973,0.466291952
+S14000006,"Ayr, Carrick and Cumnock",Village or smaller,40372,0.438068989
+S14000006,"Ayr, Carrick and Cumnock",Small Town,8814,0.095639059
+E14000539,Banbury,Medium Town,80229,0.659100431
+E14000539,Banbury,Village or smaller,41496,0.340899569
+S14000007,Banff and Buchan,Village or smaller,62600,0.670249898
+S14000007,Banff and Buchan,Small Town,30798,0.329750102
+E14000540,Barking,Core City (London),137516,1
+E14000541,Barnsley Central,Large Town,79635,0.883076991
+E14000541,Barnsley Central,Small Town,10544,0.116923009
+E14000542,Barnsley East,Small Town,65038,0.694924671
+E14000542,Barnsley East,Village or smaller,16310,0.174270755
+E14000542,Barnsley East,Large Town,12242,0.130804573
+E14000543,Barrow and Furness,Medium Town,44624,0.513509781
+E14000543,Barrow and Furness,Small Town,28701,0.33027618
+E14000543,Barrow and Furness,Village or smaller,13575,0.156214039
+E14000544,Basildon and Billericay,Large Town,58371,0.613972715
+E14000544,Basildon and Billericay,Medium Town,35962,0.378264665
+E14000544,Basildon and Billericay,Village or smaller,738,0.00776262
+E14000545,Basingstoke,Large Town,113260,0.989792708
+E14000545,Basingstoke,Village or smaller,1013,0.008852728
+E14000545,Basingstoke,Small Town,155,0.001354564
+E14000546,Bassetlaw,Medium Town,42652,0.403855622
+E14000546,Bassetlaw,Village or smaller,32152,0.304435102
+E14000546,Bassetlaw,Small Town,30808,0.291709275
+E14000547,Bath,Large Town,93920,0.994262243
+E14000547,Bath,Village or smaller,542,0.005737757
+E14000548,Batley and Spen,Large Town,58225,0.51826039
+E14000548,Batley and Spen,Small Town,42987,0.382627039
+E14000548,Batley and Spen,Other City,10451,0.093024291
+E14000548,Batley and Spen,Village or smaller,684,0.00608828
+E14000549,Battersea,Core City (London),112693,1
+E14000550,Beaconsfield,Small Town,43555,0.424124097
+E14000550,Beaconsfield,Large Town,37356,0.363760298
+E14000550,Beaconsfield,Village or smaller,20117,0.195892652
+E14000550,Beaconsfield,Core City (London),1666,0.016222954
+E14000551,Beckenham,Core City (London),91801,0.998346982
+E14000551,Beckenham,Village or smaller,152,0.001653018
+E14000552,Bedford,Large Town,84647,0.79636285
+E14000552,Bedford,Small Town,20971,0.197296128
+E14000552,Bedford,Village or smaller,674,0.006341023
+E14000553,Bermondsey and Old Southwark,Core City (London),143059,1
+S14000008,"Berwickshire, Roxburgh and Selkirk",Village or smaller,67946,0.720301071
+S14000008,"Berwickshire, Roxburgh and Selkirk",Small Town,26384,0.279698929
+E14000554,Berwick-upon-Tweed,Village or smaller,53610,0.715410484
+E14000554,Berwick-upon-Tweed,Small Town,21326,0.284589516
+E14000555,Bethnal Green and Bow,Core City (London),146245,1
+E14000556,Beverley and Holderness,Village or smaller,50230,0.501162361
+E14000556,Beverley and Holderness,Medium Town,30831,0.307611721
+E14000556,Beverley and Holderness,Small Town,17081,0.170423139
+E14000556,Beverley and Holderness,Other City,2085,0.020802778
+E14000557,Bexhill and Battle,Village or smaller,47727,0.460778729
+E14000557,Bexhill and Battle,Medium Town,43619,0.42111818
+E14000557,Bexhill and Battle,Small Town,7975,0.076994371
+E14000557,Bexhill and Battle,Large Town,4258,0.041108719
+E14000558,Bexleyheath and Crayford,Core City (London),93155,1
+E14000559,Birkenhead,Large Town,89183,0.995657125
+E14000559,Birkenhead,Medium Town,389,0.004342875
+E14000560,"Birmingham, Edgbaston",Core City (outside London),103469,1
+E14000561,"Birmingham, Erdington",Core City (outside London),101586,0.996146265
+E14000561,"Birmingham, Erdington",Large Town,393,0.003853735
+E14000562,"Birmingham, Hall Green",Core City (outside London),119557,1
+E14000563,"Birmingham, Hodge Hill",Core City (outside London),128651,1
+E14000564,"Birmingham, Ladywood",Core City (outside London),142437,1
+E14000565,"Birmingham, Northfield",Core City (outside London),102783,1
+E14000566,"Birmingham, Perry Barr",Core City (outside London),111872,1
+E14000567,"Birmingham, Selly Oak",Core City (outside London),107643,1
+E14000568,"Birmingham, Yardley",Core City (outside London),111772,1
+E14000569,Bishop Auckland,Village or smaller,34441,0.389269406
+E14000569,Bishop Auckland,Small Town,28538,0.322550748
+E14000569,Bishop Auckland,Medium Town,25497,0.288179845
+E14000570,Blackburn,Large Town,107142,0.995799022
+E14000570,Blackburn,Village or smaller,452,0.004200978
+E14000571,Blackley and Broughton,Core City (outside London),91670,0.751177941
+E14000571,Blackley and Broughton,Large Town,30365,0.248822059
+E14000572,Blackpool North and Cleveleys,Large Town,62382,0.749234335
+E14000572,Blackpool North and Cleveleys,Small Town,20342,0.244316066
+E14000572,Blackpool North and Cleveleys,Village or smaller,537,0.006449598
+E14000573,Blackpool South,Large Town,79048,1
+W07000072,Blaenau Gwent,Small Town,45472,0.653070604
+W07000072,Blaenau Gwent,Village or smaller,24156,0.346929396
+E14000574,Blaydon,Small Town,47478,0.538800245
+E14000574,Blaydon,Village or smaller,19261,0.218581902
+E14000574,Blaydon,Medium Town,13486,0.153044781
+E14000574,Blaydon,Large Town,7893,0.089573072
+E14000575,Blyth Valley,Medium Town,65495,0.787171136
+E14000575,Blyth Valley,Village or smaller,9709,0.116690504
+E14000575,Blyth Valley,Small Town,7999,0.09613836
+E14000576,Bognor Regis and Littlehampton,Large Town,68909,0.654244916
+E14000576,Bognor Regis and Littlehampton,Medium Town,29374,0.278886505
+E14000576,Bognor Regis and Littlehampton,Village or smaller,7043,0.066868579
+E14000577,Bolsover,Small Town,50710,0.522180575
+E14000577,Bolsover,Village or smaller,43142,0.444249938
+E14000577,Bolsover,Large Town,3260,0.033569487
+E14000578,Bolton North East,Other City,96785,0.996591705
+E14000578,Bolton North East,Village or smaller,331,0.003408295
+E14000579,Bolton South East,Other City,51165,0.488672614
+E14000579,Bolton South East,Medium Town,30839,0.294540696
+E14000579,Bolton South East,Small Town,22088,0.210960631
+E14000579,Bolton South East,Large Town,410,0.003915876
+E14000579,Bolton South East,Village or smaller,200,0.001910183
+E14000580,Bolton West,Small Town,44016,0.456976744
+E14000580,Bolton West,Other City,28246,0.293251661
+E14000580,Bolton West,Medium Town,15023,0.155969684
+E14000580,Bolton West,Village or smaller,9035,0.09380191
+E14000581,Bootle,Medium Town,79811,0.80819629
+E14000581,Bootle,Small Town,18642,0.188775924
+E14000581,Bootle,Core City (outside London),299,0.003027787
+E14000582,Boston and Skegness,Medium Town,65921,0.626798262
+E14000582,Boston and Skegness,Village or smaller,39250,0.373201738
+E14000583,Bosworth,Medium Town,48157,0.466140741
+E14000583,Bosworth,Village or smaller,35324,0.34192237
+E14000583,Bosworth,Small Town,19829,0.191936889
+E14000584,Bournemouth East,Other City,109104,0.998837326
+E14000584,Bournemouth East,Village or smaller,127,0.001162674
+E14000585,Bournemouth West,Other City,88426,0.829893666
+E14000585,Bournemouth West,Large Town,18125,0.170106334
+E14000586,Bracknell,Large Town,63262,0.571756519
+E14000586,Bracknell,Small Town,35240,0.318496091
+E14000586,Bracknell,Medium Town,9633,0.087062226
+E14000586,Bracknell,Village or smaller,2510,0.022685164
+E14000587,Bradford East,Other City,119110,0.997470941
+E14000587,Bradford East,Medium Town,302,0.002529059
+E14000588,Bradford South,Other City,102293,0.984428982
+E14000588,Bradford South,Village or smaller,1314,0.012645437
+E14000588,Bradford South,Large Town,304,0.002925581
+E14000589,Bradford West,Other City,107582,0.917958651
+E14000589,Bradford West,Village or smaller,7420,0.063312201
+E14000589,Bradford West,Medium Town,2195,0.018729148
+E14000590,Braintree,Medium Town,43049,0.428783442
+E14000590,Braintree,Village or smaller,37665,0.375156876
+E14000590,Braintree,Small Town,19684,0.196059682
+W07000068,Brecon and Radnorshire,Village or smaller,53923,0.782672434
+W07000068,Brecon and Radnorshire,Small Town,14973,0.217327566
+E14000591,Brent Central,Core City (London),145634,1
+E14000592,Brent North,Core City (London),137146,1
+E14000593,Brentford and Isleworth,Core City (London),135830,1
+E14000594,Brentwood and Ongar,Medium Town,54782,0.56794808
+E14000594,Brentwood and Ongar,Village or smaller,41674,0.43205192
+W07000073,Bridgend,Medium Town,48017,0.578427475
+W07000073,Bridgend,Small Town,29823,0.359256984
+W07000073,Bridgend,Village or smaller,5173,0.062315541
+E14000595,Bridgwater and West Somerset,Village or smaller,55648,0.498830194
+E14000595,Bridgwater and West Somerset,Medium Town,43825,0.392848499
+E14000595,Bridgwater and West Somerset,Small Town,12084,0.108321307
+E14000596,Brigg and Goole,Village or smaller,62450,0.708065943
+E14000596,Brigg and Goole,Small Town,22070,0.250232432
+E14000596,Brigg and Goole,Large Town,3678,0.041701626
+E14000597,"Brighton, Kemptown",Other City,51563,0.537276886
+E14000597,"Brighton, Kemptown",Small Town,42976,0.44780194
+E14000597,"Brighton, Kemptown",Village or smaller,1432,0.014921174
+E14000598,"Brighton, Pavilion",Other City,108503,0.959668503
+E14000598,"Brighton, Pavilion",Village or smaller,4560,0.040331497
+E14000599,Bristol East,Core City (outside London),100368,1
+E14000600,Bristol North West,Core City (outside London),105388,1
+E14000601,Bristol South,Core City (outside London),112588,1
+E14000602,Bristol West,Core City (outside London),135869,1
+E14000603,Broadland,Village or smaller,73693,0.7538386
+E14000603,Broadland,Small Town,24064,0.2461614
+E14000604,Bromley and Chislehurst,Core City (London),94464,1
+E14000605,Bromsgrove,Medium Town,34820,0.359825977
+E14000605,Bromsgrove,Village or smaller,28371,0.293182734
+E14000605,Bromsgrove,Core City (outside London),16377,0.169238082
+E14000605,Bromsgrove,Small Town,10693,0.110500264
+E14000605,Bromsgrove,Large Town,6508,0.067252943
+E14000606,Broxbourne,Medium Town,86199,0.843863805
+E14000606,Broxbourne,Small Town,10408,0.101891373
+E14000606,Broxbourne,Village or smaller,5541,0.054244821
+E14000607,Broxtowe,Medium Town,53084,0.542919969
+E14000607,Broxtowe,Small Town,34666,0.354548709
+E14000607,Broxtowe,Core City (outside London),6093,0.062316543
+E14000607,Broxtowe,Village or smaller,3932,0.040214779
+E14000608,Buckingham,Village or smaller,79889,0.769576819
+E14000608,Buckingham,Small Town,22044,0.21235153
+E14000608,Buckingham,Large Town,1876,0.018071651
+E14000609,Burnley,Large Town,82002,0.936930143
+E14000609,Burnley,Village or smaller,5520,0.063069857
+E14000610,Burton,Large Town,74145,0.701851536
+E14000610,Burton,Village or smaller,18481,0.174939891
+E14000610,Burton,Small Town,13016,0.123208572
+E14000611,Bury North,Large Town,69778,0.778685415
+E14000611,Bury North,Small Town,17359,0.193717219
+E14000611,Bury North,Village or smaller,2473,0.027597366
+E14000612,Bury South,Medium Town,31160,0.31456001
+E14000612,Bury South,Core City (outside London),30600,0.308906813
+E14000612,Bury South,Small Town,22992,0.2321041
+E14000612,Bury South,Large Town,9728,0.098204101
+E14000612,Bury South,Village or smaller,4579,0.046224977
+E14000613,Bury St Edmunds,Village or smaller,53687,0.461541768
+E14000613,Bury St Edmunds,Medium Town,41829,0.359599728
+E14000613,Bury St Edmunds,Small Town,20805,0.178858504
+W07000076,Caerphilly,Medium Town,42082,0.477125591
+W07000076,Caerphilly,Small Town,27274,0.309232531
+W07000076,Caerphilly,Village or smaller,18843,0.213641878
+S14000009,"Caithness, Sutherland and Easter Ross",Village or smaller,53687,0.879566827
+S14000009,"Caithness, Sutherland and Easter Ross",Small Town,7351,0.120433173
+E14000614,Calder Valley,Village or smaller,40387,0.383877652
+E14000614,Calder Valley,Medium Town,33866,0.321895673
+E14000614,Calder Valley,Small Town,28234,0.268363623
+E14000614,Calder Valley,Large Town,1696,0.016120447
+E14000614,Calder Valley,Other City,1025,0.009742605
+E14000615,Camberwell and Peckham,Core City (London),132045,1
+E14000616,Camborne and Redruth,Small Town,53605,0.595531707
+E14000616,Camborne and Redruth,Village or smaller,36407,0.404468293
+E14000617,Cambridge,Large Town,122236,0.997388949
+E14000617,Cambridge,Village or smaller,320,0.002611051
+E14000618,Cannock Chase,Large Town,63332,0.642742607
+E14000618,Cannock Chase,Small Town,24567,0.249325106
+E14000618,Cannock Chase,Village or smaller,10635,0.107932287
+E14000619,Canterbury,Large Town,61735,0.521674835
+E14000619,Canterbury,Medium Town,33398,0.28222072
+E14000619,Canterbury,Village or smaller,23207,0.196104445
+W07000050,Cardiff Central,Core City (outside London),93834,1
+W07000051,Cardiff North,Core City (outside London),87584,0.978275196
+W07000051,Cardiff North,Village or smaller,1945,0.021724804
+W07000080,Cardiff South and Penarth,Core City (outside London),82174,0.719033285
+W07000080,Cardiff South and Penarth,Medium Town,31522,0.275821637
+W07000080,Cardiff South and Penarth,Village or smaller,588,0.005145077
+W07000079,Cardiff West,Core City (outside London),86048,0.924948941
+W07000079,Cardiff West,Village or smaller,6982,0.075051059
+E14000620,Carlisle,Large Town,74923,0.864462905
+E14000620,Carlisle,Village or smaller,11747,0.135537095
+W07000067,Carmarthen East and Dinefwr,Village or smaller,61320,0.855934451
+W07000067,Carmarthen East and Dinefwr,Small Town,10321,0.144065549
+W07000066,Carmarthen West and South Pembrokeshire,Village or smaller,45835,0.59222172
+W07000066,Carmarthen West and South Pembrokeshire,Small Town,31560,0.40777828
+E14000621,Carshalton and Wallington,Core City (London),101399,1
+E14000622,Castle Point,Medium Town,66609,0.742318708
+E14000622,Castle Point,Other City,1069,0.011913386
+E14000622,Castle Point,Small Town,22053,0.245767906
+S14000010,Central Ayrshire,Medium Town,36302,0.416871454
+S14000010,Central Ayrshire,Small Town,31876,0.366045796
+S14000010,Central Ayrshire,Village or smaller,18904,0.21708275
+E14000623,Central Devon,Village or smaller,75616,0.822163267
+E14000623,Central Devon,Small Town,16356,0.177836733
+E14000624,Central Suffolk and North Ipswich,Village or smaller,55644,0.55432801
+E14000624,Central Suffolk and North Ipswich,Large Town,28675,0.285661629
+E14000624,Central Suffolk and North Ipswich,Small Town,16062,0.160010361
+W07000064,Ceredigion,Village or smaller,56963,0.768254525
+W07000064,Ceredigion,Small Town,17183,0.231745475
+E14000625,Charnwood,Small Town,39863,0.395231013
+E14000625,Charnwood,Other City,31670,0.313999603
+E14000625,Charnwood,Village or smaller,29327,0.290769383
+E14000626,Chatham and Aylesford,Large Town,66493,0.651158008
+E14000626,Chatham and Aylesford,Medium Town,19124,0.187279048
+E14000626,Chatham and Aylesford,Small Town,11500,0.112618127
+E14000626,Chatham and Aylesford,Village or smaller,4998,0.048944817
+E14000627,Cheadle,Small Town,59539,0.638679711
+E14000627,Cheadle,Medium Town,25274,0.27111626
+E14000627,Cheadle,Large Town,8409,0.090204029
+E14000628,Chelmsford,Large Town,109495,0.998641057
+E14000628,Chelmsford,Village or smaller,149,0.001358943
+E14000629,Chelsea and Fulham,Core City (London),106813,1
+E14000630,Cheltenham,Large Town,106382,0.99699165
+E14000630,Cheltenham,Village or smaller,321,0.00300835
+E14000631,Chesham and Amersham,Small Town,62707,0.6593588
+E14000631,Chesham and Amersham,Village or smaller,27421,0.288329495
+E14000631,Chesham and Amersham,Large Town,4975,0.052311704
+E14000632,Chesterfield,Large Town,81306,0.863753705
+E14000632,Chesterfield,Small Town,11126,0.118196981
+E14000632,Chesterfield,Village or smaller,1699,0.018049314
+E14000633,Chichester,Village or smaller,55778,0.512986057
+E14000633,Chichester,Medium Town,30925,0.284414892
+E14000633,Chichester,Small Town,22029,0.202599051
+E14000634,Chingford and Woodford Green,Core City (London),94251,1
+E14000635,Chippenham,Medium Town,43059,0.43548485
+E14000635,Chippenham,Small Town,40225,0.406822687
+E14000635,Chippenham,Village or smaller,15592,0.157692463
+E14000636,Chipping Barnet,Core City (London),118594,0.997938387
+E14000636,Chipping Barnet,Medium Town,245,0.002061613
+E14000637,Chorley,Medium Town,42503,0.41898819
+E14000637,Chorley,Small Town,25831,0.254638118
+E14000637,Chorley,Village or smaller,17909,0.176544232
+E14000637,Chorley,Large Town,15199,0.149829459
+E14000638,Christchurch,Medium Town,75791,0.880891224
+E14000638,Christchurch,Village or smaller,8711,0.101244784
+E14000638,Christchurch,Small Town,1537,0.017863992
+E14000639,Cities of London and Westminster,Core City (London),125873,1
+E14000640,City of Chester,Large Town,82359,0.859347447
+E14000640,City of Chester,Village or smaller,13480,0.140652553
+E14000641,City of Durham,Medium Town,51119,0.514550012
+E14000641,City of Durham,Village or smaller,38304,0.385557692
+E14000641,City of Durham,Small Town,9924,0.099892297
+E14000642,Clacton,Medium Town,52704,0.59394158
+E14000642,Clacton,Village or smaller,23780,0.267985936
+E14000642,Clacton,Small Town,12252,0.138072485
+E14000643,Cleethorpes,Medium Town,39107,0.416147019
+E14000643,Cleethorpes,Village or smaller,32387,0.344637879
+E14000643,Cleethorpes,Small Town,22480,0.239215102
+W07000062,Clwyd South,Village or smaller,50307,0.687216546
+W07000062,Clwyd South,Small Town,13517,0.18464838
+W07000062,Clwyd South,Large Town,9380,0.128135075
+W07000059,Clwyd West,Medium Town,28247,0.385083091
+W07000059,Clwyd West,Village or smaller,26249,0.357844942
+W07000059,Clwyd West,Small Town,18857,0.257071967
+S14000011,"Coatbridge, Chryston and Bellshill",Medium Town,43657,0.461993502
+S14000011,"Coatbridge, Chryston and Bellshill",Village or smaller,26571,0.28118353
+S14000011,"Coatbridge, Chryston and Bellshill",Small Town,24269,0.256822968
+E14000644,Colchester,Large Town,119611,0.996916178
+E14000644,Colchester,Village or smaller,370,0.003083822
+E14000645,Colne Valley,Large Town,63907,0.576382626
+E14000645,Colne Valley,Small Town,30106,0.271528554
+E14000645,Colne Valley,Village or smaller,16863,0.15208882
+E14000646,Congleton,Small Town,46289,0.492331419
+E14000646,Congleton,Medium Town,29521,0.313986386
+E14000646,Congleton,Village or smaller,18210,0.193682195
+E14000647,Copeland,Village or smaller,55669,0.701341732
+E14000647,Copeland,Small Town,23706,0.298658268
+E14000648,Corby,Medium Town,59902,0.504280771
+E14000648,Corby,Village or smaller,42147,0.354811553
+E14000648,Corby,Small Town,16738,0.140907675
+E14000649,Coventry North East,Other City,122570,1
+E14000650,Coventry North West,Other City,110400,0.99470213
+E14000650,Coventry North West,Village or smaller,588,0.00529787
+E14000651,Coventry South,Other City,119353,1
+E14000652,Crawley,Large Town,110606,0.993095398
+E14000652,Crawley,Village or smaller,769,0.006904602
+E14000653,Crewe and Nantwich,Large Town,73241,0.66944838
+E14000653,Crewe and Nantwich,Village or smaller,18174,0.166116722
+E14000653,Crewe and Nantwich,Small Town,17990,0.164434898
+E14000654,Croydon Central,Core City (London),97158,0.809488102
+E14000654,Croydon Central,Small Town,22866,0.190511898
+E14000655,Croydon North,Core City (London),145017,1
+E14000656,Croydon South,Core City (London),117263,1
+S14000012,"Cumbernauld, Kilsyth and Kirkintilloch East",Medium Town,49362,0.5661494
+S14000012,"Cumbernauld, Kilsyth and Kirkintilloch East",Small Town,21748,0.249435135
+S14000012,"Cumbernauld, Kilsyth and Kirkintilloch East",Village or smaller,16079,0.184415465
+W07000070,Cynon Valley,Medium Town,33728,0.478567476
+W07000070,Cynon Valley,Village or smaller,25461,0.361266796
+W07000070,Cynon Valley,Small Town,11288,0.160165728
+E14000657,Dagenham and Rainham,Core City (London),109452,0.99760288
+E14000657,Dagenham and Rainham,Village or smaller,263,0.00239712
+E14000658,Darlington,Large Town,91162,1
+E14000659,Dartford,Large Town,62856,0.563478261
+E14000659,Dartford,Small Town,32433,0.290748543
+E14000659,Dartford,Village or smaller,15239,0.136611385
+E14000659,Dartford,Medium Town,1022,0.009161811
+E14000660,Daventry,Village or smaller,67906,0.694179223
+E14000660,Daventry,Small Town,24913,0.254676862
+E14000660,Daventry,Other City,5003,0.051143914
+W07000042,Delyn,Small Town,39559,0.568817761
+W07000042,Delyn,Village or smaller,29987,0.431182239
+E14000661,Denton and Reddish,Medium Town,34911,0.405672984
+E14000661,Denton and Reddish,Core City (outside London),32763,0.380712783
+E14000661,Denton and Reddish,Small Town,12698,0.147553366
+E14000661,Denton and Reddish,Large Town,5685,0.066060867
+E14000662,Derby North,Other City,102559,1
+E14000663,Derby South,Other City,114435,1
+E14000664,Derbyshire Dales,Village or smaller,54841,0.693399924
+E14000664,Derbyshire Dales,Small Town,24249,0.306600076
+E14000665,Devizes,Village or smaller,53605,0.532503527
+E14000665,Devizes,Small Town,47061,0.467496473
+E14000666,Dewsbury,Large Town,63932,0.566286084
+E14000666,Dewsbury,Village or smaller,29127,0.257996227
+E14000666,Dewsbury,Small Town,19838,0.17571769
+E14000667,Don Valley,Small Town,55406,0.556721127
+E14000667,Don Valley,Village or smaller,25799,0.259229115
+E14000667,Don Valley,Large Town,18317,0.184049758
+E14000668,Doncaster Central,Large Town,90543,0.834936326
+E14000668,Doncaster Central,Small Town,14538,0.134061212
+E14000668,Doncaster Central,Village or smaller,3362,0.031002462
+E14000669,Doncaster North,Small Town,34338,0.348849967
+E14000669,Doncaster North,Village or smaller,33010,0.33535842
+E14000669,Doncaster North,Medium Town,26901,0.27329527
+E14000669,Doncaster North,Large Town,4183,0.042496343
+E14000670,Dover,Medium Town,74975,0.74960008
+E14000670,Dover,Village or smaller,25045,0.25039992
+E14000671,Dudley North,Large Town,41716,0.496760979
+E14000671,Dudley North,Medium Town,31291,0.372618367
+E14000671,Dudley North,Small Town,10699,0.127405449
+E14000671,Dudley North,Village or smaller,270,0.003215204
+E14000672,Dudley South,Medium Town,64200,0.797297633
+E14000672,Dudley South,Large Town,16322,0.202702367
+E14000673,Dulwich and West Norwood,Core City (London),117324,1
+S14000013,Dumfries and Galloway,Village or smaller,55140,0.574267325
+S14000013,Dumfries and Galloway,Medium Town,30295,0.315513758
+S14000013,Dumfries and Galloway,Small Town,10583,0.110218917
+S14000014,"Dumfriesshire, Clydesdale and Tweeddale",Village or smaller,66076,0.767388653
+S14000014,"Dumfriesshire, Clydesdale and Tweeddale",Small Town,17376,0.201800128
+S14000014,"Dumfriesshire, Clydesdale and Tweeddale",Medium Town,2653,0.030811219
+S14000015,Dundee East,Large Town,64995,0.723267641
+S14000015,Dundee East,Small Town,19463,0.216585246
+S14000015,Dundee East,Village or smaller,5405,0.060147113
+S14000016,Dundee West,Large Town,82895,0.938405633
+S14000016,Dundee West,Village or smaller,5441,0.061594367
+S14000017,Dunfermline and West Fife,Medium Town,54945,0.545728134
+S14000017,Dunfermline and West Fife,Village or smaller,30332,0.30126537
+S14000017,Dunfermline and West Fife,Small Town,15405,0.153006496
+W07000061,Dwyfor Meirionnydd,Village or smaller,61305,1
+E14000674,Ealing Central and Acton,Core City (London),121791,1
+E14000675,Ealing North,Core City (London),122019,1
+E14000676,"Ealing, Southall",Core City (London),99386,1
+E14000677,Easington,Small Town,30293,0.366419508
+E14000677,Easington,Medium Town,26943,0.325898419
+E14000677,Easington,Village or smaller,25437,0.307682073
+E14000678,East Devon,Village or smaller,45414,0.443483101
+E14000678,East Devon,Medium Town,35216,0.343896175
+E14000678,East Devon,Small Town,13191,0.128814586
+E14000678,East Devon,Large Town,8582,0.083806138
+S14000018,East Dunbartonshire,Small Town,51024,0.609219968
+S14000018,East Dunbartonshire,Medium Town,28117,0.335713348
+S14000018,East Dunbartonshire,Village or smaller,4612,0.055066684
+E14000679,East Ham,Core City (London),160657,1
+E14000680,East Hampshire,Small Town,49304,0.50963894
+E14000680,East Hampshire,Village or smaller,47079,0.48663986
+E14000680,East Hampshire,Medium Town,360,0.003721199
+S14000019,"East Kilbride, Strathaven and Lesmahagow",Large Town,75087,0.741212008
+S14000019,"East Kilbride, Strathaven and Lesmahagow",Village or smaller,26216,0.258787992
+S14000020,East Lothian,Small Town,62884,0.60413104
+S14000020,East Lothian,Village or smaller,41206,0.39586896
+S14000021,East Renfrewshire,Small Town,39484,0.420893295
+S14000021,East Renfrewshire,Village or smaller,30511,0.325242511
+S14000021,East Renfrewshire,Medium Town,23815,0.253864194
+E14000681,East Surrey,Small Town,45982,0.41371554
+E14000681,East Surrey,Village or smaller,35633,0.320602102
+E14000681,East Surrey,Medium Town,25622,0.230529763
+E14000681,East Surrey,Core City (London),3907,0.035152595
+E14000682,East Worthing and Shoreham,Medium Town,50465,0.507619575
+E14000682,East Worthing and Shoreham,Large Town,35909,0.361203038
+E14000682,East Worthing and Shoreham,Small Town,12170,0.122416134
+E14000682,East Worthing and Shoreham,Village or smaller,871,0.008761253
+E14000683,East Yorkshire,Village or smaller,44725,0.438458899
+E14000683,East Yorkshire,Medium Town,35442,0.347453556
+E14000683,East Yorkshire,Small Town,21838,0.214087545
+E14000684,Eastbourne,Large Town,108907,0.985405356
+E14000684,Eastbourne,Small Town,1443,0.01305646
+E14000684,Eastbourne,Village or smaller,170,0.001538183
+E14000685,Eastleigh,Large Town,50651,0.468556892
+E14000685,Eastleigh,Medium Town,26473,0.244893617
+E14000685,Eastleigh,Village or smaller,19789,0.18306198
+E14000685,Eastleigh,Other City,11187,0.103487512
+E14000686,Eddisbury,Village or smaller,52378,0.594616686
+E14000686,Eddisbury,Medium Town,35709,0.405383314
+S14000022,Edinburgh East,Core City (outside London),102907,1
+S14000023,Edinburgh North and Leith,Core City (outside London),112597,1
+S14000024,Edinburgh South,Core City (outside London),90540,1
+S14000025,Edinburgh South West,Core City (outside London),104749,0.987974421
+S14000025,Edinburgh South West,Village or smaller,1275,0.012025579
+S14000026,Edinburgh West,Core City (outside London),76071,0.799888541
+S14000026,Edinburgh West,Village or smaller,10336,0.108683308
+S14000026,Edinburgh West,Small Town,8695,0.091428151
+E14000687,Edmonton,Core City (London),120107,1
+E14000688,Ellesmere Port and Neston,Large Town,61325,0.703284479
+E14000688,Ellesmere Port and Neston,Small Town,15207,0.174396202
+E14000688,Ellesmere Port and Neston,Village or smaller,10666,0.122319319
+E14000689,Elmet and Rothwell,Small Town,55393,0.550052132
+E14000689,Elmet and Rothwell,Village or smaller,44939,0.44624398
+E14000689,Elmet and Rothwell,Core City (outside London),373,0.003703888
+E14000690,Eltham,Core City (London),95455,1
+E14000691,Enfield North,Core City (London),108338,0.991234812
+E14000691,Enfield North,Village or smaller,958,0.008765188
+E14000692,"Enfield, Southgate",Core City (London),101694,0.997078202
+E14000692,"Enfield, Southgate",Village or smaller,298,0.002921798
+E14000693,Epping Forest,Small Town,41066,0.412441748
+E14000693,Epping Forest,Medium Town,32878,0.330206492
+E14000693,Epping Forest,Core City (London),14189,0.142505624
+E14000693,Epping Forest,Village or smaller,11435,0.114846135
+E14000694,Epsom and Ewell,Medium Town,74710,0.68082198
+E14000694,Epsom and Ewell,Core City (London),17265,0.157333576
+E14000694,Epsom and Ewell,Small Town,14749,0.134405614
+E14000694,Epsom and Ewell,Village or smaller,3011,0.02743883
+E14000695,Erewash,Medium Town,78633,0.812920634
+E14000695,Erewash,Small Town,17635,0.182313474
+E14000695,Erewash,Village or smaller,461,0.004765892
+E14000696,Erith and Thamesmead,Core City (London),120342,1
+E14000697,Esher and Walton,Medium Town,51147,0.460945738
+E14000697,Esher and Walton,Large Town,36186,0.326114581
+E14000697,Esher and Walton,Small Town,18039,0.162570633
+E14000697,Esher and Walton,Core City (London),4334,0.039058768
+E14000697,Esher and Walton,Village or smaller,1255,0.01131028
+E14000698,Exeter,Large Town,115598,1
+S14000028,Falkirk,Village or smaller,47209,0.424812605
+S14000028,Falkirk,Medium Town,35909,0.323128976
+S14000028,Falkirk,Small Town,28011,0.252058419
+E14000699,Fareham,Medium Town,85593,0.846734464
+E14000699,Fareham,Other City,14712,0.145539442
+E14000699,Fareham,Village or smaller,781,0.007726095
+E14000700,Faversham and Mid Kent,Large Town,45360,0.465966758
+E14000700,Faversham and Mid Kent,Village or smaller,32036,0.329094159
+E14000700,Faversham and Mid Kent,Small Town,19950,0.204939083
+E14000701,Feltham and Heston,Core City (London),135309,1
+E14000702,Filton and Bradley Stoke,Large Town,65630,0.654147854
+E14000702,Filton and Bradley Stoke,Core City (outside London),21359,0.212889593
+E14000702,Filton and Bradley Stoke,Village or smaller,6926,0.069032882
+E14000702,Filton and Bradley Stoke,Small Town,6414,0.063929671
+E14000703,Finchley and Golders Green,Core City (London),129820,1
+E14000704,Folkestone and Hythe,Medium Town,52861,0.454346985
+E14000704,Folkestone and Hythe,Small Town,33888,0.291271649
+E14000704,Folkestone and Hythe,Village or smaller,29596,0.254381366
+E14000705,Forest of Dean,Village or smaller,69145,0.771010582
+E14000705,Forest of Dean,Small Town,20536,0.228989418
+E14000706,Fylde,Medium Town,46260,0.550170665
+E14000706,Fylde,Small Town,20919,0.248789886
+E14000706,Fylde,Village or smaller,11334,0.134795381
+E14000706,Fylde,Large Town,5570,0.066244068
+E14000707,Gainsborough,Village or smaller,73109,0.759226951
+E14000707,Gainsborough,Small Town,22669,0.23541446
+E14000707,Gainsborough,Large Town,516,0.005358589
+E14000708,Garston and Halewood,Core City (outside London),98698,0.994478367
+E14000708,Garston and Halewood,Village or smaller,548,0.005521633
+E14000709,Gateshead,Large Town,96380,1
+E14000710,Gedling,Medium Town,85755,0.9072971
+E14000710,Gedling,Core City (outside London),5167,0.054667414
+E14000710,Gedling,Village or smaller,3595,0.038035486
+E14000711,Gillingham and Rainham,Large Town,101869,0.987581192
+E14000711,Gillingham and Rainham,Village or smaller,1281,0.012418808
+S14000029,Glasgow Central,Core City (outside London),99189,1
+S14000030,Glasgow East,Core City (outside London),88056,0.960031399
+S14000030,Glasgow East,Village or smaller,3666,0.039968601
+S14000031,Glasgow North,Core City (outside London),74583,0.988574458
+S14000031,Glasgow North,Village or smaller,862,0.011425542
+S14000032,Glasgow North East,Core City (outside London),85954,0.993538543
+S14000032,Glasgow North East,Village or smaller,559,0.006461457
+S14000033,Glasgow North West,Core City (outside London),88220,1
+S14000034,Glasgow South,Core City (outside London),86802,0.980215462
+S14000034,Glasgow South,Village or smaller,1752,0.019784538
+S14000035,Glasgow South West,Core City (outside London),85704,0.990351171
+S14000035,Glasgow South West,Village or smaller,835,0.009648829
+S14000036,Glenrothes,Medium Town,40156,0.455319583
+S14000036,Glenrothes,Village or smaller,32435,0.367772953
+S14000036,Glenrothes,Small Town,15602,0.176907464
+E14000712,Gloucester,Large Town,119002,1
+S14000037,Gordon,Village or smaller,57331,0.558857934
+S14000037,Gordon,Small Town,23054,0.22472852
+S14000037,Gordon,Other City,22201,0.216413546
+E14000713,Gosport,Large Town,73800,0.740220662
+E14000713,Gosport,Medium Town,25378,0.254543631
+E14000713,Gosport,Village or smaller,522,0.005235707
+W07000046,Gower,Small Town,28226,0.358680458
+W07000046,Gower,Village or smaller,27139,0.344867461
+W07000046,Gower,Other City,23329,0.29645208
+E14000714,Grantham and Stamford,Medium Town,43371,0.394468294
+E14000714,Grantham and Stamford,Small Town,36020,0.327609415
+E14000714,Grantham and Stamford,Village or smaller,30557,0.277922291
+E14000715,Gravesham,Medium Town,87355,0.817869448
+E14000715,Gravesham,Village or smaller,19089,0.178722568
+E14000715,Gravesham,Large Town,364,0.003407984
+E14000716,Great Grimsby,Large Town,88099,1
+E14000717,Great Yarmouth,Medium Town,40405,0.407456335
+E14000717,Great Yarmouth,Small Town,33728,0.340123432
+E14000717,Great Yarmouth,Village or smaller,25031,0.252420233
+E14000718,Greenwich and Woolwich,Core City (London),126165,1
+E14000719,Guildford,Large Town,85009,0.743534125
+E14000719,Guildford,Village or smaller,18265,0.159755447
+E14000719,Guildford,Small Town,11057,0.096710428
+E14000720,Hackney North and Stoke Newington,Core City (London),140244,0.995061728
+E14000720,Hackney North and Stoke Newington,Village or smaller,696,0.004938272
+E14000721,Hackney South and Shoreditch,Core City (London),132586,1
+E14000722,Halesowen and Rowley Regis,Medium Town,65280,0.730283029
+E14000722,Halesowen and Rowley Regis,Large Town,18230,0.203937801
+E14000722,Halesowen and Rowley Regis,Village or smaller,5880,0.06577917
+E14000723,Halifax,Large Town,90608,0.866548077
+E14000723,Halifax,Other City,9357,0.089487577
+E14000723,Halifax,Village or smaller,4597,0.043964347
+E14000724,Haltemprice and Howden,Village or smaller,35149,0.395283454
+E14000724,Haltemprice and Howden,Small Town,28265,0.317866421
+E14000724,Haltemprice and Howden,Other City,25507,0.286850125
+E14000725,Halton,Large Town,94872,0.981512327
+E14000725,Halton,Village or smaller,1787,0.018487673
+E14000726,Hammersmith,Core City (London),115374,1
+E14000727,Hampstead and Kilburn,Core City (London),141504,1
+E14000728,Harborough,Medium Town,56951,0.546276846
+E14000728,Harborough,Small Town,24039,0.230583293
+E14000728,Harborough,Village or smaller,23263,0.223139862
+E14000729,Harlow,Large Town,86119,0.89078177
+E14000729,Harlow,Village or smaller,4561,0.047177227
+E14000729,Harlow,Medium Town,3981,0.041177931
+E14000729,Harlow,Small Town,2017,0.020863071
+E14000730,Harrogate and Knaresborough,Large Town,72621,0.722302344
+E14000730,Harrogate and Knaresborough,Small Town,15373,0.152902796
+E14000730,Harrogate and Knaresborough,Village or smaller,12547,0.12479486
+E14000731,Harrow East,Core City (London),107584,0.994407934
+E14000731,Harrow East,Village or smaller,605,0.005592066
+E14000732,Harrow West,Core City (London),108643,1
+E14000733,Hartlepool,Large Town,89608,0.965426592
+E14000733,Hartlepool,Village or smaller,3209,0.034573408
+E14000734,Harwich and North Essex,Village or smaller,55524,0.592508804
+E14000734,Harwich and North Essex,Small Town,36748,0.392145982
+E14000734,Harwich and North Essex,Large Town,1438,0.015345214
+E14000735,Hastings and Rye,Large Town,93001,0.839071438
+E14000735,Hastings and Rye,Village or smaller,17837,0.160928562
+E14000736,Havant,Medium Town,47913,0.507660521
+E14000736,Havant,Small Town,25666,0.271943208
+E14000736,Havant,Other City,18896,0.200211909
+E14000736,Havant,Village or smaller,1905,0.020184361
+E14000737,Hayes and Harlington,Core City (London),125972,1
+E14000738,Hazel Grove,Small Town,32906,0.407116434
+E14000738,Hazel Grove,Medium Town,27866,0.344761033
+E14000738,Hazel Grove,Large Town,14508,0.179494476
+E14000738,Hazel Grove,Village or smaller,5547,0.068628057
+E14000739,Hemel Hempstead,Large Town,96682,0.917399679
+E14000739,Hemel Hempstead,Village or smaller,8705,0.082600321
+E14000740,Hemsworth,Village or smaller,42124,0.4343576
+E14000740,Hemsworth,Small Town,40297,0.415518664
+E14000740,Hemsworth,Large Town,14303,0.147484017
+E14000740,Hemsworth,Medium Town,256,0.00263972
+E14000741,Hendon,Core City (London),137424,1
+E14000742,Henley,Village or smaller,73517,0.74740502
+E14000742,Henley,Small Town,23237,0.236237203
+E14000742,Henley,Large Town,1609,0.016357777
+E14000743,Hereford and South Herefordshire,Large Town,60698,0.604206691
+E14000743,Hereford and South Herefordshire,Village or smaller,28580,0.284494172
+E14000743,Hereford and South Herefordshire,Small Town,11181,0.111299137
+E14000744,Hertford and Stortford,Medium Town,69144,0.609713943
+E14000744,Hertford and Stortford,Small Town,28626,0.252424959
+E14000744,Hertford and Stortford,Village or smaller,15634,0.137861098
+E14000745,Hertsmere,Medium Town,63349,0.611902094
+E14000745,Hertsmere,Small Town,30448,0.294104011
+E14000745,Hertsmere,Village or smaller,8982,0.086759138
+E14000745,Hertsmere,Large Town,749,0.007234758
+E14000746,Hexham,Village or smaller,44054,0.57499739
+E14000746,Hexham,Small Town,32562,0.42500261
+E14000747,Heywood and Middleton,Medium Town,73174,0.689306304
+E14000747,Heywood and Middleton,Large Town,28974,0.27293794
+E14000747,Heywood and Middleton,Village or smaller,4008,0.037755756
+E14000748,High Peak,Village or smaller,33773,0.368451485
+E14000748,High Peak,Small Town,30997,0.338166307
+E14000748,High Peak,Medium Town,26892,0.293382209
+E14000749,Hitchin and Harpenden,Medium Town,67339,0.651556347
+E14000749,Hitchin and Harpenden,Village or smaller,25205,0.24387766
+E14000749,Hitchin and Harpenden,Large Town,10807,0.104565994
+E14000750,Holborn and St Pancras,Core City (London),150151,1
+E14000751,Hornchurch and Upminster,Core City (London),107210,0.983054888
+E14000751,Hornchurch and Upminster,Village or smaller,1848,0.016945112
+E14000752,Hornsey and Wood Green,Core City (London),132852,1
+E14000753,Horsham,Medium Town,49897,0.45320121
+E14000753,Horsham,Village or smaller,42383,0.384953542
+E14000753,Horsham,Small Town,16713,0.151799744
+E14000753,Horsham,Large Town,1106,0.010045505
+E14000754,Houghton and Sunderland South,Other City,40291,0.459748736
+E14000754,Houghton and Sunderland South,Small Town,26757,0.305316248
+E14000754,Houghton and Sunderland South,Large Town,14037,0.160172073
+E14000754,Houghton and Sunderland South,Village or smaller,6552,0.074762943
+E14000755,Hove,Other City,82792,0.805432329
+E14000755,Hove,Small Town,20000,0.194567671
+E14000756,Huddersfield,Large Town,100187,0.992667968
+E14000756,Huddersfield,Village or smaller,740,0.007332032
+E14000757,Huntingdon,Medium Town,58093,0.490994532
+E14000757,Huntingdon,Village or smaller,43415,0.366937972
+E14000757,Huntingdon,Small Town,16809,0.142067497
+E14000758,Hyndburn,Small Town,40830,0.442266031
+E14000758,Hyndburn,Medium Town,36072,0.390727903
+E14000758,Hyndburn,Village or smaller,13566,0.146945407
+E14000758,Hyndburn,Large Town,1852,0.020060659
+E14000759,Ilford North,Core City (London),108704,1
+E14000760,Ilford South,Core City (London),142892,1
+S14000038,Inverclyde,Medium Town,41323,0.522018696
+S14000038,Inverclyde,Small Town,25381,0.320629106
+S14000038,Inverclyde,Village or smaller,12456,0.157352198
+S14000039,"Inverness, Nairn, Badenoch and Strathspey",Village or smaller,49140,0.469569704
+S14000039,"Inverness, Nairn, Badenoch and Strathspey",Medium Town,45666,0.436373018
+S14000039,"Inverness, Nairn, Badenoch and Strathspey",Small Town,9843,0.094057277
+E14000761,Ipswich,Large Town,111904,1
+E14000762,Isle of Wight,Small Town,67748,0.484613514
+E14000762,Isle of Wight,Village or smaller,46596,0.333309489
+E14000762,Isle of Wight,Medium Town,25454,0.182076997
+E14000763,Islington North,Core City (London),114886,1
+E14000764,Islington South and Finsbury,Core City (London),117979,1
+W07000077,Islwyn,Small Town,60544,0.796181108
+W07000077,Islwyn,Village or smaller,15499,0.203818892
+E14000765,Jarrow,Medium Town,39770,0.477385125
+E14000765,Jarrow,Small Town,19740,0.236952033
+E14000765,Jarrow,Large Town,18811,0.225800643
+E14000765,Jarrow,Village or smaller,4987,0.059862198
+E14000766,Keighley,Medium Town,53428,0.546119879
+E14000766,Keighley,Small Town,23209,0.237233216
+E14000766,Keighley,Village or smaller,21195,0.216646905
+E14000767,Kenilworth and Southam,Village or smaller,51078,0.624837913
+E14000767,Kenilworth and Southam,Small Town,21680,0.265211753
+E14000767,Kenilworth and Southam,Medium Town,5561,0.068027793
+E14000767,Kenilworth and Southam,Other City,3427,0.041922541
+E14000768,Kensington,Core City (London),114193,1
+E14000769,Kettering,Medium Town,58908,0.595018282
+E14000769,Kettering,Small Town,28516,0.288034585
+E14000769,Kettering,Village or smaller,11578,0.116947132
+S14000040,Kilmarnock and Loudoun,Village or smaller,50662,0.522380211
+S14000040,Kilmarnock and Loudoun,Medium Town,46321,0.477619789
+E14000770,Kingston and Surbiton,Core City (London),128429,0.996755842
+E14000770,Kingston and Surbiton,Village or smaller,418,0.003244158
+E14000771,Kingston upon Hull East,Other City,91608,1
+E14000772,Kingston upon Hull North,Other City,96759,1
+E14000773,Kingston upon Hull West and Hessle,Other City,72342,0.834538848
+E14000773,Kingston upon Hull West and Hessle,Small Town,14343,0.165461152
+E14000774,Kingswood,Core City (outside London),90107,0.986198669
+E14000774,Kingswood,Village or smaller,1261,0.013801331
+S14000041,Kirkcaldy and Cowdenbeath,Medium Town,47864,0.480383793
+S14000041,Kirkcaldy and Cowdenbeath,Village or smaller,33602,0.337244196
+S14000041,Kirkcaldy and Cowdenbeath,Small Town,18171,0.18237201
+E14000775,Knowsley,Core City (outside London),60661,0.575919263
+E14000775,Knowsley,Medium Town,44355,0.421109096
+E14000775,Knowsley,Village or smaller,313,0.002971641
+S14000042,Lanark and Hamilton East,Village or smaller,36611,0.373326399
+S14000042,Lanark and Hamilton East,Small Town,35966,0.366749263
+S14000042,Lanark and Hamilton East,Medium Town,25490,0.259924337
+E14000776,Lancaster and Fleetwood,Medium Town,63623,0.709785022
+E14000776,Lancaster and Fleetwood,Village or smaller,26014,0.290214978
+E14000777,Leeds Central,Core City (outside London),148870,0.992704916
+E14000777,Leeds Central,Village or smaller,1094,0.007295084
+E14000778,Leeds East,Core City (outside London),99188,1
+E14000779,Leeds North East,Core City (outside London),93295,0.99871541
+E14000779,Leeds North East,Village or smaller,120,0.00128459
+E14000780,Leeds North West,Core City (outside London),58380,0.675780481
+E14000780,Leeds North West,Small Town,21634,0.250425401
+E14000780,Leeds North West,Village or smaller,6375,0.073794117
+E14000781,Leeds West,Core City (outside London),92521,0.989995292
+E14000781,Leeds West,Large Town,643,0.006880243
+E14000781,Leeds West,Village or smaller,292,0.003124465
+E14000782,Leicester East,Other City,115536,1
+E14000783,Leicester South,Other City,125622,1
+E14000784,Leicester West,Other City,106671,0.995204553
+E14000784,Leicester West,Village or smaller,514,0.004795447
+E14000785,Leigh,Medium Town,53303,0.509637633
+E14000785,Leigh,Small Town,48011,0.459040061
+E14000785,Leigh,Village or smaller,3276,0.031322306
+E14000786,Lewes,Small Town,63994,0.693822235
+E14000786,Lewes,Village or smaller,27511,0.298273955
+E14000786,Lewes,Medium Town,729,0.00790381
+E14000787,Lewisham East,Core City (London),110950,1
+E14000788,Lewisham West and Penge,Core City (London),114813,1
+E14000789,"Lewisham, Deptford",Core City (London),124785,1
+E14000790,Leyton and Wanstead,Core City (London),110860,1
+E14000791,Lichfield,Medium Town,62235,0.653214379
+E14000791,Lichfield,Village or smaller,33040,0.346785621
+E14000792,Lincoln,Large Town,101564,0.9161217
+E14000792,Lincoln,Village or smaller,9299,0.0838783
+S14000043,Linlithgow and East Falkirk,Small Town,86087,0.729513754
+S14000043,Linlithgow and East Falkirk,Village or smaller,31919,0.270486246
+E14000793,"Liverpool, Riverside",Core City (outside London),127628,1
+E14000794,"Liverpool, Walton",Core City (outside London),93126,1
+E14000795,"Liverpool, Wavertree",Core City (outside London),94146,1
+E14000796,"Liverpool, West Derby",Core City (outside London),90862,1
+S14000044,Livingston,Medium Town,56684,0.513558324
+S14000044,Livingston,Village or smaller,38125,0.345413364
+S14000044,Livingston,Small Town,15566,0.141028313
+W07000045,Llanelli,Medium Town,44561,0.54153805
+W07000045,Llanelli,Village or smaller,34933,0.424531512
+W07000045,Llanelli,Small Town,2792,0.033930438
+E14000797,Loughborough,Large Town,65104,0.607477769
+E14000797,Loughborough,Small Town,23886,0.222877458
+E14000797,Loughborough,Village or smaller,18181,0.169644773
+E14000798,Louth and Horncastle,Village or smaller,65704,0.668566079
+E14000798,Louth and Horncastle,Small Town,29162,0.296735724
+E14000798,Louth and Horncastle,Medium Town,3410,0.034698197
+E14000799,Ludlow,Village or smaller,62398,0.72905932
+E14000799,Ludlow,Small Town,23189,0.27094068
+E14000800,Luton North,Other City,102996,1
+E14000801,Luton South,Other City,113795,0.946910755
+E14000801,Luton South,Village or smaller,6380,0.053089245
+E14000802,Macclesfield,Medium Town,56759,0.606373659
+E14000802,Macclesfield,Village or smaller,18933,0.202266997
+E14000802,Macclesfield,Small Town,17912,0.191359344
+E14000803,Maidenhead,Large Town,66785,0.634687574
+E14000803,Maidenhead,Village or smaller,21204,0.201511048
+E14000803,Maidenhead,Medium Town,9438,0.089693514
+E14000803,Maidenhead,Small Town,7798,0.074107864
+E14000804,Maidstone and The Weald,Large Town,74804,0.696032455
+E14000804,Maidstone and The Weald,Village or smaller,32668,0.303967545
+E14000805,Makerfield,Small Town,37155,0.370912031
+E14000805,Makerfield,Large Town,36057,0.359950884
+E14000805,Makerfield,Medium Town,23731,0.236902528
+E14000805,Makerfield,Village or smaller,3229,0.032234557
+E14000806,Maldon,Village or smaller,48267,0.532260732
+E14000806,Maldon,Small Town,38175,0.420971957
+E14000806,Maldon,Medium Town,3591,0.039599484
+E14000806,Maldon,Large Town,650,0.007167826
+E14000807,Manchester Central,Core City (outside London),154130,1
+E14000808,"Manchester, Gorton",Core City (outside London),117556,0.987160432
+E14000808,"Manchester, Gorton",Medium Town,1529,0.012839568
+E14000809,"Manchester, Withington",Core City (outside London),101127,1
+E14000810,Mansfield,Large Town,74765,0.695909154
+E14000810,Mansfield,Small Town,29194,0.271736399
+E14000810,Mansfield,Village or smaller,3476,0.032354447
+E14000811,Meon Valley,Medium Town,50388,0.54091075
+E14000811,Meon Valley,Village or smaller,42766,0.45908925
+E14000812,Meriden,Core City (outside London),58264,0.52793534
+E14000812,Meriden,Village or smaller,26287,0.238188869
+E14000812,Meriden,Large Town,25811,0.233875791
+W07000071,Merthyr Tydfil and Rhymney,Medium Town,44564,0.586137051
+W07000071,Merthyr Tydfil and Rhymney,Village or smaller,23700,0.311719058
+W07000071,Merthyr Tydfil and Rhymney,Small Town,7766,0.102143891
+E14000813,Mid Bedfordshire,Village or smaller,84686,0.771022251
+E14000813,Mid Bedfordshire,Small Town,21407,0.194899669
+E14000813,Mid Bedfordshire,Large Town,2422,0.022051058
+E14000813,Mid Bedfordshire,Other City,1321,0.012027022
+E14000814,Mid Derbyshire,Other City,39239,0.46228249
+E14000814,Mid Derbyshire,Village or smaller,23725,0.27950896
+E14000814,Mid Derbyshire,Small Town,21917,0.258208551
+E14000815,Mid Dorset and North Poole,Large Town,42060,0.509651387
+E14000815,Mid Dorset and North Poole,Village or smaller,21728,0.263283531
+E14000815,Mid Dorset and North Poole,Small Town,14561,0.176439226
+E14000815,Mid Dorset and North Poole,Other City,4178,0.050625856
+E14000816,Mid Norfolk,Small Town,56590,0.540470847
+E14000816,Mid Norfolk,Village or smaller,48115,0.459529153
+E14000817,Mid Sussex,Medium Town,96904,0.86819094
+E14000817,Mid Sussex,Village or smaller,14712,0.13180906
+E14000818,Mid Worcestershire,Village or smaller,48330,0.485328674
+E14000818,Mid Worcestershire,Medium Town,26642,0.26753831
+E14000818,Mid Worcestershire,Small Town,24290,0.243919584
+E14000818,Mid Worcestershire,Large Town,320,0.003213432
+E14000819,Middlesbrough,Other City,95665,1
+E14000820,Middlesbrough South and East Cleveland,Other City,43683,0.468370038
+E14000820,Middlesbrough South and East Cleveland,Village or smaller,32476,0.34820835
+E14000820,Middlesbrough South and East Cleveland,Small Town,17107,0.183421611
+S14000045,Midlothian,Small Town,57943,0.653910394
+S14000045,Midlothian,Village or smaller,30667,0.346089606
+E14000821,Milton Keynes North,Other City,94950,0.728311728
+E14000821,Milton Keynes North,Village or smaller,20516,0.157367493
+E14000821,Milton Keynes North,Small Town,14904,0.114320779
+E14000822,Milton Keynes South,Other City,87315,0.651074872
+E14000822,Milton Keynes South,Medium Town,39050,0.291181054
+E14000822,Milton Keynes South,Village or smaller,7744,0.057744074
+E14000823,Mitcham and Morden,Core City (London),107213,1
+E14000824,Mole Valley,Village or smaller,45288,0.468863559
+E14000824,Mole Valley,Medium Town,33896,0.350922964
+E14000824,Mole Valley,Small Town,17407,0.180213477
+W07000054,Monmouth,Small Town,39107,0.460104005
+W07000054,Monmouth,Village or smaller,37484,0.441008989
+W07000054,Monmouth,Medium Town,8405,0.098887006
+W07000063,Montgomeryshire,Village or smaller,52015,0.822189555
+W07000063,Montgomeryshire,Small Town,11249,0.177810445
+S14000046,Moray,Small Town,48140,0.501092953
+S14000046,Moray,Village or smaller,47930,0.498907047
+E14000825,Morecambe and Lunesdale,Medium Town,47280,0.522991494
+E14000825,Morecambe and Lunesdale,Village or smaller,26359,0.291572182
+E14000825,Morecambe and Lunesdale,Small Town,16764,0.185436324
+E14000826,Morley and Outwood,Large Town,60816,0.620324565
+E14000826,Morley and Outwood,Medium Town,29609,0.302012464
+E14000826,Morley and Outwood,Village or smaller,6109,0.062311937
+E14000826,Morley and Outwood,Core City (outside London),1505,0.015351034
+S14000047,Motherwell and Wishaw,Medium Town,62786,0.670905283
+S14000047,Motherwell and Wishaw,Village or smaller,18873,0.201669089
+S14000047,Motherwell and Wishaw,Small Town,11925,0.127425628
+S14000027,Na h-Eileanan an Iar,Village or smaller,26900,1
+W07000069,Neath,Medium Town,36530,0.492663322
+W07000069,Neath,Village or smaller,20898,0.281841722
+W07000069,Neath,Small Town,16720,0.225494956
+E14000827,New Forest East,Small Town,34137,0.36506256
+E14000827,New Forest East,Village or smaller,29925,0.320019249
+E14000827,New Forest East,Medium Town,29448,0.314918191
+E14000828,New Forest West,Small Town,50416,0.588106292
+E14000828,New Forest West,Village or smaller,28107,0.327870191
+E14000828,New Forest West,Medium Town,7203,0.084023517
+E14000829,Newark,Village or smaller,54320,0.525226741
+E14000829,Newark,Medium Town,39059,0.377666261
+E14000829,Newark,Small Town,10043,0.097106999
+E14000830,Newbury,Medium Town,67075,0.607436856
+E14000830,Newbury,Village or smaller,42899,0.388496962
+E14000830,Newbury,Small Town,449,0.004066182
+E14000831,Newcastle upon Tyne Central,Core City (outside London),102809,0.997506452
+E14000831,Newcastle upon Tyne Central,Village or smaller,257,0.002493548
+E14000832,Newcastle upon Tyne East,Core City (outside London),101480,1
+E14000833,Newcastle upon Tyne North,Core City (outside London),76691,0.834214419
+E14000833,Newcastle upon Tyne North,Village or smaller,13264,0.144280555
+E14000833,Newcastle upon Tyne North,Small Town,1977,0.021505025
+E14000834,Newcastle-under-Lyme,Large Town,77798,0.831175214
+E14000834,Newcastle-under-Lyme,Village or smaller,15232,0.162735043
+E14000834,Newcastle-under-Lyme,Other City,570,0.006089744
+W07000055,Newport East,Large Town,57156,0.713121811
+W07000055,Newport East,Village or smaller,13205,0.164755643
+W07000055,Newport East,Small Town,9788,0.122122547
+W07000056,Newport West,Large Town,74152,0.854985068
+W07000056,Newport West,Small Town,7061,0.081414521
+W07000056,Newport West,Village or smaller,5516,0.06360041
+E14000835,Newton Abbot,Small Town,38504,0.429636242
+E14000835,Newton Abbot,Medium Town,26817,0.299230083
+E14000835,Newton Abbot,Village or smaller,24299,0.271133676
+E14000836,"Normanton, Pontefract and Castleford",Medium Town,71359,0.643180978
+E14000836,"Normanton, Pontefract and Castleford",Small Town,35569,0.320594518
+E14000836,"Normanton, Pontefract and Castleford",Village or smaller,4019,0.036224504
+S14000048,North Ayrshire and Arran,Small Town,56706,0.601106682
+S14000048,North Ayrshire and Arran,Village or smaller,37630,0.398893318
+E14000837,North Cornwall,Village or smaller,67364,0.73661305
+E14000837,North Cornwall,Small Town,24087,0.26338695
+E14000838,North Devon,Village or smaller,44181,0.466955557
+E14000838,North Devon,Medium Town,31795,0.336046081
+E14000838,North Devon,Small Town,18639,0.196998362
+E14000839,North Dorset,Village or smaller,52462,0.532257901
+E14000839,North Dorset,Small Town,46103,0.467742099
+E14000840,North Durham,Village or smaller,33894,0.385150337
+E14000840,North Durham,Small Town,29654,0.336969614
+E14000840,North Durham,Medium Town,24121,0.274096043
+E14000840,North Durham,Large Town,333,0.003784005
+E14000841,North East Bedfordshire,Village or smaller,68040,0.596810694
+E14000841,North East Bedfordshire,Small Town,39742,0.348595688
+E14000841,North East Bedfordshire,Large Town,5338,0.046822097
+E14000841,North East Bedfordshire,Medium Town,886,0.007771521
+E14000842,North East Cambridgeshire,Small Town,54067,0.457586093
+E14000842,North East Cambridgeshire,Village or smaller,33858,0.286550945
+E14000842,North East Cambridgeshire,Medium Town,30232,0.255862962
+E14000843,North East Derbyshire,Small Town,53587,0.58436021
+E14000843,North East Derbyshire,Village or smaller,32051,0.349512552
+E14000843,North East Derbyshire,Large Town,5489,0.059856928
+E14000843,North East Derbyshire,Core City (outside London),575,0.00627031
+S14000049,North East Fife,Village or smaller,51732,0.632281405
+S14000049,North East Fife,Small Town,30086,0.367718595
+E14000844,North East Hampshire,Medium Town,40785,0.410770579
+E14000844,North East Hampshire,Village or smaller,33642,0.338829075
+E14000844,North East Hampshire,Small Town,24346,0.245203396
+E14000844,North East Hampshire,Large Town,516,0.00519695
+E14000845,North East Hertfordshire,Village or smaller,37405,0.374671955
+E14000845,North East Hertfordshire,Medium Town,35215,0.352735541
+E14000845,North East Hertfordshire,Small Town,27214,0.272592504
+E14000846,North East Somerset,Village or smaller,44899,0.481289327
+E14000846,North East Somerset,Small Town,40303,0.432023068
+E14000846,North East Somerset,Large Town,6655,0.071337457
+E14000846,North East Somerset,Core City (outside London),1432,0.015350148
+E14000847,North Herefordshire,Village or smaller,63730,0.717276308
+E14000847,North Herefordshire,Small Town,20353,0.229071469
+E14000847,North Herefordshire,Medium Town,2441,0.02747327
+E14000847,North Herefordshire,Large Town,2326,0.026178953
+E14000848,North Norfolk,Village or smaller,66281,0.76439857
+E14000848,North Norfolk,Small Town,20429,0.23560143
+E14000849,North Shropshire,Village or smaller,66610,0.616496677
+E14000849,North Shropshire,Small Town,41436,0.383503323
+E14000850,North Somerset,Village or smaller,38252,0.376392333
+E14000850,North Somerset,Small Town,37194,0.365981816
+E14000850,North Somerset,Medium Town,26182,0.257625851
+E14000851,North Swindon,Other City,98658,0.886351385
+E14000851,North Swindon,Small Town,7972,0.071621087
+E14000851,North Swindon,Village or smaller,4678,0.042027527
+E14000852,North Thanet,Large Town,45848,0.468238082
+E14000852,North Thanet,Medium Town,40361,0.412200253
+E14000852,North Thanet,Village or smaller,11250,0.114894399
+E14000852,North Thanet,Small Town,457,0.004667266
+E14000853,North Tyneside,Medium Town,82255,0.792689391
+E14000853,North Tyneside,Small Town,7335,0.070687213
+E14000853,North Tyneside,Large Town,7091,0.068335791
+E14000853,North Tyneside,Village or smaller,5358,0.051634913
+E14000853,North Tyneside,Core City (outside London),1728,0.016652693
+E14000854,North Warwickshire,Village or smaller,32599,0.355569856
+E14000854,North Warwickshire,Medium Town,30987,0.337987151
+E14000854,North Warwickshire,Small Town,20828,0.227179023
+E14000854,North Warwickshire,Other City,6940,0.075697255
+E14000854,North Warwickshire,Large Town,327,0.003566715
+E14000855,North West Cambridgeshire,Large Town,62668,0.474811532
+E14000855,North West Cambridgeshire,Village or smaller,51576,0.390771679
+E14000855,North West Cambridgeshire,Small Town,17741,0.13441679
+E14000856,North West Durham,Village or smaller,55973,0.59690526
+E14000856,North West Durham,Medium Town,25570,0.272682677
+E14000856,North West Durham,Small Town,12229,0.130412063
+E14000857,North West Hampshire,Village or smaller,46877,0.442983907
+E14000857,North West Hampshire,Medium Town,45554,0.430481662
+E14000857,North West Hampshire,Small Town,13390,0.126534431
+E14000858,North West Leicestershire,Village or smaller,48451,0.491170269
+E14000858,North West Leicestershire,Medium Town,36776,0.372815377
+E14000858,North West Leicestershire,Small Town,13417,0.136014355
+E14000859,North West Norfolk,Medium Town,48472,0.497036566
+E14000859,North West Norfolk,Village or smaller,40439,0.414665409
+E14000859,North West Norfolk,Small Town,8611,0.088298025
+E14000860,North Wiltshire,Village or smaller,59703,0.643663414
+E14000860,North Wiltshire,Small Town,32779,0.353393348
+E14000860,North Wiltshire,Other City,273,0.002943238
+E14000861,Northampton North,Other City,88943,1
+E14000862,Northampton South,Other City,101295,1
+E14000863,Norwich North,Other City,89321,1
+E14000864,Norwich South,Other City,103534,1
+E14000865,Nottingham East,Core City (outside London),105766,0.977857083
+E14000865,Nottingham East,Medium Town,2395,0.022142917
+E14000866,Nottingham North,Core City (outside London),100402,1
+E14000867,Nottingham South,Core City (outside London),88781,0.760638799
+E14000867,Nottingham South,Small Town,23090,0.197825547
+E14000867,Nottingham South,Medium Town,4848,0.041535654
+E14000868,Nuneaton,Large Town,87814,0.949874524
+E14000868,Nuneaton,Village or smaller,4634,0.050125476
+S14000050,Ochil and South Perthshire,Village or smaller,73532,0.716742046
+S14000050,Ochil and South Perthshire,Small Town,29060,0.283257954
+W07000074,Ogmore,Small Town,40953,0.532839782
+W07000074,Ogmore,Village or smaller,35905,0.467160218
+E14000869,Old Bexley and Sidcup,Core City (London),89239,0.998098625
+E14000869,Old Bexley and Sidcup,Village or smaller,170,0.001901375
+E14000870,Oldham East and Saddleworth,Large Town,52531,0.502126805
+E14000870,Oldham East and Saddleworth,Small Town,47252,0.451666555
+E14000870,Oldham East and Saddleworth,Village or smaller,4834,0.046206639
+E14000871,Oldham West and Royton,Large Town,50863,0.472713247
+E14000871,Oldham West and Royton,Medium Town,36105,0.335554564
+E14000871,Oldham West and Royton,Small Town,20630,0.191732188
+S14000051,Orkney and Shetland,Village or smaller,45050,1
+E14000872,Orpington,Core City (London),87660,0.954995588
+E14000872,Orpington,Village or smaller,4131,0.045004412
+E14000873,Oxford East,Large Town,128847,1
+E14000874,Oxford West and Abingdon,Large Town,39894,0.361601073
+E14000874,Oxford West and Abingdon,Medium Town,37037,0.335705092
+E14000874,Oxford West and Abingdon,Village or smaller,18328,0.166125845
+E14000874,Oxford West and Abingdon,Small Town,15067,0.136567989
+S14000052,Paisley and Renfrewshire North,Small Town,44713,0.490677641
+S14000052,Paisley and Renfrewshire North,Large Town,22860,0.250864198
+S14000052,Paisley and Renfrewshire North,Village or smaller,21550,0.23648834
+S14000052,Paisley and Renfrewshire North,Core City (outside London),2002,0.021969822
+S14000053,Paisley and Renfrewshire South,Large Town,54203,0.639148635
+S14000053,Paisley and Renfrewshire South,Small Town,15911,0.187618655
+S14000053,Paisley and Renfrewshire South,Village or smaller,14691,0.17323271
+E14000875,Pendle,Small Town,39182,0.432529695
+E14000875,Pendle,Medium Town,30494,0.336622952
+E14000875,Pendle,Village or smaller,20912,0.230847353
+E14000876,Penistone and Stocksbridge,Small Town,46203,0.51699135
+E14000876,Penistone and Stocksbridge,Village or smaller,25988,0.290794347
+E14000876,Penistone and Stocksbridge,Core City (outside London),12973,0.145162193
+E14000876,Penistone and Stocksbridge,Large Town,4205,0.04705211
+E14000877,Penrith and The Border,Village or smaller,66392,0.807138689
+E14000877,Penrith and The Border,Small Town,15388,0.187074499
+E14000877,Penrith and The Border,Large Town,476,0.005786812
+S14000054,Perth and North Perthshire,Medium Town,47137,0.474034071
+S14000054,Perth and North Perthshire,Village or smaller,43645,0.438916712
+S14000054,Perth and North Perthshire,Small Town,8656,0.087049217
+E14000878,Peterborough,Large Town,111434,0.909969867
+E14000878,Peterborough,Village or smaller,11025,0.090030133
+E14000879,"Plymouth, Moor View",Other City,94047,1
+E14000880,"Plymouth, Sutton and Devonport",Other City,114972,1
+W07000075,Pontypridd,Small Town,45968,0.562464821
+W07000075,Pontypridd,Medium Town,27787,0.340001958
+W07000075,Pontypridd,Village or smaller,7971,0.097533221
+E14000881,Poole,Large Town,98650,1
+E14000882,Poplar and Limehouse,Core City (London),158609,1
+E14000883,Portsmouth North ,Other City,101271,1
+E14000884,Portsmouth South,Other City,113561,1
+W07000065,Preseli Pembrokeshire,Village or smaller,49495,0.632588635
+W07000065,Preseli Pembrokeshire,Small Town,28747,0.367411365
+E14000885,Preston,Large Town,87922,0.910467236
+E14000885,Preston,Medium Town,8646,0.089532764
+E14000886,Pudsey,Small Town,43195,0.47144276
+E14000886,Pudsey,Medium Town,33863,0.369590605
+E14000886,Pudsey,Other City,6491,0.070844657
+E14000886,Pudsey,Core City (outside London),6023,0.065736769
+E14000886,Pudsey,Village or smaller,1416,0.015454635
+E14000886,Pudsey,Large Town,635,0.006930574
+E14000887,Putney,Core City (London),95695,1
+E14000888,Rayleigh and Wickford,Large Town,697,0.006924024
+E14000888,Rayleigh and Wickford,Medium Town,62702,0.62288405
+E14000888,Rayleigh and Wickford,Other City,843,0.008374394
+E14000888,Rayleigh and Wickford,Small Town,26299,0.261255265
+E14000888,Rayleigh and Wickford,Village or Smaller,10123,0.100562267
+E14000889,Reading East,Other City,93963,0.830942695
+E14000889,Reading East,Medium Town,18674,0.165139724
+E14000889,Reading East,Village or smaller,443,0.00391758
+E14000890,Reading West,Other City,98051,0.93699591
+E14000890,Reading West,Village or smaller,6593,0.06300409
+E14000891,Redcar,Medium Town,37420,0.430753646
+E14000891,Redcar,Other City,37277,0.429107527
+E14000891,Redcar,Small Town,8018,0.092297775
+E14000891,Redcar,Village or smaller,4156,0.047841052
+E14000892,Redditch,Large Town,82799,0.913987041
+E14000892,Redditch,Village or smaller,7792,0.086012959
+E14000893,Reigate,Medium Town,51026,0.483984482
+E14000893,Reigate,Small Town,33062,0.313594931
+E14000893,Reigate,Village or smaller,15301,0.145130846
+E14000893,Reigate,Core City (London),6040,0.05728974
+W07000052,Rhondda,Small Town,51788,0.746128024
+W07000052,Rhondda,Village or smaller,17621,0.253871976
+E14000894,Ribble Valley,Large Town,37325,0.378461414
+E14000894,Ribble Valley,Village or smaller,33633,0.341025927
+E14000894,Ribble Valley,Small Town,23095,0.234174584
+E14000894,Ribble Valley,Medium Town,4570,0.046338075
+E14000895,Richmond (Yorks),Village or smaller,71130,0.649565313
+E14000895,Richmond (Yorks),Small Town,38374,0.350434687
+E14000896,Richmond Park,Core City (London),124819,1
+E14000897,Rochdale,Large Town,81365,0.739621304
+E14000897,Rochdale,Small Town,23080,0.209801016
+E14000897,Rochdale,Village or smaller,5564,0.05057768
+E14000898,Rochester and Strood,Large Town,83623,0.741378087
+E14000898,Rochester and Strood,Village or smaller,29171,0.258621913
+E14000899,Rochford and Southend East,Other City,88285,0.849572255
+E14000899,Rochford and Southend East,Village or smaller,7856,0.075598795
+E14000899,Rochford and Southend East,Small Town,7776,0.07482895
+E14000900,Romford,Core City (London),102954,1
+E14000901,Romsey and Southampton North,Other City,34890,0.386614217
+E14000901,Romsey and Southampton North,Village or smaller,29633,0.328361682
+E14000901,Romsey and Southampton North,Small Town,17107,0.189561749
+E14000901,Romsey and Southampton North,Large Town,8615,0.095462352
+S14000055,"Ross, Skye and Lochaber",Village or smaller,69083,1
+E14000902,Rossendale and Darwen,Small Town,52046,0.533487771
+E14000902,Rossendale and Darwen,Medium Town,27442,0.281289079
+E14000902,Rossendale and Darwen,Village or smaller,12481,0.127934152
+E14000902,Rossendale and Darwen,Large Town,5589,0.057288997
+E14000903,Rother Valley,Small Town,52125,0.542172434
+E14000903,Rother Valley,Village or smaller,24989,0.259920325
+E14000903,Rother Valley,Large Town,17752,0.184645469
+E14000903,Rother Valley,Core City (outside London),1275,0.013261772
+E14000904,Rotherham,Large Town,73034,0.81042633
+E14000904,Rotherham,Core City (outside London),9944,0.110344215
+E14000904,Rotherham,Village or smaller,7140,0.079229455
+E14000905,Rugby,Large Town,73041,0.727840722
+E14000905,Rugby,Village or smaller,27312,0.272159278
+E14000906,"Ruislip, Northwood and Pinner",Core City (London),90555,0.923163969
+E14000906,"Ruislip, Northwood and Pinner",Village or smaller,7537,0.076836031
+E14000907,Runnymede and Weybridge,Medium Town,52456,0.482611416
+E14000907,Runnymede and Weybridge,Small Town,39358,0.362105767
+E14000907,Runnymede and Weybridge,Large Town,10269,0.094477974
+E14000907,Runnymede and Weybridge,Village or smaller,6609,0.060804843
+E14000908,Rushcliffe,Village or smaller,47935,0.489347367
+E14000908,Rushcliffe,Medium Town,42421,0.433057362
+E14000908,Rushcliffe,Small Town,7601,0.077595271
+S14000056,Rutherglen and Hamilton West,Medium Town,87650,0.832170289
+S14000056,Rutherglen and Hamilton West,Small Town,17097,0.162323051
+S14000056,Rutherglen and Hamilton West,Village or smaller,580,0.00550666
+E14000909,Rutland and Melton,Village or smaller,59132,0.572912327
+E14000909,Rutland and Melton,Medium Town,27439,0.265848294
+E14000909,Rutland and Melton,Small Town,10975,0.106333505
+E14000909,Rutland and Melton,Other City,5667,0.054905874
+E14000910,Saffron Walden,Village or smaller,71980,0.655549585
+E14000910,Saffron Walden,Small Town,32597,0.296873435
+E14000910,Saffron Walden,Large Town,5224,0.04757698
+E14000911,Salford and Eccles,Large Town,82704,0.71289177
+E14000911,Salford and Eccles,Medium Town,33308,0.28710823
+E14000912,Salisbury,Medium Town,45477,0.481579533
+E14000912,Salisbury,Village or smaller,38304,0.405620916
+E14000912,Salisbury,Small Town,10652,0.112799551
+E14000913,Scarborough and Whitby,Large Town,61164,0.635351311
+E14000913,Scarborough and Whitby,Village or smaller,22165,0.230242656
+E14000913,Scarborough and Whitby,Small Town,12939,0.134406033
+E14000914,Scunthorpe,Large Town,78656,0.860663092
+E14000914,Scunthorpe,Village or smaller,12734,0.139336908
+E14000915,Sedgefield,Village or smaller,47658,0.56495608
+E14000915,Sedgefield,Medium Town,25917,0.307229987
+E14000915,Sedgefield,Small Town,9552,0.113233045
+E14000915,Sedgefield,Large Town,1230,0.014580888
+E14000916,Sefton Central,Medium Town,50411,0.602116503
+E14000916,Sefton Central,Small Town,23106,0.27598151
+E14000916,Sefton Central,Core City (outside London),6313,0.075403414
+E14000916,Sefton Central,Village or smaller,3893,0.046498573
+E14000917,Selby and Ainsty,Village or smaller,80682,0.807328617
+E14000917,Selby and Ainsty,Small Town,19255,0.192671383
+E14000918,Sevenoaks,Village or smaller,42655,0.441047222
+E14000918,Sevenoaks,Medium Town,31221,0.322821131
+E14000918,Sevenoaks,Small Town,22837,0.236131647
+E14000919,Sheffield Central,Core City (outside London),129691,1
+E14000920,Sheffield South East,Core City (outside London),94983,0.995618495
+E14000920,Sheffield South East,Village or smaller,418,0.004381505
+E14000921,"Sheffield, Brightside and Hillsborough",Core City (outside London),111496,1
+E14000922,"Sheffield, Hallam",Core City (outside London),86790,0.967623252
+E14000922,"Sheffield, Hallam",Village or smaller,2904,0.032376748
+E14000923,"Sheffield, Heeley",Core City (outside London),94036,0.996344603
+E14000923,"Sheffield, Heeley",Village or smaller,345,0.003655397
+E14000924,Sherwood,Village or smaller,39325,0.398874125
+E14000924,Sherwood,Medium Town,35282,0.357865909
+E14000924,Sherwood,Small Town,17152,0.17397302
+E14000924,Sherwood,Large Town,4767,0.04835176
+E14000924,Sherwood,Core City (outside London),2064,0.020935186
+E14000925,Shipley,Small Town,38743,0.403880034
+E14000925,Shipley,Village or smaller,26811,0.279493782
+E14000925,Shipley,Medium Town,26537,0.276637443
+E14000925,Shipley,Other City,3836,0.039988741
+E14000926,Shrewsbury and Atcham,Large Town,73276,0.700488495
+E14000926,Shrewsbury and Atcham,Village or smaller,31331,0.299511505
+E14000927,Sittingbourne and Sheppey,Medium Town,52435,0.449923633
+E14000927,Sittingbourne and Sheppey,Small Town,34432,0.295447135
+E14000927,Sittingbourne and Sheppey,Village or smaller,29223,0.250750802
+E14000927,Sittingbourne and Sheppey,Large Town,452,0.00387843
+E14000928,Skipton and Ripon,Village or smaller,59819,0.605400318
+E14000928,Skipton and Ripon,Small Town,38990,0.394599682
+E14000929,Sleaford and North Hykeham,Village or smaller,78876,0.677250676
+E14000929,Sleaford and North Hykeham,Small Town,34296,0.294474735
+E14000929,Sleaford and North Hykeham,Large Town,2437,0.020924741
+E14000929,Sleaford and North Hykeham,Medium Town,856,0.007349848
+E14000930,Slough,Large Town,140512,1
+E14000931,Solihull,Large Town,100634,0.992435972
+E14000931,Solihull,Core City (outside London),767,0.007564028
+E14000932,Somerton and Frome,Village or smaller,78759,0.742953362
+E14000932,Somerton and Frome,Medium Town,27249,0.257046638
+E14000933,South Basildon and East Thurrock,Large Town,55240,0.557281788
+E14000933,South Basildon and East Thurrock,Medium Town,28566,0.288184496
+E14000933,South Basildon and East Thurrock,Village or smaller,14975,0.151073403
+E14000933,South Basildon and East Thurrock,Small Town,343,0.003460312
+E14000934,South Cambridgeshire,Village or smaller,80050,0.691785853
+E14000934,South Cambridgeshire,Large Town,18105,0.156461997
+E14000934,South Cambridgeshire,Small Town,17560,0.15175215
+E14000935,South Derbyshire,Medium Town,47342,0.471844041
+E14000935,South Derbyshire,Village or smaller,37115,0.369914486
+E14000935,South Derbyshire,Small Town,8210,0.081826699
+E14000935,South Derbyshire,Other City,6738,0.0671557
+E14000935,South Derbyshire,Large Town,929,0.009259075
+E14000936,South Dorset,Medium Town,52393,0.563984155
+E14000936,South Dorset,Village or smaller,29905,0.321912205
+E14000936,South Dorset,Small Town,10600,0.114103641
+E14000937,South East Cambridgeshire,Village or smaller,63825,0.53255845
+E14000937,South East Cambridgeshire,Small Town,40556,0.338400948
+E14000937,South East Cambridgeshire,Large Town,15465,0.129040602
+E14000938,South East Cornwall,Village or smaller,56447,0.631617227
+E14000938,South East Cornwall,Small Town,32922,0.368382773
+E14000939,South Holland and The Deepings,Village or smaller,49797,0.468034513
+E14000939,South Holland and The Deepings,Medium Town,34613,0.325322381
+E14000939,South Holland and The Deepings,Small Town,21986,0.206643107
+E14000940,South Leicestershire,Small Town,45828,0.440179806
+E14000940,South Leicestershire,Village or smaller,34880,0.335023821
+E14000940,South Leicestershire,Other City,23404,0.224796373
+E14000941,South Norfolk,Village or smaller,91769,0.869395102
+E14000941,South Norfolk,Small Town,10670,0.101084743
+E14000941,South Norfolk,Other City,3116,0.029520155
+E14000942,South Northamptonshire,Village or smaller,58691,0.506371597
+E14000942,South Northamptonshire,Other City,33886,0.292360123
+E14000942,South Northamptonshire,Small Town,23328,0.20126828
+E14000943,South Ribble,Medium Town,30623,0.30808467
+E14000943,South Ribble,Village or smaller,28277,0.284482585
+E14000943,South Ribble,Large Town,22916,0.230547898
+E14000943,South Ribble,Small Town,17582,0.176884847
+E14000944,South Shields,Large Town,74366,0.893779145
+E14000944,South Shields,Village or smaller,5257,0.063182059
+E14000944,South Shields,Medium Town,3581,0.043038796
+E14000945,South Staffordshire,Small Town,43897,0.454175806
+E14000945,South Staffordshire,Village or smaller,30155,0.311995613
+E14000945,South Staffordshire,Other City,12911,0.133582337
+E14000945,South Staffordshire,Large Town,5974,0.061809378
+E14000945,South Staffordshire,Medium Town,3715,0.038436866
+E14000946,South Suffolk,Village or smaller,57140,0.610522267
+E14000946,South Suffolk,Small Town,31607,0.337710488
+E14000946,South Suffolk,Large Town,4845,0.051767245
+E14000947,South Swindon,Other City,90622,0.850136495
+E14000947,South Swindon,Village or smaller,15975,0.149863505
+E14000948,South Thanet,Medium Town,42402,0.419742821
+E14000948,South Thanet,Small Town,23871,0.236302082
+E14000948,South Thanet,Large Town,18669,0.184806819
+E14000948,South Thanet,Village or smaller,16077,0.159148279
+E14000949,South West Bedfordshire,Medium Town,74525,0.670345584
+E14000949,South West Bedfordshire,Small Town,17829,0.16037023
+E14000949,South West Bedfordshire,Village or smaller,11899,0.107030421
+E14000949,South West Bedfordshire,Other City,6921,0.062253764
+E14000950,South West Devon,Other City,33333,0.370803391
+E14000950,South West Devon,Medium Town,25566,0.284401629
+E14000950,South West Devon,Village or smaller,19264,0.214296838
+E14000950,South West Devon,Small Town,11731,0.130498142
+E14000951,South West Hertfordshire,Small Town,47153,0.427815783
+E14000951,South West Hertfordshire,Medium Town,25325,0.229771907
+E14000951,South West Hertfordshire,Village or smaller,22532,0.204431218
+E14000951,South West Hertfordshire,Large Town,15208,0.137981092
+E14000952,South West Norfolk,Village or smaller,58178,0.535699158
+E14000952,South West Norfolk,Medium Town,30728,0.282941382
+E14000952,South West Norfolk,Small Town,19696,0.181359459
+E14000953,South West Surrey,Medium Town,37297,0.355182462
+E14000953,South West Surrey,Village or smaller,34203,0.325718041
+E14000953,South West Surrey,Small Town,33508,0.319099497
+E14000954,South West Wiltshire,Medium Town,35488,0.349019955
+E14000954,South West Wiltshire,Small Town,35053,0.344741785
+E14000954,South West Wiltshire,Village or smaller,31138,0.30623826
+E14000955,"Southampton, Itchen",Other City,111449,1
+E14000956,"Southampton, Test",Other City,113647,1
+E14000957,Southend West,Other City,91514,1
+E14000958,Southport,Large Town,91786,1
+E14000959,Spelthorne,Medium Town,52623,0.532072152
+E14000959,Spelthorne,Large Town,32321,0.326798245
+E14000959,Spelthorne,Core City (London),12452,0.125902408
+E14000959,Spelthorne,Village or smaller,1506,0.015227195
+E14000960,St Albans,Large Town,89079,0.867996414
+E14000960,St Albans,Village or smaller,13547,0.132003586
+E14000961,St Austell and Newquay,Village or smaller,47342,0.452431694
+E14000961,St Austell and Newquay,Small Town,31769,0.30360573
+E14000961,St Austell and Newquay,Medium Town,25528,0.243962576
+E14000962,St Helens North,Small Town,39685,0.405288098
+E14000962,St Helens North,Large Town,39524,0.403643865
+E14000962,St Helens North,Village or smaller,13944,0.142404869
+E14000962,St Helens North,Medium Town,4765,0.048663167
+E14000963,St Helens South and Whiston,Large Town,66036,0.643042856
+E14000963,St Helens South and Whiston,Medium Town,34533,0.336274137
+E14000963,St Helens South and Whiston,Village or smaller,2124,0.020683007
+E14000964,St Ives,Village or smaller,48842,0.56376753
+E14000964,St Ives,Small Town,37793,0.43623247
+E14000965,Stafford,Large Town,70592,0.722383111
+E14000965,Stafford,Village or smaller,19399,0.198514137
+E14000965,Stafford,Small Town,7730,0.079102752
+E14000966,Staffordshire Moorlands,Small Town,37987,0.484725909
+E14000966,Staffordshire Moorlands,Village or smaller,25155,0.320985606
+E14000966,Staffordshire Moorlands,Other City,11855,0.151273479
+E14000966,Staffordshire Moorlands,Medium Town,3371,0.043015006
+E14000967,Stalybridge and Hyde,Medium Town,67715,0.725473811
+E14000967,Stalybridge and Hyde,Small Town,19153,0.205198256
+E14000967,Stalybridge and Hyde,Village or smaller,6471,0.069327934
+E14000968,Stevenage,Large Town,87081,0.893633397
+E14000968,Stevenage,Village or smaller,6864,0.070439012
+E14000968,Stevenage,Small Town,3182,0.032653983
+E14000968,Stevenage,Medium Town,319,0.003273608
+S14000057,Stirling,Village or smaller,47100,0.5024
+S14000057,Stirling,Medium Town,37471,0.399690667
+S14000057,Stirling,Small Town,9179,0.097909333
+E14000969,Stockport,Large Town,81035,0.915670411
+E14000969,Stockport,Medium Town,7463,0.084329589
+E14000970,Stockton North,Large Town,50046,0.53898097
+E14000970,Stockton North,Medium Town,34948,0.376379869
+E14000970,Stockton North,Village or smaller,7859,0.084639161
+E14000971,Stockton South,Small Town,41355,0.40217645
+E14000971,Stockton South,Large Town,33879,0.329472517
+E14000971,Stockton South,Medium Town,25855,0.251439297
+E14000971,Stockton South,Village or smaller,1739,0.016911736
+E14000972,Stoke-on-Trent Central,Other City,84996,1
+E14000973,Stoke-on-Trent North,Other City,77420,0.785136958
+E14000973,Stoke-on-Trent North,Medium Town,19914,0.201953208
+E14000973,Stoke-on-Trent North,Village or smaller,1273,0.012909834
+E14000974,Stoke-on-Trent South,Other City,90002,1
+E14000975,Stone,Village or smaller,46829,0.549952437
+E14000975,Stone,Small Town,27904,0.327700203
+E14000975,Stone,Other City,9967,0.117050886
+E14000975,Stone,Large Town,451,0.005296473
+E14000976,Stourbridge,Large Town,63439,0.706715237
+E14000976,Stourbridge,Medium Town,26327,0.293284763
+E14000977,Stratford-on-Avon,Village or smaller,61340,0.680481906
+E14000977,Stratford-on-Avon,Medium Town,28802,0.319518094
+E14000978,Streatham,Core City (London),125987,1
+E14000979,Stretford and Urmston,Medium Town,70092,0.692211973
+E14000979,Stretford and Urmston,Core City (outside London),20004,0.197554761
+E14000979,Stretford and Urmston,Small Town,8062,0.079618401
+E14000979,Stretford and Urmston,Large Town,2627,0.025943629
+E14000979,Stretford and Urmston,Village or smaller,473,0.004671236
+E14000980,Stroud,Village or smaller,41394,0.397571962
+E14000980,Stroud,Medium Town,33666,0.323347772
+E14000980,Stroud,Small Town,22659,0.217630166
+E14000980,Stroud,Large Town,6398,0.061450099
+E14000981,Suffolk Coastal,Village or smaller,59460,0.5941247
+E14000981,Suffolk Coastal,Small Town,38522,0.38491207
+E14000981,Suffolk Coastal,Large Town,2098,0.020963229
+E14000982,Sunderland Central,Other City,102016,1
+E14000983,Surrey Heath,Medium Town,48756,0.44716327
+E14000983,Surrey Heath,Small Town,23757,0.217886164
+E14000983,Surrey Heath,Village or smaller,20517,0.188170662
+E14000983,Surrey Heath,Large Town,16004,0.146779904
+E14000984,Sutton and Cheam,Core City (London),100821,1
+E14000985,Sutton Coldfield,Large Town,90935,0.963233269
+E14000985,Sutton Coldfield,Core City (outside London),2943,0.031173866
+E14000985,Sutton Coldfield,Village or smaller,528,0.005592865
+W07000048,Swansea East,Other City,80716,0.977581843
+W07000048,Swansea East,Village or smaller,1851,0.022418157
+W07000047,Swansea West,Other City,80049,0.96152645
+W07000047,Swansea West,Small Town,3203,0.03847355
+E14000986,Tamworth,Large Town,76515,0.798695198
+E14000986,Tamworth,Village or smaller,11528,0.120334029
+E14000986,Tamworth,Small Town,7757,0.080970772
+E14000987,Tatton,Medium Town,48047,0.559668721
+E14000987,Tatton,Village or smaller,24477,0.285116891
+E14000987,Tatton,Small Town,13325,0.155214388
+E14000988,Taunton Deane,Large Town,61941,0.536216076
+E14000988,Taunton Deane,Village or smaller,41557,0.359754144
+E14000988,Taunton Deane,Small Town,12017,0.10402978
+E14000989,Telford,Large Town,92141,0.974150509
+E14000989,Telford,Village or smaller,2445,0.025849491
+E14000990,Tewkesbury,Small Town,49242,0.470737816
+E14000990,Tewkesbury,Large Town,32079,0.30666501
+E14000990,Tewkesbury,Village or smaller,23285,0.222597174
+E14000991,The Cotswolds,Village or smaller,81396,0.822015754
+E14000991,The Cotswolds,Small Town,17287,0.174580893
+E14000991,The Cotswolds,Medium Town,337,0.003403353
+E14000992,The Wrekin,Large Town,54964,0.587705698
+E14000992,The Wrekin,Village or smaller,25690,0.274691787
+E14000992,The Wrekin,Small Town,12869,0.137602515
+E14000993,Thirsk and Malton,Village or smaller,81496,0.816535914
+E14000993,Thirsk and Malton,Small Town,18311,0.183464086
+E14000994,Thornbury and Yate,Village or smaller,34270,0.398831553
+E14000994,Thornbury and Yate,Medium Town,30849,0.359018225
+E14000994,Thornbury and Yate,Small Town,20807,0.242150222
+E14000995,Thurrock,Large Town,72514,0.577423516
+E14000995,Thurrock,Small Town,53068,0.422576484
+E14000996,Tiverton and Honiton,Village or smaller,52678,0.522900081
+E14000996,Tiverton and Honiton,Small Town,48064,0.477099919
+E14000997,Tonbridge and Malling,Medium Town,48360,0.464116394
+E14000997,Tonbridge and Malling,Village or smaller,38369,0.368231636
+E14000997,Tonbridge and Malling,Small Town,17469,0.16765197
+E14000998,Tooting,Core City (London),107708,1
+E14000999,Torbay,Medium Town,50279,0.507228247
+E14000999,Torbay,Large Town,48846,0.492771753
+W07000053,Torfaen,Medium Town,67533,0.821879298
+W07000053,Torfaen,Small Town,7735,0.094135258
+W07000053,Torfaen,Village or smaller,6901,0.083985445
+E14001000,Torridge and West Devon,Village or smaller,57790,0.574578934
+E14001000,Torridge and West Devon,Small Town,42788,0.425421066
+E14001001,Totnes,Village or smaller,42119,0.4993361
+E14001001,Totnes,Small Town,24949,0.29577949
+E14001001,Totnes,Large Town,17282,0.20488441
+E14001002,Tottenham,Core City (London),145599,1
+E14001003,Truro and Falmouth,Small Town,52280,0.556827743
+E14001003,Truro and Falmouth,Village or smaller,41609,0.443172257
+E14001004,Tunbridge Wells,Medium Town,59947,0.559671742
+E14001004,Tunbridge Wells,Village or smaller,28032,0.261709815
+E14001004,Tunbridge Wells,Small Town,19132,0.178618443
+E14001005,Twickenham,Core City (London),117771,0.995637729
+E14001005,Twickenham,Medium Town,516,0.004362271
+E14001006,Tynemouth,Large Town,61111,0.613934097
+E14001006,Tynemouth,Medium Town,36907,0.370775568
+E14001006,Tynemouth,Village or smaller,1522,0.015290336
+E14001007,Uxbridge and South Ruislip,Core City (London),110327,1
+W07000060,Vale of Clwyd,Medium Town,25621,0.357530595
+W07000060,Vale of Clwyd,Small Town,25427,0.354823405
+W07000060,Vale of Clwyd,Village or smaller,20613,0.287646
+W07000078,Vale of Glamorgan,Medium Town,52749,0.531454652
+W07000078,Vale of Glamorgan,Village or smaller,30113,0.303393314
+W07000078,Vale of Glamorgan,Small Town,16091,0.162119411
+W07000078,Vale of Glamorgan,Core City (outside London),301,0.003032623
+E14001008,Vauxhall,Core City (London),122718,1
+E14001009,Wakefield,Large Town,57552,0.588039358
+E14001009,Wakefield,Small Town,32092,0.327901013
+E14001009,Wakefield,Village or smaller,8227,0.08405963
+E14001010,Wallasey,Large Town,89036,0.99224357
+E14001010,Wallasey,Village or smaller,696,0.00775643
+E14001011,Walsall North,Medium Town,91172,0.929359238
+E14001011,Walsall North,Large Town,6930,0.070640762
+E14001012,Walsall South,Large Town,63620,0.617190532
+E14001012,Walsall South,Small Town,18160,0.176173846
+E14001012,Walsall South,Medium Town,11411,0.110700427
+E14001012,Walsall South,Core City (outside London),9619,0.093315871
+E14001012,Walsall South,Village or smaller,270,0.002619325
+E14001013,Walthamstow,Core City (London),118385,1
+E14001014,Wansbeck,Small Town,39633,0.487808781
+E14001014,Wansbeck,Medium Town,27431,0.337624774
+E14001014,Wansbeck,Village or smaller,14183,0.174566446
+E14001015,Wantage,Village or smaller,48717,0.42276585
+E14001015,Wantage,Small Town,34951,0.30330458
+E14001015,Wantage,Medium Town,31566,0.273929569
+E14001016,Warley,Medium Town,73472,0.757826118
+E14001016,Warley,Core City (outside London),22725,0.234396757
+E14001016,Warley,Village or smaller,754,0.007777125
+E14001017,Warrington North,Large Town,76454,0.79019772
+E14001017,Warrington North,Village or smaller,20299,0.20980228
+E14001018,Warrington South,Large Town,94604,0.844256443
+E14001018,Warrington South,Small Town,11992,0.10701792
+E14001018,Warrington South,Village or smaller,5460,0.048725637
+E14001019,Warwick and Leamington,Medium Town,84467,0.841472405
+E14001019,Warwick and Leamington,Small Town,8116,0.08085276
+E14001019,Warwick and Leamington,Village or smaller,7797,0.077674836
+E14001020,Washington and Sunderland West,Large Town,52788,0.597764667
+E14001020,Washington and Sunderland West,Other City,33288,0.376949122
+E14001020,Washington and Sunderland West,Village or smaller,2233,0.025286211
+E14001021,Watford,Large Town,122151,1
+E14001022,Waveney,Large Town,72130,0.696544798
+E14001022,Waveney,Village or smaller,17246,0.166541128
+E14001022,Waveney,Small Town,14178,0.136914074
+E14001023,Wealden,Small Town,59763,0.553212563
+E14001023,Wealden,Village or smaller,48266,0.446787437
+E14001024,Weaver Vale,Medium Town,30331,0.34227067
+E14001024,Weaver Vale,Large Town,28250,0.318787592
+E14001024,Weaver Vale,Village or smaller,20813,0.234864642
+E14001024,Weaver Vale,Small Town,9223,0.104077096
+E14001025,Wellingborough,Medium Town,82452,0.740316411
+E14001025,Wellingborough,Village or smaller,20308,0.182340582
+E14001025,Wellingborough,Small Town,8614,0.077343006
+E14001026,Wells,Small Town,67686,0.635108
+E14001026,Wells,Village or smaller,38888,0.364892
+E14001027,Welwyn Hatfield,Medium Town,94821,0.813027858
+E14001027,Welwyn Hatfield,Village or smaller,15830,0.135731863
+E14001027,Welwyn Hatfield,Small Town,5976,0.051240279
+E14001028,Wentworth and Dearne,Medium Town,35760,0.363001462
+E14001028,Wentworth and Dearne,Small Town,27542,0.279580153
+E14001028,Wentworth and Dearne,Large Town,19414,0.197072438
+E14001028,Wentworth and Dearne,Village or smaller,15796,0.160345948
+S14000058,West Aberdeenshire and Kincardine,Village or smaller,58727,0.604174811
+S14000058,West Aberdeenshire and Kincardine,Small Town,38475,0.395825189
+E14001029,West Bromwich East,Large Town,65207,0.708240559
+E14001029,West Bromwich East,Small Town,26573,0.288620491
+E14001029,West Bromwich East,Core City (outside London),289,0.00313895
+E14001030,West Bromwich West,Medium Town,68929,0.72527831
+E14001030,West Bromwich West,Small Town,14676,0.154422442
+E14001030,West Bromwich West,Large Town,11433,0.120299249
+E14001031,West Dorset,Village or smaller,51307,0.526641553
+E14001031,West Dorset,Small Town,43500,0.446506472
+E14001031,West Dorset,Medium Town,2616,0.026851975
+S14000059,West Dunbartonshire,Village or smaller,35434,0.394324505
+S14000059,West Dunbartonshire,Small Town,29374,0.326886268
+S14000059,West Dunbartonshire,Medium Town,25052,0.278789228
+E14001032,West Ham,Core City (London),180321,1
+E14001033,West Lancashire,Medium Town,61073,0.628109798
+E14001033,West Lancashire,Village or smaller,18985,0.195252641
+E14001033,West Lancashire,Small Town,9338,0.096037354
+E14001033,West Lancashire,Large Town,7837,0.080600208
+E14001034,West Suffolk,Village or smaller,48524,0.406255756
+E14001034,West Suffolk,Small Town,43420,0.363523719
+E14001034,West Suffolk,Medium Town,27498,0.230220525
+E14001035,West Worcestershire,Village or smaller,49890,0.531474044
+E14001035,West Worcestershire,Medium Town,35453,0.377677877
+E14001035,West Worcestershire,Small Town,7315,0.07792609
+E14001035,West Worcestershire,Large Town,1213,0.012921989
+E14001036,Westminster North,Core City (London),131142,1
+E14001037,Westmorland and Lonsdale,Village or smaller,54728,0.653898082
+E14001037,Westmorland and Lonsdale,Medium Town,28967,0.346101918
+E14001038,Weston-Super-Mare,Large Town,87584,0.795834734
+E14001038,Weston-Super-Mare,Village or smaller,22469,0.204165266
+E14001039,Wigan,Large Town,63764,0.617419511
+E14001039,Wigan,Small Town,23472,0.227276688
+E14001039,Wigan,Village or smaller,16039,0.155303801
+E14001040,Wimbledon,Core City (London),97816,1
+E14001041,Winchester,Medium Town,47534,0.471483267
+E14001041,Winchester,Village or smaller,31437,0.311819318
+E14001041,Winchester,Large Town,21847,0.216697415
+E14001042,Windsor,Medium Town,32622,0.311118317
+E14001042,Windsor,Small Town,30416,0.290079539
+E14001042,Windsor,Large Town,22325,0.212915101
+E14001042,Windsor,Village or smaller,19491,0.185887043
+E14001043,Wirral South,Medium Town,70656,0.970202949
+E14001043,Wirral South,Village or smaller,1828,0.025100925
+E14001043,Wirral South,Large Town,342,0.004696125
+E14001044,Wirral West,Large Town,25896,0.374717833
+E14001044,Wirral West,Small Town,25705,0.371954043
+E14001044,Wirral West,Medium Town,16309,0.235992939
+E14001044,Wirral West,Village or smaller,1198,0.017335186
+E14001045,Witham,Village or smaller,44382,0.488218599
+E14001045,Witham,Medium Town,26434,0.290783887
+E14001045,Witham,Large Town,10355,0.113908873
+E14001045,Witham,Small Town,9735,0.107088641
+E14001046,Witney,Village or smaller,62062,0.57108416
+E14001046,Witney,Medium Town,30112,0.277085595
+E14001046,Witney,Small Town,16500,0.151830245
+E14001047,Woking,Large Town,88068,0.825209423
+E14001047,Woking,Village or smaller,10906,0.102190739
+E14001047,Woking,Medium Town,7748,0.072599839
+E14001048,Wokingham,Medium Town,44984,0.418689501
+E14001048,Wokingham,Other City,35873,0.333888682
+E14001048,Wokingham,Village or smaller,26583,0.247421817
+E14001049,Wolverhampton North East,Other City,63702,0.716010251
+E14001049,Wolverhampton North East,Medium Town,25266,0.283989749
+E14001050,Wolverhampton South East,Other City,51651,0.556104651
+E14001050,Wolverhampton South East,Medium Town,28889,0.311035745
+E14001050,Wolverhampton South East,Small Town,12340,0.132859604
+E14001051,Wolverhampton South West,Other City,87407,1
+E14001052,Worcester,Large Town,102220,0.998846958
+E14001052,Worcester,Village or smaller,118,0.001153042
+E14001053,Workington,Small Town,41003,0.518959625
+E14001053,Workington,Village or smaller,38007,0.481040375
+E14001054,Worsley and Eccles South,Small Town,44699,0.436731184
+E14001054,Worsley and Eccles South,Medium Town,32903,0.321478471
+E14001054,Worsley and Eccles South,Other City,24320,0.237618345
+E14001054,Worsley and Eccles South,Village or smaller,427,0.004172
+E14001055,Worthing West,Large Town,77312,0.79061634
+E14001055,Worthing West,Medium Town,20475,0.20938366
+W07000044,Wrexham,Large Town,53117,0.746088153
+W07000044,Wrexham,Village or smaller,18077,0.253911847
+E14001056,Wycombe,Large Town,99823,0.887931188
+E14001056,Wycombe,Village or smaller,12260,0.109053388
+E14001056,Wycombe,Small Town,339,0.003015424
+E14001057,Wyre and Preston North,Village or smaller,31436,0.35020721
+E14001057,Wyre and Preston North,Small Town,27915,0.310982131
+E14001057,Wyre and Preston North,Medium Town,24746,0.275678446
+E14001057,Wyre and Preston North,Large Town,5667,0.063132213
+E14001058,Wyre Forest,Medium Town,56697,0.567526176
+E14001058,Wyre Forest,Small Town,28631,0.286590859
+E14001058,Wyre Forest,Village or smaller,14574,0.145882965
+E14001059,Wythenshawe and Sale East,Large Town,108031,0.999435666
+E14001059,Wythenshawe and Sale East,Village or smaller,61,0.000564334
+E14001060,Yeovil,Medium Town,47620,0.433725283
+E14001060,Yeovil,Village or smaller,40515,0.369012596
+E14001060,Yeovil,Small Town,21658,0.197262121
+W07000041,Ynys Mon,Village or smaller,58104,0.833354847
+W07000041,Ynys Mon,Small Town,11619,0.166645153
+E14001061,York Central,Large Town,111775,1
+E14001062,York Outer,Large Town,50100,0.518676495
+E14001062,York Outer,Village or smaller,34504,0.357213848
+E14001062,York Outer,Small Town,11988,0.124109657

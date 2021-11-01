@@ -134,6 +134,10 @@ def intersection(lst1, lst2):
 def amalgamate_waves(df, pattern, forward_fill=True, specify_wave_order = None, low_priority_values = [], match=True):
     # euref_imm = amalgamate_waves(BES_reduced_with_na,"euRefVoteW",forward_fill=False)
     # assumes simple wave structure, give a pattern that works!
+    
+    ## BUG - we need to check that categories are the same for all columns!!!
+    
+    
     if match:
         df_cols_dict = {int(re.search("W(\d+)", x).groups()[0]):x for x in df.columns if re.match(pattern, x)}
     else:
@@ -163,7 +167,9 @@ def amalgamate_waves(df, pattern, forward_fill=True, specify_wave_order = None, 
         low_priority_series = df[df_cols]\
                 .replace(high_priority_values,[np.nan]*len(high_priority_values))\
                 .fillna(method=method,axis=1)[df_cols[pick_col]]
-        low_priority_mask = low_priority_series.apply(lambda x: x in low_priority_values) & latest_series.isnull()
+        low_priority_series = low_priority_series.cat.set_categories(latest_series.cat.categories)
+        # apply doesn't trigger on NaN values!
+        low_priority_mask = low_priority_series.apply(lambda x: x in low_priority_values).astype('bool').fillna(False) & latest_series.isnull()
         latest_series.loc[low_priority_mask] = low_priority_series.loc[low_priority_mask]
     # if it's a category, retain category type/options/order
     if df[df_cols[0]].dtype.name == "category":
@@ -223,7 +229,7 @@ def get_manifest(dataset_name, BES_file_manifest):
     return (manifest, dataset_filename, dataset_description, dataset_citation, dataset_start, dataset_stop, dataset_wave)
 
 
-def get_small_files(data_subfolder, encoding):
+def get_small_files(data_subfolder, encoding ):
     try:
         var_type    = pd.read_msgpack( data_subfolder + "var_type.msgpack")
     except:
@@ -251,20 +257,25 @@ def hdf_shrink_to_msgpack(hdf_file):
 
 
 def setup_directories():
-    if os.getcwd().split(os.sep)[-1] != 'BES_analysis_code':
-        raise Exception("Stop! You're in the wrong directory - should be in 'BES_analysis_code'")
+   # if os.getcwd().split(os.sep)[-1] != 'BES_analysis_code':
+   #     raise Exception("Stop! You're in the wrong directory - should be in 'BES_analysis_code'")
+    if 'BES_analysis_code' not in os.getcwd().split(os.sep):
+        raise Exception("Stop! You're in the wrong directory - should be in 'BES_analysis_code' *or a child directory*")   
 
-    BES_code_folder   = "../BES_analysis_code/" # we should be here!
+    depth = len(os.getcwd().split(os.sep)) - os.getcwd().split(os.sep).index('BES_analysis_code')
+    base = "".join(([os.pardir+os.sep]*depth))
+
+    BES_code_folder   = base+"BES_analysis_code"+os.sep # we should be here!
     BES_small_data_files = BES_code_folder + "small data files" + os.sep
     if not os.path.exists( BES_small_data_files ):
         os.makedirs( BES_small_data_files )
 
     # we should create these if they don't already exist
-    BES_data_folder   = "../BES_analysis_data/"
+    BES_data_folder   = base+"BES_analysis_data"+os.sep
     if not os.path.exists( BES_data_folder ):
         os.makedirs( BES_data_folder )
 
-    BES_output_folder = "../BES_analysis_output/"
+    BES_output_folder = base+"BES_analysis_output"+os.sep
     if not os.path.exists( BES_output_folder ):
         os.makedirs( BES_output_folder )
         
@@ -797,42 +808,52 @@ from sklearn.pipeline import Pipeline
 from sklearn.model_selection import cross_val_score, GridSearchCV, train_test_split
 from sklearn.linear_model import ElasticNet
 from xgboost import XGBClassifier, XGBRegressor
-from sklearn.metrics import accuracy_score, mean_squared_error, mean_absolute_error, explained_variance_score, r2_score
+from sklearn.metrics import mean_squared_error, mean_absolute_error, explained_variance_score, r2_score
+from sklearn.metrics import accuracy_score, log_loss,f1_score,roc_auc_score
 import pickle
 
 def shap_outputs(shap_values, train, target_var, output_subfolder,
                  dependence_plots = False, threshold = .1, min_features = 30,
-                 title=None,save_shap_values=False):
+                 title=None,save_shap_values=False,skip_bar_plot=False, multiclass=False,class_names=None,
+                 plot_type='dot' ):
 
 
     #################################
 #     threshold = .1
 #     min_features = 30
-    global_shap_vals = np.abs(shap_values).mean(0)#[::-1]
-    n_top_features = max( sum(global_shap_vals[np.argsort(global_shap_vals)]>=threshold),
-                          min_features )
-    n_top_features = min(n_top_features,global_shap_vals.shape[0])# can't display more features than present!
-    
-#     if n_top_features <min_features:
-#         n_top_features = min_features
+    if not multiclass:
 
-    ##########################
+        global_shap_vals = np.abs(shap_values).mean(0)#[::-1]
+        n_top_features = max( sum(global_shap_vals[np.argsort(global_shap_vals)]>=threshold),
+                              min_features )
+        n_top_features = min(n_top_features,global_shap_vals.shape[0])# can't display more features than present!
+        
+    #     if n_top_features <min_features:
+    #         n_top_features = min_features
 
-    inds = np.argsort(global_shap_vals)[-n_top_features:]
+        ##########################
 
-    y_pos = np.arange(n_top_features)
-    plt.figure(figsize=(16,10))
-    plt.title(target_var);
-    plt.barh(y_pos, global_shap_vals[inds], color="#1E88E5")
-    plt.yticks(y_pos, train.columns[inds])
-    plt.gca().spines['right'].set_visible(False)
-    plt.gca().spines['top'].set_visible(False)
-    plt.xlabel("mean SHAP value magnitude (change in log odds)")
-    plt.gcf().set_size_inches(6, 4.5)
+        inds = np.argsort(global_shap_vals)[-n_top_features:]
 
-    plt.savefig( output_subfolder + "mean_impact" + ".png", bbox_inches='tight' )
+        y_pos = np.arange(n_top_features)
+        
+        if skip_bar_plot:
+            plt.figure(figsize=(16,10))
+            plt.title(target_var);
+            plt.barh(y_pos, global_shap_vals[inds], color="#1E88E5")
+            plt.yticks(y_pos, train.columns[inds])
+            plt.gca().spines['right'].set_visible(False)
+            plt.gca().spines['top'].set_visible(False)
+            plt.xlabel("mean SHAP value magnitude (change in log odds)")
+            plt.gcf().set_size_inches(6, 4.5)
 
-    plt.show()
+            plt.savefig( output_subfolder + "mean_impact" + ".png", bbox_inches='tight' )
+
+            plt.show()
+    else: ## multiclass
+        n_top_features = min(min_features,train.shape[1])# can't display more features than present!
+        plot_type='bar'
+       # class_names=["your","list","of", "class", "names"]
 
     ####################
     
@@ -842,7 +863,10 @@ def shap_outputs(shap_values, train, target_var, output_subfolder,
     else:
         fig.suptitle(title);
         
-    shap.summary_plot( shap_values, train, max_display=n_top_features, plot_type='dot' );
+
+       
+        
+    shap.summary_plot( shap_values, train, max_display=n_top_features, plot_type=plot_type, class_names=class_names );
     shap_problem = np.isnan(np.abs(shap_values).mean(0)).any()
     if shap_problem:
         summary_text = "summary_plot(approx)"
@@ -876,14 +900,16 @@ early_stoppping_fraction = .1
 def get_non_overfit_settings( train, target, alg, seed, early_stoppping_fraction, test_size, eval_metric, verbose = True,
                               sample_weights = None ):
 
+    if target.dtype.name == 'category':
+        stratification = target.cat.codes
+    else:
+        stratification = pd.qcut( pd.Series( target ), q=10, duplicates = 'drop', ).cat.codes
+
     if sample_weights is not None:
 
         X_train, X_test, y_train, y_test = train_test_split( pd.concat( [train,sample_weights], axis=1 ),
                                                              target, test_size=test_size,
-                                                             random_state=seed, stratify=pd.qcut( pd.Series( target ),
-                                                                                                  q=10,
-                                                                                                  duplicates = 'drop',
-                                                                                                ).cat.codes )
+                                                             random_state=seed, stratify= stratification)
 
         eval_set = [(X_test, y_test)]
         weight_var = sample_weights.name
@@ -894,15 +920,12 @@ def get_non_overfit_settings( train, target, alg, seed, early_stoppping_fraction
 
         alg.fit(X_train, y_train, eval_metric=eval_metric, 
                 early_stopping_rounds = alg.get_params()['n_estimators']*early_stoppping_fraction,
-                eval_set=eval_set, verbose=True, sample_weight = sample_weight)
+                eval_set=eval_set, verbose=verbose, sample_weight = sample_weight)
         
     else:
         X_train, X_test, y_train, y_test = train_test_split( train,
                                                              target, test_size=test_size,
-                                                             random_state=seed, stratify=pd.qcut( pd.Series( target ),
-                                                                                                  q=10,
-                                                                                                  duplicates = 'drop',
-                                                                                                ).cat.codes )
+                                                             random_state=seed, stratify=stratification )
           
             
 
@@ -910,21 +933,34 @@ def get_non_overfit_settings( train, target, alg, seed, early_stoppping_fraction
 
         alg.fit(X_train, y_train, eval_metric=eval_metric, 
                 early_stopping_rounds = alg.get_params()['n_estimators']*early_stoppping_fraction,
-                eval_set=eval_set, verbose=True )        
+                eval_set=eval_set, verbose=verbose )        
         
 
     # make predictions for test data
     predictions = alg.predict(X_test)
 
-    # evaluate predictions
-    MSE = mean_squared_error(y_test, predictions)
-    MAE = mean_absolute_error(y_test, predictions)
-    EV = explained_variance_score(y_test, predictions)
-    R2 = r2_score(y_test, predictions)
+    
+    if target.dtype.name == 'category':
+        ACC = accuracy_score(y_test, predictions)
+        ##NLL = log_loss(y_test, predictions)
+        F1 = f1_score(y_test, predictions,average='micro')
+        ##ROCAUC = roc_auc_score(y_test, predictions)
 
-    print("MSE: %.2f, MAE: %.2f, EV: %.2f, R2: %.2f" % (MSE, MAE, EV, R2) )
-    alg.set_params(n_estimators=alg.best_iteration)   
-    return (MSE, MAE, EV, R2, alg.best_iteration)
+        print("ACC: %.2f,  F1: %.2f"  % (ACC,  F1,) )   
+        alg.set_params(n_estimators=alg.best_iteration)   
+        return (ACC, F1, alg.best_iteration)
+
+    
+    else:
+    # evaluate predictions
+        MSE = mean_squared_error(y_test, predictions)
+        MAE = mean_absolute_error(y_test, predictions)
+        EV = explained_variance_score(y_test, predictions)
+        R2 = r2_score(y_test, predictions)
+
+        print("MSE: %.2f, MAE: %.2f, EV: %.2f, R2: %.2f" % (MSE, MAE, EV, R2) )
+        alg.set_params(n_estimators=alg.best_iteration)   
+        return (MSE, MAE, EV, R2, alg.best_iteration)
 
 def shap_array(shap_values, train_columns, threshold = .1, min_features = 50):
 
@@ -976,33 +1012,63 @@ def get_xgboost_alg(learning_rate =0.05,
      refresh_leaf=0,
      nthread=8,
      n_jobs =8,
-     random_state=27**2):
+     random_state=27**2, 
+     classification_problem = False):
      
-    alg = XGBRegressor(
-     learning_rate =learning_rate,
-     n_estimators= n_estimators,
-     max_depth = max_depth,
-     min_child_weight = min_child_weight,
-     min_split_loss = min_split_loss,
-     subsample = subsample,
-     colsample_bytree = colsample_bytree,
-     colsample_bylevel = colsample_bylevel,
-     colsample_bynode = colsample_bynode,
-     objective = objective,
-     scale_pos_weight = scale_pos_weight,
-     reg_alpha=reg_alpha,
-     reg_lambda=reg_lambda,
-     sketch_eps=sketch_eps,
-     refresh_leaf=refresh_leaf,
-     nthread = nthread,
-     n_jobs  = n_jobs ,
-     random_state = random_state)
+    if classification_problem==False:
+        alg = XGBRegressor(
+         learning_rate =learning_rate,
+         n_estimators= n_estimators,
+         max_depth = max_depth,
+         min_child_weight = min_child_weight,
+         min_split_loss = min_split_loss,
+         subsample = subsample,
+         colsample_bytree = colsample_bytree,
+         colsample_bylevel = colsample_bylevel,
+         colsample_bynode = colsample_bynode,
+         objective = objective,
+         scale_pos_weight = scale_pos_weight,
+         reg_alpha=reg_alpha,
+         reg_lambda=reg_lambda,
+         sketch_eps=sketch_eps,
+         refresh_leaf=refresh_leaf,
+         nthread = nthread,
+         n_jobs  = n_jobs ,
+         random_state = random_state)
+    else:
+        alg = XGBClassifier(
+         learning_rate =learning_rate,
+         n_estimators= n_estimators,
+         max_depth = max_depth,
+         min_child_weight = min_child_weight,
+         min_split_loss = min_split_loss,
+         subsample = subsample,
+         colsample_bytree = colsample_bytree,
+         colsample_bylevel = colsample_bylevel,
+         colsample_bynode = colsample_bynode,
+         objective = objective,
+         scale_pos_weight = scale_pos_weight,
+         reg_alpha=reg_alpha,
+         reg_lambda=reg_lambda,
+         sketch_eps=sketch_eps,
+         refresh_leaf=refresh_leaf,
+         nthread = nthread,
+         n_jobs  = n_jobs ,
+         random_state = random_state)        
     return alg
     
     
 #global var_list
 def xgboost_run(title, dataset, var_list,var_stub_list=[], subdir=None, min_features=30, dependence_plots=False , output_folder=".."+os.sep+"Output"+os.sep,Treatment="default",
-                use_specific_weights = None, automatic_weights_from_wave_no = False, alg = get_xgboost_alg()):
+                use_specific_weights = None, automatic_weights_from_wave_no = False, alg = None,verbosity=1,skip_bar_plot=False,
+                eval_metric = 'rmse'):
+    if alg is None:
+        alg = get_xgboost_alg()
+        alg.verbosity=verbosity
+    if verbosity>=1:
+        verbose=True
+    else:
+        verbose=False
     # global BES_Panel
     # for target_var,base_var in zip(var_list,base_list):
     treatment_subfolder = create_subdir(output_folder,Treatment)
@@ -1053,12 +1119,20 @@ def xgboost_run(title, dataset, var_list,var_stub_list=[], subdir=None, min_feat
     #         alg.fit(train, target, verbose = True, sample_weight = sample_weights)        
     #     else:
 
-        (MSE, MAE, EV, R2, alg_best_iteration) = get_non_overfit_settings( train, target, alg, seed, early_stoppping_fraction, test_size, eval_metric, verbose = True,
-                                  sample_weights=sample_weights )
-        pd.Series([MSE, MAE, EV, R2, alg_best_iteration],index = ["MSE", "MAE", "EV", "R2", "alg_best_iteration"]).to_csv(output_subfolder+"scores.csv")
+        if target.dtype.name == 'category':
+            (ACC,  F1, alg_best_iteration) = get_non_overfit_settings( train, target, alg, seed, early_stoppping_fraction, test_size, eval_metric, verbose = verbose,
+                                      sample_weights=sample_weights )
+            pd.Series([ACC,  F1,  alg_best_iteration],index = ["ACC",  "F1", "alg_best_iteration"]).to_csv(output_subfolder+"scores.csv")
+           
+        
+        else:
+
+            (MSE, MAE, EV, R2, alg_best_iteration) = get_non_overfit_settings( train, target, alg, seed, early_stoppping_fraction, test_size, eval_metric, verbose = verbose,
+                                      sample_weights=sample_weights )
+            pd.Series([MSE, MAE, EV, R2, alg_best_iteration],index = ["MSE", "MAE", "EV", "R2", "alg_best_iteration"]).to_csv(output_subfolder+"scores.csv")
                                         
         # fit to full dataset at non-overfitting level
-        alg.fit(train, target, verbose = True, sample_weight = sample_weights)
+        alg.fit(train, target, verbose = verbose, sample_weight = sample_weights)
 
 
     #################
@@ -1076,10 +1150,21 @@ def xgboost_run(title, dataset, var_list,var_stub_list=[], subdir=None, min_feat
         pickle.dump( explainer, open( output_subfolder+"explainer.pkl", "wb" ) )
         pickle.dump( explainer, open( output_subfolder+"alg.pkl", "wb" ) )
 
-        subtitle = "MSE: %.2f, MAE: %.2f, EV: %.2f, R2: %.2f" % (MSE, MAE, EV, R2)
+        if target.dtype.name == 'category':
+            subtitle = "ACC: %.2f, F1: %.2f" % (ACC, F1)
+        else:
+            subtitle = "MSE: %.2f, MAE: %.2f, EV: %.2f, R2: %.2f" % (MSE, MAE, EV, R2)
+        if target.dtype.name == 'category':
+            multiclass = True
+            class_names = list(target.cat.categories)
+        else:
+            multiclass = False
+            class_names = None
         shap_outputs(shap_values, train, target_var, output_subfolder, threshold = .1,
                      min_features = min_features, title=title+"\n"+subtitle,
-                     dependence_plots=dependence_plots)
+                     dependence_plots=dependence_plots,skip_bar_plot=False,multiclass=multiclass,class_names=class_names)        
+        
+
                      
     
     if skipping:

@@ -1061,7 +1061,7 @@ def get_xgboost_alg(learning_rate =0.05,
 #global var_list
 def xgboost_run(title, dataset, var_list,var_stub_list=[], subdir=None, min_features=30, dependence_plots=False , output_folder=".."+os.sep+"Output"+os.sep,Treatment="default",
                 use_specific_weights = None, automatic_weights_from_wave_no = False, alg = None,verbosity=1,skip_bar_plot=False,
-                eval_metric = 'rmse'):
+                eval_metric = 'rmse',minimum_sample=50,dont_stop_on_sample_size_err=False,print_shap_chart=True):
     if alg is None:
         alg = get_xgboost_alg()
         alg.verbosity=verbosity
@@ -1091,6 +1091,8 @@ def xgboost_run(title, dataset, var_list,var_stub_list=[], subdir=None, min_feat
         if sum(mask) < minimum_sample:
             print("Skipping - sample size beneath minimum: ",minimum_sample)
             skipping = True
+            if not dont_stop_on_sample_size_err:
+                raise Exception("fgflgf")
             continue
         skipping=False
 
@@ -1160,13 +1162,12 @@ def xgboost_run(title, dataset, var_list,var_stub_list=[], subdir=None, min_feat
         else:
             multiclass = False
             class_names = None
-        shap_outputs(shap_values, train, target_var, output_subfolder, threshold = .1,
+            
+        if print_shap_chart:
+            shap_outputs(shap_values, train, target_var, output_subfolder, threshold = .1,
                      min_features = min_features, title=title+"\n"+subtitle,
                      dependence_plots=dependence_plots,skip_bar_plot=False,multiclass=multiclass,class_names=class_names)        
-        
 
-                     
-    
     if skipping:
         return (None,None,None,None,None,None)
     else:

@@ -11,12 +11,13 @@ di.display_html('<script>jQuery(function() {if (jQuery("body.notebook_app").leng
 # This line will add a button to toggle visibility of code blocks, for use with the HTML export version
 di.display_html('''<button onclick="jQuery('.input_area').toggle(); jQuery('.prompt').toggle();">Toggle code</button>''', raw=True)
 
-
-
 import numpy as np, pandas as pd, matplotlib.pyplot as plt, seaborn as sns
 import pickle, os, gc, re, sys
 dataset_name = sys.argv[1]
 df_list = [x for x in sys.argv[2].split("|")]
+#eval(sys.argv[2])
+#
+#raise Exception
 
 sns.set();
 sns.set_palette("colorblind")

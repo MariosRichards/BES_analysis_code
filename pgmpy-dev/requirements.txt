@@ -1,5 +1,5 @@
 networkx==1.11
-numpy==1.11.1
+numpy==1.21.0
 scipy==0.18.0
 pandas==0.18.1
 pyparsing==2.1.8

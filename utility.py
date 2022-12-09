@@ -554,7 +554,7 @@ def get_weights(dataset_name, BES_Panel):
     max_wave = int(re.match("W(\d+)_",dataset_name).groups()[0])
     num_to_wave = {x:"W"+str(x) for x in range(1,max_wave+1)}
     ## problem here if it's *not* a combined panel!
-    num_to_weight = { y:[x for x in BES_Panel.columns.sort_values(ascending=False) if re.match("wt_(new|full)_W"+str(y)+"$",x)][0] for y in range(1,max_wave+1) }
+    num_to_weight = { y:[x for x in BES_Panel.columns.sort_values(ascending=False) if re.match("wt_(new|full)_W"+str(y)+"$|_result$",x)][0] for y in range(1,max_wave+1) }
     weights = BES_Panel[list(num_to_weight.values())].copy()
     return max_wave, num_to_wave, num_to_weight, weights
     
@@ -742,8 +742,8 @@ def nice_bar_plot(ser1, ser2, output_folder, BES_Panel, normalize = 'columns', s
         sns.barplot(x = stacked[var2],
                     y = stacked['%'],
                     hue = stacked[var1],
-                    ax = ax, order = labels_restricted,
-                    yerr = errors.values);        
+                    yerr = errors.values)        
+#                    ax = ax, order = labels_restricted,
                     # err_stacked["%"].values );
 # .reshape(len(stacked),1)
     if title is None:
@@ -898,10 +898,12 @@ minimum_sample = 100
 early_stoppping_fraction = .1            
             
 def get_non_overfit_settings( train, target, alg, seed, early_stoppping_fraction, test_size, eval_metric, verbose = True,
-                              sample_weights = None ):
+                              sample_weights = None,plot_validation=False):
 
     if target.dtype.name == 'category':
         stratification = target.cat.codes
+    elif len(pd.unique(target))<=10:
+        stratification = target
     else:
         stratification = pd.qcut( pd.Series( target ), q=10, duplicates = 'drop', ).cat.codes
 
@@ -911,7 +913,7 @@ def get_non_overfit_settings( train, target, alg, seed, early_stoppping_fraction
                                                              target, test_size=test_size,
                                                              random_state=seed, stratify= stratification)
 
-        eval_set = [(X_test, y_test)]
+        eval_set = [(X_train, y_train), (X_test, y_test)]
         weight_var = sample_weights.name
         sample_weight = X_train[weight_var].values
         sample_weight_eval_set = X_test[weight_var].values
@@ -929,15 +931,38 @@ def get_non_overfit_settings( train, target, alg, seed, early_stoppping_fraction
           
             
 
-        eval_set = [(X_test, y_test)]
+        eval_set = [(X_train, y_train), (X_test, y_test)]
 
         alg.fit(X_train, y_train, eval_metric=eval_metric, 
                 early_stopping_rounds = alg.get_params()['n_estimators']*early_stoppping_fraction,
                 eval_set=eval_set, verbose=verbose )        
         
 
+    
+
+    def scale(x):
+        return (np.array(x)-min(x))/(max(x)-min(x))
+    if plot_validation:
+        results = alg.evals_result()
+        epochs = len(results['validation_0'][eval_metric[0]])
+        x_axis = range(0, epochs)
+        plt.figure(figsize=(14,8));
+        color = iter(cm.rainbow(np.linspace(0, 1, len(eval_metric))))
+        for metric in eval_metric:
+            col = next(color)
+            plt.plot(x_axis, np.log(scale(results['validation_0'][metric])), label=metric,marker='*',c=col)
+            plt.plot(x_axis, np.log(scale(results['validation_1'][metric])), label=metric,marker='s',c=col)
+            
+        plt.axvline(alg.best_iteration);
+        plt.legend();
+        plt.title('XGBoost Validation Errors');
+        plt.show();
+    
+    alg.set_params(n_estimators=alg.best_iteration)    
+    
     # make predictions for test data
-    predictions = alg.predict(X_test)
+    # belt and bracers!
+    predictions = alg.predict(X_test,iteration_range=(0, alg.best_iteration + 1))
 
     
     if target.dtype.name == 'category':
@@ -947,7 +972,7 @@ def get_non_overfit_settings( train, target, alg, seed, early_stoppping_fraction
         ##ROCAUC = roc_auc_score(y_test, predictions)
 
         print("ACC: %.2f,  F1: %.2f"  % (ACC,  F1,) )   
-        alg.set_params(n_estimators=alg.best_iteration)   
+           
         return (ACC, F1, alg.best_iteration)
 
     
@@ -959,7 +984,7 @@ def get_non_overfit_settings( train, target, alg, seed, early_stoppping_fraction
         R2 = r2_score(y_test, predictions)
 
         print("MSE: %.2f, MAE: %.2f, EV: %.2f, R2: %.2f" % (MSE, MAE, EV, R2) )
-        alg.set_params(n_estimators=alg.best_iteration)   
+  
         return (MSE, MAE, EV, R2, alg.best_iteration)
 
 def shap_array(shap_values, train_columns, threshold = .1, min_features = 50):
@@ -995,17 +1020,18 @@ def get_generic_weights(BES_Panel):
 
     
 
-def get_xgboost_alg(learning_rate =0.05,
+def get_xgboost_alg(
+     learning_rate =0.05,
      n_estimators= 500,
      max_depth=6,
      min_child_weight=6,
-     min_split_loss=0.00065,
+     gamma=0.00065, # aka min_split_loss
      subsample=0.8,
      colsample_bytree=0.7,
      colsample_bylevel=.9,
      colsample_bynode=.85,
      objective= 'reg:squarederror',
-     scale_pos_weight=1.09,
+   #  scale_pos_weight=1.09,
      reg_alpha=1.075,
      reg_lambda=1.011,
      sketch_eps=0.0,
@@ -1013,6 +1039,8 @@ def get_xgboost_alg(learning_rate =0.05,
      nthread=8,
      n_jobs =8,
      random_state=27**2, 
+     base_score =.5,
+     scale_pos_weight = 1,
      classification_problem = False):
      
     if classification_problem==False:
@@ -1021,7 +1049,7 @@ def get_xgboost_alg(learning_rate =0.05,
          n_estimators= n_estimators,
          max_depth = max_depth,
          min_child_weight = min_child_weight,
-         min_split_loss = min_split_loss,
+         gamma = gamma,
          subsample = subsample,
          colsample_bytree = colsample_bytree,
          colsample_bylevel = colsample_bylevel,
@@ -1034,14 +1062,15 @@ def get_xgboost_alg(learning_rate =0.05,
          refresh_leaf=refresh_leaf,
          nthread = nthread,
          n_jobs  = n_jobs ,
-         random_state = random_state)
+         random_state = random_state,
+         base_score=base_score)
     else:
         alg = XGBClassifier(
          learning_rate =learning_rate,
          n_estimators= n_estimators,
          max_depth = max_depth,
          min_child_weight = min_child_weight,
-         min_split_loss = min_split_loss,
+         gamma = gamma,
          subsample = subsample,
          colsample_bytree = colsample_bytree,
          colsample_bylevel = colsample_bylevel,
@@ -1054,14 +1083,17 @@ def get_xgboost_alg(learning_rate =0.05,
          refresh_leaf=refresh_leaf,
          nthread = nthread,
          n_jobs  = n_jobs ,
-         random_state = random_state)        
+         random_state = random_state,
+         base_score=base_score)        
     return alg
+    
     
     
 #global var_list
 def xgboost_run(title, dataset, var_list,var_stub_list=[], subdir=None, min_features=30, dependence_plots=False , output_folder=".."+os.sep+"Output"+os.sep,Treatment="default",
                 use_specific_weights = None, automatic_weights_from_wave_no = False, alg = None,verbosity=1,skip_bar_plot=False,
-                eval_metric = 'rmse',minimum_sample=50,dont_stop_on_sample_size_err=False,print_shap_chart=True):
+                eval_metric = ['rmse'],minimum_sample=50,dont_stop_on_sample_size_err=False,print_shap_chart=True,plot_validation=False,
+                threshold=.1):
     if alg is None:
         alg = get_xgboost_alg()
         alg.verbosity=verbosity
@@ -1096,7 +1128,7 @@ def xgboost_run(title, dataset, var_list,var_stub_list=[], subdir=None, min_feat
             continue
         skipping=False
 
-        train = create_train(dataset,drop_other_waves,var_stub_list,mask)
+        train = create_train(dataset,drop_other_waves,var_stub_list,mask,target_var)
 
         if subdir is None:
             output_subfolder = create_subdir(treatment_subfolder,target_var)
@@ -1123,14 +1155,14 @@ def xgboost_run(title, dataset, var_list,var_stub_list=[], subdir=None, min_feat
 
         if target.dtype.name == 'category':
             (ACC,  F1, alg_best_iteration) = get_non_overfit_settings( train, target, alg, seed, early_stoppping_fraction, test_size, eval_metric, verbose = verbose,
-                                      sample_weights=sample_weights )
+                                      sample_weights=sample_weights,plot_validation=plot_validation)
             pd.Series([ACC,  F1,  alg_best_iteration],index = ["ACC",  "F1", "alg_best_iteration"]).to_csv(output_subfolder+"scores.csv")
            
         
         else:
 
             (MSE, MAE, EV, R2, alg_best_iteration) = get_non_overfit_settings( train, target, alg, seed, early_stoppping_fraction, test_size, eval_metric, verbose = verbose,
-                                      sample_weights=sample_weights )
+                                      sample_weights=sample_weights,plot_validation=plot_validation)
             pd.Series([MSE, MAE, EV, R2, alg_best_iteration],index = ["MSE", "MAE", "EV", "R2", "alg_best_iteration"]).to_csv(output_subfolder+"scores.csv")
                                         
         # fit to full dataset at non-overfitting level
@@ -1154,8 +1186,13 @@ def xgboost_run(title, dataset, var_list,var_stub_list=[], subdir=None, min_feat
 
         if target.dtype.name == 'category':
             subtitle = "ACC: %.2f, F1: %.2f" % (ACC, F1)
+            metrics = (ACC, F1)
         else:
             subtitle = "MSE: %.2f, MAE: %.2f, EV: %.2f, R2: %.2f" % (MSE, MAE, EV, R2)
+            metrics = (MSE, MAE, EV, R2)
+            
+        
+            
         if target.dtype.name == 'category':
             multiclass = True
             class_names = list(target.cat.categories)
@@ -1164,15 +1201,14 @@ def xgboost_run(title, dataset, var_list,var_stub_list=[], subdir=None, min_feat
             class_names = None
             
         if print_shap_chart:
-            shap_outputs(shap_values, train, target_var, output_subfolder, threshold = .1,
+            shap_outputs(shap_values, train, target_var, output_subfolder, threshold = threshold,
                      min_features = min_features, title=title+"\n"+subtitle,
                      dependence_plots=dependence_plots,skip_bar_plot=False,multiclass=multiclass,class_names=class_names)        
 
     if skipping:
-        return (None,None,None,None,None,None)
+        return (None,None,None,None,None,None,None)
     else:
-        return (explainer, shap_values, train.columns, train.index, alg,output_subfolder)
-
+        return (explainer, shap_values, train.columns, train.index, alg,output_subfolder,metrics)
 
 
 
@@ -1197,16 +1233,20 @@ def optional_mask_fn(wave=[]):
 
 
 
-def create_train(dataset,drop_other_waves,var_stub_list,mask):
+def create_train(dataset,drop_other_waves,var_stub_list,mask,target_var):
     keep_list = dataset.columns
     
     if drop_other_waves:
         # drop variables from other waves
         other_waves = get_other_wave_pattern(wave_no, max_wave, num_to_wave)
         keep_list = [x for x in keep_list if not re.search( other_waves, x )]
-        
+    
+    keep_list = list(keep_list)
+    keep_list.remove(target_var)
     # drop key variables
     keep_list = [x for x in keep_list if not any([var_stub in x for var_stub in var_stub_list])] 
+    
+    
     
     return dataset[keep_list][mask]
 
@@ -1217,8 +1257,72 @@ def create_target(dataset,target_var):
 
 
 
+########################################################################################################################
+
+def nice_crosstab(ser_ind,ser_col,data=None,values=None,aggfunc=sum,normalize='all',round_places=0,percentage=True,
+                 margins=True, add_sample_sizes = True,drop_col_list=[],drop_ind_list=[],replace_dict={}):
+    if data is not None:
+        ser_ind = BES_Panel[ser_ind]
+        ser_col = BES_Panel[ser_col]
+        if values is not None:
+            values = BES_Panel[values]
+    if drop_col_list:
+        if ser_col.dtype == 'category':
+            ser_col = ser_col.cat.remove_categories(drop_col_list)
+        else:
+            ser_col = ser_col.replace({k:np.nan for k in drop_col_list})
+    # replace_dict
+    if ser_col.dtype == 'category':
+        ser_col = ser_col.cat.rename_categories(replace_dict)
+    else:
+        ser_col = ser_col.replace(replace_dict)
+#     ind_N_dict = ser_ind.value_counts().to_dict()
+#         ser_ind.columns = [x+"(N="+str(ind_N_dict[x])+")" for x in  ind_N_dict.keys()]        
+    if ser_ind.dtype == 'category':
+        ser_ind = ser_ind.cat.rename_categories(replace_dict)
+    else:
+        ser_ind = ser_ind.replace(replace_dict)            
+            
+    
+    if drop_ind_list:
+        if ser_ind.dtype == 'category':
+            ser_ind = ser_ind.cat.remove_categories(drop_ind_list)
+        else:
+            ser_ind = ser_ind.replace({k:np.nan for k in drop_ind_list})
+            
+    if add_sample_sizes:
+        col_N_dict = ser_col.value_counts().to_dict()
+#         ser_col.columns = [x+"\n(N="+str(col_N_dict[x])+")" for x in  col_N_dict.keys()]
+        if ser_col.dtype == 'category':
+            ser_col = ser_col.cat.rename_categories({x:x+" (N="+str(col_N_dict[x])+")" for x in  col_N_dict.keys()})
+        else:
+            ser_col = ser_col.replace({x:x+" (N="+str(col_N_dict[x])+")" for x in  col_N_dict.keys()})
+        ind_N_dict = ser_ind.value_counts().to_dict()
+#         ser_ind.columns = [x+"(N="+str(ind_N_dict[x])+")" for x in  ind_N_dict.keys()]        
+        if ser_ind.dtype == 'category':
+            ser_ind = ser_ind.cat.rename_categories({x:x+" (N="+str(ind_N_dict[x])+")" for x in  ind_N_dict.keys()})
+        else:
+            ser_ind = ser_ind.replace({x:x+" (N="+str(ind_N_dict[x])+")" for x in  ind_N_dict.keys()})
+#         ser_ind = ser_ind.replace({x:x+" (N="+str(ind_N_dict[x])+")" for x in  ind_N_dict.keys()})
+    
+    if percentage:
+        ct = round(pd.crosstab(ser_ind,ser_col,
+                values=values,aggfunc=aggfunc,normalize=normalize,margins=margins)*100,round_places)
+    else:
+        ct = round(pd.crosstab(ser_ind,ser_col,
+                values=values,aggfunc=aggfunc,normalize=normalize,margins=margins),round_places)
+    if round_places==0:
+        ct = ct.astype(int)
+    return ct
+
+# drop_col_list = ["Don't know"]
+# drop_ind_list = ["Don't know"]
+# replace_dict = {'Conservative':"CON", 'Labour':"LAB", 'Liberal Democrat':"LD",
+       # 'Scottish National Party (SNP)':"SNP", 'Plaid Cymru':"PC",
+       # 'United Kingdom Independence Party (UKIP)':"UKIP", 'Green Party':"GP",
+       # 'British National Party (BNP)':"BNP", 'Other':"OTH"}
 
 
-
-
-
+# nice_crosstab("preferMPEthnicW6","p_past_vote_2015",data=BES_Panel,values="wt_new_W6",normalize='columns',
+              # round_places=0,add_sample_sizes=True,drop_col_list=drop_col_list,drop_ind_list=drop_ind_list,
+              # replace_dict=replace_dict)

@@ -1,4 +1,5 @@
 
+
 def full_form_birth_year(x):
     if pd.isnull(x):
         return np.nan
@@ -54,16 +55,20 @@ global BES_label_list, BES_df_list
 def prep_df_only(ge,target_var,target_var_replace_dict,target_var_drop_list,target_var_title_pair,
        var_stub,harm_vars,min_features,dependence_plots=False,
        drop_vars = [],demo_var_only=True,
-        multi_class_target=False,dummy_na=True,specific_vars = False, drop_after_dummying = []):
+        multi_class_target=False,dummy_na=True,specific_vars = False, drop_after_dummying = [],
+                harmonised_only=False):
 
     if demo_var_only:
         demo_vars = demo_var_dict[ge]
+    elif harmonised_only:
+        demo_vars = []
     elif specific_vars:
         demo_vars = specific_vars
     else:
         demo_vars = list(BES_label_list[ge].keys())
 
 #     labels = BES_label_list[ge]
+
     df = pd.concat([f2f_harmonised[f2f_harmonised["dataset"]==ge][harm_vars],BES_df_list[ge]
                            ],axis=1)
     old_demo_vars = demo_vars.copy()
@@ -101,7 +106,7 @@ def prep_df_only(ge,target_var,target_var_replace_dict,target_var_drop_list,targ
         df_simp = pd.get_dummies(df_simp[all_but_target],prefix_sep='|',dummy_na=dummy_na)
         df_simp[target_temp.name] = target_temp
         
-
+    #raise Exception
     df_simp = df_simp.rename(columns = replace_var_names( BES_label_list[ge] , df_simp ))  
     
     df_simp = df_simp.drop(drop_after_dummying , axis=1)
@@ -118,12 +123,14 @@ def prep_df_only(ge,target_var,target_var_replace_dict,target_var_drop_list,targ
 
 def prep_df(ge,target_var,target_var_replace_dict,target_var_drop_list,target_var_title_pair,
        var_stub,harm_vars,min_features,dependence_plots=False,drop_vars = [],demo_var_only=True,alg=None,
-           multi_class_target=False,dummy_na=True,specific_vars = False, drop_after_dummying = [],
-           wt_col = "wt"):
+           multi_class_target=False,dummy_na=True, specific_vars = False, drop_after_dummying = [],
+           wt_col = "wt", harmonised_only=False):
 
     # drop drop_var variables from demo_var list
     if demo_var_only:
         demo_vars = demo_var_dict[ge]
+    elif harmonised_only:
+        demo_vars = []
     elif specific_vars:
         demo_vars = specific_vars
     else:
@@ -204,7 +211,7 @@ def prep_df(ge,target_var,target_var_replace_dict,target_var_drop_list,target_va
         wt_ser = df_simp[wt_col]        
     mask = df_simp[var_stub].notnull() & df_simp[wt_col].notnull()
     
-    (explainer, shap_values, train_columns, train_index, alg,output_subfolder)=\
+    (explainer, shap_values, train_columns, train_index, alg,output_subfolder,metrics)=\
         xgboost_run(subdir=colname,dataset=df_simp[mask].drop(wt_cols,axis=1),
                 var_list=var_list,var_stub_list=var_stub_list,
                 use_specific_weights=wt_ser[mask],
@@ -213,6 +220,7 @@ def prep_df(ge,target_var,target_var_replace_dict,target_var_drop_list,target_va
                 title = title)
     
     return (explainer, shap_values, train_columns, train_index, alg,output_subfolder)
+    
     
     
     

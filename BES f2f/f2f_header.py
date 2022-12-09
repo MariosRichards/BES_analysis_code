@@ -28,6 +28,7 @@ import sys
 sys.path.append("../")
 import Jupyter_module_loader
 from utility import *
+from f2f_utility import *
 import gaussian_kde
 
 import warnings
@@ -51,7 +52,7 @@ data_subfolder = BES_data_folder + dataset_name + os.sep
 
 
 for df in df_list:
-    if df == "[]":
+    if df == '[]' or df=="[[[['[]']]]]":
         continue
     if df=="BES_Panel":
         if os.path.isfile(data_subfolder + "BES_Panel.zip"):

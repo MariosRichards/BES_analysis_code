@@ -1,5 +1,3 @@
-
-
 def full_form_birth_year(x):
     if pd.isnull(x):
         return np.nan
@@ -12,6 +10,308 @@ def rep_char(x):
     return x.replace('[', '{').replace(']', '}').replace('<', '{').replace('>', '}')
 
 list_of_scale_harm_vars = ["Age","kind_of_scool","year_past_min_sch_leave_age"]
+from pandas._libs.lib import is_integer
+def weighted_qcut(values, weights, q, **kwargs):
+    if is_integer(q):
+        quantiles = np.linspace(0, 1, q + 1)
+    else:
+        quantiles = q
+        
+    if values.isnull().sum()>0:
+        raise Exception("nans in values")
+        
+    if weights.isnull().sum()>0:
+        raise Exception("nans in weights")
+        
+    order = weights.loc[weights.index[values.argsort()]].cumsum()
+    bins = pd.cut(order / order.iloc[-1], quantiles, **kwargs)
+    return bins.sort_index()
+
+def f2f_harm_con_vars(f2f_harmonised):
+
+    wt_means = f2f_harmonised.groupby("dataset")["wt"].mean().to_dict()
+    f2f_harmonised["wt_norm"] = f2f_harmonised.apply(lambda x: x["wt"]/wt_means[x["dataset"]] , axis=1 )
+
+    f2f_harmonised["AuthRight"] = f2f_harmonised["bloc_complete"]=="Right-Auth"
+    f2f_harmonised["LibLeft"] = f2f_harmonised["bloc_complete"]=="Left-Lib"
+
+    f2f_harmonised["CON"] = f2f_harmonised["vote_complete_simple"]=="CON"
+    f2f_harmonised["LAB"] = f2f_harmonised["vote_complete_simple"]=="LAB"
+    f2f_harmonised["DNV"] = f2f_harmonised["vote_complete_simple"]=="DNV"
+    f2f_harmonised["LD"]  = f2f_harmonised["vote_complete_simple"]=="LD"
+    f2f_harmonised["REFUK"]  = f2f_harmonised["vote_complete_simple"]=="REFUK"
+    f2f_harmonised["SNP"]  = f2f_harmonised["vote_complete_simple"]=="SNP"
+    f2f_harmonised["GP"]  = f2f_harmonised["vote_complete_simple"]=="GP"
+    f2f_harmonised["DK"]  = f2f_harmonised["vote_complete_simple"]=="DK"
+    f2f_harmonised["PC"]  = f2f_harmonised["vote_complete_simple"]=="PC"
+    f2f_harmonised["decade"] = f2f_harmonised["age"]/10
+    f2f_harmonised["generation"] = f2f_harmonised["age"]/20
+    inc_maxes = f2f_harmonised.groupby("dataset")["inc_det"].max().to_dict()
+    f2f_harmonised["inc_norm"] = f2f_harmonised.apply(lambda x: x["inc_det"]/inc_maxes[x["dataset"]] , axis=1 )#.groupby(f2f_harmonised["dataset"]).hist()
+    ## do a proper version with weighting/quantiles
+
+    f2f_harmonised["inc_norm_wt"]=np.nan
+    temp = (f2f_harmonised[f2f_harmonised["wt"].notnull()].groupby("dataset").apply(lambda x: weighted_qcut(x["inc_det"],x["wt"],21)).cat.codes/20)
+    reverse_dict = {v:k for k,v in f2f_harmonised[f2f_harmonised["wt"].notnull()].groupby("dataset").apply(lambda x: x["uid"]).to_dict().items()}
+    f2f_harmonised.loc[f2f_harmonised["wt"].notnull(),"inc_norm_wt"]=temp.loc[f2f_harmonised["uid"][f2f_harmonised["wt"].notnull()].apply(lambda x: reverse_dict[x])].values
+    # weighted_qcut
+
+    f2f_harmonised["inc(quartile)"] = f2f_harmonised["inc_norm_wt"]*4
+#     f2f_harmonised["inc_norm_wt"].hist(bins=100)
+#     f2f_harmonised[["inc_det","inc_norm","inc_norm_wt"]].corr()
+
+
+
+def errplot(x, y, yerr, **kwargs):
+    ax = plt.gca()
+    data = kwargs.pop("data")
+#     raise Exception
+    data.plot(x=x, y=y, yerr=yerr,xerr=None, kind="line", ax=ax, **kwargs)
+    
+def get_dummies(ser,drop_category,dummy_na):
+    
+    if (drop_category is None) or (ser.value_counts().shape[0]==0):
+        return pd.get_dummies(ser, dummy_na=dummy_na)
+    elif isinstance(drop_category, list):
+        return pd.get_dummies(ser.replace({k:np.nan for k in drop_category}), dummy_na=dummy_na)
+    elif drop_category == "first":
+        return pd.get_dummies(ser, drop_first=True, dummy_na=dummy_na)
+    elif drop_category == "largest":
+        ser = ser.apply(lambda x: x.astype('category').cat.reorder_categories(x.value_counts().index))
+        return pd.get_dummies(ser, drop_first=True, dummy_na=dummy_na)
+    else:
+        raise Exception()
+# .astype('category').cat.remove_unused_categories()
+#     return pd.get_dummies(ser.replace({k:np.nan for k in drop_list}),
+#                           dummy_na=dummy_na)
+
+# drop_category
+#(f2f_harmonised[cols][mask],drop_first=drop_first,dummy_na=dummy_na):
+    
+# global f2f_harmonised
+def OLS_party_housing(f2f_harmonised,variance_scaled = False, regularised=False, regression_type="OLS",const=True,
+                     cols = ['age', 'inc_det', 'gender_complete', 'housing'],
+#                      drop_first=True,
+                     drop_category = None,
+                     dummy_na=False,
+                     dummied_cols = None,#"first","largest",<list>
+                     
+                     mask = None, # defaults to [Left-Lib,Right-Auth]
+                     target = "auth_right_vote",
+                     error_bars=False, hide_const=False,add_actual=False,
+                     ax=None,single_legend=False,eyeline=True,alpha_const_actual=True,
+                     ge_range = None,
+                     wt_var = "wt_norm",
+                     ):
+#     global f2f_harmonised
+    if mask is None:
+        f2f_harmonised["bloc_complete"].isin(["Left-Lib","Right-Auth"])
+        
+    if ge_range is None:
+        ge_range = f2f_harmonised["dataset"].unique()
+
+    import statsmodels.api as sm
+    from sklearn.preprocessing import StandardScaler
+    from sklearn.linear_model import LinearRegression, Ridge, Lasso, ElasticNet
+    
+    
+#     mask = 
+    if regression_type=="Weighted_OLS":
+        mask = mask & f2f_harmonised[wt_var].notnull()
+    if dummied_cols == None:
+#         dummied_cols = list(pd.get_dummies(f2f_harmonised[cols][mask],drop_first=drop_first,dummy_na=dummy_na).columns)
+        dummied_cols = list(get_dummies(f2f_harmonised[cols][mask],drop_category,dummy_na).columns)
+        
+    if const:
+        dummied_cols = ["const"]+dummied_cols
+    if add_actual:
+        dummied_cols = ["actual"]+dummied_cols
+    results_df = pd.DataFrame(columns = dummied_cols)        
+    # add error_bar columns
+    if error_bars:
+        dummied_errs = [x+'_err' for x in dummied_cols]
+        results_df[dummied_errs]=np.nan
+        
+    scaler = StandardScaler()
+
+    for ge in ge_range:
+    # ge = "1979"
+        df = f2f_harmonised[mask][f2f_harmonised["dataset"][mask]==ge][cols+[target]]
+        if regression_type == "Weighted_OLS":
+            sample_weight = f2f_harmonised[mask][f2f_harmonised["dataset"][mask]==ge][wt_var]
+#             raise Exception
+#         X = pd.get_dummies(df.drop([target],axis=1),drop_first=drop_first,dummy_na=dummy_na)
+        X = get_dummies(df.drop([target],axis=1),drop_category,dummy_na)
+    
+        X = X[intersection(X.columns, dummied_cols)]
+        
+        if variance_scaled:
+            X = pd.DataFrame(scaler.fit_transform(X,sample_weight=sample_weight),columns=X.columns,index=X.index)
+        if const:
+            X = sm.add_constant(X)
+
+        Y = df[target]
+        if regression_type == "OLS":
+            model = sm.OLS(Y,X)
+        elif regression_type == "Logit":
+            model = sm.Logit(Y,X)
+        elif regression_type == "Probit":
+            model = sm.Probit(Y,X)
+        elif regression_type == "Weighted_OLS":
+            if regularised:
+                model = ElasticNet(fit_intercept=False,alpha=0.0)
+#                 LinearRegression()
+            else:
+                model = LinearRegression(fit_intercept=False)
+                
+            model.fit(X, Y, sample_weight=sample_weight)
+            
+
+        # results.params
+        if regression_type == "Weighted_OLS":
+            results_df.loc[ge,X.columns] = model.coef_
+        else:
+            if regularised:        
+                results = model.fit_regularized()
+            else:
+                results = model.fit()            
+            results_df.loc[ge,X.columns] = results.params.values
+            
+        # error bars
+        # dodgy, grabbing only
+        if error_bars:
+            if regression_type == "Weighted_OLS":
+                model = sm.OLS(Y,X)
+            # otherwise use sm model used prior
+            results = model.fit()
+            errors = results.conf_int()
+            results_df.loc[ge,[x+"_err" for x in X.columns]] = (results_df.loc[ge,X.columns]-errors[0]).values
+#             raise Exception
+        
+        if add_actual:
+            if regression_type == "Weighted_OLS":
+                results_df.loc[ge,"actual"] = sum(Y.loc[X.dropna().index]*sample_weight.loc[X.dropna().index])/sum(sample_weight.loc[X.dropna().index])
+#                 (Y.loc[X.dropna().index]*sample_weight.loc[X.dropna().index]).mean()
+#                 results_df.loc[ge,"actual"] = Y.mean()
+#                 raise Exception
+            else:
+                results_df.loc[ge,"actual"] = Y.loc[X.dropna().index].mean()
+
+    results_df = results_df.sort_index()
+
+#     else:
+#         title = title+"_unscaled"        
+#     results_df.plot(kind='line',title=title)  
+
+    if ax is None:
+        plt.figure(figsize=(12,6));
+        ax=plt.gca()
+        
+#     if single_legend:
+#         legend=False
+#     else:
+#         legend='auto'
+    x_label = "UK GE Date"
+    y_label = "Impact on Probability"
+    hue_label = "Factor"
+    title = 'Probability of Voting: '+target
+#     if variance_scaled:
+#         title = title+"_scaled"
+# #     else:
+# #         title = title+"_unscaled"
+#     if regularised:
+#         title = title+"_regularised"    
+    hue_name_replace_dict = {"inc_norm_wt":"income(decile)",
+                         "generation":"age(generation)",
+                         "gender_complete":"gender(female)",
+                         "housing_OWN":"tenure(OWN&MORT)","housing_RENT":"tenure(RENT)",
+                         "housing_det_OWN":"tenure(OWN)","housing_det_MORT":"tenure(MORT)","housing_det_OWN-MORT":"tenure(OWN&MORT)",
+                         "housing_det_RENT-LA":"tenure(RENT-LA)","housing_det_RENT-PR":"tenure(RENT-PR)","housing_det_RENT-HA":"tenure(RENT-HA)","housing_det_RENT-ALL":"tenure(RENT)",
+                         "age_left_education_3_15 or younger":"left_edu(15-)","age_left_education_3_16":"left_edu(16)",
+                         "age_left_education_3_18":"left_edu(17-18)","age_left_education_3_19 or older":"left_edu(19+)",
+                        }
+#     sns.set(font_scale = 2)
+    if error_bars:
+        res_df = results_df[dummied_cols].reset_index().melt(id_vars='index')
+        res_df["index"] = res_df["index"].replace(ge_to_date_dict).apply(lambda x: pd.to_datetime(x))
+        res_df.columns = [x_label,hue_label,y_label]
+        res_df[y_label] = res_df[y_label.astype('float')]
+
+        err_df = results_df[dummied_errs].reset_index().melt(id_vars='index')
+        err_df["index"] = err_df["index"].replace(ge_to_date_dict).apply(lambda x: pd.to_datetime(x))
+        err_df.columns = [x_label,hue_label,y_label]
+        err_df[y_label] = err_df[y_label].astype('float')
+        res_df["yerr"] = err_df[y_label]
+        if hide_const:
+            res_df = res_df.replace("const",np.nan).dropna()
+#         res_df
+        res_df=res_df.replace(hue_name_replace_dict)
+        g = sns.FacetGrid(res_df, hue=hue_label,height=6,aspect=1.5)
+        g.map_dataframe(errplot, x_label, y_label, "yerr",ax=ax)# test ax!
+        g.add_legend()    
+    
+    else:
+    
+        res_df = results_df.reset_index().melt(id_vars='index')
+        res_df["index"] = res_df["index"].replace(ge_to_date_dict).apply(lambda x: pd.to_datetime(x))
+        res_df.columns = [x_label,hue_label,y_label]
+        res_df[y_label] = res_df[y_label].astype('float')
+        if hide_const:
+            res_df = res_df.replace("const",np.nan).dropna()
+        res_df=res_df.replace(hue_name_replace_dict)
+        sns.lineplot(data = res_df,x=x_label,y=y_label,hue=hue_label,style=hue_label,markers=True,ax=ax);
+        ax.set_xlabel(x_label,fontsize=16);
+        ax.set_ylabel(y_label,fontsize=22);
+        ax.set_title(title,fontsize=22);
+#         plt.xticks(rotation=90);   
+#         plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
+    if eyeline:
+        ax.axhline(0, color ='grey', lw = 2, alpha=.2);
+    if alpha_const_actual:
+        if const or add_actual:
+            ax.get_lines()[0].set_alpha(.5);   
+        if const and add_actual:
+            ax.get_lines()[1].set_alpha(.5);   
+
+    if single_legend:
+        handles, labels = ax.get_legend_handles_labels()
+        ax.get_legend().remove()
+        legend_data = (handles, labels)
+    else:
+        legend_data = None
+    
+    
+    return res_df,legend_data
+
+def plot_OLS_set(target_list, X_list, f2f_harmonised, figsize=(16.5, 6),  sharey=True, regression_type="Weighted_OLS",regularised=False,
+                 variance_scaled=False,drop_category=None,
+                 hide_const=False,add_actual=True,dummied_cols=None, single_legend=True,
+                 mask=None,
+                 ge_range = None):
+    if mask is None:
+        mask = f2f_harmonised["vote_complete_simple"].notnull()&f2f_harmonised["wt"].notnull()
+    if ge_range is None:
+        ge_range = f2f_harmonised["dataset"].unique()
+        
+    
+    fig, axs = plt.subplots(ncols=len(target_list),figsize=figsize, sharey=sharey);
+    ax_pos = 0
+    for target in target_list:
+        df,(handles, labels)=OLS_party_housing(variance_scaled=variance_scaled,drop_category=drop_category,cols = X_list,
+                    target=target,mask = mask,
+                    regression_type=regression_type, regularised=regularised, hide_const=hide_const,add_actual=add_actual,
+                    dummied_cols=dummied_cols,single_legend=single_legend,
+                    ax=axs[ax_pos],ge_range=ge_range)
+        ax_pos=ax_pos+1
+    if single_legend:
+#         handles, labels = axs[0].get_legend_handles_labels()
+        fig.legend(handles, labels, 
+                   loc='upper center',
+                   bbox_to_anchor=(0.5, 0.05), bbox_transform = plt.gcf().transFigure,
+                   fancybox=False, shadow=False, ncol=5);
+#         raise Exception
+#     return (handles, labels)
+
 
 # def replace_var_names(labels):
     # varname_replace_dict = {}
@@ -691,3 +991,4 @@ def run_autoencoder(encoding_dim=32,hidden_size=100,verbose=2,
     
 def get_top_corr(x,n):
     return x[x.abs().sort_values(ascending=False).head(n).index]
+

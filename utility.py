@@ -551,10 +551,10 @@ def drop_zero_var(df):
     
 global num_to_weight
 def get_weights(dataset_name, BES_Panel):
-    max_wave = int(re.match("W(\d+)_",dataset_name).groups()[0])
+    max_wave = int(re.match("W(\d+)_?",dataset_name).groups()[0])
     num_to_wave = {x:"W"+str(x) for x in range(1,max_wave+1)}
     ## problem here if it's *not* a combined panel!
-    num_to_weight = { y:[x for x in BES_Panel.columns.sort_values(ascending=False) if re.match("wt_(new|full)_W"+str(y)+"$|_result$",x)][0] for y in range(1,max_wave+1) }
+    num_to_weight = { y:[x for x in BES_Panel.columns.sort_values(ascending=False) if re.match("wt_(new|full)_W"+str(y)+"($|_result$)",x)][0] for y in range(1,max_wave+1) }
     weights = BES_Panel[list(num_to_weight.values())].copy()
     return max_wave, num_to_wave, num_to_weight, weights
     

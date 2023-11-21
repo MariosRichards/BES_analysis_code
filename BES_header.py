@@ -61,6 +61,6 @@ for df in df_list:
         
     if isinstance(globals()[df],pd.DataFrame) and ("id" in globals()[df].columns) :
         globals()[df] = globals()[df].set_index("id").sort_index()        
-  
-#(var_type, cat_dictionary, new_old_col_names, old_new_col_names) = get_small_files(data_subfolder, encoding)
+if os.path.isfile(data_subfolder + "var_type.csv"):
+    (var_type, cat_dictionary, new_old_col_names, old_new_col_names) = get_small_files(data_subfolder, encoding)
 

@@ -241,10 +241,16 @@ def get_small_files(data_subfolder, encoding ):
     with open(fname, "rb") as f:
         cat_dictionary = pickle.load( f )
 
-    fname = data_subfolder + "new_old_col_names.pkl"
-    with open(fname, "rb") as f:
-        new_old_col_names = pickle.load(f)
-    old_new_col_names = {v: k for k, v in new_old_col_names.items()}
+    try:
+        fname = data_subfolder + "new_old_col_names.pkl"
+        with open(fname, "rb") as f:
+            new_old_col_names = pickle.load(f)
+        old_new_col_names = {v: k for k, v in new_old_col_names.items()}
+    except:
+        print("old_new_col_names not loaded")
+        old_new_col_names = None
+        new_old_col_names = None
+        
     return (var_type, cat_dictionary, new_old_col_names, old_new_col_names)
 
 def hdf_shrink_to_msgpack(hdf_file):

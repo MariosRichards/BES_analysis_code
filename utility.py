@@ -285,7 +285,7 @@ def setup_directories():
     if not os.path.exists( BES_output_folder ):
         os.makedirs( BES_output_folder )
         
-    BES_file_manifest = pd.read_csv( BES_small_data_files + "BES_file_manifest.csv" )
+    BES_file_manifest = pd.read_csv( BES_small_data_files + "BES_file_manifest.csv",encoding = "ISO-8859-1" )
 
     BES_R_data_files = BES_data_folder + "R_data" + os.sep
     if not os.path.exists( BES_R_data_files ):
@@ -484,17 +484,17 @@ def match(df, pattern, case_sensitive=False, mask=None):
     if mask is None:
            mask = pd.Series(np.ones( (df.shape[0]) ) , index=df.index).astype('bool')
     if case_sensitive:
-        return df[[x for x in df.columns if re.match(pattern,x)]][mask].notnull().sum()
+        return df.loc[mask,[x for x in df.columns if re.match(pattern, x)]].notnull().sum()
     else:
-        return df[[x for x in df.columns if re.match(pattern, x, re.IGNORECASE)]][mask].notnull().sum()
+        return df.loc[mask,[x for x in df.columns if re.match(pattern, x, re.IGNORECASE)]].notnull().sum()
 
 def search(df, pattern, case_sensitive=False, mask=None):
     if mask is None:
         mask = pd.Series(np.ones( (df.shape[0]) ), index=df.index).astype('bool')
     if case_sensitive:
-        return df[[x for x in df.columns if re.search(pattern,x)]][mask].notnull().sum()
+        return df.loc[mask,[x for x in df.columns if re.search(pattern, x)]].notnull().sum()
     else:
-        return df[[x for x in df.columns if re.search(pattern, x, re.IGNORECASE)]][mask].notnull().sum()
+        return df.loc[mask,[x for x in df.columns if re.search(pattern, x, re.IGNORECASE)]].notnull().sum()
 
 def remove_wave(x):
     return re.sub("(W\d+)+","",x)    

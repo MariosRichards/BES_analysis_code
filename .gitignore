@@ -45,3 +45,7 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+Output/default/CON/alg.pkl
+Output/default/CON/explainer.pkl
+Output/default/CON/scores.csv
+Output/default/CON/summary_plot.png

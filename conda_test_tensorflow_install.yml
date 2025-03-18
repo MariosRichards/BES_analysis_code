@@ -1,0 +1,55 @@
+name: test_tensorflow_install
+channels:
+  - conda-forge
+  - anaconda
+  - defaults
+dependencies:
+  - scikit-learn
+  - matplotlib
+  - shap
+  - notebook
+  - umap-learn
+  - numpy
+  - pandas
+  - seaborn
+  - xgboost
+  - scipy
+  - voila
+  - jupyterlab
+  - holoviews
+  - cudatoolkit
+  - pip
+  - scikit-optimize
+  - pyreadstat
+  - geopandas
+  - xlrd
+  - openpyxl
+  - cvxopt
+  - hyperopt
+  - geoviews
+  - bokeh
+  - pyvis
+  - mlxtend
+  - jupyter
+  - ipywidgets
+  - jinja2
+  - tabula-py
+  - camelot-py
+  - beautifulsoup4
+  - lxml
+  - textdistance
+  - torchvision
+  - pytorch
+  - html5lib
+  - psutil
+  - brotlipy
+  - python
+  - polars
+  - pdpbox
+  - desilinguist::factor_analyzer
+  - pyreadr
+  - pingouin
+  - python-graphviz
+  - lime
+  - feature_engine
+prefix: E:\Users\Gamer\anaconda3\envs\test_tensorflow_install

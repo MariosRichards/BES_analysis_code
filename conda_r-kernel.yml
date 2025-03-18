@@ -1,0 +1,23 @@
+name: r-kernel
+channels:
+  - conda-forge
+  - anaconda
+  - defaults
+dependencies:
+  - r-recommended
+  - r-irkernel
+  - jupyter
+  - r-reticulate
+  - r-ggeffects
+  - r-ggplot2
+  - r-essentials
+  - r-lavaan
+  - conda-forge::r-texreg
+  - conda-forge::r-survey
+  - conda-forge::r-jtools
+  - conda-forge::r-gridextra
+  - conda-forge::r-ggpubr
+  - conda-forge::r-ggcorrplot
+  - conda-forge::r-dotwhisker
+  - conda-forge::r-kutils
+prefix: E:\Users\Gamer\anaconda3\envs\r-kernel

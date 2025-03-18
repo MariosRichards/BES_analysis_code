@@ -1,0 +1,20 @@
+name: tf-n-gpu
+channels:
+  - conda-forge
+  - anaconda
+  - defaults
+dependencies:
+  - python=3.10
+  - cudnn=8.1.0
+  - cudatoolkit=11.2
+  - numpy~=1.23.3
+  - pandas
+  - jupyter
+  - shap
+  - matplotlib
+  - seaborn
+  - xgboost
+  - holoviews
+  - catboost
+  - cython
+prefix: E:\Users\Gamer\anaconda3\envs\tf-n-gpu

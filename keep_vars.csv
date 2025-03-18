@@ -1,0 +1,154 @@
+,0
+0,"anyUniW26W27__Yes, I graduated from higher education"
+1,polAttention__Pay a great deal of attention
+2,econPersonalProsp__Get a lot better
+3,econPersonalRetro__Got a lot better
+4,EUIntegrationSelf__Protect our independence
+5,satDemUK__Very satisfied
+6,satDemEng__Very satisfied
+7,redistSelf__Government should be less concerned about equal incomes
+8,immigSelf__Allow many more
+9,infoSourceTV__More than 2 hours
+10,infoSourcePaper__More than 2 hours
+11,infoSourceRadio__More than 2 hours
+12,infoSourceInternet__More than 2 hours
+13,infoSourcePeople__More than 2 hours
+14,trustMPs__A great deal of trust
+15,britishness__Very strongly British
+16,englishness__Very strongly English
+17,europeanness__Very strongly European
+18,lr1W27__Strongly agree
+19,lr2W27__Strongly agree
+20,lr3W27__Strongly agree
+21,lr4W27__Strongly agree
+22,lr5W27__Strongly agree
+23,al1W27__Strongly agree
+24,al2W27__Strongly agree
+25,al3W27__Strongly agree
+26,al4W27__Strongly agree
+27,al5W27__Strongly agree
+28,lr_scaleW27__Right
+29,al_scaleW27__Authoritarian
+30,parentOccOrgSize__500 or more employees
+31,parentNumEmployees__500 or more employees
+32,edlevelParent__Postgrad
+33,selfOccOrgSizeW26W27__500 or more employees
+34,selfOccOrgSizeLastW26W27__500 or more employees
+35,occCheckW26W27__Strongly agree
+36,age
+37,p_hh_children__5 or more
+38,"p_gross_household__£150,000 and over"
+39,p_gross_personal__Â Prefer not to answer
+40,p_hh_size__8 or more
+41,p_socgrade__E
+42,p_education_age__Still at school/Full time student
+43,p_disability__No
+44,"p_turnout_scot_ref__No, I was not eligible to vote"
+45,p_edlevel__Postgrad
+46,p_edlevelUni__Postgrad
+47,"sectorW26W27_Private sector firm of company Including, for example, limited companies and PLCs"
+48,sectorW26W27_Other public sector employer Incl eg: - Central govt/ Civil Service/ Govt Agency - Local authority/ Local Educ Auth/sch
+49,"sectorW26W27_Charity/voluntary sector Including, for example, charitable companies, churches, trade unions:"
+50,mii_cat_llm_12.0
+51,mii_cat_llm_32.0
+52,mii_cat_llm_26.0
+53,mii_cat_llm_1.0
+54,mii_cat_llm_40.0
+55,mii_cat_llm_5.0
+56,"subjClassW27_Yes, working class"
+57,"subjClassW27_Yes, middle class"
+58,subjClassW27_No
+59,small_mii_cat_llm_Economy
+60,small_mii_cat_llm_Immigration
+61,small_mii_cat_llm_Health
+62,small_mii_cat_llm_Environment
+63,small_mii_cat_llm_Other lib-auth
+64,small_mii_cat_llm_Negativity
+65,small_mii_cat_llm_Inequality
+66,LRAL_mii_cat_llm_Left-right
+67,LRAL_mii_cat_llm_Lib-auth
+68,headHouseholdPast_My father
+69,headHouseholdPast_My mother
+70,headHouseholdPast_Someone else
+71,parentEducation_No formal qualifications
+72,"parentEducation_Other technical, professional or higher qualification"
+73,parentEducation_GCE A level or Higher Certificate
+74,ns_sec_parent_L4.1 Traditional employees
+75,ns_sec_analytic_parent_Lower professional and managerial and higher supervisory
+76,ns_sec_analytic_parent_Routine occupations
+77,ns_sec_analytic_parent_Lower supervisory and technical occupations
+78,ns_sec_analytic_parent_Semi-routine occupations
+79,workingStatusW26W27_Working full time (30 or more hours per week)
+80,workingStatusW26W27_Retired
+81,workingStatusW26W27_Working part time (8-29 hours a week)
+82,workingStatusW26W27_Not in paid work for any other reason
+83,ns_sec_analyticW26W27_Lower professional and managerial and higher supervisory
+84,ns_sec_analyticW26W27_Intermediate occupations
+85,ns_sec_analyticW26W27_Semi-routine occupations
+86,ns_sec_analyticW26W27_Routine occupations
+87,ns_secW26W27_L4.1 Traditional employees
+88,ns_secW26W27_L7.1 Intermediate clerical and administrative occupations
+89,gor_South East
+90,gor_North West
+91,gor_East of England
+92,gor_South West
+93,gor_London
+94,gor_Yorkshire and the Humber
+95,gor_West Midlands
+96,gor_East Midlands
+97,gor_North East
+98,"p_education_University or CNAA first degree (e.g. BA, B.Sc, B.Ed)"
+99,p_education_GCE A level or Higher Certificate
+100,"p_education_CSE grade 1, GCE O level, GCSE, School Certificate"
+101,p_education_CSE grades 2-5
+102,p_work_stat_Retired
+103,p_work_stat_Working full time (30 or more hours per week)
+104,p_work_stat_Working part time (8-29 hours a week)
+105,p_work_stat_Not working
+106,p_work_stat_Unemployed
+107,p_housing_Own outright
+108,p_housing_Own with a mortgage
+109,p_housing_Rent from a private landlord
+110,p_housing_Rent from a housing association
+111,"p_housing_Neither I live rent-free with my parents, family or friends"
+112,p_housing_Rent from my local authority
+113,p_sexuality_Heterosexual
+114,p_sexuality_Gay or lesbian
+115,p_sexuality_Bisexual
+116,p_marital_Married
+117,p_marital_Single
+118,p_marital_Living with a partner but neither married nor in a civil partnership
+119,p_marital_Divorced
+120,p_marital_Widowed
+121,"p_marital_In a relationship, but not living together"
+122,"p_religion_No, I do not regard myself as belonging to any particular religion."
+123,p_religion_Yes - Church of England/Anglican/Episcopal
+124,p_religion_Yes - Roman Catholic
+125,p_religion_Yes - Other
+126,p_religion_Yes - Methodist
+127,p_religion_Yes - Islam
+128,p_job_sector_Not applicable
+129,"p_job_sector_Private sector profit-seeking (e.g. public limited company, partnership)"
+130,"p_job_sector_Public sector government owned or funded (e.g. civil service, local government, NHS, university)"
+131,"p_job_sector_Third sector non-profit, non-governmental (e.g. charity, social enterprise)"
+132,p_country_birth_UK
+133,p_country_birth_EU: pre-2004
+134,p_country_birth_EU: post-2004
+135,p_ethnicity_White British
+136,p_ethnicity_Any other white background
+137,p_scot_const_vote_2016_I would/did not vote
+138,p_scot_list_vote_2016_I would/did not vote
+139,selfOccSuperviseLastW26W27_Yes
+140,selfOccStatusW26W27_An employee
+141,parentOccEmployees_Yes
+142,parentOccSupervise_Yes
+143,parentOccStatus_An employee
+144,selfOccSuperviseW26W27_Yes
+145,p_parent_Yes
+146,gender_Female
+147,currentUnionMemberW19_W26_Yes
+148,everUnionMemberW19_W26_Yes
+149,subjClassSqueezeW27_Working class
+150,disabilityChildW26_Yes
+151,noDependentsInHouseW26_Yes
+152,disabilityCensusW26_Yes

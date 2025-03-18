@@ -912,7 +912,7 @@ def get_non_overfit_settings( train, target, alg, seed, early_stoppping_fraction
         stratification = target
     else:
         stratification = pd.qcut( pd.Series( target ), q=10, duplicates = 'drop', ).cat.codes
-
+    alg.set_params(**{"eval_metric":eval_metric[0],"early_stopping_rounds":alg.get_params()['n_estimators']*early_stoppping_fraction})
     if sample_weights is not None:
 
         X_train, X_test, y_train, y_test = train_test_split( pd.concat( [train,sample_weights], axis=1 ),
@@ -925,9 +925,8 @@ def get_non_overfit_settings( train, target, alg, seed, early_stoppping_fraction
         sample_weight_eval_set = X_test[weight_var].values
         X_train.drop(weight_var, axis=1, inplace=True)
         X_test.drop(weight_var, axis=1, inplace=True)
-
-        alg.fit(X_train, y_train, eval_metric=eval_metric, 
-                early_stopping_rounds = alg.get_params()['n_estimators']*early_stoppping_fraction,
+        
+        alg.fit(X_train, y_train, 
                 eval_set=eval_set, verbose=verbose, sample_weight = sample_weight)
         
     else:
@@ -935,13 +934,9 @@ def get_non_overfit_settings( train, target, alg, seed, early_stoppping_fraction
                                                              target, test_size=test_size,
                                                              random_state=seed, stratify=stratification )
           
-            
 
         eval_set = [(X_train, y_train), (X_test, y_test)]
-
-        alg.fit(X_train, y_train, eval_metric=eval_metric, 
-                early_stopping_rounds = alg.get_params()['n_estimators']*early_stoppping_fraction,
-                eval_set=eval_set, verbose=verbose )        
+        alg.fit(X_train, y_train, eval_set=eval_set, verbose=verbose )        
         
 
     
@@ -970,7 +965,6 @@ def get_non_overfit_settings( train, target, alg, seed, early_stoppping_fraction
     # belt and bracers!
     predictions = alg.predict(X_test,iteration_range=(0, alg.best_iteration + 1))
 
-    
     if target.dtype.name == 'category':
         ACC = accuracy_score(y_test, predictions)
         ##NLL = log_loss(y_test, predictions)
@@ -1047,7 +1041,8 @@ def get_xgboost_alg(
      random_state=27**2, 
      base_score =.5,
      scale_pos_weight = 1,
-     classification_problem = False):
+     classification_problem = False,
+     multi_strategy = None):
      
     if classification_problem==False:
         alg = XGBRegressor(
@@ -1069,7 +1064,8 @@ def get_xgboost_alg(
          nthread = nthread,
          n_jobs  = n_jobs ,
          random_state = random_state,
-         base_score=base_score)
+         base_score=base_score,
+         multi_strategy = multi_strategy)
     else:
         alg = XGBClassifier(
          learning_rate =learning_rate,
@@ -1090,23 +1086,41 @@ def get_xgboost_alg(
          nthread = nthread,
          n_jobs  = n_jobs ,
          random_state = random_state,
-         base_score=base_score)        
+         base_score=base_score,
+         enable_categorical=True,
+         multi_strategy = multi_strategy)        
     return alg
     
     
     
 #global var_list
-def xgboost_run(title, dataset, var_list,var_stub_list=[], subdir=None, min_features=30, dependence_plots=False , output_folder=".."+os.sep+"Output"+os.sep,Treatment="default",
+def xgboost_run(title, dataset, var_list,var_stub_list=[], subdir=None, min_features=30,
+                dependence_plots=False , output_folder=".."+os.sep+"Output"+os.sep,Treatment="default",
                 use_specific_weights = None, automatic_weights_from_wave_no = False, alg = None,verbosity=1,skip_bar_plot=False,
                 eval_metric = ['rmse'],minimum_sample=50,dont_stop_on_sample_size_err=False,print_shap_chart=True,plot_validation=False,
-                threshold=.1):
+                threshold=.1,multi_target=False,classification_problem=False,class_names=None):
+    # will need to change this if you want to change alg type per variable in list of target vars!
+                    
     if alg is None:
-        alg = get_xgboost_alg()
+        if classification_problem:
+            alg = get_xgboost_alg(classification_problem=classification_problem,
+                objective= 'multi:softmax',)
+            eval_metric = ['mlogloss']
+        else:
+            alg = get_xgboost_alg(classification_problem=classification_problem,
+                objective= 'reg:squarederror',)
+            
+        
         alg.verbosity=verbosity
+        
+    if multi_target:
+        alg.multi_strategy="multi_output_tree"
+        
     if verbosity>=1:
         verbose=True
     else:
         verbose=False
+        
     # global BES_Panel
     # for target_var,base_var in zip(var_list,base_list):
     treatment_subfolder = create_subdir(output_folder,Treatment)
@@ -1171,6 +1185,7 @@ def xgboost_run(title, dataset, var_list,var_stub_list=[], subdir=None, min_feat
                                       sample_weights=sample_weights,plot_validation=plot_validation)
             pd.Series([MSE, MAE, EV, R2, alg_best_iteration],index = ["MSE", "MAE", "EV", "R2", "alg_best_iteration"]).to_csv(output_subfolder+"scores.csv")
                                         
+        alg.set_params(**{"eval_metric":eval_metric[0],"early_stopping_rounds":None})
         # fit to full dataset at non-overfitting level
         alg.fit(train, target, verbose = verbose, sample_weight = sample_weights)
 
@@ -1201,7 +1216,8 @@ def xgboost_run(title, dataset, var_list,var_stub_list=[], subdir=None, min_feat
             
         if target.dtype.name == 'category':
             multiclass = True
-            class_names = list(target.cat.categories)
+            if class_names is None:
+                class_names = list(target.cat.categories)
         else:
             multiclass = False
             class_names = None
@@ -1248,7 +1264,11 @@ def create_train(dataset,drop_other_waves,var_stub_list,mask,target_var):
         keep_list = [x for x in keep_list if not re.search( other_waves, x )]
     
     keep_list = list(keep_list)
-    keep_list.remove(target_var)
+    # multitarget case
+    if isinstance(target_var,list):
+        keep_list = [x for x in keep_list if x not in target_var]
+    else:
+        keep_list.remove(target_var)
     # drop key variables
     keep_list = [x for x in keep_list if not any([var_stub in x for var_stub in var_stub_list])] 
     

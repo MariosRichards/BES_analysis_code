@@ -122,14 +122,13 @@ def lazy_weighted_indices(weights):
     return flatten( [[weights.index[ind]]*x.values[ind] for ind in range(weights.shape[0])] )
 
 
-
-
 def intersection(lst1, lst2): 
   
     # Use of hybrid method 
     temp = set(lst2) 
     lst3 = [value for value in set(lst1) if value in temp] 
     return lst3 
+
 
 def amalgamate_waves(df, pattern, forward_fill=True, specify_wave_order = None, low_priority_values = [], match=True):
     # euref_imm = amalgamate_waves(BES_reduced_with_na,"euRefVoteW",forward_fill=False)
@@ -817,13 +816,14 @@ from xgboost import XGBClassifier, XGBRegressor
 from sklearn.metrics import mean_squared_error, mean_absolute_error, explained_variance_score, r2_score
 from sklearn.metrics import accuracy_score, log_loss,f1_score,roc_auc_score
 import pickle
+from matplotlib import colors as plt_colors
 
 def shap_outputs(shap_values, train, target_var, output_subfolder,
                  dependence_plots = False, threshold = .1, min_features = 30,
                  title=None,save_shap_values=False,skip_bar_plot=False, multiclass=False,class_names=None,
-                 plot_type='dot' ):
+                 plot_type='dot',colour_list=None ):
 
-
+    
     #################################
 #     threshold = .1
 #     min_features = 30
@@ -863,6 +863,10 @@ def shap_outputs(shap_values, train, target_var, output_subfolder,
 
     ####################
     
+
+        
+    
+    
     fig = plt.figure()
     if title is None:
         fig.suptitle(target_var);
@@ -870,9 +874,17 @@ def shap_outputs(shap_values, train, target_var, output_subfolder,
         fig.suptitle(title);
         
 
-       
+    if colour_list:
+        # get class ordering from shap values
+        class_inds = np.argsort([-np.abs(shap_values[:,:,i]).mean() for i in range(shap_values.shape[2])])
+
+        # create listed colormap
+        cmap = plt_colors.ListedColormap(np.array(colour_list)[class_inds])
         
-    shap.summary_plot( shap_values, train, max_display=n_top_features, plot_type=plot_type, class_names=class_names );
+        shap.summary_plot( shap_values, train, max_display=n_top_features, plot_type=plot_type, class_names=class_names, show=False,color=cmap );
+    else:
+                
+        shap.summary_plot( shap_values, train, max_display=n_top_features, plot_type=plot_type, class_names=class_names, show=False );
     shap_problem = np.isnan(np.abs(shap_values).mean(0)).any()
     if shap_problem:
         summary_text = "summary_plot(approx)"
@@ -1096,9 +1108,10 @@ def get_xgboost_alg(
 #global var_list
 def xgboost_run(title, dataset, var_list,var_stub_list=[], subdir=None, min_features=30,
                 dependence_plots=False , output_folder=".."+os.sep+"Output"+os.sep,Treatment="default",
-                use_specific_weights = None, automatic_weights_from_wave_no = False, alg = None,verbosity=1,skip_bar_plot=False,
+                use_specific_weights = None, automatic_weights_from_wave_no = False, alg = None, verbosity=1,
+                skip_bar_plot=False,
                 eval_metric = ['rmse'],minimum_sample=50,dont_stop_on_sample_size_err=False,print_shap_chart=True,plot_validation=False,
-                threshold=.1,multi_target=False,classification_problem=False,class_names=None):
+                threshold=.1,multi_target=False,classification_problem=False,class_names=None,colour_list=None):
     # will need to change this if you want to change alg type per variable in list of target vars!
                     
     if alg is None:
@@ -1225,7 +1238,8 @@ def xgboost_run(title, dataset, var_list,var_stub_list=[], subdir=None, min_feat
         if print_shap_chart:
             shap_outputs(shap_values, train, target_var, output_subfolder, threshold = threshold,
                      min_features = min_features, title=title+"\n"+subtitle,
-                     dependence_plots=dependence_plots,skip_bar_plot=False,multiclass=multiclass,class_names=class_names)        
+                     dependence_plots=dependence_plots,skip_bar_plot=False,multiclass=multiclass,class_names=class_names,
+                     colour_list=colour_list)        
 
     if skipping:
         return (None,None,None,None,None,None,None)
